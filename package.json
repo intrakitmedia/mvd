@@ -1,0 +1,37 @@
+{
+  "name": "sage",
+  "private": true,
+  "bud": {
+    "location": {
+      "src": "resources",
+      "dist": "public"
+    }
+  },
+  "browserslist": [
+    "extends @wordpress/browserslist-config"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "dev": "bud dev",
+    "build": "bud build",
+    "lint": "npm run lint:js && npm run lint:css",
+    "lint:js": "eslint resources/scripts",
+    "lint:css": "stylelint \"resources/**/*.{css,scss,vue}\"",
+    "test": "npm run lint"
+  },
+  "devDependencies": {
+    "@roots/bud": "^5.2.0",
+    "@roots/bud-eslint": "^5.2.0",
+    "@roots/bud-postcss": "^5.2.0",
+    "@roots/bud-prettier": "^5.2.0",
+    "@roots/bud-stylelint": "^5.2.0",
+    "@roots/bud-tailwindcss": "^5.2.0",
+    "@roots/sage": "^5.2.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "swiper": "^8.0.7"
+  }
+}
