@@ -11,7 +11,6 @@
             </ul>
         </div>
         <div class="four-col">
-            <h1>{{$title_me}}</h1>
             <h4>MultiVision Digital / Rye, NY</h4>
             <ul>
                 <li>34 Gramercy Ave<br/>
