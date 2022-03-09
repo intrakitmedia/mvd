@@ -146,13 +146,6 @@
                                 </ul>
                             </div>
                             <div class="callout-video remote-video-right">
-
-								<?php
-								$video = get_field( 'video' );
-
-								echo $video;
-								?>
-
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/9GJrrM_JH9k"
                                         title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
