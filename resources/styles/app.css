@@ -33,6 +33,7 @@
 @import "components/forms.css";
 @import "components/shadow-bg.css";
 @import "components/play.css";
+@import "components/quick-quote.css";
 
 .root,
 #root,

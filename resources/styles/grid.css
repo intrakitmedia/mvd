@@ -56,6 +56,14 @@ section.section-alt-2 {
   padding-left: 10px;
 }
 
+.large-col {
+  width: 75%;
+}
+
+.small-col {
+  width: 25%;
+}
+
 @media (max-width: var(--container)) {
   .container {
     padding-left: 10px;

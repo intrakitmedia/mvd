@@ -1,0 +1,48 @@
+/* stylelint-disable */
+
+.quick-quote {
+  margin-top: -90px;
+}
+
+.quick-quote h4,
+.quick-quote p {
+  color: var(--white);
+}
+
+.quick-quote label p {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.quick-quote-wrapper {
+  background-color: var(--orange);
+  box-shadow: var(--shadow);
+  padding: 30px 20px;
+}
+
+.quick-quote-title {
+  text-align: center;
+}
+
+.quick-quote label,
+.quick-quote input {
+  width: 100%;
+}
+
+.quick-quote input[type="text"],
+.quick-quote input[type="phone"],
+.quick-quote input[type="email"] {
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.quick-quote button {
+  color: var(--white);
+  padding: 5px;
+  width: 100%;
+  border: 1px solid var(--white);
+}

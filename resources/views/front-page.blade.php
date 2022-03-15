@@ -3,7 +3,9 @@
 
 @section('content')
     <div class="hero">
-        <div class="hero-inner" style="background: url('https://wordpress-docker.test/wp-content/uploads/2022/02/video-content-marketing.webp'); background-size: cover; background-position:
+        <div class="hero-inner" style="background: url(@asset('images/video-content-marketing.jpg'));
+        background-size: cover;
+        background-position:
          center right">
             <div class="row">
                 <div class="hero-container">
