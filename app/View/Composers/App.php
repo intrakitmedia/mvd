@@ -24,6 +24,7 @@ class App extends Composer
     {
         return [
             'siteName' => $this->siteName(),
+	        'title' => $this->pageTitle()
         ];
     }
 
@@ -36,4 +37,14 @@ class App extends Composer
     {
         return get_bloginfo('name', 'display');
     }
+
+	/**
+	 * Returns the page title.
+	 *
+	 * @return string
+	 */
+	public function pageTitle()
+	{
+		return "hi";
+	}
 }

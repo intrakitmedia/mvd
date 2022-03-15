@@ -1,0 +1,36 @@
+/* stylelint-disable */
+
+/*.sizzle-reel .image-flex-roll {*/
+  /*display: flex;*/
+  /*flex-wrap: wrap;*/
+/*}*/
+
+.sizzle-reel .image-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.sizzle-reel .image-flex-roll img {
+  height: auto;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.sizzle-reel .image-flex-roll img:not(:nth-child(1)) {
+  width: 50%;
+}
+
+.sizzle-reel .image-flex-roll img:first-child {
+  margin-right: 10px;
+  width: 50%;
+}
+
+.sizzle-content-top {
+  padding-left: 40px;
+}
+
+.sizzle-only {
+  width: 80% !important;
+}

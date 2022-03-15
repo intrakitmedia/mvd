@@ -6,7 +6,8 @@
             <ul>
                 <li>1330 Fifth Ave, Ste 6e<br/>
                     New York, NY 10026<br/>
-                    (646) 319-8609<br/></li>
+                    (646) 319-8609<br/><a href="mailto:rweiss@nyccorporatevideomarketing
+                    .com">rweiss@nyccorporatevideomarketing.com</a></li>
                 <li>
             </ul>
         </div>
@@ -15,17 +16,18 @@
             <ul>
                 <li>34 Gramercy Ave<br/>
                     Rye, NY 10580<br/>
-                    (646) 319-8609<br/></li>
+                    (646) 319-8609<br/><a href="mailto:rweiss@nyccorporatevideomarketing
+                    .com">rweiss@nyccorporatevideomarketing.com</a></li>
                 <li>
             </ul>
         </div>
     </div>
         <div class="social-icons">
             <ul>
-                <li><a href=""></a></li>
-                <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                <li><a href=""><i class="fa fa-linkedin"></i></a></li>
-                <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://www.facebook.com/NYCOnlineVideoProduction"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/nycvideomktg"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/multivision-digital/"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.youtube.com/user/MVProductionsNYC"><i class="fa fa-youtube"></i></a></li>
             </ul>
         </div>
     <div class="row center">

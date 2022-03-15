@@ -1,14 +1,43 @@
 header.header-banner {
   background: var(--white);
   width: 100%;
-  padding: 10px 0;
+  padding: 0;
   box-shadow: var(--shadowbig);
   position: relative;
   z-index: 1;
+}
+
+header.header-banner .header-inner,
+.primary-menu-wrapper {
+  height: 100%;
 }
 
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.preheader {
+  color: var(--orange);
+  font-size: 18px;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.follow-up {
+  color: var(--blue);
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.follow-up.smaller {
+  font-size: 32px;
+  line-height: 42px;
+  text-transform: none;
 }

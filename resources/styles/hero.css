@@ -33,6 +33,7 @@
 
 .hero-link p {
   margin-bottom: 0;
+  font-weight: bold;
 }
 
 .hero-video {
@@ -70,4 +71,5 @@ h1.home-lead {
   color: var(--white);
   font-weight: 600;
   margin-bottom: 10px;
+  letter-spacing: -2px;
 }

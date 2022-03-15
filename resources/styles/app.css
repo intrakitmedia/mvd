@@ -10,6 +10,7 @@
 @import "main-nav.css";
 @import "mobile-menu.css";
 /** sections **/
+@import "sections/page-header.css";
 @import "sections/stats.css";
 @import "sections/callout.css";
 @import "sections/steps.css";
@@ -18,19 +19,30 @@
 @import "sections/shout.css";
 @import "sections/wide-form-section.css";
 @import "sections/footer.css";
+@import "sections/sizzle-reel.css";
+@import "sections/right-up.css";
+@import "sections/core-values.css";
 /** modules **/
 @import "modules/lead-ins-outs.css";
 @import "modules/swiper.css";
 @import "modules/wide-form.css";
+@import "modules/peak-card.css";
 /** components **/
 @import "components/buttons.css";
+@import "components/icon-feats.css";
 @import "components/forms.css";
+@import "components/shadow-bg.css";
+@import "components/play.css";
 
+.root,
+#root,
+#docs-root,
 :root {
   --blue: #016191;
   --bluergb: 	1 97 145;
   --blue2: #079da8;
   --blue3: #45abde;
+  --darkblue: #003351;
   --orange: #f88f1e;
   --orange2: #f9b368;
   --ctaorange: #f6821d;
@@ -63,8 +75,13 @@
   --shadowbig: 0 4px 2px -2px rgb(0 0 0 / 30%);
   --shadow: 0 1px 4px rgb(0 0 0 / 16%);
   --shadowall: 0px 0px 10px 0px rgb(0 0 0 / 10%);
+  --leftshadow: 0em 0em 2em 0em rgb(0 0 0 / 25%);
   --container: 1460px;
   --row: 1120px;
+  --sm: 576px;
+  --md: 768px;
+  --lg: 1120px;
+  --xl: 1425px;
 }
 
 *, *:before, *:after {
@@ -145,6 +162,10 @@ h4.header-alt {
   font-style: italic;
   font-size: 24px;
   line-height: 1;
+}
+
+.fill-height {
+  height: 100%;
 }
 
 /** Hero CTA **/

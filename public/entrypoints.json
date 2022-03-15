@@ -1,15 +1,24 @@
 {
   "app": {
     "js": [
-      "vendor/bud.app.editor.js",
-      "app.js"
+      "runtime.979dfd.js",
+      "vendor/app.53554a.js",
+      "app.f78d59.js"
     ],
-    "dependencies": []
+    "css": [
+      "app.b50447.css"
+    ],
+    "dependencies": [
+      "jquery"
+    ]
   },
   "editor": {
     "js": [
-      "vendor/bud.app.editor.js",
-      "editor.js"
+      "runtime.979dfd.js",
+      "editor.4d42af.js"
+    ],
+    "css": [
+      "editor.31d6cf.css"
     ],
     "dependencies": [
       "wp-blocks"

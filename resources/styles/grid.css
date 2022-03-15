@@ -4,6 +4,14 @@ section {
   padding: 60px 0;
 }
 
+section.section-up-next {
+  padding-bottom: 90px;
+}
+
+section.next-up-312 {
+  padding-bottom: 312px;
+}
+
 section.section-alt {
   background-color: var(--lightgrey);
 }
@@ -46,6 +54,13 @@ section.section-alt-2 {
 .two-col.even-space:last-child:not(:first-child) {
   padding-right: 0;
   padding-left: 10px;
+}
+
+@media (max-width: var(--container)) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 @media screen and (min-device-width: var(--small)) and (max-device-width: var(--container)) {

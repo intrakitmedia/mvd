@@ -1,0 +1,38 @@
+/* stylelint-disable */
+
+section.core-values {
+
+}
+
+.small-card {
+  width: 33%;
+}
+
+.small-card:not(:last-child) {
+  margin-right: 20px;
+}
+
+section.core-values .small-card {
+  background: var(--white);
+  box-shadow: var(--shadow);
+  padding: 30px;
+  text-align: center;
+}
+
+.small-card-icon {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.small-card-text h4 {
+  color: var(--orange);
+  font-weight: bold;
+}
+
+.small-card-text h4,
+.small-card-text p {
+  font-weight: bold;
+  font-size: 18px;
+}
+

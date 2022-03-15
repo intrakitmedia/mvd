@@ -1,0 +1,45 @@
+/* stylelint-disable */
+
+.right-up .two-col {
+  display: flex;
+  align-items: flex-end;
+}
+
+.right-up .right-up-inner {
+  margin-top: -90px;
+}
+
+.right-up h3 {
+  text-transform: none;
+  margin-bottom: 30px;
+}
+
+ul.checklist-board {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.checklist-board li {
+  padding-left: 22px;
+  margin-bottom: 3px;
+  font-size: 16px;
+}
+
+.checklist-board li:before {
+  content: '\f46d';
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -22px;
+  width: 22px;
+  color: var(--orange);
+  font-size: 18px;
+
+}
+
+.right-up-image {
+  padding-left: 20px;
+}
+
+.right-up-image img {
+  border-radius: 10px;
+}

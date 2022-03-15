@@ -1,3 +1,5 @@
+/* stylelint-disable */
+
 /** Main Navigation **/
 
 .desktop-nav > li.menu-item {
@@ -9,6 +11,10 @@
   position: relative;
   letter-spacing: 0.05em;
 }
+
+/*.desktop-nav > li.menu-item.call-to-action a {*/
+  /*padding: 10px;*/
+/*}*/
 
 .desktop-nav > li.menu-item.call-to-action a {
   font-weight: 600;
@@ -26,13 +32,19 @@
   padding-right: 30px;
 }
 
+.desktop-nav > li.menu-item:not(.call-to-action) a {
+  padding-top: 37.5px;
+  padding-bottom: 37.5px;
+  display: block;
+}
+
 .desktop-nav > li.menu-item.menu-item-has-children {
   padding-right: 45px;
 }
 
 .desktop-nav > li.menu-item.menu-item-has-children::after {
   position: absolute;
-  top: 5px;
+  top: 46%;
   right: 30px;
   display: block;
   content: '';
@@ -49,15 +61,173 @@
 }
 
 .desktop-nav > li.menu-item > ul.sub-menu {
-  display: none;
+  display: block;
+  height: 0;
+  visibility: hidden;
   position: absolute;
+  background-color: var(--darkblue);
+  width: auto;
+  white-space: nowrap;
+  border-top: 2px solid var(--orange);
+  opacity: 0;
+  transition: 0.8s opacity ease;
+}
+
+.desktop-nav > li.menu-item:hover > ul.sub-menu {
+  display: block;
+  height: auto;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.8s opacity ease;
 }
 
 .mobile-nav > li.menu-item > ul.sub-menu {
   display: none;
   position: absolute;
+  border-top: 2px solid var(--orange);
 }
 
-.desktop-nav > li.menu-item:hover > ul.sub-menu {
+.desktop-nav > li.menu-item:hover {
+  color: var(--orange);
+  transition: 0.6s all ease;
+}
+
+.desktop-nav > li.menu-item > ul.sub-menu > li a {
+  padding: 15px 30px;
+  color: var(--white);
+  border-bottom:  2px solid rgb(0 0 0 / 45%);
   display: block;
+  position: relative;
+}
+
+.desktop-nav > li.menu-item > ul.sub-menu > li a:hover {
+  background: rgb(0 0 0 / 9.5%);
+  transition: 0.6s all ease;
+}
+
+.desktop-nav > li.menu-item:hover > ul.sub-menu > li:hover a::before {
+  background: rgb(0 0 0 / 25%);
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/** menuToggle **/
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+.ham-wrapper {
+  position: relative;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle .ham-wrapper span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #cdcdcd;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+  opacity 0.55s ease;
+}
+
+#menuToggle .ham-wrapper span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle .ham-wrapper span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+.ham-wrapper input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(1px, -1px);
+  background: #232323;
+}
+
+/*
+ */
+.ham-wrapper input:checked ~ span:nth-last-child(2)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Oh yeah and the last one should go the other direction
+ */
+.ham-wrapper input:checked ~ span:nth-last-child(1)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle .ham-wrapper input:checked ~ ul
+{
+  transform: none;
 }

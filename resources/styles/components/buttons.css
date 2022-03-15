@@ -21,6 +21,10 @@ a.call-to-action {
   display: block;
 }
 
+a.call-to-action.inline-block {
+  display: inline-block;
+}
+
 a.call-to-action.btn-alt {
   background-color: var(--white);
   border-color: var(--white);
@@ -56,4 +60,48 @@ span.learn-more {
   border-bottom: 1px solid var(--white);
   padding-bottom: 5px;
   text-transform: uppercase;
+}
+
+a.orange-link {
+  color: var(--orange);
+  text-transform: uppercase;
+  transition: 0.3s ease all;
+}
+
+a.orange-link span {
+  display: inline-block;
+  padding-bottom: 1px;
+  border-bottom: 1px solid var(--orange);
+  transition: 0.3s ease all;
+  margin-left: 5px;
+}
+
+a.orange-link:hover {
+  color: #e78267;
+  transition: 0.3s ease all;
+}
+
+a.orange-link:hover span {
+  border-bottom: 1px solid #e78267;
+  transition: 0.3s ease all;
+}
+
+a.orange-link:hover .orange-play {
+  box-shadow: 0 0 0 1px #e78267;
+  transition: 0.3s ease all;
+}
+
+.orange-play {
+  color: white;
+  background: var(--orange);
+  padding: 12px 14px 12px 16px;
+  font-size: 18px;
+  line-height: 1;
+  border-radius: 50%;
+  transition: 0.3s ease all;
+}
+
+.orange-play:hover {
+  box-shadow: 0 0 0 2px #e78267;
+  transition: 0.5s ease all;
 }

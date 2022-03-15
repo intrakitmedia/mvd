@@ -1,0 +1,28 @@
+/* stylelint-disable */
+
+.page-header-title {
+  max-width: 1000px;
+}
+
+.page-header-title h1 {
+  color: var(--orange);
+  font-size: 18px;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.page-header-title h2 {
+  color: var(--blue);
+  font-size:  42px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.page-header-title p {
+  font-size: 18px;
+  font-weight: bold;
+}

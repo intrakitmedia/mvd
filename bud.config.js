@@ -37,4 +37,8 @@ module.exports = (app) =>
          *
          * This is your local dev server.
          */
-        .proxy('https://wordpress-docker.test/');
+        .proxy('https://wordpress-docker.test/')
+        /**
+         * Development URL
+         */
+        .serve('http://localhost:3000');

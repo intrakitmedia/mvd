@@ -4,6 +4,10 @@ footer {
   border-top: 2px solid var(--orange);
 }
 
+.footer {
+  padding-bottom: 60px;
+}
+
 .footer h4 {
   text-transform: capitalize;
   color: var(--grey);
@@ -20,4 +24,23 @@ footer {
   font-size: 12px;
   line-height: 1;
   margin-bottom: 0;
+  color: var(--darkgrey);
+}
+
+footer .social-icons {
+  padding: 30px;
+}
+
+footer .social-icons ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer .social-icons ul li {
+  padding: 0 20px;
+}
+
+footer .social-icons ul li i {
+  font-size: 18px;
+  color: var(--darkgrey);
 }
