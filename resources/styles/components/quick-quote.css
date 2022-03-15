@@ -40,7 +40,7 @@
   padding-bottom: 3px;
 }
 
-.quick-quote button {
+div.quick-quote button {
   color: var(--white);
   padding: 5px;
   width: 100%;
