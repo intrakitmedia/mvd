@@ -46,3 +46,11 @@ header.header-banner .header-inner,
   line-height: 42px;
   text-transform: none;
 }
+
+.h2-large-blue {
+  color: var(--blue);
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 45px;
+  letter-spacing: 1px;
+}

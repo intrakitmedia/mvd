@@ -7,6 +7,16 @@
 .quick-quote h4,
 .quick-quote p {
   color: var(--white);
+  font-size:18px;
+  font-weight: bold;
+}
+
+.quick-quote h4 {
+  margin-bottom: 15px;
+}
+
+.quick-quote-title p {
+  margin-bottom: 45px;
 }
 
 .quick-quote label p {
@@ -18,11 +28,19 @@
 .quick-quote-wrapper {
   background-color: var(--orange);
   box-shadow: var(--shadow);
-  padding: 30px 20px;
+  padding: 45px 40px;
 }
 
 .quick-quote-title {
   text-align: center;
+}
+
+.quick-quote .form-row {
+  margin-bottom: 15px;
+}
+
+.quick-quote .form-row.last {
+  margin-bottom: 45px;
 }
 
 .quick-quote label,
@@ -36,13 +54,14 @@
   padding-left: 10px;
   outline: none;
   border: none;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 div.quick-quote button {
   color: var(--white);
-  padding: 5px;
+  padding: 10px;
   width: 100%;
   border: 1px solid var(--white);
+  border-radius: 10px;
 }

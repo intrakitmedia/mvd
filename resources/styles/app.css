@@ -22,11 +22,15 @@
 @import "sections/sizzle-reel.css";
 @import "sections/right-up.css";
 @import "sections/core-values.css";
+@import "sections/services-content.css";
+@import "sections/services-banner.css";
 /** modules **/
 @import "modules/lead-ins-outs.css";
 @import "modules/swiper.css";
 @import "modules/wide-form.css";
 @import "modules/peak-card.css";
+@import "modules/services-sizzle-reel.css";
+@import "modules/other-services.css";
 /** components **/
 @import "components/buttons.css";
 @import "components/icon-feats.css";
@@ -113,7 +117,6 @@ li {
   font-size: 16px;
   line-height: 28px;
   color: var(--pcolor);
-  font-weight: 100;
 }
 
 p {

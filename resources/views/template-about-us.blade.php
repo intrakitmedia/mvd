@@ -77,7 +77,7 @@
                         <div class="checklist-board">
                             <div class="checklist-board-inner">
 
-                                <h3>Our Clients rely on us to:</h3>
+                                <h2>Our Clients rely on us to:</h2>
                                 <ul>
                                     <li>Provide a quick turn around while maintaining a high level of quality and
                                         customer
@@ -100,6 +100,10 @@
                                         budget
                                     </li>
                                 </ul>
+
+                                <div class="cta-button-wrapper">
+                                    <a href="" class="call-to-action">View Customer Studies</a>
+                                </div>
                             </div>
                         </div>
                     </div>

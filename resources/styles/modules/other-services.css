@@ -1,0 +1,37 @@
+/* stylelint-disable */
+
+/** services-sizzle-reel **/
+
+.other-services {
+  padding-top: 60px;
+}
+
+.other-services-wrapper {
+  padding: 15px 20px;
+  border: 1px solid rgb(0 0 0 / 5%);
+  background: white;
+}
+
+.other-service {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.other-service:not(:last-child) {
+  border-bottom: 1px solid rgb(0 0 0 / 5%);
+}
+
+.other-service-image {
+  width: 40%;
+}
+
+.other-service-title {
+  width: 60%;
+  padding-left: 10px;
+}
+
+.other-service-title a {
+  font-size: 18px;
+  font-weight: bold;
+}

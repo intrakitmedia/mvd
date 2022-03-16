@@ -1,0 +1,24 @@
+/* stylelint-disable */
+
+/** services-sizzle-reel **/
+
+.services-sizzle {
+  margin-top: -120px;
+}
+
+.services-sizzle-reel {
+  padding-right: 40px;
+}
+
+.s-vid img {
+  border-radius: 10px;
+}
+
+.s-vid-title {
+  padding-top: 5px;
+}
+
+.s-vid-title h4 {
+  margin: 0;
+  font-weight: bold;
+}

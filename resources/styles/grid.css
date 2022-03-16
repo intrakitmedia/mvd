@@ -57,11 +57,11 @@ section.section-alt-2 {
 }
 
 .large-col {
-  width: 75%;
+  width: 70%;
 }
 
 .small-col {
-  width: 25%;
+  width: 30%;
 }
 
 @media (max-width: var(--container)) {
