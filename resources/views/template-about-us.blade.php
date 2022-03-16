@@ -214,7 +214,7 @@
 
                     <p>Reach out say hello and will be seeing you in front of a camera.
                 </div>
-                <div class="cta-button-wrapper">
+                <div class="cta-button-wrapper text-center">
                     <a class="call-to-action">View Portfolio</a>
                 </div>
             </div>
