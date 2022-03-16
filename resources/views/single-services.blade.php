@@ -49,7 +49,7 @@
                 <div class="large-col">
                     <div class="services-add-content">
                         <div class="header-two">
-                        <h2>Capture up to 4k video with the help of a professional director without the on-location cost.</h2>
+                            <h2>Capture up to 4k video with the help of a professional director without the on-location cost.</h2>
                         </div>
                         <p>Letting you record up to 4k video anywhere / anytime with either a smartphone, tablet or from your
                             computer. After downloading an App to your smartphone, you will start a unique session and get guidance from the director. You can even roll a teleprompter on screen if you need.
@@ -107,7 +107,9 @@
             <div class="row">
                 <div class="large-col">
                     <div class="services-reel-content">
-                        <h2 class="h2-large-blue">Sizzle Reels Made for Our Partners</h2>
+                        <div class="header-two blue">
+                            <h2>Sizzle Reels Made for Our Partners</h2>
+                        </div>
 
                         <div class="services-sizzle-reel grid grid-cols-3 gap-2">
 

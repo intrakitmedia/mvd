@@ -31,6 +31,11 @@ section.section-alt-2 {
   display: flex;
 }
 
+.small-row {
+  max-width: var(--small-row);
+  margin: 0 auto;
+}
+
 .row.center {
   justify-content: center;
 }

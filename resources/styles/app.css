@@ -83,6 +83,7 @@
   --leftshadow: 0em 0em 2em 0em rgb(0 0 0 / 25%);
   --container: 1460px;
   --row: 1240px;
+  --small-row: 1000px;
   --sm: 576px;
   --md: 768px;
   --lg: 1240px;

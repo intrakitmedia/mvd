@@ -203,6 +203,24 @@
         </div>
     </section>
 
+    <section class="paragraph">
+        <div class="container">
+            <div class="small-row">
+                <div class="the-content">
+                    <p>We set out on our journey in 2011 and today our value proposition remains the same as it will tomorrow.  Our client
+                        base and core offering is now expanded into video strategy, video production and video distribution, allowing us to offer a full turnkey service to work clients across the spectrum of video content.
+
+                    <p>Regardless of the size of the company, or budget attached, all the people at these companies needed a trusted resource to ensure their business video production was on time, on budget and achieved the business objectives they were after.
+
+                    <p>Reach out say hello and will be seeing you in front of a camera.
+                </div>
+                <div class="cta-button-wrapper">
+                    <a class="call-to-action">View Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <section class="accolades next-up-312">
         <div class="row center">
