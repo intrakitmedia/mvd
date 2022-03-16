@@ -18,7 +18,7 @@ a.call-to-action {
   color: var(--white);
   padding: 10px 30px;
   border-radius: 4px;
-  display: block;
+  display: inline-block;
 }
 
 a.call-to-action.inline-block {
@@ -73,7 +73,7 @@ a.orange-link span {
   padding-bottom: 1px;
   border-bottom: 1px solid var(--orange);
   transition: 0.3s ease all;
-  margin-left: 5px;
+  margin-left: 20px;
 }
 
 a.orange-link:hover {

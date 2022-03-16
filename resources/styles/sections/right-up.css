@@ -17,6 +17,17 @@
 ul.checklist-board {
   list-style: none;
   padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+.checklist-board-inner h2 {
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: 800;
+}
+
+.checklist-board-inner ul {
+  margin-bottom: 15px;
 }
 
 .checklist-board li {

@@ -7,7 +7,7 @@
 .page-header-title h1 {
   color: var(--orange);
   font-size: 18px;
-  line-height: 1;
+  line-height: 22px;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 2px;
@@ -16,13 +16,14 @@
 
 .page-header-title h2 {
   color: var(--blue);
-  font-size:  42px;
+  font-size:  48px;
+  line-height: 58px;
   font-weight: bold;
   margin-bottom: 15px;
   letter-spacing: 1px;
 }
 
 .page-header-title p {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 24px;
+  font-weight: 500;
 }

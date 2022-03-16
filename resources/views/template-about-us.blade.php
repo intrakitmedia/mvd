@@ -77,7 +77,12 @@
                         <div class="checklist-board">
                             <div class="checklist-board-inner">
 
-                                <h2>Our Clients rely on us to:</h2>
+                                <div class="header-two">
+
+                                    <h2>Our Clients rely on us to:</h2>
+
+                                </div>
+
                                 <ul>
                                     <li>Provide a quick turn around while maintaining a high level of quality and
                                         customer
@@ -156,6 +161,7 @@
                     <h2>Our Core Values</h2>
                 </div>
             </div>
+
             <div class="row">
                 <div class="small-card">
                     <div class="small-card-icon">

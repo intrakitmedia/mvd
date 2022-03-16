@@ -3,7 +3,7 @@
 /** services-sizzle-reel **/
 
 .services-sizzle {
-  margin-top: -120px;
+  margin-top: -90px;
 }
 
 .services-sizzle-reel {
@@ -21,4 +21,5 @@
 .s-vid-title h4 {
   margin: 0;
   font-weight: bold;
+  font-size: 16px;
 }

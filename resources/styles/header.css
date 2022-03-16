@@ -12,6 +12,17 @@ header.header-banner {
   z-index: 1;
 }
 
+.header-two h2 {
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.header-two.blue h2 {
+  color: var(--blue);
+}
+
 header.header-banner .header-inner,
 .primary-menu-wrapper {
   height: 100%;
@@ -45,12 +56,4 @@ header.header-banner .header-inner,
   font-size: 32px;
   line-height: 42px;
   text-transform: none;
-}
-
-.h2-large-blue {
-  color: var(--blue);
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 45px;
-  letter-spacing: 1px;
 }
