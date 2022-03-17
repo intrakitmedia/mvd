@@ -40,6 +40,27 @@ domReady(() => {
             $('#mobile-navi').prop('checked', false);
         }
     })
+
+    $('.s-vid').on('click', function (e) {
+        e.preventDefault();
+        let id = $(this).attr('data-field');
+
+        if(id) {
+            $('<iframe width="420" height="315" frameborder="0" allowfullscreen></iframe>')
+                .attr("src", id)
+                .appendTo(".video-modal");
+            $('.video-modal').addClass('active');
+        }
+
+        console.log(id);
+    });
+
+    $('#ex-out').on('click', function (e) {
+        e.preventDefault();
+
+        $('.video-modal').removeClass('active');
+
+    })
 });
 
 /**

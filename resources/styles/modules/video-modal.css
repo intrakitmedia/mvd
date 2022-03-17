@@ -1,0 +1,60 @@
+/* stylelint-disable */
+
+/** video-modal **/
+
+.video-modal {
+  outline: none;
+  position: fixed;
+  top: 156.5px;
+  left: 148.5px;
+  box-sizing: border-box;
+  max-height: 793px;
+  max-width: 1577px;
+  z-index: 2202;
+  display: none;
+}
+
+.video-modal.active {
+  display: block;
+}
+
+.video-modal-inner {
+  position: absolute;
+  left: calc(50% - 265px);
+  width: 560px;
+  top: 120px;
+}
+
+.bg-shadow-video {
+  background: rgb(0 0 0 / 85%);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+div.ex-out {
+  height: 40px;
+  width: 40px;
+  background-color: var(--darkgrey);
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 15px;
+  float: right;
+}
+
+div.ex-out:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "\d7"; /* use the hex value here... */
+  font-size: 30px;
+  color: #FFF;
+  line-height: 38px;
+  text-align: center;
+}
+

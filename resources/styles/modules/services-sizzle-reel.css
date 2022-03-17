@@ -9,6 +9,9 @@
 .services-sizzle-reel {
   padding-right: 40px;
 }
+.s-vid {
+  cursor: pointer;
+}
 
 .s-vid img {
   border-radius: 10px;

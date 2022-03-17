@@ -1,6 +1,6 @@
 {
-  "app.css": "app.26e644.css",
-  "app.js": "app.f78d59.js",
+  "app.css": "app.9176cd.css",
+  "app.js": "app.ffb446.js",
   "editor.css": "editor.31d6cf.css",
   "editor.js": "editor.4d42af.js",
   "runtime.js": "runtime.979dfd.js",
@@ -67,5 +67,9 @@
   "images/step-two.png": "images/step-two.da6560.png",
   "images/step-four.png": "images/step-four.39d223.png",
   "images/step-one.png": "images/step-one.428f8b.png",
+  "images/scale.png": "images/scale.a391ee.png",
+  "images/time.png": "images/time.b9d361.png",
+  "images/Vector.png": "images/Vector.bdc602.png",
+  "images/check.png": "images/check.6ec0fc.png",
   "images/micro_carbon.png": "images/micro_carbon.c2acd0.png"
 }

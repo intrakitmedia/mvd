@@ -166,7 +166,7 @@
                 <div class="small-card">
                     <div class="small-card-icon">
                         <div class="icon-off">
-                            <i class="fa-solid fa-scale-unbalanced"></i>
+                            <img src="@asset('images/scale.png')">
                         </div>
 
                     </div>
@@ -178,7 +178,7 @@
                 <div class="small-card">
                     <div class="small-card-icon">
                         <div class="icon-off">
-                            <i class="fa-solid fa-receipt"></i>
+                            <img src="@asset('images/Vector.png')">
                         </div>
 
                     </div>
@@ -190,7 +190,7 @@
                 <div class="small-card">
                     <div class="small-card-icon">
                         <div class="icon-off">
-                            <i class="fa-solid fa-dna"></i>
+                            <img src="@asset('images/time.png')">
                         </div>
 
                     </div>

@@ -31,6 +31,7 @@
 @import "modules/peak-card.css";
 @import "modules/services-sizzle-reel.css";
 @import "modules/other-services.css";
+@import "modules/video-modal.css";
 /** components **/
 @import "components/buttons.css";
 @import "components/icon-feats.css";
