@@ -18,6 +18,14 @@
   margin-bottom: 0;
 }
 
+.banner-list-wide .checklist-board li {
+  font-size: 18px;
+}
+
+.banner-list-wide .checklist-board {
+  margin-bottom: 0;
+}
+
 .checklist-board li::before {
   content: url('../images/check.png');
   display: inline-block;

@@ -20,6 +20,10 @@ header.header-banner {
   letter-spacing: 1px;
 }
 
+.header-two.blue.no-margin h2 {
+  margin-bottom: 0;
+}
+
 header.header-banner .header-inner,
 .primary-menu-wrapper {
   height: 100%;

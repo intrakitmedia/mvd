@@ -31,6 +31,10 @@ section.section-alt-2 {
   display: flex;
 }
 
+.row.block {
+  display: block;
+}
+
 .small-row {
   max-width: var(--small-row);
   margin: 0 auto;
@@ -67,6 +71,14 @@ section.section-alt-2 {
 
 .small-col {
   width: 30%;
+}
+
+.extra-bottom {
+  padding-bottom: 282px !important;
+}
+
+.extra-gap-right {
+  padding-right: 40px;
 }
 
 @media (max-width: var(--container)) {
