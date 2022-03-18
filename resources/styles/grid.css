@@ -93,16 +93,17 @@ section.section-alt-2 {
   padding-right: 40px;
 }
 
-@media (max-width: var(--container)) {
-  .container {
-    padding-left: 10px;
-    padding-right: 10px;
+@media (max-width: 800px) {
+  .row {
+    flex-wrap: wrap;
   }
-}
 
-@media screen and (min-device-width: var(--small)) and (max-device-width: var(--container)) {
   .four-col {
     width: 50%;
+  }
+
+  .two-col {
+    width: 100%;
   }
 }
 

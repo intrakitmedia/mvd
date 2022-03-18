@@ -66,7 +66,7 @@
     <section class="blog-articles small">
         <div class="container">
             <div class="row block">
-                <div class="grid grid-cols-3 gap-4">
+                <div class="grid sm:grid-cols-1 lg:grid-cols-3 gap-4">
                     <div class="blog-card">
                         <div class="blog-card-image-wapper blog-card-row">
                             <div class="blog-featured-image"
