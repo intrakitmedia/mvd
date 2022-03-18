@@ -86,17 +86,19 @@
                                     </div>
                                     <div class="form-row">
                                         <label id="quick-name"><p>Phone <span class="required">*</span></p>
-                                            <input type="text" placeholder="Jane Doe" value="" id="quick-quote-name">
+                                            <input type="text" placeholder="555-555-555" value="" id="quick-quote-name">
                                         </label>
                                     </div>
                                     <div class="form-row">
                                         <label id="quick-name"><p>Email <span class="required">*</span></p>
-                                            <input type="text" placeholder="Jane Doe" value="" id="quick-quote-name">
+                                            <input type="text" placeholder="hello@example.com" value=""
+                                                   id="quick-quote-name">
                                         </label>
                                     </div>
                                     <div class="form-row last">
                                         <label id="quick-name"><p>Company <span class="required">*</span></p>
-                                            <input type="text" placeholder="Jane Doe" value="" id="quick-quote-name">
+                                            <input type="text" placeholder="Company Name" value=""
+                                                   id="quick-quote-name">
                                         </label>
                                     </div>
                                     <div class="form-row">

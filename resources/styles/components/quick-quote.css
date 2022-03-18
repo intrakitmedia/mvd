@@ -7,16 +7,17 @@
 .quick-quote h4,
 .quick-quote p {
   color: var(--white);
-  font-size:18px;
   font-weight: bold;
 }
 
 .quick-quote h4 {
   margin-bottom: 15px;
+  font-size:20px;
 }
 
 .quick-quote-title p {
   margin-bottom: 45px;
+  font-size:16px;
 }
 
 .quick-quote label p {
