@@ -17,6 +17,7 @@ class Post extends Composer
         'partials.content-*',
 	    'single-services',
 	    'single-portfolios',
+	    'template-blog',
     ];
 
     /**

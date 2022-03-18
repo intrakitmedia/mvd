@@ -24,6 +24,8 @@
 @import "sections/core-values.css";
 @import "sections/services-content.css";
 @import "sections/services-banner.css";
+@import "sections/blog-banner.css";
+@import "sections/blog-articles.css";
 /** modules **/
 @import "modules/lead-ins-outs.css";
 @import "modules/swiper.css";
@@ -32,6 +34,7 @@
 @import "modules/services-sizzle-reel.css";
 @import "modules/other-services.css";
 @import "modules/video-modal.css";
+@import "modules/blog-card.css";
 /** components **/
 @import "components/buttons.css";
 @import "components/icon-feats.css";
@@ -50,8 +53,11 @@
   --blue2: #079da8;
   --blue3: #45abde;
   --darkblue: #003351;
+  --bluesoft: #E0EEF6;
   --orange: #f88f1e;
   --orange2: #f9b368;
+  --orangealt: #F5771B;
+  --orangesoft: #FFE3CF;
   --ctaorange: #f6821d;
   --brandalt: #f7c22a;
   --brandalt2: #f74511;

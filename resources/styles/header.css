@@ -76,3 +76,21 @@ span.orange {
 .header-tag.center {
   text-align: center;
 }
+
+.blog-banner h3,
+.blog-banner h3 a {
+  font-size: 36px;
+  line-height: 43px;
+  color: black;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+.blog-articles h3,
+.blog-articles h3 a {
+  font-size: 24px;
+  line-height: 28px;
+  color: black;
+  font-weight: 800;
+  text-transform: capitalize;
+}

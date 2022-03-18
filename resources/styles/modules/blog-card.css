@@ -1,0 +1,41 @@
+/* stylelint disable */
+
+.blog-card-row {
+  margin-bottom: 15px;
+}
+
+.blog-roll-author {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.blog-roll-author .pic {
+  padding-right: 20px;
+}
+
+.blog-roll-author .pic-inner {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+.blog-roll-author .author-name p,
+.blog-roll-author .date p {
+  margin-bottom: 0;
+}
+
+.blog-roll-author .author-name,
+.blog-roll-author .author-name p {
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.blog-roll-author .date,
+.blog-roll-author .date p {
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--darkgrey);
+}

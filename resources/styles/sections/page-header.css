@@ -4,7 +4,12 @@
   max-width: 1000px;
 }
 
-.page-header-title h1 {
+.blog-page-header {
+  max-width: 610px;
+}
+
+.page-header-title h1,
+.blog-page-header h1 {
   color: var(--orange);
   font-size: 18px;
   line-height: 22px;
@@ -14,7 +19,8 @@
   margin-bottom: 15px;
 }
 
-.page-header-title h2 {
+.page-header-title h2,
+.blog-page-header h2 {
   color: var(--blue);
   font-size:  48px;
   line-height: 58px;
@@ -23,7 +29,8 @@
   letter-spacing: 1px;
 }
 
-.page-header-title p {
+.page-header-title p,
+.blog-page-header p {
   font-size: 24px;
   font-weight: 500;
 }

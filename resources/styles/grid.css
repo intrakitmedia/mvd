@@ -8,6 +8,18 @@ section.section-up-next {
   padding-bottom: 90px;
 }
 
+section.small {
+  padding: 30px 0;
+}
+
+section.small:first-child {
+  padding-top: 60px;
+}
+
+section.small:last-child {
+  padding-bottom: 60px;
+}
+
 section.next-up-312 {
   padding-bottom: 312px;
 }

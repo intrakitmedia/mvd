@@ -1,0 +1,7 @@
+/* stylelint-disable */
+
+.blog-articles .blog-featured-image {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}

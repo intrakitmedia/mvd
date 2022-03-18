@@ -105,3 +105,23 @@ a.orange-link:hover .orange-play {
   box-shadow: 0 0 0 2px #e78267;
   transition: 0.5s ease all;
 }
+
+a.cat.pinned {
+  color: var(--orangealt);
+  background: var(--orangesoft);
+}
+
+a.cat {
+  padding: 4px 10px;
+  border-radius: 20px;
+  color: var(--blue);
+  background: var(--bluesoft);
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+a.cat:not(:last-child) {
+  margin-right: 10px;
+}
