@@ -32,12 +32,13 @@ class ThemeServiceProvider extends ServiceProvider
 				'labels'      => array(
 					'name'          => __( 'Services', 'textdomain' ),
 					'singular_name' => __( 'Service', 'textdomain' ),
+					'edit_item' =>  __( 'Edit Service', 'services' ),
 				),
 				'public'      => true,
 				'has_archive' => true,
 				'rewrite'     => array( 'slug' => 'services' ),
 				'show_in_rest' => true,
-				'supports' => array('title', 'thumbnail')
+				'supports' => array('title', 'thumbnail'),
 			)
 		);
 	}

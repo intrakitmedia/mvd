@@ -13,17 +13,76 @@
             <div class="row center">
                 <div class="page-header-title text-center">
                     <h1>About Us</h1>
-                    <h2>Fairness, Quality of Work, & Evolution</h2>
-                    <p>Our mission from day one - "Provide quality video proudction services that did not break the bank
-                        and allow them to invest in different types of video marketing content multiple times a
-                        year."</p>
-                    <div class="play-link">
-                        <a class="orange-link" href=""><i class="fa-solid fa-play orange-play"></i> <span>Watch 10th
-                            ANNIVERSARY
-                                PROMOTIONAL VIDEO</span></a>
+                    <h2>Our mission from day one &#8212;</h2>
+                    <p>Provide quality video proudction services that did not break the bank and allow them to invest in different types of video marketing content multiple times a year.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="right-up">
+        <div class="right-up-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="large-col">
+                        <div class="checklist-board">
+                            <div class="checklist-board-inner" style="padding-top: 90px;">
+
+                                <div class="header-two">
+
+                                    <h2>Our Clients rely on us to:</h2>
+
+                                </div>
+
+                                <ul>
+                                    <li>Provide a quick turn around while maintaining a high level of quality and
+                                        customer
+                                        service
+                                    </li>
+                                    <li>Give them back more value than the $ amount invested</li>
+                                    <li>Produce a wide range of videos that include almost every type of business video
+                                        possible – talking head, green screen, human resources, animation, product
+                                        video, case study videos, etc
+                                    </li>
+                                    <li>Make their talent look great in front of the camera</li>
+                                    <li>Challenge their thinking on executing the right video for the right objective
+                                    </li>
+                                    <li>Plan complex, multi day / location / camera shoot to simple business video
+                                        production projects
+                                    </li>
+                                    <li>Work in their budget parameters, but still produce quality professional work
+                                    </li>
+                                    <li>Collaborate with them to make the most efficient and productive use out of their
+                                        budget
+                                    </li>
+                                </ul>
+
+                                <div class="cta-button-wrapper">
+                                    <a href="" class="call-to-action">View Customer Studies</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="small-col">
+                        <div class="right-up-image">
+                            <img src="@asset('images/video-production-meet.jpeg')" alt="Video Production Meet"/>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="section-alt-2 page-header">
+        <div class="container">
+            <div class="row center">
+                <div class="page-header-title text-center">
+                    <a class="orange-link" href=""><i class="fa-solid fa-play orange-play"></i> <span>Watch 10th
+                            ANNIVERSARY
+                                PROMOTIONAL VIDEO</span></a>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
 
@@ -69,58 +128,7 @@
         </div>
     </section>
 
-    <section class="right-up">
-        <div class="right-up-inner">
-            <div class="container">
-                <div class="row">
-                    <div class="two-col">
-                        <div class="checklist-board">
-                            <div class="checklist-board-inner">
 
-                                <div class="header-two">
-
-                                    <h2>Our Clients rely on us to:</h2>
-
-                                </div>
-
-                                <ul>
-                                    <li>Provide a quick turn around while maintaining a high level of quality and
-                                        customer
-                                        service
-                                    </li>
-                                    <li>Give them back more value than the $ amount invested</li>
-                                    <li>Produce a wide range of videos that include almost every type of business video
-                                        possible – talking head, green screen, human resources, animation, product
-                                        video, case study videos, etc
-                                    </li>
-                                    <li>Make their talent look great in front of the camera</li>
-                                    <li>Challenge their thinking on executing the right video for the right objective
-                                    </li>
-                                    <li>Plan complex, multi day / location / camera shoot to simple business video
-                                        production projects
-                                    </li>
-                                    <li>Work in their budget parameters, but still produce quality professional work
-                                    </li>
-                                    <li>Collaborate with them to make the most efficient and productive use out of their
-                                        budget
-                                    </li>
-                                </ul>
-
-                                <div class="cta-button-wrapper">
-                                    <a href="" class="call-to-action">View Customer Studies</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="two-col">
-                        <div class="right-up-image">
-                            <img src="@asset('images/video-production-meet.jpeg')" alt="Video Production Meet"/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     {{--<section class="post-roll">--}}
 
@@ -154,7 +162,7 @@
 
 
 
-    <section class="core-values section-alt">
+    <section class="core-values section-alt-2">
         <div class="container">
             <div class="row center">
                 <div class="header-two">

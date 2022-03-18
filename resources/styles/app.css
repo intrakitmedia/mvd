@@ -116,8 +116,8 @@ div#app:before {
 
 p,
 li {
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 18px;
+  line-height: 32px;
   color: var(--pcolor);
   font-weight: 500;
 }

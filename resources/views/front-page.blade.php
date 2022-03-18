@@ -33,73 +33,129 @@
             </div>
         </div>
 
-        <section class="stats">
+        {{--<section class="stats">--}}
+            {{--<div class="copy-inner">--}}
+                {{--<div class="container">--}}
+                    {{--<div class="row center">--}}
+                        {{--<div class="lead-in">--}}
+                            {{--<h3>Reach Your Goals Faster With Professional Marketing Videos</h3>--}}
+                            {{--<h4 class="header-alt">Don't miss out on the customer engagement and conversions.</h4>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<div class="row">--}}
+                        {{--<div class="four-col">--}}
+                            {{--<div class="short-copy">--}}
+                                {{--<div class="stat">--}}
+                                    {{--<span>88%</span>--}}
+                                {{--</div>--}}
+                                {{--<h4>Increased Chances</h4>--}}
+                                {{--<p>88% of video marketers reported that video gives them a positive ROI</p>--}}
+                                {{--<div class="learn-more">--}}
+                                    {{--<span>– Wyzowl</span>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<div class="four-col">--}}
+                            {{--<div class="short-copy">--}}
+                                {{--<div class="stat">--}}
+                                    {{--<span>88%</span>--}}
+                                {{--</div>--}}
+                                {{--<h4>Increased Chances</h4>--}}
+                                {{--<p>88% of video marketers reported that video gives them a positive ROI</p>--}}
+                                {{--<div class="learn-more">--}}
+                                    {{--<span>– Wyzowl</span>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<div class="four-col">--}}
+                            {{--<div class="short-copy">--}}
+                                {{--<div class="stat">--}}
+                                    {{--<span>88%</span>--}}
+                                {{--</div>--}}
+                                {{--<h4>Increased Chances</h4>--}}
+                                {{--<p>88% of video marketers reported that video gives them a positive ROI</p>--}}
+                                {{--<div class="learn-more">--}}
+                                    {{--<span>– Wyzowl</span>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<div class="four-col">--}}
+                            {{--<div class="short-copy">--}}
+                                {{--<div class="stat">--}}
+                                    {{--<span>88%</span>--}}
+                                {{--</div>--}}
+                                {{--<h4>Increased Chances</h4>--}}
+                                {{--<p>88% of video marketers reported that video gives them a positive ROI</p>--}}
+                                {{--<div class="learn-more">--}}
+                                    {{--<span>– Wyzowl</span>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<div class="row center">--}}
+                        {{--<div class="lead-out">--}}
+                            {{--<div class="call-to-actions-group">--}}
+                                {{--<div class="cta-button-wrapper js-watch">--}}
+                                    {{--<a class="call-to-action" href="">Contact Us</a>--}}
+                                {{--</div>--}}
+                                {{--<div class="cta-button-wrapper js-watch">--}}
+                                    {{--<a class="call-to-action btn-alt-2" href="">View Customer Case Studies</a>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</section>--}}
+
+        <section class="">
             <div class="copy-inner">
                 <div class="container">
                     <div class="row center">
                         <div class="lead-in">
-                            <h3>Reach Your Goals Faster With Professional Marketing Videos</h3>
-                            <h4 class="header-alt">Don't miss out on the customer engagement and conversions.</h4>
+                            <h3>A Solution for Every Stage of Video Adoption</h3>
+                            <h4 class="header-alt">Perfectly made to every company size, industry, status, and
+                                professional role</h4>
                         </div>
                     </div>
                     <div class="row">
                         <div class="four-col">
                             <div class="short-copy">
-                                <div class="stat">
-                                    <span>88%</span>
-                                </div>
-                                <h4>Increased Chances</h4>
-                                <p>88% of video marketers reported that video gives them a positive ROI</p>
-                                <div class="learn-more">
-                                    <span>– Wyzowl</span>
+                                <img src="@asset('images/getting-started.jpg')" alt="Getting Started"/>
+                                <p>You're just getting started with video marketing; in any size of company or
+                                    industry.</p>
+                                <div class="call-to-action-group">
+                                    <a href="">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
                         <div class="four-col">
                             <div class="short-copy">
-                                <div class="stat">
-                                    <span>88%</span>
-                                </div>
-                                <h4>Increased Chances</h4>
-                                <p>88% of video marketers reported that video gives them a positive ROI</p>
-                                <div class="learn-more">
-                                    <span>– Wyzowl</span>
+                                <img src="@asset('images/doubling-down.jpg')" alt="Doubling Down"/>
+                                <p>You've done some video before, but now you need to focus more on it with an eye
+                                    towards ROI.</p>
+                                <div class="call-to-action-group">
+                                    <a href="">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
                         <div class="four-col">
                             <div class="short-copy">
-                                <div class="stat">
-                                    <span>88%</span>
-                                </div>
-                                <h4>Increased Chances</h4>
-                                <p>88% of video marketers reported that video gives them a positive ROI</p>
-                                <div class="learn-more">
-                                    <span>– Wyzowl</span>
+                                <img src="@asset('images/need-strategy.jpg')" alt="Need a Strategy"/>
+                                <p>You have many videos, but no strategy. You need a planned, thoughtful, and integrated
+                                    approach.</p>
+                                <div class="call-to-action-group">
+                                    <a href="">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
                         <div class="four-col">
                             <div class="short-copy">
-                                <div class="stat">
-                                    <span>88%</span>
-                                </div>
-                                <h4>Increased Chances</h4>
-                                <p>88% of video marketers reported that video gives them a positive ROI</p>
-                                <div class="learn-more">
-                                    <span>– Wyzowl</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row center">
-                        <div class="lead-out">
-                            <div class="call-to-actions-group">
-                                <div class="cta-button-wrapper js-watch">
-                                    <a class="call-to-action" href="">Contact Us</a>
-                                </div>
-                                <div class="cta-button-wrapper js-watch">
-                                    <a class="call-to-action btn-alt-2" href="">View Customer Case Studies</a>
+                                <img src="@asset('images/for-agencies.jpg')" alt="For Agencies"/>
+                                <p>For agencies, PR firms, SEO and web developers looking for a trusted, value based
+                                    company to rely on.</p>
+                                <div class="call-to-action-group">
+                                    <a href="">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -168,61 +224,7 @@
             </div>
         </section>
 
-        <section class="section-alt-2">
-            <div class="copy-inner">
-                <div class="container">
-                    <div class="row center">
-                        <div class="lead-in">
-                            <h3>A Solution for Every Stage of Video Adoption</h3>
-                            <h4 class="header-alt">Perfectly made to every company size, industry, status, and
-                                professional role</h4>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="four-col">
-                            <div class="short-copy">
-                                <img src="@asset('images/getting-started.jpg')" alt="Getting Started"/>
-                                <p>You're just getting started with video marketing; in any size of company or
-                                    industry.</p>
-                                <div class="call-to-action-group">
-                                    <a href="">LEARN MORE</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="four-col">
-                            <div class="short-copy">
-                                <img src="@asset('images/doubling-down.jpg')" alt="Doubling Down"/>
-                                <p>You've done some video before, but now you need to focus more on it with an eye
-                                    towards ROI.</p>
-                                <div class="call-to-action-group">
-                                    <a href="">LEARN MORE</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="four-col">
-                            <div class="short-copy">
-                                <img src="@asset('images/need-strategy.jpg')" alt="Need a Strategy"/>
-                                <p>You have many videos, but no strategy. You need a planned, thoughtful, and integrated
-                                    approach.</p>
-                                <div class="call-to-action-group">
-                                    <a href="">LEARN MORE</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="four-col">
-                            <div class="short-copy">
-                                <img src="@asset('images/for-agencies.jpg')" alt="For Agencies"/>
-                                <p>For agencies, PR firms, SEO and web developers looking for a trusted, value based
-                                    company to rely on.</p>
-                                <div class="call-to-action-group">
-                                    <a href="">LEARN MORE</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
 
         <section class="steps">
             <div class="row center">

@@ -46,10 +46,10 @@ domReady(() => {
         let id = $(this).attr('data-field');
 
         if(id) {
-            ('.video-modal').html('');
+            $('.video-iframe').html('');
             $('<iframe width="420" height="315" frameborder="0" allowfullscreen></iframe>')
                 .attr("src", id)
-                .appendTo(".video-modal");
+                .appendTo(".video-iframe");
             $('.video-modal').addClass('active');
         }
 

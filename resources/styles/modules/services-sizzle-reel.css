@@ -2,12 +2,9 @@
 
 /** services-sizzle-reel **/
 
-.services-sizzle {
-  margin-top: -90px;
-}
-
 .services-sizzle-reel {
-  padding-right: 40px;
+  padding-right: 20px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .s-vid {
   cursor: pointer;

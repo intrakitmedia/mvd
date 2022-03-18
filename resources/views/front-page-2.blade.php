@@ -33,80 +33,80 @@
             </div>
         </div>
 
-        <section class="stats">
-            <div class="copy-inner">
-                <div class="container">
-                    <div class="row center">
-                        <div class="lead-in">
-                            <h3>Reach Your Goals Faster With Professional Marketing Videos</h3>
-                            <h4 class="header-alt">Don't miss out on the customer engagement and conversions.</h4>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="four-col">
-                            <div class="short-copy">
-                                <div class="stat">
-                                    <span>88%</span>
-                                </div>
-                                <h4>Increased Chances</h4>
-                                <p>88% of video marketers reported that video gives them a positive ROI</p>
-                                <div class="learn-more">
-                                    <span>– Wyzowl</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="four-col">
-                            <div class="short-copy">
-                                <div class="stat">
-                                    <span>88%</span>
-                                </div>
-                                <h4>Increased Chances</h4>
-                                <p>88% of video marketers reported that video gives them a positive ROI</p>
-                                <div class="learn-more">
-                                    <span>– Wyzowl</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="four-col">
-                            <div class="short-copy">
-                                <div class="stat">
-                                    <span>88%</span>
-                                </div>
-                                <h4>Increased Chances</h4>
-                                <p>88% of video marketers reported that video gives them a positive ROI</p>
-                                <div class="learn-more">
-                                    <span>– Wyzowl</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="four-col">
-                            <div class="short-copy">
-                                <div class="stat">
-                                    <span>88%</span>
-                                </div>
-                                <h4>Increased Chances</h4>
-                                <p>88% of video marketers reported that video gives them a positive ROI</p>
-                                <div class="learn-more">
-                                    <span>– Wyzowl</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row center">
-                        <div class="lead-out">
-                            <div class="call-to-actions-group">
-                                <div class="cta-button-wrapper js-watch">
-                                    <a class="call-to-action" href="">Contact Us</a>
-                                </div>
-                                <div class="cta-button-wrapper js-watch">
-                                    <a class="call-to-action btn-alt-2" href="">View Customer Case Studies</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        {{--<section class="stats">--}}
+        {{--<div class="copy-inner">--}}
+        {{--<div class="container">--}}
+        {{--<div class="row center">--}}
+        {{--<div class="lead-in">--}}
+        {{--<h3>Reach Your Goals Faster With Professional Marketing Videos</h3>--}}
+        {{--<h4 class="header-alt">Don't miss out on the customer engagement and conversions.</h4>--}}
+        {{--</div>--}}
+        {{--</div>--}}
+        {{--<div class="row">--}}
+        {{--<div class="four-col">--}}
+        {{--<div class="short-copy">--}}
+        {{--<div class="stat">--}}
+        {{--<span>88%</span>--}}
+        {{--</div>--}}
+        {{--<h4>Increased Chances</h4>--}}
+        {{--<p>88% of video marketers reported that video gives them a positive ROI</p>--}}
+        {{--<div class="learn-more">--}}
+        {{--<span>– Wyzowl</span>--}}
+        {{--</div>--}}
+        {{--</div>--}}
+        {{--</div>--}}
+        {{--<div class="four-col">--}}
+        {{--<div class="short-copy">--}}
+        {{--<div class="stat">--}}
+        {{--<span>88%</span>--}}
+        {{--</div>--}}
+        {{--<h4>Increased Chances</h4>--}}
+        {{--<p>88% of video marketers reported that video gives them a positive ROI</p>--}}
+        {{--<div class="learn-more">--}}
+        {{--<span>– Wyzowl</span>--}}
+        {{--</div>--}}
+        {{--</div>--}}
+        {{--</div>--}}
+        {{--<div class="four-col">--}}
+        {{--<div class="short-copy">--}}
+        {{--<div class="stat">--}}
+        {{--<span>88%</span>--}}
+        {{--</div>--}}
+        {{--<h4>Increased Chances</h4>--}}
+        {{--<p>88% of video marketers reported that video gives them a positive ROI</p>--}}
+        {{--<div class="learn-more">--}}
+        {{--<span>– Wyzowl</span>--}}
+        {{--</div>--}}
+        {{--</div>--}}
+        {{--</div>--}}
+        {{--<div class="four-col">--}}
+        {{--<div class="short-copy">--}}
+        {{--<div class="stat">--}}
+        {{--<span>88%</span>--}}
+        {{--</div>--}}
+        {{--<h4>Increased Chances</h4>--}}
+        {{--<p>88% of video marketers reported that video gives them a positive ROI</p>--}}
+        {{--<div class="learn-more">--}}
+        {{--<span>– Wyzowl</span>--}}
+        {{--</div>--}}
+        {{--</div>--}}
+        {{--</div>--}}
+        {{--</div>--}}
+        {{--<div class="row center">--}}
+        {{--<div class="lead-out">--}}
+        {{--<div class="call-to-actions-group">--}}
+        {{--<div class="cta-button-wrapper js-watch">--}}
+        {{--<a class="call-to-action" href="">Contact Us</a>--}}
+        {{--</div>--}}
+        {{--<div class="cta-button-wrapper js-watch">--}}
+        {{--<a class="call-to-action btn-alt-2" href="">View Customer Case Studies</a>--}}
+        {{--</div>--}}
+        {{--</div>--}}
+        {{--</div>--}}
+        {{--</div>--}}
+        {{--</div>--}}
+        {{--</div>--}}
+        {{--</section>--}}
 
         <section class="callout callout-center section-alt">
             <div class="callout-inner">
