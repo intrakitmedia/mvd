@@ -32,7 +32,11 @@ class ThemeServiceProvider extends ServiceProvider
 				'labels'      => array(
 					'name'          => __( 'Services', 'textdomain' ),
 					'singular_name' => __( 'Service', 'textdomain' ),
+					'view_item' => __( 'View Service', 'services' ),
+					'view_items' =>__( 'View Services', 'services' ),
 					'edit_item' =>  __( 'Edit Service', 'services' ),
+					'all_items' => __( 'All Services', 'services' ),
+					'add_new_item' => __( 'Add New Service', 'services' ),
 				),
 				'public'      => true,
 				'has_archive' => true,
