@@ -206,9 +206,11 @@
                     </div>
                 </div>
                 <div class="small-col">
+
                     <div class="small-content other-services">
                         <div class="other-services-wrapper">
                             <div class="other-services-inner">
+                                <h3 class="header-tag center">Other Services</h3>
                                 <div class="other-service">
                                     <div class="other-service-image">
                                         <img src="@asset('images/remote-video-capture-client.jpg')" alt="Remote Video Capture
