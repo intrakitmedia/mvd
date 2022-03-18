@@ -1,0 +1,28 @@
+/** stylelint disable **/
+
+/** checklist **/
+
+.banner-list {
+  padding-left: 40px;
+}
+
+.checklist-board li {
+  padding-left: 40px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.banner-list .checklist-board.smaller li {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.checklist-board li::before {
+  content: url('../images/check.png');
+  display: inline-block;
+  margin-left: -22px;
+  width: 30px;
+  color: var(--orange);
+  font-size: 18px;
+}

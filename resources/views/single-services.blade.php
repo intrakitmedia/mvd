@@ -11,11 +11,13 @@
     <section class="services-banner section-alt">
         <div class="container">
             <div class="row">
+                <div class="services-header">
+                    <span class="header-tag">Services</span>
+                    <h1 class="services-header-title">{{$title}}</h1>
+                </div>
+            </div>
+            <div class="row">
                 <div class="two-col">
-                    <div class="services-header">
-                        <span class="header-tag">Services</span>
-                        <h1 class="services-header-title">{{$title}}</h1>
-                    </div>
                     <div class="services-video-wrapper">
                         <div class="services-video video-container video-iframe">
                             @php
@@ -109,6 +111,24 @@
         </div>
     </section>
 
+    @php
+        $center_image = get_field('center_image') ?? null;
+        $center_image_url = $center_image['url'];
+
+        if($center_image) :
+
+    @endphp
+
+    <section class="middle-image">
+        <div class="container">
+            <div class="row center">
+                <div class="middle-image text-center">
+                    <img style="max-width: 800px; margin:0 auto;" src="{{ $center_image_url }}" alt=""/>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="different remote-bg" style="background: url(@asset('images/remote-bg.jpg')); background-size: cover;">
         <div class="different-bg"></div>
 
@@ -131,6 +151,14 @@
         </div>
 
     </section>
+
+
+
+    @php
+
+    endif;
+
+    @endphp
 
     <section class="services-sizzle section-alt">
         <div class="container">

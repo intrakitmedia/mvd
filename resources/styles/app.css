@@ -39,6 +39,7 @@
 @import "components/shadow-bg.css";
 @import "components/play.css";
 @import "components/quick-quote.css";
+@import "components/lists.css";
 
 .root,
 #root,

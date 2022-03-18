@@ -45,5 +45,24 @@ class ThemeServiceProvider extends ServiceProvider
 				'supports' => array('title', 'thumbnail'),
 			)
 		);
+
+		register_post_type('portfolios',
+			array(
+				'labels'      => array(
+					'name'          => __( 'Portfolios', 'textdomain' ),
+					'singular_name' => __( 'Portfolio', 'textdomain' ),
+					'view_item' => __( 'View Portfolio', 'portfolios' ),
+					'view_items' =>__( 'View Portfolios', 'portfolios' ),
+					'edit_item' =>  __( 'Edit Portfolio', 'portfolios' ),
+					'all_items' => __( 'All Portfolios', 'portfolios' ),
+					'add_new_item' => __( 'Add New Portfolio', 'portfolios' ),
+				),
+				'public'      => true,
+				'has_archive' => true,
+				'rewrite'     => array( 'slug' => 'portfolios' ),
+				'show_in_rest' => true,
+				'supports' => array('title', 'thumbnail'),
+			)
+		);
 	}
 }

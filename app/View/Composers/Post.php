@@ -16,6 +16,7 @@ class Post extends Composer
         'partials.content',
         'partials.content-*',
 	    'single-services',
+	    'single-portfolios',
     ];
 
     /**
@@ -27,6 +28,8 @@ class Post extends Composer
     {
         return [
             'title' => $this->title(),
+	        'thumbnail_url' => $this->thumbnail_url(),
+	        'thumbnail_alt' => $this->thumbnail_alt(),
         ];
     }
 
@@ -66,5 +69,20 @@ class Post extends Composer
         }
 
         return get_the_title();
+    }
+
+	/**
+	 * Returns the post thumbnail url.
+	 *
+	 * @return string
+	 */
+    public function thumbnail_url() {
+	    return get_the_post_thumbnail_url();
+    }
+
+    public function thumbnail_alt() {
+	    $thumbnail_id = get_post_thumbnail_id();
+	    $alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
+	    return $alt;
     }
 }
