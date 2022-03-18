@@ -1,0 +1,54 @@
+/* stylelint-disable */
+
+/** services-sizzle-reel **/
+
+.post-roll {
+  padding-top: 30px;
+}
+
+.post-roll-inner {
+  padding-top: 15px;
+}
+
+.post-roll-wrapper {
+  padding: 15px 20px;
+  border: 1px solid rgb(0 0 0 / 5%);
+  background: white;
+}
+
+.post-roll-post {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.post-roll-image {
+  width: 40%;
+}
+
+.post-roll-header {
+  width: 60%;
+  padding-left: 10px;
+}
+
+.post-roll-header .post-roll-title {
+  margin-bottom: 15px;
+}
+
+.post-roll-header .post-roll-title a {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.post-roll-header .post-date,
+.post-roll-header .post-date p {
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--darkgrey);
+}
+
+.post-roll-title a {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+}

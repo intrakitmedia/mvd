@@ -1,0 +1,37 @@
+/* stylelint disable */
+
+.post-meta {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.post-meta .pic {
+  padding-right: 20px;
+}
+
+.post-meta .pic-inner {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+.post-meta .author-name p,
+.post-meta .date p {
+  margin-bottom: 0;
+}
+
+.post-meta .author-name,
+.post-meta .author-name p {
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.post-meta .date,
+.post-meta .date p {
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--darkgrey);
+}

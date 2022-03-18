@@ -282,7 +282,7 @@
                                            required/>
                                 </label>
                                 <button class="call-to-action" id="wide-form-submit">Download</button>
-                            </div
+                            </div>
                         </form>
                     </div>
                 </div>

@@ -1,0 +1,62 @@
+/* stylelint disable */
+
+.magnet-bar {
+  padding-top: 60px;
+}
+
+.magnet-bar .peak {
+  flex-wrap: wrap;
+  background: var(--grey);
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.magnet-bar .peak .peak-card {
+  box-shadow: none;
+}
+
+.magnet-bar .peak .wide-form {
+  background: var(--grey);
+  padding: 30px 20px;
+  border-radius: 0;
+}
+
+.magnet-bar .peak .wide-form h3 {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.magnet-bar .peak .wide-form p {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.magnet-bar .peak .lead-in,
+.magnet-bar .peak .lead-in-right {
+  width: 100%;
+}
+
+.magnet-bar .peak .lead-in {
+  padding: 0 20px;
+}
+
+.magnet-bar .form-row {
+  margin-bottom: 15px;
+}
+
+.magnet-bar .form-row label,
+.magnet-bar .form-row input {
+  width: 100%;
+}
+
+.magnet-bar .form-row label {
+  padding-right: 0;
+}
+
+.magnet-bar .form-row input[type="email"] {
+  padding: 10px;
+}
+
+.magnet-bar button.call-to-action {
+  width: 100%;
+}
