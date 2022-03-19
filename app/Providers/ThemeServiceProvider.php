@@ -64,5 +64,24 @@ class ThemeServiceProvider extends ServiceProvider
 				'supports' => array('title', 'thumbnail'),
 			)
 		);
+
+		register_post_type('case_studies',
+			array(
+				'labels'      => array(
+					'name'          => __( 'Case Studies', 'textdomain' ),
+					'singular_name' => __( 'Case Study', 'textdomain' ),
+					'view_item' => __( 'View Case Study', 'portfolios' ),
+					'view_items' =>__( 'View Case Studies', 'case_studies' ),
+					'edit_item' =>  __( 'Edit Case Study', 'case_studies' ),
+					'all_items' => __( 'All Case Studies', 'case_studies' ),
+					'add_new_item' => __( 'Add New Case Study', 'case_studies' ),
+				),
+				'public'      => true,
+				'has_archive' => true,
+				'rewrite'     => array( 'slug' => 'case-studies' ),
+				'show_in_rest' => true,
+				'supports' => array('title', 'thumbnail'),
+			)
+		);
 	}
 }

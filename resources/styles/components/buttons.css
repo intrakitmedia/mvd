@@ -66,6 +66,7 @@ a.orange-link {
   color: var(--orange);
   text-transform: uppercase;
   transition: 0.3s ease all;
+  font-weight: bold;
 }
 
 a.orange-link span {

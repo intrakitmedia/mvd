@@ -11,7 +11,7 @@
     <section class="small page-header">
         <div class="container">
             <div class="row center">
-                <div class="blog-page-header text-center">
+                <div class="page-header-title blog-page-header text-center">
                     <h1>{{$title}}</h1>
                     <h2>Insights and Updates from our expert team</h2>
                 </div>

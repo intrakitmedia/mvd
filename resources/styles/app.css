@@ -47,6 +47,7 @@
 @import "components/quick-quote.css";
 @import "components/lists.css";
 @import "components/post-meta.css";
+@import "components/post-card.css";
 
 .root,
 #root,
