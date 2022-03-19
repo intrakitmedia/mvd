@@ -1,0 +1,62 @@
+.contact-page-form .lead-in-form {
+  background: var(--orange);
+  height: 475px;
+}
+
+.contact-page-form .lead-in-form h4 {
+  margin-bottom: 30px;
+}
+
+.contact-page-form .lead-in-form ul {
+  margin-bottom: 30px;
+}
+
+.contact-page-form .lead-in-form ul li {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--lightgrey);
+  padding-right: 20px;
+}
+
+.contact-page-form .lead-in-form ul.social {
+  display: flex;
+  padding-right: 10px;
+  font-size: 32px;
+  line-height: 1;
+}
+
+.contact-page-form .lead-in-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-page-form .lead-in-right .wide-form {
+  width: 100%;
+  padding: 0 40px;
+}
+
+.contact-page-form .wide-form label,
+.contact-page-form .wide-form label p {
+  color: var(--orange);
+  text-transform: uppercase;
+}
+
+.contact-page-form .wide-form select,
+.contact-page-form .wide-form input[type="email"],
+.contact-page-form .wide-form input[type="phone"],
+.contact-page-form .wide-form input[type="text"] {
+  border: 1px solid rgb(0 0 0 / 8%);
+  border-radius: 4px;
+  padding: 5px;
+  width: 100%;
+  font-size: 18px;
+  line-height: 1;
+  background: var(--inputgreey);
+  color: black;
+  height: 40px;
+}
+
+.contact-page-form select {
+  appearance: none;
+}

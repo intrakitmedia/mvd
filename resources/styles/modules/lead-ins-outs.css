@@ -51,3 +51,11 @@
 .lead-out {
   padding-top: 30px;
 }
+
+.lead-in-form {
+  height: 440px;
+}
+
+.lead-in-form .orange-bg-cover {
+  height: 100%;
+}

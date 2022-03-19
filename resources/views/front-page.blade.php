@@ -540,7 +540,7 @@
 
         <section class="wide-form-section section-alt-2">
             <div class="row wide-form-wrapper">
-                <div class="lead-in left alt">
+                <div class="lead-in left alt lead-in-form">
                     <div class="orange-bg-cover" style="background:url(@asset('images/orange-bg-cover.jpg'));">
                         <div class="wide-form-banner">
                             <h3>Nothing comes close to the effectiveness of a well designed video communications
