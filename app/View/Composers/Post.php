@@ -18,7 +18,7 @@ class Post extends Composer
 	    'single-services',
 	    'single-portfolios',
 	    'template-blog',
-	    'archive-case-studies'
+	    'template-case_studies',
     ];
 
     /**

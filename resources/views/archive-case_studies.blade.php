@@ -1,7 +1,3 @@
-{{--
-  Template Name: Case Study Archive
---}}
-
 @extends('layouts.app')
 
 @section('content')
@@ -9,7 +5,7 @@
         <div class="container">
             <div class="row center">
                 <div class="page-header-title text-center">
-                    <h1>{{$title}}</h1>
+                    <h1>Case Studies</h1>
                     <h2>Get in-depth information from our Video Marketing Case Studies</h2>
                 </div>
             </div>
