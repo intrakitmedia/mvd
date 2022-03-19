@@ -14,7 +14,7 @@
                                 <a class="cat" href="#">Video Marketing</a>
                             </div>
                             <div class="article-title article-row ">
-                                <h1>Remote Video Production: An Affordable, High-Quality Solution</h1>
+                                <h1>{{$title}}</h1>
                             </div>
                             <div class="article-meta article-row-2">
                                 <div class="post-meta article-author">
