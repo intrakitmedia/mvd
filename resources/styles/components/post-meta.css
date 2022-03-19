@@ -35,3 +35,9 @@
   line-height: 14px;
   color: var(--darkgrey);
 }
+
+@media (max-width: 800px) {
+  .post-meta .pic {
+    padding-right: 10px;
+  }
+}

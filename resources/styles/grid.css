@@ -105,6 +105,11 @@ section.section-alt-2 {
   .two-col {
     width: 100%;
   }
+
+  .large-col,
+  .small-col {
+    width: 100%;
+  }
 }
 
 /** columns css **/

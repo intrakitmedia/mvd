@@ -60,3 +60,9 @@
 .magnet-bar button.call-to-action {
   width: 100%;
 }
+
+@media (max-width: 800px) {
+  .magnet-bar {
+    padding-top: 120px;
+  }
+}

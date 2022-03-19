@@ -68,3 +68,30 @@ article .article-header {
 .article-featured-image img {
   width: 100%;
 }
+
+@media (max-width: 800px) {
+  .article-title h1 {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1px;
+    text-align: left;
+  }
+
+  .article-meta .post-meta {
+    padding-right: 20px;
+  }
+
+  .article-meta .post-social {
+    padding-left: 20px;
+  }
+
+  .article-meta .post-social .blurb p {
+    display: none;
+  }
+
+  article.aside {
+    padding-right: 0;
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgb(0 0 0 / 7%);
+  }
+}
