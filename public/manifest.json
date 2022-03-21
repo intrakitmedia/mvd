@@ -1,6 +1,6 @@
 {
-  "app.css": "app.9eb389.css",
-  "app.js": "app.0e65c6.js",
+  "app.css": "app.4d3fa7.css",
+  "app.js": "app.a07f1c.js",
   "editor.css": "editor.31d6cf.css",
   "editor.js": "editor.4d42af.js",
   "runtime.js": "runtime.979dfd.js",
@@ -58,6 +58,7 @@
   "fonts/Lato-LightItalic.woff2": "fonts/Lato-LightItalic.0ea765.woff2",
   "fonts/Lato-HairlineItalic.woff2": "fonts/Lato-HairlineItalic.bf1e07.woff2",
   "images/animation-studio.jpg": "images/animation-studio.702a5f.jpg",
+  "images/default-author.png": "images/default-author.6b7f54.png",
   "images/getting-started.jpg": "images/getting-started.0a2e1c.jpg",
   "images/doubling-down.jpg": "images/doubling-down.596922.jpg",
   "images/need-strategy.jpg": "images/need-strategy.5dbce1.jpg",

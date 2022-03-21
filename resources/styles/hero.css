@@ -15,10 +15,6 @@
   padding: 28px 0;
 }
 
-.hero-text {
-  width: 50%;
-}
-
 .hero-text p,
 .hero-link a {
   color: var(--white);
@@ -72,4 +68,31 @@ h1.home-lead {
   font-weight: 600;
   margin-bottom: 10px;
   letter-spacing: -2px;
+}
+
+@media (max-width: 800px) {
+  h1.home-lead {
+    font-size: 40px;
+  }
+
+  .hero-inner {
+    padding: 30px 20px;
+  }
+
+  .hero-inner .cta-inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .hero-inner .cta-button-wrapper {
+    padding: 0;
+    padding-right: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .home-explainer {
+    margin-bottom: 45px;
+  }
 }

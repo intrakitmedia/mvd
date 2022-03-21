@@ -10,7 +10,7 @@
             <div class="row">
                 <div class="hero-container">
                     <div class="hero-body">
-                        <div class="hero-text md:w-3/4 lg:w-1/2">
+                        <div class="hero-text sm:w-full md:w-3/4 lg:w-1/2">
                             <h1 class="home-lead">Turn-Key Video Strategy, Production, and Marketing Services​</h1>
                             <p class="home-explainer">We help our clients with strategic guidance, cost-effective video
                                 production & video marketing services to reach their lead & sales goals.</p>
@@ -32,6 +32,7 @@
                 </div>
             </div>
         </div>
+    </div>
 
         {{--<section class="stats">--}}
             {{--<div class="copy-inner">--}}
@@ -125,7 +126,7 @@
                                 <p>You're just getting started with video marketing; in any size of company or
                                     industry.</p>
                                 <div class="call-to-action-group">
-                                    <a href="">LEARN MORE</a>
+                                    <a class="orange-underline" href="">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -135,7 +136,7 @@
                                 <p>You've done some video before, but now you need to focus more on it with an eye
                                     towards ROI.</p>
                                 <div class="call-to-action-group">
-                                    <a href="">LEARN MORE</a>
+                                    <a class="orange-underline" href="">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -145,7 +146,7 @@
                                 <p>You have many videos, but no strategy. You need a planned, thoughtful, and integrated
                                     approach.</p>
                                 <div class="call-to-action-group">
-                                    <a href="">LEARN MORE</a>
+                                    <a class="orange-underline" href="">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -155,7 +156,7 @@
                                 <p>For agencies, PR firms, SEO and web developers looking for a trusted, value based
                                     company to rely on.</p>
                                 <div class="call-to-action-group">
-                                    <a href="">LEARN MORE</a>
+                                    <a class="orange-underline" href="">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -227,6 +228,7 @@
 
 
         <section class="steps">
+            <div class="container">
             <div class="row center">
                 <div class="lead-in">
                     <h3>4 Steps Process</h3>
@@ -291,6 +293,7 @@
                     </div>
                 </div>
             </div>
+            </div>
         </section>
 
         <section class="block-services">
@@ -301,7 +304,7 @@
                         <div class="services-block-inner">
                             <div class="block-flip">
                                 <a href="" class="block-link" style="background: url(@asset('images/video-strategy.jpg')
-                                );">
+                                ); background-size: cover;">
                                     <div class="block-flip-inner">
                                         <div class="block-content">
                                             <div class="block-header">
@@ -327,7 +330,7 @@
                         <div class="services-block-inner">
                             <div class="block-flip">
                                 <a href="" class="block-link"
-                                   style="background: url(@asset('images/video-production.jpg'));">
+                                   style="background: url(@asset('images/video-production.jpg')); background-size: cover;">
                                     <div class="block-flip-inner">
                                         <div class="block-content">
                                             <div class="block-header">
@@ -353,7 +356,7 @@
                         <div class="services-block-inner">
                             <div class="block-flip">
                                 <a href="" class="block-link"
-                                   style="background: url(@asset('images/video-marketing.jpg'));">
+                                   style="background: url(@asset('images/video-marketing.jpg')); background-size: cover;">
                                     <div class="block-flip-inner">
                                         <div class="block-content">
                                             <div class="block-header">
@@ -378,7 +381,7 @@
                         <div class="services-block-inner">
                             <div class="block-flip">
                                 <a href="" class="block-link"
-                                   style="background: url(@asset('images/animation-studio.jpg'));">
+                                   style="background: url(@asset('images/animation-studio.jpg')); background-size: cover;">
                                     <div class="block-flip-inner">
                                         <div class="block-content">
                                             <div class="block-header">
@@ -418,6 +421,7 @@
         </section>
 
         <section class="different" style="background: url(@asset('images/bg-image.jpg')); background-size: cover;">
+            <div class="container">
             <div class="different-bg"></div>
             <div class="row center">
                 <div class="different-content">
@@ -465,11 +469,12 @@
                     </div>
                 </div>
             </div>
-
+            </div>
         </section>
 
 
         <section class="accolades">
+            <div class="container">
             <div class="row center">
                 <div class="different-content">
                     <div class="lead-in">
@@ -485,10 +490,11 @@
                     Awards"/>
                 </div>
             </div>
-
+            </div>
         </section>
 
         <section class="shout section-alt">
+            <div class="container">
             <div class="row">
                 <div class="lead-in left">
                     <h3>Hear from our satisfied clients who achieve greater success with their businesses</h3>
@@ -535,10 +541,12 @@
                     </div>
                 </div>
             </div>
+            </div>
         </section>
 
 
         <section class="wide-form-section section-alt-2">
+            <div class="container">
             <div class="row wide-form-wrapper">
                 <div class="lead-in left alt lead-in-form">
                     <div class="orange-bg-cover" style="background:url(@asset('images/orange-bg-cover.jpg'));">
@@ -587,6 +595,7 @@
                         </form>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
 @endsection

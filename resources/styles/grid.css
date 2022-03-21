@@ -107,7 +107,7 @@ section.section-alt-2 {
   }
 
   .four-col {
-    width: 50%;
+    width: 100%;
   }
 
   .two-col {
@@ -117,6 +117,14 @@ section.section-alt-2 {
   .large-col,
   .small-col {
     width: 100%;
+  }
+
+  .short-copy {
+    margin-bottom: 30px;
+  }
+
+  .services-block {
+    width: 100% !important;
   }
 }
 

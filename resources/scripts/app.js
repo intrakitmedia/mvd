@@ -62,6 +62,12 @@ domReady(() => {
         $('.video-modal').removeClass('active');
 
     })
+
+    $('#main-navi-wrapper').on('click', '.is-mobile.mobile-open .menu-item-has-children a', function (e) {
+        alert('work in progress')
+        e.preventDefault();
+        console.log('hello');
+    })
 });
 
 /**

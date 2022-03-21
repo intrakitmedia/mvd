@@ -44,3 +44,9 @@ footer .social-icons ul li i {
   font-size: 18px;
   color: var(--darkgrey);
 }
+
+@media (max-width: 800px) {
+  footer .four-col {
+    margin-bottom: 30px;
+  }
+}

@@ -71,6 +71,10 @@
     width: 100%;
   }
 
+  .lead-in.left {
+    width: 100%;
+  }
+
   .wide-form {
     padding: 30px 20px !important;
   }

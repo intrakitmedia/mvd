@@ -1,8 +1,10 @@
 .callout-body {
   display: flex;
+  flex-wrap: wrap;
 }
 
-.callout-body > div {
+.callout-body .callout-text,
+.callout-body .callout-video {
   width: 50%;
 }
 
@@ -10,4 +12,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 800px) {
+  .callout-body .callout-text,
+  .callout-body .callout-video,
+  .callout-body .callout-video iframe {
+    width: 100%;
+  }
+
+  .callout-text ul.checkmark li {
+    padding: 5px 5px 5px 25px;
+    font-size: 16px;
+  }
+
+  ul.checkmark {
+    margin-bottom: 30px;
+  }
 }

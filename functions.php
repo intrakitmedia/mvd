@@ -11,8 +11,8 @@
 |
 */
 
-if (! file_exists($composer = __DIR__ . '/vendor/autoload.php')) {
-    wp_die(__('Error locating autoloader. Please run <code>composer install</code>.', 'sage'));
+if ( ! file_exists( $composer = __DIR__ . '/vendor/autoload.php' ) ) {
+	wp_die( __( 'Error locating autoloader. Please run <code>composer install</code>.', 'sage' ) );
 }
 
 require $composer;
@@ -43,15 +43,15 @@ require $composer;
 |
 */
 
-collect(['setup', 'filters', 'mega_menu'])
-    ->each(function ($file) {
-        if (! locate_template($file = "app/{$file}.php", true, true)) {
-            wp_die(
-                /* translators: %s is replaced with the relative file path */
-                sprintf(__('Error locating <code>%s</code> for inclusion.', 'sage'), $file)
-            );
-        }
-    });
+collect( [ 'setup', 'filters', 'mega_menu' ] )
+	->each( function ( $file ) {
+		if ( ! locate_template( $file = "app/{$file}.php", true, true ) ) {
+			wp_die(
+			/* translators: %s is replaced with the relative file path */
+				sprintf( __( 'Error locating <code>%s</code> for inclusion.', 'sage' ), $file )
+			);
+		}
+	} );
 
 /*
 |--------------------------------------------------------------------------
@@ -65,8 +65,8 @@ collect(['setup', 'filters', 'mega_menu'])
 |
 */
 
-add_theme_support('sage');
+add_theme_support( 'sage' );
 
-@ini_set( 'upload_max_size' , '64M' );
-@ini_set( 'post_max_size', '64M');
+@ini_set( 'upload_max_size', '64M' );
+@ini_set( 'post_max_size', '64M' );
 @ini_set( 'max_execution_time', '300' );

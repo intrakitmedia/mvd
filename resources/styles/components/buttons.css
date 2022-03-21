@@ -1,10 +1,15 @@
 .call-to-actions-group {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .call-to-actions-group .call-to-action:not(:last-child) {
   padding-right: 30px;
+}
+
+.cta-button-wrapper:not(:last-child) {
+  padding-right: 20px;
 }
 
 button.call-to-action,
@@ -19,6 +24,7 @@ a.call-to-action {
   padding: 10px 30px;
   border-radius: 4px;
   display: inline-block;
+  text-align: center;
 }
 
 a.call-to-action.inline-block {
@@ -126,4 +132,18 @@ a.cat {
 
 a.cat:not(:last-child) {
   margin-right: 10px;
+}
+
+a.orange-underline {
+  color: var(--orange);
+  padding-bottom: 3px;
+  border-bottom: 1px solid var(--orange);
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .cta-button-wrapper:not(:last-child) {
+    margin-bottom: 30px;
+    padding-right: 0;
+  }
 }

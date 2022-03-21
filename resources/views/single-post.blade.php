@@ -125,7 +125,7 @@
                                     @foreach($recent_posts as $post)
                                         @php
                                             $image_url = get_the_post_thumbnail_url($post->ID) ?? null;
-                                       $post_date = date('F dd Y', strtotime($post->post_date) );
+                                       $post_date = date('F d Y', strtotime($post->post_date) );
                                         $post_link = get_permalink($post->ID);
                                         @endphp
                                         <div class="post-roll-post">
@@ -164,15 +164,16 @@
                 <h2>You might like these too</h2>
             </div>
             <div class="row block">
+                @php
+                //TODO make conditional for categories
+                @endphp
                 <div class="related-posts grid sm:grid-cols-1 lg:grid-cols-3 gap-4">
                     @foreach($related_posts as $post)
 
                         @php
-
                             $image_url = get_the_post_thumbnail_url($post->ID) ?? null;
-
                         $cats = get_the_terms($post->ID, 'category');
-                       $related_post_date = date('F dd Y', strtotime($post->post_date) );
+                       $related_post_date = date('F d Y', strtotime($post->post_date) );
                         $related_post_link = get_permalink($post->ID);
                         @endphp
 
