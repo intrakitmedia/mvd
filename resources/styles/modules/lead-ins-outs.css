@@ -59,3 +59,19 @@
 .lead-in-form .orange-bg-cover {
   height: 100%;
 }
+
+@media (max-width: 800px) {
+  .lead-in.lead-in-form {
+    width: 100%;
+  }
+
+  .lead-in-right,
+  .lead-in-right div,
+  .lead-in-right form {
+    width: 100%;
+  }
+
+  .wide-form {
+    padding: 30px 20px !important;
+  }
+}

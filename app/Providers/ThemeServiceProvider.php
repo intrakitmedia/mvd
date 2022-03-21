@@ -24,6 +24,23 @@ class ThemeServiceProvider extends ServiceProvider
 	public function boot()
 	{
 		add_action('init', [$this, 'register_post_types']);
+		add_action( 'wp_nav_menu_item_custom_fields', [$this,'mega_menu'], 10, 2);
+		add_theme_support( 'responsive-embeds' );
+	}
+
+	public function mega_menu($item_id, $item) {
+		$menu_item_desc = get_post_meta( $item_id, '_menu_item_desc', true );
+		?>
+		<div style="clear: both;">
+			<span class="description"><?php _e( "Item Description", 'menu-item-desc' ); ?></span><br />
+			<input type="hidden" class="nav-menu-id" value="<?php echo $item_id ;?>" />
+			<div class="logged-input-holder">
+				<textarea cols="45" type="text" name="menu_item_desc[<?php echo $item_id ;?>]" id="menu-item-desc-<?php
+				echo
+				$item_id ;?>" value="<?php echo esc_attr( $menu_item_desc ); ?>"></textarea>
+			</div>
+		</div>
+		<?php
 	}
 
 	public function register_post_types() {

@@ -115,10 +115,9 @@
 
     @php
         $center_image = get_field('center_image') ?? null;
-        $center_image_url = $center_image['url'];
 
         if($center_image) :
-
+        $center_image_url = $center_image['url'];
     @endphp
 
     <section class="middle-image">

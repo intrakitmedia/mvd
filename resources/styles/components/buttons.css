@@ -121,6 +121,7 @@ a.cat {
   display: inline-block;
   font-weight: bold;
   font-size: 12px;
+  margin-bottom: 5px;
 }
 
 a.cat:not(:last-child) {

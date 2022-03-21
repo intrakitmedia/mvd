@@ -1,0 +1,14 @@
+/* stylelint disable */
+
+.mega-menu {
+  position: absolute;
+  background: blue;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  display: none;
+}
+
+.desktop-nav > li.menu-item:hover > div.mega-menu {
+  display: block;
+}
