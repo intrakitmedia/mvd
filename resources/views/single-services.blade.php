@@ -22,21 +22,27 @@
                         <div class="services-video video-container video-iframe">
                             @php
                                 $field = get_field('featured_video');
-
-                                echo $field;
                             @endphp
+                            @if($field)
+                                {!! $field !!};
+                                @endif
                         </div>
                     </div>
                 </div>
                 <div class="two-col">
                     <div class="services-content-lead">
-                        <p>Marketing with video using Remote Video Capture allows your firm to provide the video quality
-                            content your clients expect.
+                        @php
+                        $banner_bold_content = get_field('banner_bold_content');
+                        $banner_regular_content = get_field('banner_regular_content');
+                        @endphp
+                        @if($banner_bold_content)
+                        <p>{!! $banner_bold_content !!}
+
                         </p>
-                        <p>Video recording remotely has never been easier with Remote Video Capture, a remote video
-                            production solution for marketing with video. <p>It reduces the cost, time and effort of
-                            creating quality video content by eliminating the on-location equipment, crew and set up of
-                            traditional corporate video production.</p>
+                        @endif
+                        @if($banner_regular_content)
+                        <p>{!! $banner_regular_content !!}</p>
+                        @endif
                     </div>
                 </div>
             </div>
@@ -48,26 +54,20 @@
             <div class="row">
                 <div class="large-col">
                     <div class="services-add-content">
+                        @php
+                            $main_bold_content = get_field('main_bold_content');
+                            $main_regular_content = get_field('main_regular_content');
+                        @endphp
+                        @if($main_bold_content)
                         <div class="header-two">
-                            <h2>Capture up to 4k video with the help of a professional director without the on-location
-                                cost.</h2>
+                            <h2 id="main-content">{!! $main_bold_content !!}</h2>
                         </div>
-
-                        <p>Letting you record up to 4k video anywhere / anytime with either a smartphone, tablet or from
-                            your
-                            computer. After downloading an App to your smartphone, you will start a unique session and
-                            get guidance from the director. You can even roll a teleprompter on screen if you need.
-
-                        <p>While the director guides you to look and sound your best on camera, they can control a
-                            number of features on the camera.
-
-                        <p>For marketing teams that need to service teams across different locations, our remote video
-                            production solution lets multiple users can join the session to further collaborate in real
-                            time.
-
-                        <p>When your remote video recording session is finished, we will upload the footage to the cloud
-                            and the start the professional editing – including lower thirds, text, motion graphics,
-                            background music, voice over and other professional editing techniques.
+                        @endif
+                        @if($main_regular_content)
+                        <div class="main-regular-content">
+                            {!! $main_regular_content !!}
+                        </div>
+                        @endif
                     </div>
                 </div>
                 <div class="small-col">

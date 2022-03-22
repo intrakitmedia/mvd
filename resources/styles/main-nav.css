@@ -32,7 +32,7 @@
 }
 
 .desktop-nav > li.menu-item:first-child {
-  padding-left: 100px;
+  padding-left: 300px;
 }
 
 .desktop-nav > li.menu-item:not(:last-child) {

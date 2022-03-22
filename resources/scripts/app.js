@@ -63,8 +63,6 @@ domReady(() => {
 
     $('#main-navi-wrapper').on('click', '.is-mobile.mobile-open .menu-item-has-children a', function (e) {
         e.preventDefault();
-        alert($(this).parent().find('.sub-menu').addClass('mobile-sub-open'));
-        console.log("why");
     });
 
 
