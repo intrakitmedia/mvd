@@ -27,7 +27,11 @@ class=\"sub-menu\">\n";
 
 		function end_el( &$output, $data_object, $depth = 0, $args = null, $current_object_id = 0 ) {
 			$item        = get_post_meta( $data_object->ID );
-			$desc        = $item['_menu_item_desc'][0];
+			$desc = '';
+
+			if (array_key_exists('_menu_item_desc', $item)) {
+				$desc = $item['_menu_item_desc'][0];
+			}
 			$classes     = empty( $data_object->classes ) ? array() : (array) $data_object->classes;
 			$class_names = esc_attr( implode( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item ) ) );
 
