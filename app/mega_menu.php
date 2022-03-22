@@ -7,9 +7,10 @@ if ( ! class_exists( 'MegaMenu' ) ) {
 		private $currentMenuItem;
 
 		function start_lvl( &$output, $depth = 0, $args = null ) {
+			$menu_title = $this->currentMenuItem->title;
 			$indent = str_repeat( "\t", $depth );
 			$output .= "\n$indent<div class=\"mega-menu\"><div class='container'><div class='mega-menu-inner'><div 
-class='sub-menu-title'><h2>Services</h2></div> <ul 
+class='sub-menu-title'><h2>$menu_title</h2></div><ul 
 class=\"sub-menu\">\n";
 		}
 
