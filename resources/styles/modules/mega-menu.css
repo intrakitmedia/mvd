@@ -1,14 +1,89 @@
-/* stylelint disable */
+/** stylelint disable **/
 
 .mega-menu {
   position: absolute;
-  background: blue;
+  background: var(--white);
   top: 100%;
   width: 100%;
   left: 0;
   display: none;
+  border-radius: 0 0 10px 10px;
+}
+
+.mega-menu .container {
+  padding-right: 0;
+}
+
+.mega-menu-inner {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border-radius: 0 0 10px 10px;
+  padding: 30px 0 0;
+}
+
+.mega-menu-inner .sub-menu {
+  flex: 1;
 }
 
 .desktop-nav > li.menu-item:hover > div.mega-menu {
   display: block;
+}
+
+.sub-menu-title {
+  padding-right: 80px;
+}
+
+.sub-menu-title h2 {
+  color: var(--orange);
+  font-size: 18px;
+  line-height: 1;
+}
+
+.sub-menu {
+  display: flex;
+  cursor: default;
+  flex-wrap: wrap;
+}
+
+.desktop-nav > li.menu-item .sub-menu .menu-item {
+  line-height: 1;
+  width: 50%;
+  padding-right: 40px;
+}
+
+.desktop-nav > li.menu-item .sub-menu .menu-item a {
+  padding-top: 0;
+  padding-bottom: 7px;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: capitalize;
+  color: var(--blue);
+  font-weight: bold;
+  transition: 0.2s all ease;
+}
+
+.desktop-nav > li.menu-item .sub-menu .menu-item a:hover {
+  transition: 0.2s all ease;
+  color: var(--orange);
+}
+
+.desktop-nav > li.menu-item .sub-menu .menu-item a:hover ~ p {
+  transition: 0.2s all ease;
+  color: var(--orange);
+}
+
+.sub-menu .menu-item p {
+  transition: 0.2s all ease;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--darkblue);
+  margin-bottom: 30px;
+  text-transform: none;
+}
+
+.image-wrapper-menu {
+  background: var(--bluesoft);
+  padding: 20px;
+  border-bottom-right-radius: 10px;
 }

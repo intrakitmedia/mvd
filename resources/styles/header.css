@@ -66,6 +66,7 @@ header.header-banner .header-inner,
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .preheader {

@@ -38,12 +38,6 @@
   line-height: 1;
 }
 
-.is-mobile .desktop-nav > li.menu-item.menu-item-has-children::after {
-  border-left: 4px solid transparent;
-  border-right: 4px solid transparent;
-  border-top: 4px solid var(--white);
-}
-
 .is-mobile.mobile-open .sh-overlay {
   display: none;
 }

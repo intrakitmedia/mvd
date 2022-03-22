@@ -9,7 +9,7 @@
 
 <header class="header-banner">
     <div class="container">
-        <div class="header-inner xs:py-2 sm:py-1 lg:py-0">
+        <div class="header-inner">
             <a class="brand" href="{{ home_url('/') }}">
                 <img width="250" src="@asset('images/multivision-digital-video-production-logo-trans.png')" alt="Multivision
     Digital
@@ -39,7 +39,7 @@
                              aria-label="{{ wp_get_nav_menu_name('primary_navigation') }}">
                             {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'desktop-nav',
                             'echo'
-                             => false]) !!}
+                             => false, 'walker' => new \app\MegaMenu()]) !!}
                         </nav>
                     </div>
                     </div>

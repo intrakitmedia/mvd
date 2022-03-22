@@ -25,11 +25,13 @@ class ThemeServiceProvider extends ServiceProvider
 	{
 		add_action('init', [$this, 'register_post_types']);
 		add_action( 'wp_nav_menu_item_custom_fields', [$this,'mega_menu'], 10, 2);
+		add_action( 'wp_update_nav_menu_item', [$this, 'kia_nav_update'], 10, 2 );
 		add_theme_support( 'responsive-embeds' );
 	}
 
 	public function mega_menu($item_id, $item) {
 		$menu_item_desc = get_post_meta( $item_id, '_menu_item_desc', true );
+
 		?>
 		<div style="clear: both;">
 			<span class="description"><?php _e( "Item Description", 'menu-item-desc' ); ?></span><br />
@@ -37,10 +39,28 @@ class ThemeServiceProvider extends ServiceProvider
 			<div class="logged-input-holder">
 				<textarea cols="45" type="text" name="menu_item_desc[<?php echo $item_id ;?>]" id="menu-item-desc-<?php
 				echo
-				$item_id ;?>" value="<?php echo esc_attr( $menu_item_desc ); ?>"></textarea>
+				$item_id ;?>"><?php echo esc_attr( $menu_item_desc ); ?></textarea>
 			</div>
 		</div>
 		<?php
+	}
+
+	/**
+	 * Save the menu item meta
+	 *
+	 * @param int $menu_id
+	 * @param int $menu_item_db_id
+	 */
+	function kia_nav_update( $menu_id, $menu_item_db_id ) {
+
+		if ( isset( $_POST['menu_item_desc'][$menu_item_db_id]  ) ) {
+			foreach ($_POST['menu_item_desc'] as $menu_item_id => $menu_item_desc) {
+				$sanitized_data = sanitize_text_field( $menu_item_desc );
+				update_post_meta( $menu_item_id, '_menu_item_desc', $sanitized_data );
+			}
+		} else {
+			delete_post_meta( $menu_item_db_id, '_menu_item_desc' );
+		}
 	}
 
 	public function register_post_types() {

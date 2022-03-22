@@ -96,3 +96,9 @@ h1.home-lead {
     margin-bottom: 45px;
   }
 }
+
+@media (max-width: 500px) {
+  .hero-inner {
+    background-position: -940px !important;
+  }
+}

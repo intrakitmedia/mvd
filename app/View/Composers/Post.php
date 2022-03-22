@@ -19,7 +19,8 @@ class Post extends Composer {
 		'single-services',
 		'single-portfolios',
 		'template-blog',
-		'single-case_studies'
+		'single-case_studies',
+		'template-solutions',
 	];
 
 	public $post_ID;
