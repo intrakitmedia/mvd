@@ -97,7 +97,11 @@ if( have_rows('sizzle_reel') ):
                                 $video_url = get_sub_field('video', false, false) ?? 'hey';
                                 $video_title = get_sub_field('video_title') ?? null;
                                 $image = get_sub_field('video_cover_image');
-                                $url = $image['url'];
+                                $url = false;
+                                if ($image) {
+                                    $url = $image['url'];
+                                }
+
                             endif;
 
                     @endphp
@@ -108,10 +112,16 @@ if( have_rows('sizzle_reel') ):
                             $video_url;
                          @endphp">
                         <div class="s-vid-inner">
-                            <div class="video-container video-thumbnail" style="background-image: url('@php echo $url; @endphp');
-                                    background-size: cover;">
-                                {{--<img src="@php echo $url; @endphp" alt="Remote Video Capture--}}
-                            </div>
+                            @if($url)
+                                <div class="video-container video-thumbnail" style="background-image: url('@php echo $url; @endphp');
+                                        background-size: cover;">
+                                </div>
+                            @else
+                                <div class="video-container video-thumbnail" style="background-image: url(@asset
+                                ('images/default-image.jpg'));
+                                        background-size: cover;">
+                                </div>
+                            @endif
                             {{--Client"/>--}}
                             @if($video_title)
                                 <div class="s-vid-title">
