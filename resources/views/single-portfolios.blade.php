@@ -117,8 +117,7 @@ if( have_rows('sizzle_reel') ):
                                         background-size: cover;">
                                 </div>
                             @else
-                                <div class="video-container video-thumbnail" style="background-image: url(@asset
-                                ('images/default-image.jpg'));
+                                <div class="video-container video-thumbnail" style="background-image: url(@asset('images/default-image.jpg'));
                                         background-size: cover;">
                                 </div>
                             @endif
