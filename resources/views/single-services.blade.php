@@ -130,16 +130,26 @@
         </div>
     </section>
 
+    @php
+
+        endif;
+
+    @endphp
+
     <section class="different remote-bg" style="background: url(@asset('images/remote-bg.jpg')); background-size: cover;">
         <div class="different-bg"></div>
 
         <div class="row">
+            @php
+            $alternate_content = get_field('alternate_content');
+            @endphp
+
+            @if($alternate_content)
             <div class="different-content">
                 <div class="different-text">
-                    <p>Video recording remotely has never been easier because <span class="orange">Remote Video
-                            Capture</span>
-                        maintains the professional service of a director and a professional editor so you look and sound your best.</div>
+                   {!! $alternate_content !!}
             </div>
+                @endif
         </div>
         <div class="row center">
             <div class="different-content lead-out">
@@ -155,11 +165,7 @@
 
 
 
-    @php
 
-    endif;
-
-    @endphp
 
     <section class="services-sizzle section-alt">
         <div class="container">
