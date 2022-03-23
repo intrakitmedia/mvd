@@ -26,12 +26,18 @@
                 </div>
                 <div class="two-col">
                     <div class="services-content-lead">
-                        <p>Marketing with video using Remote Video Capture allows your firm to provide the video quality
-                            content your clients expect.
-                        </p>
-                        <p>One of the best things that marketers at accounting firms like about video marketing content is that an investment in professional video production can be used for many years and can be integrated into many other digital marketing tactics – like thought leadership, client alerts email, blogs, bio pages, social media and in press releases.
-                        <p>Thus an investment into video marketing for accountants has a high return on Investment.
-                            Some of the tangible benefits that you should see from a professional video production project include: </p>
+                        @php
+                            $banner_bold_content = get_field('banner_bold_content');
+                            $banner_regular_content = get_field('banner_regular_content');
+                        @endphp
+                        @if($banner_bold_content)
+                            <p>{!! $banner_bold_content !!}
+
+                            </p>
+                        @endif
+                        @if($banner_regular_content)
+                            <p>{!! $banner_regular_content !!}</p>
+                        @endif
                     </div>
 
                 </div>
@@ -59,13 +65,19 @@
 
     <section class="sizzle-reel-wide">
         <div class="container">
-            <div class="row center">
-                <div class="header-two blue">
-                    <h2>
-                        Ask us why these are some of our favorite accounting videos.
-                    </h2>
+            @php
+                $sizzle_header = get_field('sizzle_reel_header');
+            @endphp
+
+            @if($sizzle_header)
+                <div class="row center">
+                    <div class="header-two blue">
+                        <h2>
+                            {!! $sizzle_header !!}
+                        </h2>
+                    </div>
                 </div>
-            </div>
+            @endif
             <div class="row block">
                 <div class="grid grid-cols-3 gap-2">
                     @php
@@ -126,16 +138,33 @@ if( have_rows('sizzle_reel') ):
         <div class="container">
             <div class="row">
                 <div class="two-col extra-gap-right">
-                    <div class="header-two blue no-margin">
-                        <h2>Let's talk about a business video production project for your
-                            accounting firm.</h2>
-                        <p>Business video production for accounting firms is the perfect compliment to your traditional process of winning new business. Video content of your partners allows prospective clients to get a real feel for them, their expertise and their skill sets.</p>
-                    </div>
+
+
+                        @php
+                            $main_bold_content = get_field('main_bold_content');
+                            $main_regular_content = get_field('main_regular_content');
+                        @endphp
+                        @if($main_bold_content)
+                            <div class="header-two blue">
+                                <h2 id="main-content">{!! $main_bold_content !!}</h2>
+                            </div>
+                        @endif
+                    @if($main_regular_content)
+                        <div class="main-regular-content">
+                            {!! $main_regular_content !!}
+                        </div>
+                    @endif
                 </div>
                 <div class="two-col">
+                    @php
+                        $portfolio_video = get_field('video_content');
+                    @endphp
+
+                    @if($portfolio_video)
                     <div class="video-container video-iframe">
-                        <iframe width="auto" src="https://www.youtube.com/embed/h8g9eM9Dwxw"></iframe>
+                        {!!  $portfolio_video !!}
                     </div>
+                        @endif
                 </div>
             </div>
         </div>

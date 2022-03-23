@@ -8,6 +8,7 @@
                 <div class="large-col">
                     <article class="aside">
                         <div class="article-header article-row ">
+                            @if($categories)
                             <div class="article-cats article-row">
                                 @foreach($categories as $category)
 
@@ -19,6 +20,7 @@
                                        href="{{$term_link}}">{{$category->name}}</a>
                                 @endforeach
                             </div>
+                            @endif
                             <div class="article-title article-row ">
                                 <h1>{{$title}}</h1>
                             </div>

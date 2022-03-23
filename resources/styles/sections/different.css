@@ -54,3 +54,8 @@ section.different p {
   z-index: 1;
 }
 
+
+.different-text a,
+.different-text span {
+  color: var(--orange);
+}

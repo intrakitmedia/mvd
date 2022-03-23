@@ -120,5 +120,25 @@ class ThemeServiceProvider extends ServiceProvider
 				'supports' => array('title', 'thumbnail'),
 			)
 		);
+
+//		register_post_type('videos',
+//			array(
+//				'labels'      => array(
+//					'name'          => __( 'Videos', 'textdomain' ),
+//					'singular_name' => __( 'Video', 'textdomain' ),
+//					'view_item' => __( 'View Video', 'portfolios' ),
+//					'view_items' =>__( 'View Videos', 'videos' ),
+//					'edit_item' =>  __( 'Edit Video', 'videos' ),
+//					'all_items' => __( 'All Videos', 'videos' ),
+//					'add_new_item' => __( 'Add New Video', 'videos' ),
+//				),
+//				'public'      => false,
+//				'has_archive' => true,
+//				'rewrite'     => array( 'slug' => 'videos' ),
+//				'show_in_rest' => true,
+//				'show_ui' => true,
+//				'supports' => array('title', 'thumbnail'),
+//			)
+//		);
 	}
 }

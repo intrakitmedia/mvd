@@ -43,3 +43,13 @@ h1.services-header-title {
 .services-images img:not(:last-child) {
   margin-right: 10px;
 }
+
+@media (max-width: 800px) {
+  .services-video-wrapper {
+    margin-bottom: 30px;
+  }
+
+  .services-content-lead {
+    padding-left: 0;
+  }
+}

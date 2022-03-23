@@ -14,6 +14,7 @@ class BlogComposer extends Composer
     protected static $views = [
         //
 	    'template-blog',
+	    'archive',
     ];
 
     /**
@@ -36,12 +37,28 @@ class BlogComposer extends Composer
 		    'posts_per_page' => 9
 	    ];
 
+    	if(is_archive()) {
+
+		    $category = get_category( get_query_var( 'cat' ) );
+		    $cat_id = $category->cat_ID;
+
+    		$cat = [
+				'category__in' => $cat_id,
+		    ];
+
+    		$args = array_merge($args, $cat);
+	    }
+    	
+
     	$query = new \WP_Query($args);
+
 
     	return $query;
     }
 
     public function pinned_post() {
-    	return get_field('pinned_post');
+    	$blog = get_page_by_title('Blog');
+
+    	return get_field('pinned_post', $blog->ID);
     }
 }

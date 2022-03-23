@@ -6,3 +6,9 @@
 .services-add-content {
   padding-right: 80px;
 }
+
+@media (max-width: 800px) {
+  .services-add-content {
+    margin-bottom: 60px;
+  }
+}

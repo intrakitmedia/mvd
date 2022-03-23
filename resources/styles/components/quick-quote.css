@@ -70,3 +70,9 @@ div.quick-quote button {
   border: 1px solid var(--white);
   border-radius: 10px;
 }
+
+@media (max-width: 800px) {
+  .quick-quote {
+    margin-top: 0;
+  }
+}

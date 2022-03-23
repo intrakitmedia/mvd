@@ -31,8 +31,8 @@
   padding-left: 20px;
 }
 
-.desktop-nav > li.menu-item:first-child {
-  padding-left: 300px;
+.desktop-nav > li.menu-item:first-child:hover {
+  padding-left: 350px;
 }
 
 .desktop-nav > li.menu-item:not(:last-child) {
