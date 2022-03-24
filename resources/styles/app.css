@@ -132,12 +132,11 @@ div#app:before {
 }
 
 ul {
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 li {
   list-style: disc;
-  padding-left: 10px;
 }
 
 p,
@@ -154,6 +153,10 @@ p {
 
 .checklist-board-inner li {
   list-style: none;
+}
+
+.checklist-board-inner ul {
+  margin-left: 10px;
 }
 
 ul.checkmark li {
