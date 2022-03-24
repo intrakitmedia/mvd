@@ -12,7 +12,7 @@
 }
 
 /*.desktop-nav > li.menu-item.call-to-action a {*/
-  /*padding: 10px;*/
+/*padding: 10px;*/
 /*}*/
 
 .desktop-nav > li.menu-item.call-to-action a {
@@ -27,9 +27,9 @@
   border-radius: 4px;
 }
 
-nav ul  {
+nav ul {
   margin-left: 0;
-  margin-bottom:  0;
+  margin-bottom: 0;
 }
 
 nav li {
@@ -40,8 +40,10 @@ nav li {
   padding-left: 20px;
 }
 
-.desktop-nav > li.menu-item:first-child:hover {
-  padding-left: 150px;
+@media (min-width: 1200px) {
+  .desktop-nav > li.menu-item:first-child:hover {
+    padding-left: 150px;
+  }
 }
 
 .desktop-nav > li.menu-item:not(:last-child) {
@@ -55,16 +57,16 @@ nav li {
 }
 
 /*.desktop-nav > li.menu-item.menu-item-has-children::after {*/
-  /*position: absolute;*/
-  /*top: 46%;*/
-  /*right: 30px;*/
-  /*display: block;*/
-  /*content: '';*/
-  /*width: 0;*/
-  /*height: 0;*/
-  /*border-left: 4px solid transparent;*/
-  /*border-right: 4px solid transparent;*/
-  /*border-top: 4px solid var(--blue);*/
+/*position: absolute;*/
+/*top: 46%;*/
+/*right: 30px;*/
+/*display: block;*/
+/*content: '';*/
+/*width: 0;*/
+/*height: 0;*/
+/*border-left: 4px solid transparent;*/
+/*border-right: 4px solid transparent;*/
+/*border-top: 4px solid var(--blue);*/
 /*}*/
 
 .desktop-nav {
@@ -107,7 +109,7 @@ nav li {
 .desktop-nav > li.menu-item > ul.sub-menu > li a {
   padding: 15px 30px;
   color: var(--white);
-  border-bottom:  2px solid rgb(0 0 0 / 45%);
+  border-bottom: 2px solid rgb(0 0 0 / 45%);
   display: block;
   position: relative;
 }
@@ -127,8 +129,7 @@ nav li {
 
 /** menuToggle **/
 
-#menuToggle input
-{
+#menuToggle input {
   display: block;
   width: 40px;
   height: 32px;
@@ -151,8 +152,7 @@ nav li {
 /*
  * Just a quick hamburger
  */
-#menuToggle .ham-wrapper span
-{
+#menuToggle .ham-wrapper span {
   display: block;
   width: 33px;
   height: 4px;
@@ -166,18 +166,16 @@ nav li {
 
   transform-origin: 4px 0px;
 
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+  background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
   opacity 0.55s ease;
 }
 
-#menuToggle .ham-wrapper span:first-child
-{
+#menuToggle .ham-wrapper span:first-child {
   transform-origin: 0% 0%;
 }
 
-#menuToggle .ham-wrapper span:nth-last-child(2)
-{
+#menuToggle .ham-wrapper span:nth-last-child(2) {
   transform-origin: 0% 100%;
 }
 
@@ -185,8 +183,7 @@ nav li {
  * Transform all the slices of hamburger
  * into a crossmark.
  */
-.ham-wrapper input:checked ~ span
-{
+.ham-wrapper input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(1px, -1px);
   background: #232323;
@@ -194,8 +191,7 @@ nav li {
 
 /*
  */
-.ham-wrapper input:checked ~ span:nth-last-child(2)
-{
+.ham-wrapper input:checked ~ span:nth-last-child(2) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
@@ -203,16 +199,15 @@ nav li {
 /*
  * Oh yeah and the last one should go the other direction
  */
-.ham-wrapper input:checked ~ span:nth-last-child(1)
-{
+.ham-wrapper input:checked ~ span:nth-last-child(1) {
   transform: rotate(-45deg) translate(0, -1px);
 }
+
 /*
  * Make this absolute positioned
  * at the top left of the screen
  */
-#menu
-{
+#menu {
   position: absolute;
   width: 300px;
   margin: -100px 0 0 -50px;
@@ -227,11 +222,10 @@ nav li {
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
 
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
 
-#menu li
-{
+#menu li {
   padding: 10px 0;
   font-size: 22px;
 }
@@ -239,8 +233,7 @@ nav li {
 /*
  * And let's slide it in from the left
  */
-#menuToggle .ham-wrapper input:checked ~ ul
-{
+#menuToggle .ham-wrapper input:checked ~ ul {
   transform: none;
 }
 
