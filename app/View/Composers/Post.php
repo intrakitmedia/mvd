@@ -128,7 +128,8 @@ class Post extends Composer {
 	 * @return string
 	 */
 	public function main_content() {
-		return get_the_content();
+		$content = get_the_content();
+		return apply_filters('the_content', $content);
 	}
 
 	/**
