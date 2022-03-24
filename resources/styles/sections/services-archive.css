@@ -1,0 +1,30 @@
+/* stylelint-disable */
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding: 30px 20px;
+  margin-bottom: 30px;
+}
+
+.service-inner {
+  background: var(--white);
+  box-shadow: var(--shadow);
+  padding: 30px;
+  text-align: center;
+}
+
+.service-image img {
+  width: 200px;
+  height: 112px;
+}
+
+.service-content {
+  padding-left: 20px;
+}

@@ -139,6 +139,12 @@ a.orange-underline {
   padding-bottom: 3px;
   border-bottom: 1px solid var(--orange);
   font-weight: bold;
+  transition: 0.2s ease all;
+}
+
+.a.orange-underline:hover {
+  color: #e78267;
+  transition: 0.2s ease all;
 }
 
 @media (max-width: 800px) {
