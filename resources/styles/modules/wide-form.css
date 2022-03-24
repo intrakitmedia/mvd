@@ -8,6 +8,12 @@
   margin-top: -222px;
 }
 
+.wide-form-wrapper-60 {
+  box-shadow: var(--shadowall);
+  background: var(--white);
+  margin-top: -60px;
+}
+
 .wide-form {
   padding: 30px 40px;
   background: var(--white);

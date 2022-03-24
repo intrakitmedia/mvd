@@ -5,3 +5,7 @@
   height: 300px;
   border-radius: 10px;
 }
+
+.blog-articles  {
+  border-bottom: 1px solid var(--lightgrey);
+}

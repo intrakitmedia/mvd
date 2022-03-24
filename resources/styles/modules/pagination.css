@@ -1,0 +1,24 @@
+/* stylelint-disable */
+
+.pagination {
+  text-align: right;
+}
+
+.nav-links span.page-numbers,
+.nav-links a.page-numbers {
+  margin-left: 10px;
+}
+
+.nav-links a.page-numbers,
+.nav-links span.page-numbers {
+  color: var(--faint);
+}
+
+.nav-links span.page-numbers.current {
+  color: var(--orangealt);
+  background: var(--orangesoft);
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 12px;
+  line-height: 1;
+}

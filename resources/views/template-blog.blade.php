@@ -196,4 +196,8 @@
         </div>
     </section>
 
+    <div class="post-pagination">
+        @php(the_posts_pagination())
+    </div>
+
 @endsection

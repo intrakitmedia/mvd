@@ -39,6 +39,7 @@
 @import "modules/magnet-bar.css";
 @import "modules/post-roll.css";
 @import "modules/mega-menu.css";
+@import "modules/pagination.css";
 /** components **/
 @import "components/buttons.css";
 @import "components/icon-feats.css";
@@ -78,6 +79,7 @@
   --lightgrey: #F5F5F5;
   --darkgrey: #999999;
   --inputgreey: #F5F5F5;
+  --faint: #BDBDBD;
   --h1: 35px;
   --h1line: 49px;
   --h2: 28px;

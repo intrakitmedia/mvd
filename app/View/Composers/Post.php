@@ -21,6 +21,7 @@ class Post extends Composer {
 		'template-blog',
 		'single-case_studies',
 		'template-solutions',
+
 	];
 
 	public $post_ID;

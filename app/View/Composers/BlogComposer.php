@@ -14,6 +14,7 @@ class BlogComposer extends Composer {
 		//
 		'template-blog',
 		'archive',
+		'index'
 	];
 
 	/**
@@ -26,6 +27,7 @@ class BlogComposer extends Composer {
 			'posts'       => $this->posts(),
 			'pinned_post' => $this->pinned_post(),
 			'title'       => $this->title(),
+
 		];
 	}
 
@@ -36,10 +38,13 @@ class BlogComposer extends Composer {
 			$post_type = get_post_type();
 		}
 
+		$paged = ( get_query_var('page') ) ? get_query_var('page') : 1;
+
 		$args = [
 			'post_type'      => $post_type,
 			'status'         => 'publish',
-			'posts_per_page' => 9
+			'posts_per_page' => 9,
+			'paged' => $paged
 		];
 
 		if ( is_archive() ) {
@@ -72,6 +77,10 @@ class BlogComposer extends Composer {
 	 * @return string
 	 */
 	public function title() {
+		if ( is_home() ) {
+			return "Our Blog";
+		}
+
 		if ( is_archive() ) {
 			return get_the_archive_title();
 		}
