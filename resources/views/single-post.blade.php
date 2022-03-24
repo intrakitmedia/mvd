@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@php
+$post = get_post($post_ID);
+@endphp
+
 
 @section('content')
     <section class="main-article-content">
@@ -22,20 +26,38 @@
                             </div>
                             @endif
                             <div class="article-title article-row ">
-                                <h1>{{$title}}</h1>
+                                <h1>{!! $title !!}</h1>
                             </div>
                             <div class="article-meta article-row-2">
+                                @php
+                                    $author_display_name = get_the_author_meta('display_name', $post->post_author);
+                                    $nickname = get_the_author_meta('nickname', $post->post_author);
+                                    $avatar = get_avatar_url($post->post_author);
+                                    $post_date = date('F d Y', strtotime($post->post_date) );
+                                @endphp
                                 <div class="post-meta article-author">
+                                    @if($avatar)
+                                        <div class="pic article-pic">
+                                            <div class="pic-inner article-pic-inner"
+                                                 style="background: url({{$avatar}}); background-size: cover;">
+
+                                            </div>
+                                        </div>
+                                    @else
                                     <div class="pic article-pic">
                                         <div class="pic-inner article-pic-inner"
                                              style="background: url(@asset('images/author.jpg')); background-size: cover;">
 
                                         </div>
                                     </div>
+                                    @endif
+
+                                    @if($author_display_name && $post_date)
                                     <div class="meta article-data">
-                                        <div class="author-name"><p>Robert Weiss</p></div>
-                                        <div class="date"><p>February 20, 2022</p></div>
+                                        <div class="author-name"><p>{!! $author_display_name !!}</p></div>
+                                        <div class="date"><p>{!! $post_date !!}</p></div>
                                     </div>
+                                        @endif
                                 </div>
                                 <div class="post-social">
                                     <div class="blurb"><p>Share on</p></div>

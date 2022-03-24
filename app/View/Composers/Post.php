@@ -21,7 +21,6 @@ class Post extends Composer {
 		'template-blog',
 		'single-case_studies',
 		'template-solutions',
-		'archive',
 	];
 
 	public $post_ID;
@@ -88,6 +87,10 @@ class Post extends Composer {
 
 		if ( is_archive() ) {
 			return get_the_archive_title();
+		}
+
+		if ( is_category() ) {
+			return single_cat_title();
 		}
 
 		if ( is_search() ) {

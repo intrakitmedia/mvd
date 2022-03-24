@@ -24,7 +24,7 @@ $query = new \WP_Query( $args );
             <div class="row">
                 <div class="services-header">
                     <span class="header-tag">Services</span>
-                    <h1 class="services-header-title">{{$title}}</h1>
+                    <h1 class="services-header-title">{!! $title !!}</h1>
                 </div>
             </div>
             <div class="row">

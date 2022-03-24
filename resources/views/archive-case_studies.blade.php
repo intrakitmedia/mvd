@@ -9,7 +9,7 @@ $args = [
 
 ];
 
-$query = \WP_Query($args);
+$case_study_query = new \WP_Query($args);
 
 @endphp
 
@@ -18,7 +18,9 @@ $query = \WP_Query($args);
         <div class="container">
             <div class="row center">
                 <div class="page-header-title text-center">
-                    <h1>Case Studies</h1>
+                    <h1>
+                        Case Studies
+                    </h1>
                     <h2>Get in-depth information from our Video Marketing Case Studies</h2>
                 </div>
             </div>
@@ -27,54 +29,60 @@ $query = \WP_Query($args);
 
     <section class="blog-banner small">
         <div class="container">
-            <div class="row blog-card post-card case-card">
-
-                @if($query->found_posts)
-                    @php
-                    $posts = $query->posts;
-                    @endphp
+            @if($case_study_query->found_posts)
+                @php
+                    $posts = $case_study_query->posts;
+                @endphp
 
                 @foreach($posts as $post)
 
-                        @php
-                            $image_url = get_the_post_thumbnail_url($post->ID) ?? null;
-                            $post_link = get_permalink($post->ID);
-                        @endphp
+                    @php
+                        $image_url = get_the_post_thumbnail_url($post->ID) ?? null;
+                        $post_link = get_permalink($post->ID);
+                    $categories = get_the_terms($post->ID, 'category');
+                    @endphp
+            <div class="row blog-card post-card case-card">
+
+
 
                 <div class="two-col">
                     <div class="blog-card-image-wapper">
                         @if($image_url)
-                        <div class="blog-featured-image"
-                             style="background: url(@asset('images/case-study-1.jpg')); background-size:cover;">
+                        <div data-check="featured-image" class="blog-featured-image"
+                             style="background: url({{$image_url}}); background-size:cover;">
                         </div>
                             @else
+                            <div class="blog-featured-image"
+                                 style="background: url(@asset('images/default-image.jpg')); background-size:cover;">
+                            </div>
                         @endif
                     </div>
                 </div>
                 <div class="two-col">
                     <div class="blog-content-card top-news">
                         <div class="blog-roll-header blog-card-row">
-                            <div class="blog-roll-cats blog-card-row">
-                                <a class="cat">Animated Explainer Videos</a>
-                                <a class="cat">Business Video Blog</a>
-                                <a class="cat">Video Marketing</a>
-                            </div>
+
+                            @if($post_link && $post->post_title)
                             <div class="blog-roll-title">
-                                <h3><a href="">Animated Holiday Cards Increase Awareness & Engagement</a></h3>
+                                <h3><a title="{{$post->post_title}}" href="{{$post_link}}">{{$post->post_title}}</a></h3>
                             </div>
+                                @endif
                         </div>
                         <div class="blog-roll-body blog-card-row">
                             <p>Just like animated videos for business are highly effective to convert leads, animated holiday cards as they make a memorable impression on their customers and prospects.  So, if your goal…</p>
                         </div>
+                        @if($post_link && $post->post_title)
                         <div class="blog-roll-author blog-card-row">
-                            <a class="orange-link" href="">Read More</a>
+                            <a  title="{{$post->post_title}}" class="orange-link" href="{{$post_link}}">Read More</a>
                         </div>
+                            @endif
 
                     </div>
 
                 </div>
             </div>
             @endforeach
+            @endif
         </div>
     </section>
 @endsection

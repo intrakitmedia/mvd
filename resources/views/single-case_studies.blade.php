@@ -1,59 +1,90 @@
 @extends('layouts.app')
-
-
+@php
+    $post = get_post($post_ID);
+@endphp
 @section('content')
     <section class="main-article-content">
         <div class="container">
             <div class="row">
                 <div class="large-col">
+                    @php
+                        $image_url = get_the_post_thumbnail_url($post->ID) ?? null;
+                        $post_date = date('F dd Y', strtotime($post->post_date) );
+                        $post_link = get_permalink($post->ID);
+                        $categories = get_the_terms($post->ID, 'category');
+                    @endphp
                     <article class="aside">
                         <div class="article-header article-row ">
-                            <div class="article-cats article-row">
-                                <a class="cat " href="#">Animated Explainer</a>
-                                <a class="cat" href="#">B2B</a>
-                                <a class="cat" href="#">Video Marketing</a>
-                            </div>
+                            {{--<div class="article-cats article-row">--}}
+                                {{--<x-categories  cats="$cats"></x-categories>--}}
+                                {{--<a class="cat " href="#">Animated Explainer</a>--}}
+                                {{--<a class="cat" href="#">B2B</a>--}}
+                                {{--<a class="cat" href="#">Video Marketing</a>--}}
+                            {{--</div>--}}
                             <div class="article-title article-row ">
-                                <h1>{{$title}}</h1>
+                                <h1>{!! $title !!}</h1>
                             </div>
                             <div class="article-meta article-row-2">
+                                @php
+                                    $author_display_name = get_the_author_meta('display_name', $post->post_author);
+                                    $nickname = get_the_author_meta('nickname', $post->post_author);
+                                    $avatar = get_avatar_url($post->post_author);
+                                    $post_date = date('F d Y', strtotime($post->post_date) );
+                                @endphp
                                 <div class="post-meta article-author">
                                     <div class="pic article-pic">
+                                        @if($avatar)
+                                            <div class="pic-inner article-pic-inner" style="background: url({{$avatar}});
+                                            background-size: cover;">
+
+                                            </div>
+                                            @else
                                         <div class="pic-inner article-pic-inner" style="background: url(@asset('images/author.jpg')); background-size: cover;">
 
                                         </div>
+                                            @endif
                                     </div>
                                     <div class="meta article-data">
-                                        <div class="author-name"><p>Robert Weiss</p></div>
-                                        <div class="date"><p>February 20, 2022</p></div>
+                                        @if($author_display_name && $post_date)
+                                        <div class="author-name"><p>{!! $author_display_name !!}</p></div>
+                                        <div class="date"><p>{!! $post_date !!}</p></div>
+                                            @endif
                                     </div>
                                 </div>
                                 <div class="post-social">
                                     <div class="blurb"><p>Share on</p></div>
                                     <div class="links">
                                         <ul>
-                                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                                            <li><a target="_blank"
+                                                   href="https://www.facebook.com/sharer/sharer.php?u=<?=
+	                                               urlencode
+	                                               ( $permalink )
+	                                               ?>"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a target="_blank" href="http://twitter.com/share?<?= urlencode
+		                                        ( $permalink ) ?>"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a target="_blank"
+                                                   href="https://www.linkedin.com/shareArticle?mini=true&url=<?= urlencode
+	                                               ( $permalink )
+	                                               ?>"><i class="fa
+                                        fa-linkedin"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="article-featured-image">
-                            <img src="@asset('images/case-study-1.jpg')" alt="" />
-                        </div>
-                        <div class="article-body">
-                            <div class="article-body-inner">
-                                <p>A good director will do more than properly setting up the camera, light, and objects
-                                    within the frame. They will be able to bring out the best possible performance from the subjects, giving thoughtful and experience-backed critiques in between takes, ensuring that you look your best.
-
-                                <h3>Effective Editing Services</h3>
-
-                                <p>Without an educated and knowledgeable editor, scenes would not flow seamlessly, and important messages would not be emphasized effectively. The goal of an editor is to utilize the footage accumulated and structure it in a way that maintains relevance to your message—while keeping your audience engaged. After all, there’s a reason you chose a visual medium to market your product/service rather than producing a radio ad.
-                                <p>Through a visual medium, audiences become engaged with your content and are much more likely to receive your message through attention-grabbing editing techniques. Editors utilize industry-standard editing software that allows for seamless scene transition and a visual structure that follows the script’s timeline. Through expert practices, efficient methods, and professional editing techniques, an editor can be the difference between professional and sloppy.</p>
+                        @if($thumbnail_url)
+                            <div class="article-featured-image">
+                                <img src="{{$thumbnail_url}}" alt=""/>
                             </div>
-                        </div>
+                        @endif
+
+                        @if($main_content)
+                            <div class="article-body">
+                                <div class="article-body-inner">
+                                    {!! $main_content !!}
+                                </div>
+                            </div>
+                        @endif
                     </article>
                 </div>
                 <div class="small-col">

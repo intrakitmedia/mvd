@@ -117,7 +117,7 @@ class ThemeServiceProvider extends ServiceProvider
 				'has_archive' => true,
 				'rewrite'     => array( 'slug' => 'case-studies' ),
 				'show_in_rest' => true,
-				'supports' => array('title', 'thumbnail'),
+				'supports' => array('title', 'thumbnail', 'categories', 'editor'),
 			)
 		);
 
