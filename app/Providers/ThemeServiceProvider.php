@@ -97,17 +97,17 @@ class ThemeServiceProvider extends ServiceProvider
 		register_post_type('portfolios',
 			array(
 				'labels'      => array(
-					'name'          => __( 'Portfolios', 'textdomain' ),
+					'name'          => __( 'Portfolio', 'textdomain' ),
 					'singular_name' => __( 'Portfolio', 'textdomain' ),
 					'view_item' => __( 'View Portfolio', 'portfolios' ),
-					'view_items' =>__( 'View Portfolios', 'portfolios' ),
+					'view_items' =>__( 'View Portfolio', 'portfolios' ),
 					'edit_item' =>  __( 'Edit Portfolio', 'portfolios' ),
-					'all_items' => __( 'All Portfolios', 'portfolios' ),
+					'all_items' => __( 'All Portfolio Items', 'portfolios' ),
 					'add_new_item' => __( 'Add New Portfolio', 'portfolios' ),
 				),
 				'public'      => true,
 				'has_archive' => true,
-				'rewrite'     => array( 'slug' => 'portfolios' ),
+				'rewrite'     => array( 'slug' => 'portfolio' ),
 				'show_in_rest' => true,
 				'supports' => array('title', 'thumbnail'),
 			)

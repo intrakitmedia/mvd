@@ -28,3 +28,9 @@
 .service-content {
   padding-left: 20px;
 }
+
+@media (max-width: 800px) {
+  .service {
+    width: 100%;
+  }
+}
