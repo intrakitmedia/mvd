@@ -131,6 +131,15 @@ div#app:before {
   width: 0;
 }
 
+ul {
+  margin-left: 20px;
+}
+
+li {
+  list-style: disc;
+  padding-left: 10px;
+}
+
 p,
 li {
   font-size: 18px;
@@ -143,10 +152,15 @@ p {
   margin-bottom: 28px;
 }
 
+.checklist-board-inner li {
+  list-style: none;
+}
+
 ul.checkmark li {
   padding: 15px 30px;
   position: relative;
   font-weight: bold;
+  list-style: none;
 }
 
 ul.checkmark li:before {

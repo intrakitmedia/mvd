@@ -8,6 +8,14 @@ footer {
   padding-bottom: 60px;
 }
 
+footer ul {
+  margin: 0;
+}
+
+footer li {
+  list-style: none;
+}
+
 .footer h4 {
   text-transform: capitalize;
   color: var(--grey);

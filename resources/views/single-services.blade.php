@@ -278,7 +278,7 @@ $query = new \WP_Query( $args );
                                 <div class="other-service">
                                     <div class="other-service-image">
                                         @if($image_url)
-                                        <img src="@asset('images/remote-video-capture-client.jpg')" alt="{{$post->post_title}}"/>
+                                        <img src="{{$image_url}}" alt="{{$post->post_title}}"/>
                                             @else
                                             <img src="@asset('images/default-image.jpg')" alt="{{$post->post_title}}"/>
                                         @endif

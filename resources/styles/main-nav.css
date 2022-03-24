@@ -27,6 +27,10 @@
   border-radius: 4px;
 }
 
+nav li {
+  list-style: none;
+}
+
 .desktop-nav > li.menu-item {
   padding-left: 20px;
 }
