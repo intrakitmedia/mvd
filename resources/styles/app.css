@@ -161,6 +161,15 @@ p {
   margin-left: 10px;
 }
 
+.checklist-board ul {
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+.checklist-board li {
+  list-style: none;
+}
+
 ul.checkmark li {
   padding: 15px 30px;
   position: relative;
