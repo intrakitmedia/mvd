@@ -21,7 +21,7 @@
             <div class="row center">
                 <div class="page-header-title blog-page-header text-center">
                 <h1>Services</h1>
-                <h2>High-Quality Video Production Company based in NYC.</h2>
+                <h2>High-Quality Video Production Company based in NYC</h2>
                 </div>
             </div>
         </div>
@@ -42,8 +42,7 @@
                             <div class="service">
                                 <div class="service-title">
                                 <h2 class="blue"><a title="{!! $post->post_title !!}"
-                                                             href="{{$post_link}}">{!! $post->post_title
-                                 !!}</a></h2>
+                                                             href="{{$post_link}}">{!! $post->post_title !!}</a></h2>
                                 <p>{!! $banner_bold !!}</p>
 
                                     <a title="{!! $post->post_title !!}" href="{{$post_link}}" class="orange-underline">LEARN MORE</a>

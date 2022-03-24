@@ -6,12 +6,21 @@
   box-shadow: var(--shadowall);
   background: var(--white);
   margin-top: -222px;
+  border-radius: 10px;
 }
 
 .wide-form-wrapper-60 {
   box-shadow: var(--shadowall);
   background: var(--white);
   margin-top: -60px;
+  border-radius: 10px;
+}
+
+.wide-form-wrapper-90 {
+  box-shadow: var(--shadowall);
+  background: var(--white);
+  margin-top: -90px;
+  border-radius: 10px;
 }
 
 .wide-form {

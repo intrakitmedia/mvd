@@ -211,7 +211,7 @@
     </section>
 
     <section class="wide-form-section">
-        <div class="row wide-form-wrapper-60">
+        <div class="row wide-form-wrapper-90">
             <div class="peak">
                 <div class="lead-in left alt">
                     <div class="peak-card">

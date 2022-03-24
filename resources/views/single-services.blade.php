@@ -35,7 +35,7 @@ $query = new \WP_Query( $args );
                                 $field = get_field('featured_video');
                             @endphp
                             @if($field)
-                                {!! $field !!};
+                                {!! $field !!}
                             @endif
                         </div>
                     </div>
