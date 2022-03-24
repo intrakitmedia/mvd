@@ -117,6 +117,7 @@
                                 $post_date = date('F dd Y', strtotime($post->post_date) );
                                 $post_link = get_permalink($post->ID);
                                 $categories = get_the_terms($post->ID, 'category');
+                            $content = get_the_content('', true, $post->ID);
                             @endphp
 
 
@@ -154,10 +155,7 @@
                                         </div>
                                     </div>
                                     <div class="blog-roll-body blog-card-row">
-                                        <p>NYC Video production services often come with a hefty price tag. Granted, the
-                                            investment
-                                            is worth it when the outcome is lucrative, but at certain times there are more
-                                            efficient…</p>
+	                                   <p><?php echo wp_trim_words( $content, 40, " ..."); ?></p>
                                     </div>
                                     <div class="blog-roll-author blog-card-row">
                                         @php

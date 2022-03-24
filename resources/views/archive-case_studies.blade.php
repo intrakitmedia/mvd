@@ -39,12 +39,10 @@ $case_study_query = new \WP_Query($args);
                     @php
                         $image_url = get_the_post_thumbnail_url($post->ID) ?? null;
                         $post_link = get_permalink($post->ID);
-                    $categories = get_the_terms($post->ID, 'category');
+                        $categories = get_the_terms($post->ID, 'category');
+                        $content = get_the_content('', false, $post->ID);
                     @endphp
             <div class="row blog-card post-card case-card">
-
-
-
                 <div class="two-col">
                     <div class="blog-card-image-wapper">
                         @if($image_url)
@@ -69,7 +67,7 @@ $case_study_query = new \WP_Query($args);
                                 @endif
                         </div>
                         <div class="blog-roll-body blog-card-row">
-                            <p>Just like animated videos for business are highly effective to convert leads, animated holiday cards as they make a memorable impression on their customers and prospects.  So, if your goal…</p>
+                            <p><?php echo wp_trim_words( $content, 40, " ..."); ?></p>
                         </div>
                         @if($post_link && $post->post_title)
                         <div class="blog-roll-author blog-card-row">
