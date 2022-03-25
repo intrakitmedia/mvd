@@ -10,6 +10,7 @@ if ( ! class_exists( 'MegaMenu' ) ) {
 			$menu_title = $this->currentMenuItem->title;
 			$indent = str_repeat( "\t", $depth );
 			$output .= "\n$indent<div class=\"mega-menu\"><div class='container'><div class='mega-menu-inner'><div 
+class='mega-menu-content'><div 
 class='sub-menu-title'><h2>$menu_title</h2></div><ul 
 class=\"sub-menu\">\n";
 		}
@@ -17,7 +18,7 @@ class=\"sub-menu\">\n";
 		function end_lvl( &$output, $depth = 0, $args = array() ) {
 			$asset_url = \Roots\asset( 'images/services-menu.jpg' )->uri();
 			$indent    = str_repeat( "\t", $depth );
-			$output    .= "$indent</ul><div class='image-wrapper-menu'><img src='$asset_url' /></div></div></div></div>\n";
+			$output    .= "$indent</ul></div><div class='image-wrapper-menu'><img src='$asset_url' /></div></div></div></div>\n";
 		}
 
 		function start_el( &$output, $data_object, $depth = 0, $args = null, $current_object_id = 0 ) {

@@ -189,34 +189,31 @@ $query = new \WP_Query( $args );
                         <div class="header-two blue">
                             <h2>Sizzle Reels Made for Our Partners</h2>
                         </div>
+                        @dump("HIs");
 
                         @php
 
                             // Check value exists.
-    if( have_rows('sizzle_reel') ):
+    if( have_rows('video_gallery') ):
 
                         @endphp
                         <div class="services-sizzle-reel grid grid-cols-2 gap-2">
                             @php
                                 // Loop through rows.
-                                while ( have_rows('sizzle_reel') ) : the_row();
+                                while ( have_rows('video_gallery') ) : the_row();
 
-
+var_dump("HI");
                                     // Case: Paragraph layout.
-                                    if( get_row_layout() == 'video' ):
+                                    if( get_row_layout() == 'videos' ):
                                         $video = get_sub_field('video');
                                         $video_url = get_sub_field('video', false, false) ?? 'hey';
-                                        $video_title = get_sub_field('video_title') ?? 'hi';
-                                        $image = get_sub_field('video_cover_image');
-                                        $url = $image['url'];
                                     endif;
 
                             @endphp
 
+                            @dump($video)
 
-                            <div class="s-vid"
-                                 data-field="@php echo
-                            $video_url;
+                            <div class="s-vid">
                                  @endphp">
                                 <div class="s-vid-inner">
                                     <div class="video-container video-thumbnail"
@@ -226,7 +223,7 @@ $query = new \WP_Query( $args );
                                     </div>
                                     {{--Client"/>--}}
                                     <div class="s-vid-title">
-                                        <h4>@php echo $video_title; @endphp</h4>
+                                        {{--<h4>@php echo $video_title; @endphp</h4>--}}
                                     </div>
                                 </div>
                             </div>
@@ -255,6 +252,81 @@ $query = new \WP_Query( $args );
                         </div>
                     </div>
                 </div>
+
+
+                            {{--<div class="large-col">--}}
+                                {{--<div class="services-reel-content">--}}
+                                    {{--<div class="header-two blue">--}}
+                                        {{--<h2>Sizzle Reels Made for Our Partners</h2>--}}
+                                    {{--</div>--}}
+
+                                    {{--@php--}}
+
+                                        {{--// Check value exists.--}}
+                {{--if( have_rows('sizzle_reel') ):--}}
+
+                                    {{--@endphp--}}
+                                    {{--<div class="services-sizzle-reel grid grid-cols-2 gap-2">--}}
+                                        {{--@php--}}
+                                            {{--// Loop through rows.--}}
+                                            {{--while ( have_rows('sizzle_reel') ) : the_row();--}}
+            {{----}}
+            {{----}}
+                                                {{--// Case: Paragraph layout.--}}
+                                                {{--if( get_row_layout() == 'video' ):--}}
+                                                    {{--$video = get_sub_field('video');--}}
+                                                    {{--$video_url = get_sub_field('video', false, false) ?? 'hey';--}}
+                                                    {{--$video_title = get_sub_field('video_title') ?? 'hi';--}}
+                                                    {{--$image = get_sub_field('video_cover_image');--}}
+                                                    {{--$url = $image['url'];--}}
+                                                {{--endif;--}}
+
+                                        {{--@endphp--}}
+
+
+                                        {{--<div class="s-vid"--}}
+                                             {{--data-field="@php echo--}}
+                            {{--$video_url;--}}
+                                             {{--@endphp">--}}
+                                            {{--<div class="s-vid-inner">--}}
+                                                {{--<div class="video-container video-thumbnail"--}}
+                                                     {{--style="background-image: url('@php echo $url; @endphp');--}}
+                                                             {{--background-size: cover;">--}}
+                                                    {{--<img src="@php echo $url; @endphp" alt="Remote Video Capture--}}
+                                                {{--</div>--}}
+                                                {{--Client"/>--}}
+                                                {{--<div class="s-vid-title">--}}
+                                                    {{--<h4>@php echo $video_title; @endphp</h4>--}}
+                                                {{--</div>--}}
+                                            {{--</div>--}}
+                                        {{--</div>--}}
+
+                                        {{--@php--}}
+
+                                            {{--// End loop.--}}
+                                            {{--endwhile;--}}
+                                                            {{--endif;--}}
+
+                                        {{--@endphp--}}
+                                    {{--</div>--}}
+
+
+                                    {{--<div class="video-modal">--}}
+                                        {{--<div class="bg-shadow-video">--}}
+
+                                            {{--<div class="video-modal-inner">--}}
+                                                {{--<div class="ex-out-wrapper">--}}
+                                                    {{--<div id="ex-out" class="ex-out"></div>--}}
+                                                {{--</div>--}}
+                                                {{--<div class="video-container video-iframe"></div>--}}
+                                            {{--</div>--}}
+                                        {{--</div>--}}
+
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+
+
                 <div class="small-col">
 
                     @if($query->found_posts)

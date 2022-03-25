@@ -128,6 +128,45 @@ class ThemeServiceProvider extends ServiceProvider {
 			)
 		);
 
+		register_post_type( 'videos',
+			array(
+				'labels'       => array(
+					'name'          => __( 'Videos', 'textdomain' ),
+					'singular_name' => __( 'Video', 'textdomain' ),
+					'view_item'     => __( 'View Video', 'portfolios' ),
+					'view_items'    => __( 'View Videos', 'case_studies' ),
+					'edit_item'     => __( 'Edit Video', 'case_studies' ),
+					'all_items'     => __( 'All Videos', 'case_studies' ),
+					'add_new_item'  => __( 'Add New Video', 'case_studies' ),
+				),
+				'public'       => false,
+				'has_archive'  => true,
+				'show_ui' => true,
+				'rewrite'      => array( 'slug' => 'videos' ),
+				'show_in_rest' => true,
+				'supports'     => array( 'title', 'thumbnail' ),
+			)
+		);
+
+		register_taxonomy(
+			'examples',
+			'videos',
+			array(
+				'labels' => array(
+					'name' => 'Examples',
+					'add_new_item' => 'Add Example',
+					'new_item_name' => "New Example"
+				),
+				'public' => false,
+				'show_ui' => true,
+				'show_tagcloud' => false,
+				'hierarchical' => false,
+				'hasArchive' => true,
+				'show_admin_column' => true,
+
+			)
+		);
+
 //		register_post_type('videos',
 //			array(
 //				'labels'      => array(
