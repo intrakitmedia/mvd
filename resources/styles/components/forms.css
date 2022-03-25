@@ -6,6 +6,15 @@ form label .required {
   color: red;
 }
 
+form label span.gfield_required,
+form label span.gfield_required_asterisk {
+  color: red !important;
+}
+
+.gform_required_legend {
+  display: none;
+}
+
 form label p {
   margin-bottom: 5px;
   color: var(--darkgrey);
@@ -25,4 +34,14 @@ form input[type="phone"] {
 .form-row {
   display: flex;
   margin-bottom: 30px;
+}
+
+.gform_wrapper.gravity-theme .gform_fields {
+  row-gap: 15px !important;
+  column-gap: 20px !important;
+}
+
+.gform_wrapper.gravity-theme .gform_footer {
+  margin-top: 0 !important;
+  padding: 30px 0 !important;
 }

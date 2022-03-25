@@ -12,6 +12,11 @@
   padding-right: 20px;
 }
 
+input[type="submit"] {
+  cursor: pointer;
+}
+
+input[type="submit"],
 button.call-to-action,
 a.call-to-action {
   font-weight: 600;

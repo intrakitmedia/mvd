@@ -189,7 +189,6 @@ $query = new \WP_Query( $args );
                         <div class="header-two blue">
                             <h2>Sizzle Reels Made for Our Partners</h2>
                         </div>
-                        @dump("HIs");
 
                         @php
 
@@ -197,37 +196,30 @@ $query = new \WP_Query( $args );
     if( have_rows('video_gallery') ):
 
                         @endphp
-                        <div class="services-sizzle-reel grid grid-cols-2 gap-2">
+                        <div class="services-sizzle-reel grid sm:grid-cols-1 md:grid-cols-2 gap-2">
                             @php
                                 // Loop through rows.
                                 while ( have_rows('video_gallery') ) : the_row();
-
-var_dump("HI");
                                     // Case: Paragraph layout.
                                     if( get_row_layout() == 'videos' ):
                                         $video = get_sub_field('video');
+                                        $youtube_id = get_field('youtube_id', $video->ID);
+                                        $youtube_id = preg_replace('/\s+/', '', $youtube_id);
                                         $video_url = get_sub_field('video', false, false) ?? 'hey';
+
                                     endif;
 
                             @endphp
 
-                            @dump($video)
-
-                            <div class="s-vid">
-                                 @endphp">
-                                <div class="s-vid-inner">
-                                    <div class="video-container video-thumbnail"
-                                         style="background-image: url('@php echo $url; @endphp');
-                                                 background-size: cover;">
-                                        {{--<img src="@php echo $url; @endphp" alt="Remote Video Capture--}}
-                                    </div>
-                                    {{--Client"/>--}}
-                                    <div class="s-vid-title">
-                                        {{--<h4>@php echo $video_title; @endphp</h4>--}}
-                                    </div>
-                                </div>
-                            </div>
-
+<div data-field="https://youtube.com/embed/{{$youtube_id}}" class="s-vid">
+    <div class="s-vid-inner">
+        <div class="video-container video-thumbnail"
+        style="background-image: url('<?php echo "https://img.youtube.com/vi/$youtube_id/maxresdefault.jpg"; ?>');
+                background-size: 103%;
+                background-position: -2px;">
+    </div>
+</div>
+</div>
                             @php
 
                                 // End loop.

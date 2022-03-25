@@ -63,84 +63,71 @@
     </section>
 
 
-    <section class="sizzle-reel-wide">
+    <section class="services-sizzle section-alt">
         <div class="container">
-            @php
-                $sizzle_header = get_field('sizzle_reel_header');
-            @endphp
-
-            @if($sizzle_header)
-                <div class="row center">
-                    <div class="header-two blue">
-                        <h2>
-                            {!! $sizzle_header !!}
-                        </h2>
-                    </div>
-                </div>
-            @endif
-            <div class="row block">
-                <div class="grid grid-cols-3 gap-2">
-                    @php
-
-                        // Check value exists.
-if( have_rows('sizzle_reel') ):
-
-                    @endphp
-                    @php
-                        // Loop through rows.
-                        while ( have_rows('sizzle_reel') ) : the_row();
-
-
-                            // Case: Paragraph layout.
-                            if( get_row_layout() == 'video' ):
-                                $video = get_sub_field('video');
-                                $video_url = get_sub_field('video', false, false) ?? 'hey';
-                                $video_title = get_sub_field('video_title') ?? null;
-                                $image = get_sub_field('video_cover_image');
-                                $url = false;
-                                if ($image) {
-                                    $url = $image['url'];
-                                }
-
-                            endif;
-
-                    @endphp
-
-
-                    <div class="s-vid"
-                         data-field="@php echo
-                            $video_url;
-                         @endphp">
-                        <div class="s-vid-inner">
-                            @if($url)
-                                <div class="video-container video-thumbnail" style="background-image: url('@php echo $url; @endphp');
-                                        background-size: cover;">
-                                </div>
-                            @else
-                                <div class="video-container video-thumbnail" style="background-image: url(@asset('images/default-image.jpg'));
-                                        background-size: cover;">
-                                </div>
-                            @endif
-                            {{--Client"/>--}}
-                            @if($video_title)
-                                <div class="s-vid-title">
-                                    <h4>@php echo $video_title; @endphp</h4>
-                                </div>
-                            @endif
-                        </div>
-                    </div>
-
-                    @php
-
-                        // End loop.
-                        endwhile;
-                                        endif;
-
-                    @endphp
+            <div class="row center">
+                <div class="header-two blue">
+                    <h2>Sizzle Reels Made for Our Partners</h2>
                 </div>
             </div>
-        </div>
-        </div>
+            <div class="row center">
+
+                    <div class="services-reel-content grid sm:grid-cols-1 md:grid-cols-3 gap-2">
+
+
+                        @php
+
+                            // Check value exists.
+    if( have_rows('video_gallery') ):
+
+                        @endphp
+                            @php
+                                // Loop through rows.
+                                while ( have_rows('video_gallery') ) : the_row();
+                                    // Case: Paragraph layout.
+                                    if( get_row_layout() == 'videos' ):
+                                        $video = get_sub_field('video');
+                                        $youtube_id = get_field('youtube_id', $video->ID);
+                                        $youtube_id = preg_replace('/\s+/', '', $youtube_id);
+                                        $video_url = get_sub_field('video', false, false) ?? 'hey';
+
+                                    endif;
+
+                            @endphp
+
+                            <div data-field="https://youtube.com/embed/{{$youtube_id}}" class="s-vid">
+                                <div class="s-vid-inner">
+                                    <div class="video-container video-thumbnail"
+                                         style="background-image: url('<?php echo "https://img.youtube.com/vi/$youtube_id/maxresdefault.jpg"; ?>');
+                                                 background-size: 103%;
+                                                 background-position: -2px;">
+                                    </div>
+                                </div>
+                            </div>
+                            @php
+
+                                // End loop.
+                                endwhile;
+                                                endif;
+
+                            @endphp
+
+
+                        <div class="video-modal">
+                            <div class="bg-shadow-video">
+
+                                <div class="video-modal-inner">
+                                    <div class="ex-out-wrapper">
+                                        <div id="ex-out" class="ex-out"></div>
+                                    </div>
+                                    <div class="video-container video-iframe"></div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </section>
 
     <section class="section-alt-2 extra-bottom">

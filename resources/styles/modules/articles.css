@@ -50,10 +50,13 @@ article .article-header {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: none;
+  margin-bottom: none;
 }
 
 .article-meta .post-social ul li {
   padding: 0 10px;
+  list-style: none;
 }
 
 .post-social {

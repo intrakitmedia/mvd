@@ -55,6 +55,7 @@
 
 .quick-quote input[type="text"],
 .quick-quote input[type="phone"],
+.quick-quote input[type="tel"],
 .quick-quote input[type="email"] {
   padding-left: 10px;
   outline: none;

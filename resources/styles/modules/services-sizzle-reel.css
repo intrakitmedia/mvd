@@ -1,6 +1,9 @@
 /* stylelint-disable */
 
 /** services-sizzle-reel **/
+.services-reel-content {
+  width: 100%;
+}
 
 .services-sizzle-reel {
   padding-right: 20px;
@@ -26,4 +29,10 @@
   margin: 0;
   font-weight: bold;
   font-size: 16px;
+}
+
+@media (max-width: 800px) {
+  .s-vid {
+    width: 100%;
+  }
 }

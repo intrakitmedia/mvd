@@ -1,6 +1,6 @@
 .contact-page-form .lead-in-form {
   background: var(--orange);
-  height: 475px;
+  height: auto;
 }
 
 .contact-page-form .lead-in-form h4 {
@@ -10,7 +10,8 @@
 }
 
 .contact-page-form .lead-in-form ul {
-  margin-bottom: 14px;
+  margin-left: 0;
+  margin-bottom: 15px;
 }
 
 .contact-page-form .lead-in-form ul li {
@@ -36,7 +37,7 @@
 
 .contact-page-form .lead-in-right .wide-form {
   width: 100%;
-  padding: 0 40px;
+  padding: 60px 40px;
 }
 
 .contact-page-form .wide-form label,
@@ -48,6 +49,7 @@
 .contact-page-form .wide-form select,
 .contact-page-form .wide-form input[type="email"],
 .contact-page-form .wide-form input[type="phone"],
+.contact-page-form .wide-form input[type="tel"],
 .contact-page-form .wide-form input[type="text"] {
   border: 1px solid rgb(0 0 0 / 8%);
   border-radius: 4px;
@@ -62,4 +64,16 @@
 
 .contact-page-form select {
   appearance: none;
+}
+
+.contact-page-form .gform_wrapper.gravity-theme .gform_footer {
+  justify-content: flex-end !important;
+}
+
+.contact-page-form .gform_confirmation_message_1 {
+  box-sizing: border-box;
+  font-size: 18px;
+  color: var(--blue);
+  font-style: italic;
+  text-align: center;
 }

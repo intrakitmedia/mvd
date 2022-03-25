@@ -32,6 +32,14 @@
   padding: 30px 20px;
 }
 
+.wide-form-banner ul {
+  list-style: none;
+}
+
+.wide-form-banner ul li {
+  list-style: none;
+}
+
 .wide-form-banner p {
   margin-bottom: 45px;
 }

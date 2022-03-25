@@ -60,49 +60,52 @@
                 </div>
                 <div class="lead-in-right">
                     <div class="wide-form">
-                        <form>
-                            <div class="form-row">
-                                <label class="two-col even-space" id="wide-form-first-name-label"
-                                       for="wide-form-first-name"><p>First
-                                        Name<span class="required">*</span></p>
-                                    <input id="wide-form-first-name" type="text" value="" required/>
-                                </label>
-                                <label class="two-col even-space" id="wide-form-first-name-label"><p>Last Name<span
-                                                class="required">*</span></p>
-                                    <input id="wide-form-last-name" type="text" value="" required/>
-                                </label>
-                            </div>
-                            <div class="form-row">
-                                <label class="two-col even-space" id="wide-form-first-name-label"><p>Phone<span
-                                                class="required">*</span></p>
-                                    <input id="wide-form-first-name" type="phone" value="" required/>
-                                </label>
-                                <label class="two-col even-space" id="wide-form-first-name-label"><p>Email<span
-                                                class="required">*</span></p>
-                                    <input id="wide-form-last-name" type="email" value="" required/>
-                                </label>
-                            </div>
-                            <div class="form-row">
-                                <label class="two-col even-space only" id="wide-form-first-name-label"><p>Company<span
-                                                class="required">*</span></p>
-                                    <input id="wide-form-first-name" type="phone" value="" required/>
-                                </label>
-                                <label class="two-col even-space only" id="wide-form-first-name-label"><p>Estimated
-                                        Budget<span
-                                                class="required">*</span></p>
-                                    <select name="budget" class="budget">
-                                        <option default value="$1,000 - $2,500">-</option>
-                                        <option value="$1,000 - $2,500">$1,000 - $2,500</option>
-                                        <option value="$2,500 - $5,000">$2,500 - $5,000</option>
-                                        <option value="$5,000 - $10,00">$5,000 - $10,00</option>
-                                        <option value="$10,000 - $25,000">$10,000 - $25,000</option>
-                                    </select>
-                                </label>
-                            </div>
-                            <div class="row center flex-end">
-                                <button class="call-to-action" id="wide-form-submit">Submit</button>
-                            </div>
-                        </form>
+@php
+echo do_shortcode('[gravityform id="1" title="true"]');
+@endphp
+                        {{--<form>--}}
+                            {{--<div class="form-row">--}}
+                                {{--<label class="two-col even-space" id="wide-form-first-name-label"--}}
+                                       {{--for="wide-form-first-name"><p>First--}}
+                                        {{--Name<span class="required">*</span></p>--}}
+                                    {{--<input id="wide-form-first-name" type="text" value="" required/>--}}
+                                {{--</label>--}}
+                                {{--<label class="two-col even-space" id="wide-form-first-name-label"><p>Last Name<span--}}
+                                                {{--class="required">*</span></p>--}}
+                                    {{--<input id="wide-form-last-name" type="text" value="" required/>--}}
+                                {{--</label>--}}
+                            {{--</div>--}}
+                            {{--<div class="form-row">--}}
+                                {{--<label class="two-col even-space" id="wide-form-first-name-label"><p>Phone<span--}}
+                                                {{--class="required">*</span></p>--}}
+                                    {{--<input id="wide-form-first-name" type="phone" value="" required/>--}}
+                                {{--</label>--}}
+                                {{--<label class="two-col even-space" id="wide-form-first-name-label"><p>Email<span--}}
+                                                {{--class="required">*</span></p>--}}
+                                    {{--<input id="wide-form-last-name" type="email" value="" required/>--}}
+                                {{--</label>--}}
+                            {{--</div>--}}
+                            {{--<div class="form-row">--}}
+                                {{--<label class="two-col even-space only" id="wide-form-first-name-label"><p>Company<span--}}
+                                                {{--class="required">*</span></p>--}}
+                                    {{--<input id="wide-form-first-name" type="phone" value="" required/>--}}
+                                {{--</label>--}}
+                                {{--<label class="two-col even-space only" id="wide-form-first-name-label"><p>Estimated--}}
+                                        {{--Budget<span--}}
+                                                {{--class="required">*</span></p>--}}
+                                    {{--<select name="budget" class="budget">--}}
+                                        {{--<option default value="$1,000 - $2,500">-</option>--}}
+                                        {{--<option value="$1,000 - $2,500">$1,000 - $2,500</option>--}}
+                                        {{--<option value="$2,500 - $5,000">$2,500 - $5,000</option>--}}
+                                        {{--<option value="$5,000 - $10,00">$5,000 - $10,00</option>--}}
+                                        {{--<option value="$10,000 - $25,000">$10,000 - $25,000</option>--}}
+                                    {{--</select>--}}
+                                {{--</label>--}}
+                            {{--</div>--}}
+                            {{--<div class="row center flex-end">--}}
+                                {{--<button class="call-to-action" id="wide-form-submit">Submit</button>--}}
+                            {{--</div>--}}
+                        {{--</form>--}}
                     </div>
                 </div>
             </div>
