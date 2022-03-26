@@ -47,11 +47,11 @@ $case_study_query = new \WP_Query($args);
                     <div class="blog-card-image-wapper">
                         @if($image_url)
                         <div data-check="featured-image" class="blog-featured-image"
-                             style="background: url({{$image_url}}); background-size:cover;">
+                             style="background: url({{$image_url}}); background-size:cover;"><a class="link-fill" title="{{$pinned_post->post_title}}" href="{{$post_link}}">
                         </div>
                             @else
                             <div class="blog-featured-image"
-                                 style="background: url(@asset('images/default-image.jpg')); background-size:cover;">
+                                 style="background: url(@asset('images/default-image.jpg')); background-size:cover;"><a class="link-fill" title="{{$pinned_post->post_title}}" href="{{$post_link}}">
                             </div>
                         @endif
                     </div>

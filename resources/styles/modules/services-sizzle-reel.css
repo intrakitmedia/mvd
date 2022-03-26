@@ -7,7 +7,6 @@
 
 .services-sizzle-reel {
   padding-right: 20px;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .s-vid {
   cursor: pointer;

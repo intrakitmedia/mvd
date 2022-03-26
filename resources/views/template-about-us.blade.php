@@ -231,6 +231,7 @@
 
 
     <section class="accolades next-up-312">
+        <div class="container">
         <div class="row center">
             <div class="different-content">
                 <div class="lead-in">
@@ -245,7 +246,7 @@
                     Awards"/>
             </div>
         </div>
-
+        </div>
     </section>
 
     <section class="wide-form-section section-alt-2">

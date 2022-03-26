@@ -10,5 +10,6 @@
 @media (max-width: 800px) {
   .services-add-content {
     margin-bottom: 60px;
+    padding-right: 0;
   }
 }

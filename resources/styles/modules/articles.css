@@ -50,8 +50,8 @@ article .article-header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: none;
-  margin-bottom: none;
+  margin-left: 0;
+  margin-bottom: 0;
 }
 
 .article-meta .post-social ul li {
