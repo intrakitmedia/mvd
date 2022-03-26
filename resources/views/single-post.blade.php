@@ -124,18 +124,7 @@ $post = get_post($post_ID);
                                         <p>Improve your search engine rankings by driving and keeeping traffic on your
                                             site and
                                             generate quality leads with professional video</p>
-                                        <form>
-                                            <div class="form-row">
-                                                <label class="two-col even-space" id="wide-form-first-name-label">
-                                                    <input id="peak-email" type="email" value=""
-                                                           placeholder="Enter Email Address"
-                                                           required/>
-                                                </label>
-                                            </div>
-                                            <div class="form-row">
-                                                <button class="call-to-action" id="wide-form-submit">Download</button>
-                                            </div>
-                                        </form>
+                                        {!!   do_shortcode('[gravityform id="4" title="false"]') !!}
                                     </div>
                                 </div>
                             </div>

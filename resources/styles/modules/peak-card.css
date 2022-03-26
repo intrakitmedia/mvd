@@ -77,3 +77,11 @@
   height: 100%;
   padding-left: 20px;
 }
+
+.peak input[type="email"] {
+  height: 44px;
+}
+
+#input_4_1 {
+  height: 44px;
+}

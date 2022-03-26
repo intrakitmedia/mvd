@@ -76,25 +76,21 @@
 
 
                         @php
-
-                            // Check value exists.
-    if( have_rows('video_gallery') ):
-
+                            if( have_rows('video_gallery') ):
                         @endphp
                             @php
-                                // Loop through rows.
                                 while ( have_rows('video_gallery') ) : the_row();
-                                    // Case: Paragraph layout.
-                                    if( get_row_layout() == 'videos' ):
+                                    if( get_row_layout() == 'videos' ) {
                                         $video = get_sub_field('video');
-                                        $youtube_id = get_field('youtube_id', $video->ID);
-                                        $youtube_id = preg_replace('/\s+/', '', $youtube_id);
-                                        $video_url = get_sub_field('video', false, false) ?? 'hey';
 
-                                    endif;
+                                        if($video) {
+                                            $youtube_id = get_field('youtube_id', $video->ID);
+                                            $youtube_id = preg_replace('/\s+/', '', $youtube_id);
+                                        }
+                            }
+                        @endphp
 
-                            @endphp
-
+                        @if($video)
                             <div data-field="https://youtube.com/embed/{{$youtube_id}}" class="s-vid">
                                 <div class="s-vid-inner">
                                     <div class="video-container video-thumbnail"
@@ -104,6 +100,8 @@
                                     </div>
                                 </div>
                             </div>
+                        @endif
+
                             @php
 
                                 // End loop.
