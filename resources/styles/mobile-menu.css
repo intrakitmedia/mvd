@@ -79,7 +79,7 @@
 }
 
 .is-mobile.mobile-open .nav-primary .desktop-nav {
-  padding-top: 150px;
+  padding-top: 90px;
   width: 100%;
 }
 
@@ -276,7 +276,7 @@
   position: relative;
   height: 0;
   opacity: 0;
-  transition: .3s ease all;
+  transition: 0.5s ease all;
   display: block;
 }
 
@@ -285,7 +285,7 @@
 
   height: 100%;
   opacity: 1;
-  transition: .3s ease all;
+  transition: 0.5s ease all;
 }
 
 .is-mobile.mobile-open .mega-menu .container {
