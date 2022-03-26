@@ -80,6 +80,13 @@ header.header-banner .header-inner,
   position: relative;
 }
 
+@media (max-width: 800px) {
+  .header-inner {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
 .preheader {
   color: var(--orange);
   font-size: 18px;

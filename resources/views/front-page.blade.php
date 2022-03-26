@@ -561,38 +561,42 @@
                 <div class="lead-in-right">
                     <div class="wide-form">
                         <h4>Contact Us</h4>
-                        <form>
-                            <div class="form-row">
-                                <label class="two-col even-space" id="wide-form-first-name-label"
-                                       for="wide-form-first-name"><p>First
-                                        Name<span class="required">*</span></p>
-                                    <input id="wide-form-first-name" type="text" value="" required/>
-                                </label>
-                                <label class="two-col even-space" id="wide-form-first-name-label"><p>Last Name<span
-                                                class="required">*</span></p>
-                                    <input id="wide-form-last-name" type="text" value="" required/>
-                                </label>
-                            </div>
-                            <div class="form-row">
-                                <label class="two-col even-space" id="wide-form-first-name-label"><p>Phone<span
-                                                class="required">*</span></p>
-                                    <input id="wide-form-first-name" type="phone" value="" required/>
-                                </label>
-                                <label class="two-col even-space" id="wide-form-first-name-label"><p>Email<span
-                                                class="required">*</span></p>
-                                    <input id="wide-form-last-name" type="email" value="" required/>
-                                </label>
-                            </div>
-                            <div class="form-row">
-                                <label class="two-col even-space only" id="wide-form-first-name-label"><p>Company<span
-                                                class="required">*</span></p>
-                                    <input id="wide-form-first-name" type="phone" value="" required/>
-                                </label>
-                            </div>
-                            <div class="row center">
-                                <button class="call-to-action" id="wide-form-submit">Submit</button>
-                            </div>
-                        </form>
+                        @php
+                            echo do_shortcode('[gravityform id="2" title="false"]');
+                        @endphp
+                        {{--<h4>Contact Us</h4>--}}
+                        {{--<form>--}}
+                            {{--<div class="form-row">--}}
+                                {{--<label class="two-col even-space" id="wide-form-first-name-label"--}}
+                                       {{--for="wide-form-first-name"><p>First--}}
+                                        {{--Name<span class="required">*</span></p>--}}
+                                    {{--<input id="wide-form-first-name" type="text" value="" required/>--}}
+                                {{--</label>--}}
+                                {{--<label class="two-col even-space" id="wide-form-first-name-label"><p>Last Name<span--}}
+                                                {{--class="required">*</span></p>--}}
+                                    {{--<input id="wide-form-last-name" type="text" value="" required/>--}}
+                                {{--</label>--}}
+                            {{--</div>--}}
+                            {{--<div class="form-row">--}}
+                                {{--<label class="two-col even-space" id="wide-form-first-name-label"><p>Phone<span--}}
+                                                {{--class="required">*</span></p>--}}
+                                    {{--<input id="wide-form-first-name" type="phone" value="" required/>--}}
+                                {{--</label>--}}
+                                {{--<label class="two-col even-space" id="wide-form-first-name-label"><p>Email<span--}}
+                                                {{--class="required">*</span></p>--}}
+                                    {{--<input id="wide-form-last-name" type="email" value="" required/>--}}
+                                {{--</label>--}}
+                            {{--</div>--}}
+                            {{--<div class="form-row">--}}
+                                {{--<label class="two-col even-space only" id="wide-form-first-name-label"><p>Company<span--}}
+                                                {{--class="required">*</span></p>--}}
+                                    {{--<input id="wide-form-first-name" type="phone" value="" required/>--}}
+                                {{--</label>--}}
+                            {{--</div>--}}
+                            {{--<div class="row center">--}}
+                                {{--<button class="call-to-action" id="wide-form-submit">Submit</button>--}}
+                            {{--</div>--}}
+                        {{--</form>--}}
                     </div>
                 </div>
             </div>

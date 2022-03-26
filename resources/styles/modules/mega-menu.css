@@ -10,6 +10,10 @@
   border-radius: 0 0 10px 10px;
 }
 
+#main-navi-wrapper #main-navi:not(.is-mobile) #menu-primary-navigation > li.menu-item-has-children:hover .mega-menu {
+  display: block;
+}
+
 .mega-menu .container {
   padding-right: 0;
 }
@@ -29,10 +33,6 @@
 
 .mega-menu-inner .sub-menu {
   flex: 1;
-}
-
-.desktop-nav > li.menu-item:hover > div.mega-menu {
-  display: block;
 }
 
 .sub-menu-title {

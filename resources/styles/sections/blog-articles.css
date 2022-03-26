@@ -1,9 +1,21 @@
 /* stylelint-disable */
+.blog-featured-image{
+  position: relative;
+}
 
 .blog-articles .blog-featured-image {
   width: 100%;
   height: 300px;
   border-radius: 10px;
+}
+
+.link-fill {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9;
 }
 
 .blog-articles  {

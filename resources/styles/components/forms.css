@@ -25,6 +25,7 @@ form label p {
 
 form input[type="text"],
 form input[type="email"],
+form input[type="tel"],
 form input[type="phone"] {
   border: 1px solid rgb(201 201 201 / 80%);
   border-radius: 4px;

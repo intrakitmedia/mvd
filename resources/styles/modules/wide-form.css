@@ -58,3 +58,7 @@
   line-height: 42px;
   margin-bottom: 45px;
 }
+
+.wide-form .gform_wrapper.gravity-theme .gform_footer {
+  justify-content: flex-end !important;
+}

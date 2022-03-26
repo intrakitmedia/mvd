@@ -226,16 +226,6 @@ ul.checkmark li:before {
   display: flex;
 }
 
-.nav-primary {
-  display: flex;
-}
-
-.menu-primary-navigation-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 /** Utility Nav **/
 
 .utility {
