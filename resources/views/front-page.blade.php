@@ -16,11 +16,39 @@
                                 production & video marketing services to reach their lead & sales goals.</p>
                             <div class="hero-cta">
                                 <div class="cta-inner">
+
+                                    @php
+                                     $portfolio = get_post_type_archive_link('portfolios');
+                                     $contact_us = get_page_by_title('Contact Us') ? get_page_by_title('Contact Us')
+                                     : get_page_by_title('Contact');
+                                    @endphp
+
                                     <div class="cta-button-wrapper js-watch">
-                                        <a class="call-to-action" href="">Contact Us</a>
+                                        @if($contact_us)
+                                            @php
+                                                $contact_us_link = get_permalink($contact_us->ID);
+$link = $contact_us_link;
+                                             @endphp
+                                        @else
+                                            @php
+                                                $link = "#";
+                                            @endphp
+                                        @endif
+
+                                        <a class="call-to-action" title="Contact Us" href="{{$link}}">Contact Us</a>
                                     </div>
                                     <div class="cta-button-wrapper js-watch">
-                                        <a class="call-to-action btn-alt" href="">View Portfolio</a>
+                                        @if($portfolio)
+                                            @php
+                                                $link = $portfolio;
+                                            @endphp
+                                        @else
+                                            @php
+                                                $link = "#";
+                                            @endphp
+                                        @endif
+                                        <a class="call-to-action btn-alt" title="View Portfolio" href="{{$link}}">View
+                                            Portfolio</a>
                                     </div>
                                 </div>
                             </div>
@@ -121,12 +149,28 @@
                     </div>
                     <div class="row">
                         <div class="four-col">
+                            @php
+                            $GettingStarted = get_page_by_title('Getting Started');
+                            $DoublingDown = get_page_by_title('Doubling Down');
+                            $NeedAStrategy = get_page_by_title('Need A Strategy');
+                            $ForAgencies = get_page_by_title('For Agencies');
+                            @endphp
+
+
                             <div class="short-copy">
                                 <img src="@asset('images/getting-started.jpg')" alt="Getting Started"/>
                                 <p>You're just getting started with video marketing; in any size of company or
                                     industry.</p>
                                 <div class="call-to-action-group">
-                                    <a class="orange-underline" href="">LEARN MORE</a>
+                                    @php
+                                        if($GettingStarted) {
+                                            $link =  get_permalink($GettingStarted->ID);
+                                        } else {
+                                            $link = "#";
+                                        }
+                                    @endphp
+                                    <a class="orange-underline" title="Getting Started" href="{{$link}}">LEARN
+                                        MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -136,7 +180,14 @@
                                 <p>You've done some video before, but now you need to focus more on it with an eye
                                     towards ROI.</p>
                                 <div class="call-to-action-group">
-                                    <a class="orange-underline" href="">LEARN MORE</a>
+                                    @php
+                                        if($DoublingDown) {
+                                            $link =  get_permalink($DoublingDown->ID);
+                                        } else {
+                                            $link = "#";
+                                        }
+                                    @endphp
+                                    <a class="orange-underline" title="Doubling Down" href="{{$link}}">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -146,7 +197,14 @@
                                 <p>You have many videos, but no strategy. You need a planned, thoughtful, and integrated
                                     approach.</p>
                                 <div class="call-to-action-group">
-                                    <a class="orange-underline" href="">LEARN MORE</a>
+                                    @php
+                                        if($NeedAStrategy) {
+                                            $link =  get_permalink($NeedAStrategy->ID);
+                                        } else {
+                                            $link = "#";
+                                        }
+                                    @endphp
+                                    <a class="orange-underline" title="Need a Strategy" href="{{$link}}">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -155,8 +213,15 @@
                                 <img src="@asset('images/for-agencies.jpg')" alt="For Agencies"/>
                                 <p>For agencies, PR firms, SEO and web developers looking for a trusted, value based
                                     company to rely on.</p>
+                                @php
+                                    if($ForAgencies) {
+                                        $link =  get_permalink($ForAgencies->ID);
+                                    } else {
+                                        $link = "#";
+                                    }
+                                @endphp
                                 <div class="call-to-action-group">
-                                    <a class="orange-underline" href="">LEARN MORE</a>
+                                    <a class="orange-underline" title="For Angencies" href="{{$link}}">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -216,7 +281,23 @@
                         <div class="lead-out">
                             <div class="call-to-actions-group">
                                 <div class="cta-button-wrapper js-watch">
-                                    <a class="call-to-action" href="">Learn More About Remore Video Capture</a>
+                                    @php
+                                        $remote = get_page_by_title('Remote Video Producton');
+                                    @endphp
+
+                                    @if($remote)
+                                        @php
+                                            $link = get_permalink($remote->ID);
+                                        @endphp
+                                    @else
+                                        @php
+                                            $link = "#";
+                                        @endphp
+                                    @endif
+                                    <a class="call-to-action" title="Remote Video Production" href="{{$link}}">Learn
+                                        More About
+                                        Remore Video
+                                        Capture</a>
                                 </div>
                             </div>
                         </div>
@@ -288,7 +369,15 @@
                 <div class="lead-out">
                     <div class="call-to-actions-group">
                         <div class="cta-button-wrapper js-watch">
-                            <a class="call-to-action" href="">Contact Us</a>
+                            @php
+                                if($contact_us_link) {
+                                    $link = $contact_us_link;
+                                } else {
+                                $link =  '#';
+                                }
+                            @endphp
+
+                            <a class="call-to-action" title="Contact Us" href="{{$link}}">Contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -303,8 +392,22 @@
                     <div class="col-four services-block">
                         <div class="services-block-inner">
                             <div class="block-flip">
-                                <a href="" class="block-link" style="background: url(@asset('images/video-strategy.jpg')
-                                ); background-size: cover;">
+                                @php
+                                    $page = get_page_by_title('Video Strategy', 'object', 'services');
+                                @endphp
+
+                                @if($page)
+                                    @php
+                                        $link = get_permalink($page->ID);
+                                    @endphp
+                                @else
+                                    @php
+                                        $link = "#";
+                                    @endphp
+                                @endif
+                                <a title="{{$page->post_title}}" href="{{$link}}" class="block-link"
+                                   style="background: url(@asset('images/video-strategy.jpg')); background-size:
+                                   cover;">
                                     <div class="block-flip-inner">
                                         <div class="block-content">
                                             <div class="block-header">
@@ -329,7 +432,20 @@
                     <div class="col-four services-block">
                         <div class="services-block-inner">
                             <div class="block-flip">
-                                <a href="" class="block-link"
+                                @php
+                                    $page = get_page_by_title('Video Production', 'object', 'services');
+                                @endphp
+
+                                @if($page)
+                                    @php
+                                        $link = get_permalink($page->ID);
+                                    @endphp
+                                @else
+                                    @php
+                                        $link = "#";
+                                    @endphp
+                                @endif
+                                <a title="{{$page->post_title}}" href="{{$link}}" class="block-link"
                                    style="background: url(@asset('images/video-production.jpg')); background-size: cover;">
                                     <div class="block-flip-inner">
                                         <div class="block-content">
@@ -355,7 +471,20 @@
                     <div class="col-four services-block">
                         <div class="services-block-inner">
                             <div class="block-flip">
-                                <a href="" class="block-link"
+                                @php
+                                    $page = get_page_by_title('Animation/Motion Graphics', 'object', 'services');
+                                @endphp
+
+                                @if($page)
+                                    @php
+                                        $link = get_permalink($page->ID);
+                                    @endphp
+                                @else
+                                    @php
+                                        $link = "#";
+                                    @endphp
+                                @endif
+                                <a title="{{$page->post_title}}" href="{{$link}}" class="block-link"
                                    style="background: url(@asset('images/video-marketing.jpg')); background-size: cover;">
                                     <div class="block-flip-inner">
                                         <div class="block-content">
@@ -380,16 +509,29 @@
                     <div class="col-four services-block">
                         <div class="services-block-inner">
                             <div class="block-flip">
-                                <a href="" class="block-link"
+                                @php
+                                    $page = get_page_by_title('Video Marketing', 'object', 'services');
+                                @endphp
+
+                                @if($page)
+                                    @php
+                                        $link = get_permalink($page->ID);
+                                    @endphp
+                                @else
+                                    @php
+                                        $link = "#";
+                                    @endphp
+                                @endif
+                                <a title="{{$page->post_title}}" href="{{$link}}" class="block-link"
                                    style="background: url(@asset('images/animation-studio.jpg')); background-size: cover;">
                                     <div class="block-flip-inner">
                                         <div class="block-content">
                                             <div class="block-header">
-                                                <h4 class="initial">Video Production</h4>
+                                                <h4 class="initial">Video Marketing</h4>
                                             </div>
                                             <div class="block-text">
                                                 <div class="block-text-inner">
-                                                    <h4>Video Production</h4>
+                                                    <h4>Video Marketing</h4>
 
                                                     <p>Our holistic video marketing strategy lets you plan, budget and
                                                         integrate all the
@@ -409,10 +551,27 @@
                     <div class="lead-out">
                         <div class="call-to-actions-group">
                             <div class="cta-button-wrapper js-watch">
-                                <a class="call-to-action" href="">Contact Us</a>
+                                    @php
+                                    if($contact_us_link) {
+                                        $link = $contact_us_link;
+                                    } else {
+                                    $link =  '#';
+                                    }
+                                    @endphp
+                                    <a class="call-to-action" title="Contact Us" href="{{$link}}">Contact Us</a>
                             </div>
                             <div class="cta-button-wrapper js-watch">
-                                <a class="call-to-action btn-alt-2" href="">View Customer Case Studies</a>
+                                @php
+                                    $case_studies_link = get_post_type_archive_link('case_studies');
+                                        if($contact_us_link) {
+                                            $link = $case_studies_link;
+                                        } else {
+                                        $link =  '#';
+                                        }
+                                @endphp
+                                <a class="call-to-action btn-alt-2" title="Case Studies" href="{{$link}}">View Customer
+                                    Case
+                                    Studies</a>
                             </div>
                         </div>
                     </div>
@@ -464,7 +623,14 @@
                 <div class="different-content lead-out">
                     <div class="call-to-actions-group">
                         <div class="cta-button-wrapper js-watch">
-                            <a class="call-to-action" href="">Contact Us</a>
+                            @php
+                                if($contact_us_link) {
+                                    $link = $contact_us_link;
+                                } else {
+                                $link =  '#';
+                                }
+                            @endphp
+                            <a class="call-to-action" title="Contact Us" href="{{$link}}">Contact Us</a>
                         </div>
                     </div>
                 </div>
