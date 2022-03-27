@@ -6,7 +6,20 @@
                 <p>Ask about our special low-investment remote video production services</p>
             </div>
 
-           {!! do_shortcode('[gravityform id="3" title="false"]') !!}
+
+            @php
+                    $qq = get_page_by_title('Quick Quote');
+
+
+                if ($qq) {
+                $shortcode = get_field('gravity_forms_shortcode', $qq->ID) ?? null;
+
+                if($shortcode) {
+                echo do_shortcode($shortcode);
+                }
+
+                }
+            @endphp
 
             {{--<form>--}}
                 {{--<div class="form-row">--}}

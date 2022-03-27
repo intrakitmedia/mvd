@@ -61,7 +61,11 @@
                 <div class="lead-in-right">
                     <div class="wide-form">
 @php
-echo do_shortcode('[gravityform id="1" title="true"]');
+$shortcode = get_field('gravity_forms_shortcode') ?? null;
+
+if ($shortcode) {
+echo do_shortcode($shortcode);
+}
 @endphp
                         {{--<form>--}}
                             {{--<div class="form-row">--}}

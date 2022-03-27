@@ -124,7 +124,7 @@ $post = get_post($post_ID);
                                         <p>Improve your search engine rankings by driving and keeeping traffic on your
                                             site and
                                             generate quality leads with professional video</p>
-                                        {!!   do_shortcode('[gravityform id="4" title="false"]') !!}
+                                        {!!   do_shortcode('[gravityform id="6" title="false"]') !!}
                                     </div>
                                 </div>
                             </div>
