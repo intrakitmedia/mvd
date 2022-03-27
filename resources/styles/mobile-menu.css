@@ -289,6 +289,7 @@
 
 .mega-menu.mobile-open {
   overflow-y: scroll;
+  max-height: 350px;
 }
 
 .mega-menu.mobile-open::-webkit-scrollbar {
@@ -298,11 +299,11 @@
 }
 
 .mega-menu.mobile-open::-webkit-scrollbar-thumb {
- border: 1px solid red;
+ border: 1px solid var(--orange);
 }
 
 .mega-menu.mobile-open::-webkit-scrollbar-button {
-  border: 1px solid red;
+  border: 1px solid var(--orange);
 }
 
 .is-mobile.mobile-open .mega-menu .container {
