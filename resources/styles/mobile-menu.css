@@ -290,7 +290,19 @@
 
 .mega-menu.mobile-open {
   overflow-y: scroll;
-  overflow: hidden;
+}
+
+.mega-menu.mobile-open ::webkit-scrollbar {
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
+
+.mega-menu.mobile-open::-webkit-scrollbar-thumb {
+  
+}
+
+.mega-menu.mobile-open::-webkit-scrollbar-button {
+
 }
 
 .is-mobile.mobile-open .mega-menu .container {
