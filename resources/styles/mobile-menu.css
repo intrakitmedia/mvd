@@ -290,6 +290,7 @@
 .mega-menu.mobile-open {
   overflow-y: scroll;
   max-height: 350px;
+  -webkit-overflow-scrolling: touch;
 }
 
 .mega-menu.mobile-open::-webkit-scrollbar {
