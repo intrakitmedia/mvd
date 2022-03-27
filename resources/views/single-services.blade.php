@@ -167,14 +167,16 @@ $query = new \WP_Query( $args );
                                     // Case: Paragraph layout.
                                     if( get_row_layout() == 'videos' ):
                                         $video = get_sub_field('video');
+                                        if($video) {
                                         $youtube_id = get_field('youtube_id', $video->ID);
                                         $youtube_id = preg_replace('/\s+/', '', $youtube_id);
-                                        $video_url = get_sub_field('video', false, false) ?? 'hey';
+                                        }
 
                                     endif;
 
                             @endphp
 
+                            @if($video)
 <div data-field="https://youtube.com/embed/{{$youtube_id}}" class="s-vid">
     <div class="s-vid-inner">
         <div class="video-container video-thumbnail"
@@ -183,6 +185,7 @@ $query = new \WP_Query( $args );
                 background-position: -2px;">
     </div>
 </div>
+    @endif
 </div>
                             @php
 
