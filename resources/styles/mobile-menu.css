@@ -282,7 +282,6 @@
 
 
 .is-mobile.mobile-open .mega-menu.mobile-open {
-
   height: 100%;
   opacity: 1;
   transition: 0.5s ease all;
@@ -292,17 +291,17 @@
   overflow-y: scroll;
 }
 
-.mega-menu.mobile-open ::webkit-scrollbar {
+.mega-menu.mobile-open::-webkit-scrollbar {
   box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
   border-radius: 10px;
 }
 
 .mega-menu.mobile-open::-webkit-scrollbar-thumb {
-  
+ border: 1px solid red;
 }
 
 .mega-menu.mobile-open::-webkit-scrollbar-button {
-
+  border: 1px solid red;
 }
 
 .is-mobile.mobile-open .mega-menu .container {
