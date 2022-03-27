@@ -562,7 +562,11 @@
                     <div class="wide-form">
                         <h4>Contact Us</h4>
                         @php
-                            echo do_shortcode('[gravityform id="2" title="false"]');
+                        $sc = get_field('gravity_forms_shortcode') ?? null;
+                        if ($sc) {
+                        	echo do_shortcode($sc);
+                        }
+
                         @endphp
                         {{--<h4>Contact Us</h4>--}}
                         {{--<form>--}}

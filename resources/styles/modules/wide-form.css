@@ -62,3 +62,8 @@
 .wide-form .gform_wrapper.gravity-theme .gform_footer {
   justify-content: flex-end !important;
 }
+
+
+.wide-form-download .gform_footer.top_label {
+  display: none !important;
+}

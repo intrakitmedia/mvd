@@ -115,7 +115,7 @@ $post = get_post($post_ID);
                                     </div>
                                 </div>
                                 <div class="lead-in-right">
-                                    <div class="wide-form">
+                                    <div class="wide-form wide-form-download">
                                         <h2 class="preheader">Download Free PDF</h2>
                                         <h3 class="follow-up smaller">Nothing comes close to the effectiveness of a well
                                             designed video
