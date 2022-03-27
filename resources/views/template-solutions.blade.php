@@ -65,7 +65,20 @@ $query = new \WP_Query( $args );
             <div class="row">
                 <div class="large-col">
                     <div class="services-add-content">
-                       {!! the_content() !!}
+                        @php
+                            $main_bold_content = get_field('main_bold_content');
+                            $main_regular_content = get_field('main_regular_content');
+                        @endphp
+                        @if($main_bold_content)
+                            <div class="header-two">
+                                <h2 id="main-content">{!! $main_bold_content !!}</h2>
+                            </div>
+                        @endif
+                        @if($main_regular_content)
+                            <div class="main-regular-content">
+                                {!! $main_regular_content !!}
+                            </div>
+                        @endif
                     </div>
                 </div>
                 <div class="small-col">
@@ -123,6 +136,16 @@ $query = new \WP_Query( $args );
                             <a class="call-to-action" href="">Contact Us</a>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-alt">
+        <div class="container">
+            <div class="small-row">
+                <div class="the-content">
+                    {!! the_content() !!}
                 </div>
             </div>
         </div>
