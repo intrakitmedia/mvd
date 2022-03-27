@@ -288,6 +288,11 @@
   transition: 0.5s ease all;
 }
 
+.mega-menu.mobile-open {
+  overflow-y: scroll;
+  overflow: hidden;
+}
+
 .is-mobile.mobile-open .mega-menu .container {
   padding: 0;
 }
