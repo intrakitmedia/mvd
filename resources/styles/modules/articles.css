@@ -97,4 +97,8 @@ article .article-header {
     padding-bottom: 60px;
     border-bottom: 1px solid rgb(0 0 0 / 7%);
   }
+
+  article iframe {
+    width: 100% !important;
+  }
 }

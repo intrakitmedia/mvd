@@ -2,7 +2,7 @@ import {domReady} from '@scripts/components';
 import $ from "jquery";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
-
+import Video from "./components/native-youtube-player";
 
 /**
  * Run the application when the DOM is ready.
@@ -40,27 +40,25 @@ domReady(() => {
         }
     })
 
-    $('.s-vid').on('click', function (e) {
-        e.preventDefault();
-        let id = $(this).attr('data-field');
+    // $('.s-vid').on('click', function (e) {
+    //     e.preventDefault();
+    //     let id = $(this).attr('data-field');
+    //
+    //     if(id) {
+    //         $('.video-iframe').html('');
+    //         $('<iframe width="420" height="315" frameborder="0" allowfullscreen></iframe>')
+    //             .attr("src", id)
+    //             .appendTo(".video-iframe");
+    //         $('.video-modal').addClass('active');
+    //     }
+    // });
 
-        if(id) {
-            $('.video-iframe').html('');
-            $('<iframe width="420" height="315" frameborder="0" allowfullscreen></iframe>')
-                .attr("src", id)
-                .appendTo(".video-iframe");
-            $('.video-modal').addClass('active');
-        }
-
-        console.log(id);
-    });
-
-    $('#ex-out').on('click', function (e) {
-        e.preventDefault();
-
-        $('.video-modal').removeClass('active');
-
-    });
+    // $('#ex-out').on('click', function (e) {
+    //     e.preventDefault();
+    //
+    //     $('.video-modal').removeClass('active');
+    //
+    // });
 
     $(".mega-menu").mouseenter(function() {
             $(this).css('display', 'block');
@@ -72,12 +70,12 @@ domReady(() => {
         ' li.menu-item-has-children > a, .is-mobile.mobile-open ul#menu-primary-navigation > li.menu-item-has-children > i', function (e) {
         e.preventDefault();
 
-        console.log('clicked')
-
         let $megaMenu = $(this).siblings('.mega-menu');
 
         $megaMenu.toggleClass('mobile-open');
     })
+
+    new Video();
 });
 
 /**

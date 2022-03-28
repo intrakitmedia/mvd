@@ -12,6 +12,11 @@
   align-items: flex-end;
 }
 
+.peak .lead-in-right .gform_wrapper.gravity-theme .gfield.gfield--width-seven-twelfths,
+.peak .lead-in-right .gform_wrapper.gravity-theme .gfield.gfield--width-five-twelfths{
+  grid-column: span 12 !important;
+}
+
 .peak .lead-in.left,
 .pead .lead-in-right {
   margin-top: -90px;

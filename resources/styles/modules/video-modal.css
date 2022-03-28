@@ -20,24 +20,24 @@
 
 .video-modal-inner {
   position: absolute;
-  left: calc(50% - 300px);
-  width: 560px;
-  top: 120px;
+  left: 0;
+  width: 91% !important;
+  top: 0;
 }
-
-.video-iframe {
-  width: 560px;
-}
-
 
 .bg-shadow-video {
-  background: rgb(0 0 0 / 85%);
-  position: fixed;
+  background: rgba(0 0 0 / 91%);
   height: 100%;
-  width: 100%;
-  top: 0;
   left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
   z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s all ease;
+  padding: 20px;
 }
 
 .ex-out-wrapper {
@@ -46,12 +46,19 @@
 }
 
 div.ex-out {
+  background-color: transparent;
+  border-radius: 5px;
   height: 40px;
   width: 40px;
-  background-color: var(--darkgrey);
-  border-radius: 5px;
-  position: relative;
-  margin-bottom: 15px;
+  position: absolute;
+  right: -40px;
+  top: -20px;
+}
+
+@media (max-width: 800px) {
+  div.ex-out {
+    right: 0px;
+  }
 }
 
 div.ex-out:after {
@@ -62,7 +69,7 @@ div.ex-out:after {
   right: 0;
   content: "\d7"; /* use the hex value here... */
   font-size: 30px;
-  color: #FFF;
+  color: var(--darkgrey);
   line-height: 38px;
   text-align: center;
   cursor: pointer;

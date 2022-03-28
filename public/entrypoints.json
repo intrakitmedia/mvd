@@ -2,11 +2,11 @@
   "app": {
     "js": [
       "runtime.979dfd.js",
-      "vendor/app.53554a.js",
-      "app.999b3d.js"
+      "vendor/app.5dbff4.js",
+      "app.2c27dd.js"
     ],
     "css": [
-      "app.dcac42.css"
+      "app.a3579a.css"
     ],
     "dependencies": [
       "jquery"
