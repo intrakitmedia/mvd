@@ -91,7 +91,7 @@
                         @endphp
 
                         @if($video)
-                            <div data-field="https://youtube.com/embed/{{$youtube_id}}" class="s-vid">
+                            <div data-field="{{$youtube_id}}" class="s-vid">
                                 <div class="s-vid-inner">
                                     <div class="video-container video-thumbnail"
                                          style="background-image: url('<?php echo "https://img.youtube.com/vi/$youtube_id/maxresdefault.jpg"; ?>');
@@ -99,9 +99,8 @@
                                                  background-position: -2px;">
                                     </div>
                                 </div>
+                                @endif
                             </div>
-                        @endif
-
                             @php
 
                                 // End loop.
@@ -109,19 +108,23 @@
                                                 endif;
 
                             @endphp
+                    </div>
 
 
-                        <div class="video-modal">
-                            <div class="bg-shadow-video">
+                <div class="video-modal">
+                    <div class="bg-shadow-video">
 
-                                <div class="video-modal-inner">
-                                    <div class="ex-out-wrapper">
-                                        <div id="ex-out" class="ex-out"></div>
-                                    </div>
-                                    <div class="video-container video-iframe"></div>
-                                </div>
+                        <div class="video-modal-inner video-container video-iframe">
+                            <div class="ex-out-wrapper">
+                                <div id="ex-out" class="ex-out"></div>
+                            </div>
+                            <div id="youtube_video_source">
+                                <div class="video-container video-iframe"></div>
                             </div>
                         </div>
+                    </div>
+
+                </div>
                         </div>
                     </div>
                 </div>

@@ -92,57 +92,53 @@
 
                         @include('components.quick-quote')
 
+                        @php
+                        $args = [
+                        'post_type' => 'case_studies',
+                        'post_status' => 'publish',
+                        "posts_per_page" => '5'
+                        ];
+                        $case = new \WP_Query($args)
+                        @endphp
+
+                        @if($case->found_posts)
+
+                        @php
+                        $posts = $case->posts;
+                        @endphp
                         <div class="post-roll">
                             <div class="post-roll-wrapper">
                                 <div class="post-roll-inner">
                                     <h3 class="header-tag center">Other Case Studies</h3>
+                                    @foreach($posts as $post)
+                                        @php
+                                            $image_url = get_the_post_thumbnail_url($post->ID) ?? null;
+                                            $post_date = date('F d Y', strtotime($post->post_date) );
+                                            $post_link = get_permalink($post->ID);
+                                        @endphp
                                     <div class="post-roll-post">
+                                        @if($image_url)
                                         <div class="post-roll-image">
-                                            <img src="@asset('images/case-study-two.jpg')" alt="Remote Video Capture
-                            Client"/>
+                                            <a title="{{$post->post_title}}" href="{{$post_link}}"><img
+                                                        src="{{$image_url}}" alt="{{$post->post_title}}"/></a>
                                         </div>
+                                        @else
+                                            <div class="post-roll-image">
+                                                <a title="{{$post->post_title}}" href="{{$post_link}}"><img src="@asset('images/default-image.jpg')" alt="Remote Video Capture
+                            Client"/></a>
+                                            </div>
+                                            @endif
                                         <div class="post-roll-header">
                                             <div class="post-roll-title">
-                                                <a href="#">How a 70 Yr Manufacturing Co. Closes Sales with B2B Video Production</a>
+                                                <a title="{{$post->post_title}}" href="{{$post_link}}">{{$post->post_title}}</a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="post-roll-post">
-                                        <div class="post-roll-image">
-                                            <img src="@asset('images/case-study-three.jpg')" alt="Remote Video Capture
-                            Client"/>
-                                        </div>
-                                        <div class="post-roll-header">
-                                            <div class="post-roll-title">
-                                                <a href="#">The 4 Day Manufacturing Video Production Deliverable – Making it Happen for the Haydon Corporation</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="post-roll-post">
-                                        <div class="post-roll-image">
-                                            <img src="@asset('images/case-study-four.jpg')" alt="Remote Video Capture
-                            Client"/>
-                                        </div>
-                                        <div class="post-roll-header">
-                                            <div class="post-roll-title">
-                                                <a href="#">Commercial Real Estate Video Content Marketing Services in NY City for Breather</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="post-roll-post">
-                                        <div class="post-roll-image">
-                                            <img src="@asset('images/remote-video-capture-client.jpg')" alt="Remote Video Capture
-                            Client"/>
-                                        </div>
-                                        <div class="post-roll-header">
-                                            <div class="post-roll-title">
-                                                <a href="#">Video for Manufacturing Companies – B2B Sales Plan</a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                        @endforeach
                                 </div>
                             </div>
                         </div>
+                            @endif
                     </div>
                 </div>
             </div>
