@@ -101,4 +101,8 @@ article .article-header {
   article iframe {
     width: 100% !important;
   }
+
+  article .video-container {
+    padding-bottom: 15px;
+  }
 }
