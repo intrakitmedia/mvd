@@ -93,6 +93,12 @@ section.section-alt-2 {
   width: 30%;
 }
 
+.stack-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 15px;
+}
+
 .extra-bottom {
   padding-bottom: 282px !important;
 }
