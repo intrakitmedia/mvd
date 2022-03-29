@@ -190,7 +190,7 @@ $query = new \WP_Query( $args );
                 <div class="large-col">
                     <div class="services-reel-content">
                         <div class="header-two blue">
-                            <h2>Video Production Examples</h2>
+                            <h2>Check out these videos!</h2>
                         </div>
 
                         @php
