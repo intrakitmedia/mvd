@@ -100,6 +100,9 @@ add_filter( 'gform_confirmation', function ( $confirmation, $form, $entry, $ajax
 	$confirmation = 'Thanks for contacting us! We will get in touch with you shortly.';
 	$confirmation .= GFCommon::get_inline_script_tag( "window.open('$url', '_blank');" );
 
+	echo "Hello";
+	die();
+
 	return $confirmation;
 }, 10, 4 );
 
