@@ -355,36 +355,6 @@ $query = new \WP_Query( $args );
                         </div>
                     </div>
                 </div>
-
-                <div class="row center">
-                    <div class="lead-out">
-                        <div class="call-to-actions-group">
-                            <div class="cta-button-wrapper js-watch">
-                                @php
-                                    if($contact_us_link) {
-                                        $link = $contact_us_link;
-                                    } else {
-                                    $link =  '#';
-                                    }
-                                @endphp
-                                <a class="call-to-action" title="Contact Us" href="{{$link}}">Contact Us</a>
-                            </div>
-                            <div class="cta-button-wrapper js-watch">
-                                @php
-                                    $case_studies_link = get_post_type_archive_link('case_studies');
-                                        if($contact_us_link) {
-                                            $link = $case_studies_link;
-                                        } else {
-                                        $link =  '#';
-                                        }
-                                @endphp
-                                <a class="call-to-action btn-alt-2" title="Case Studies" href="{{$link}}">View Customer
-                                    Case
-                                    Studies</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
 
