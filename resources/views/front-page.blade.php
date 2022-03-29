@@ -663,9 +663,9 @@ $link = $contact_us_link;
             </div>
             <div class="row center">
                 <div class="accolades-img">
-                    <img width="800" src="@asset('images/video-production-awards.png')" alt="Top Video Production
+                    <img width="800" src="@asset('images/smaller-nyc-video-production-awards-min.png')" alt="Top Video Production
                     Awards"/>
-                    <img width="800" src="@asset('images/video-production-awards-2.png')" alt="Best Video Production
+                    <img width="800" src="@asset('images/nyc-video-production-second-min.png')" alt="Best Video Production
                     Awards"/>
                 </div>
             </div>
