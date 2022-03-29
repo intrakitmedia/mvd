@@ -18,7 +18,7 @@ add_filter('excerpt_more', function () {
 add_filter( 'gform_confirmation', function ( $confirmation, $form, $entry, $ajax ) {
 	GFCommon::log_debug( 'gform_confirmation: running.' );
 
-	$forms = array( 3, 6, 7 ); // Target forms with id 3, 6 and 7. Change this to fit your needs.
+	$forms = array( 6 ); // Target forms with id 3, 6 and 7. Change this to fit your needs.
 
 	if ( ! in_array( $form['id'], $forms ) || empty( $confirmation['redirect'] ) ) {
 		return $confirmation;
