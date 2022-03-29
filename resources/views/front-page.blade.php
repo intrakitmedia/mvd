@@ -385,7 +385,7 @@ $link = $contact_us_link;
             </div>
         </section>
 
-        <section class="block-services section-alt-2">
+        <section class="section block-services section-alt-2">
             <div class="block-services-inner">
 
                 <div class="row center">

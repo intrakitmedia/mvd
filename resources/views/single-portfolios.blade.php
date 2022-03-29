@@ -81,7 +81,7 @@
         <div class="container">
             <div class="row center">
                 <div class="header-two blue">
-                    <h2>Sizzle Reels Made for Our Partners</h2>
+                    <h2>Video Production Examples</h2>
                 </div>
             </div>
             <div class="row center">

@@ -151,7 +151,7 @@ $query = new \WP_Query( $args );
                 <div class="large-col">
                     <div class="services-reel-content">
                         <div class="header-two blue">
-                            <h2>Sizzle Reels Made for Our Partners</h2>
+                            <h2>Video Production Examples</h2>
                         </div>
 
                         @php
@@ -197,9 +197,9 @@ $query = new \WP_Query( $args );
                         </div>
 
 
-                        <div class="video-modal">
-                            <div class="bg-shadow-video">
 
+                            <div class="bg-shadow-video">
+                                <div class="video-modal">
                                 <div class="video-modal-inner video-container video-iframe">
                                     <div class="ex-out-wrapper">
                                         <div id="ex-out" class="ex-out"></div>
