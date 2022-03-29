@@ -385,8 +385,15 @@ $link = $contact_us_link;
             </div>
         </section>
 
-        <section class="block-services">
+        <section class="block-services section-alt-2">
             <div class="block-services-inner">
+
+                <div class="row center">
+                    <div class="lead-in">
+                        <h3>Explore our services for your business solutions</h3>
+                        <h4 class="header-alt">Cost-effective Corporate Video Production Services</h4>
+                    </div>
+                </div>
 
                 <div class="row">
                     <div class="col-four services-block">
