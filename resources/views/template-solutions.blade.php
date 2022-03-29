@@ -133,15 +133,19 @@ $query = new \WP_Query( $args );
         </section>
     @endif
 
+    @php
+        $alternate_content = get_field('alternate_content');
+    @endphp
+
+    @if($alternate_content)
+
     <section class="different remote-bg"
              style="background: url(@asset('images/remote-bg.jpg')); background-size: cover;">
         <div class="container">
             <div class="different-bg"></div>
 
             <div class="row">
-                @php
-                    $alternate_content = get_field('alternate_content');
-                @endphp
+
 
                 @if($alternate_content)
                     <div class="different-content">
@@ -162,6 +166,8 @@ $query = new \WP_Query( $args );
             </div>
         </div>
     </section>
+
+    @endif
 
     @if('' !== get_post()->post_conten)
     <section class="section-alt">
