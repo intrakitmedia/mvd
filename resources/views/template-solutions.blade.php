@@ -106,7 +106,7 @@ $query = new \WP_Query( $args );
     </section>
 
     @php
-        $checklist = get_field('checklist') ??  null;
+        $checklist = get_field('checklist');
     @endphp
     @if($checklist)
 
@@ -115,18 +115,6 @@ $query = new \WP_Query( $args );
                 <div class="row center">
                     <div class="banner-list-wide">
 
-
-                        {{--<ul class="smaller checklist-board" style="display: grid; gap: 15px; grid-template-columns: repeat(3,minmax(0,1fr));">--}}
-                        {{--<li>Embracing diversity and inclusion </li>--}}
-                        {{--<li>Building a more equitable workplace</li>--}}
-                        {{--<li>Focus on your diversity groups</li>--}}
-                        {{--<li>How you support hiring to feed diversity</li>--}}
-                        {{--<li>Overcoming bias</li>--}}
-                        {{--<li>Steps to stop harassment and bullying </li>--}}
-                        {{--<li>Creating an organization built on meritocracy </li>--}}
-                        {{--<li>How you foster a more equitable workplace</li>--}}
-                        {{--<li>Motion graphics video</li>--}}
-                        {{--</ul>--}}
 
                         {!! $checklist !!}
 
