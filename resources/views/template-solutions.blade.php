@@ -223,6 +223,9 @@ $query = new \WP_Query( $args );
                                                      background-size: 103%;
                                                      background-position: -2px;">
                                         </div>
+                                        <div class="s-vid-title">
+                                            <h4>{{$video->post_title}}</h4>
+                                        </div>
                                     </div>
                                     @endif
                                 </div>
