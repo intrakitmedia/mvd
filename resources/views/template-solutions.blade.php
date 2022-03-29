@@ -2,9 +2,6 @@
   Template Name: Solutions
 --}}
 
-
-@extends('layouts.app')
-
 <?php
 $args = [
 	'post_type'      => 'services',
@@ -16,6 +13,9 @@ $query = new \WP_Query( $args );
 
 ?>
 
+
+
+@extends('layouts.app')
 
 @section('content')
 
@@ -105,6 +105,14 @@ $query = new \WP_Query( $args );
         </div>
     </section>
 
+
+
+    @php
+
+        endif;
+
+    @endphp
+
     @php
         $checklist = get_field('checklist');
     @endphp
@@ -124,12 +132,6 @@ $query = new \WP_Query( $args );
             </div>
         </section>
     @endif
-
-    @php
-
-        endif;
-
-    @endphp
 
     <section class="different remote-bg"
              style="background: url(@asset('images/remote-bg.jpg')); background-size: cover;">
@@ -161,6 +163,7 @@ $query = new \WP_Query( $args );
         </div>
     </section>
 
+    @if('' !== get_post()->post_conten)
     <section class="section-alt">
         <div class="container">
             <div class="small-row">
@@ -170,7 +173,7 @@ $query = new \WP_Query( $args );
             </div>
         </div>
     </section>
-
+@endif
 
 
 
