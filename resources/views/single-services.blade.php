@@ -215,7 +215,12 @@ $query = new \WP_Query( $args );
         style="background-image: url('<?php echo "https://img.youtube.com/vi/$youtube_id/maxresdefault.jpg"; ?>');
                 background-size: 103%;
                 background-position: -2px;">
+
     </div>
+        <div class="s-vid-title">
+            <h4>{{$video->post_title}}</h4>
+        </div>
+
 </div>
     @endif
 </div>
