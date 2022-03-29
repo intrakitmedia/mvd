@@ -198,12 +198,18 @@ $link = $contact_us_link;
                                     approach.</p>
                                 <div class="call-to-action-group">
                                     @php
-                                        if($NeedAStrategy) {
-                                            $link =  get_permalink($NeedAStrategy->ID);
-                                        } else {
-                                            $link = "#";
-                                        }
+                                        $page = get_page_by_title('Video Strategy', 'object', 'services');
                                     @endphp
+
+                                    @if($page)
+                                        @php
+                                            $link = get_permalink($page->ID);
+                                        @endphp
+                                    @else
+                                        @php
+                                            $link = "#";
+                                        @endphp
+                                    @endif
                                     <a class="orange-underline" title="Need a Strategy" href="{{$link}}">LEARN MORE</a>
                                 </div>
                             </div>
