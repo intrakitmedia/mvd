@@ -2,6 +2,7 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import 'fortawesome/fontawesome-free';
 @import 'font-face.css';
 @import "player-button.css";
 @import "grid.css";
