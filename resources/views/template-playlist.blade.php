@@ -9,7 +9,7 @@
             <div class="row center">
                 <div class="page-header-title text-center">
                     <h1>
-                        Business Video Production Tips
+                        {!! $title !!}
                     </h1>
                     <h2>Video marketing tips that answer some of the most common questions we receive on business video production and video content marketing.</h2>
                 </div>
