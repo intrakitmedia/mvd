@@ -9,11 +9,12 @@
     <section class="small page-header">
         <div class="container">
             <div class="row center">
-                <div class="page-header-title text-center">
-                    <h1>
+                <div class="text-center">
+                    <h1 class="bigger-than">
                         {!! $title !!}
                     </h1>
-                    <h2>Video marketing tips that answer some of the most common questions we receive on business video production and video content marketing.</h2>
+                    <p>Video marketing tips that answer some of the most common questions we receive on business
+                        video production and video content marketing.</p>
                 </div>
             </div>
         </div>
