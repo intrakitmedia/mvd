@@ -34,9 +34,11 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="row">
                 <div class="tow-col">
                     <div class="video-container video-iframe">
-                        <iframe src="https://www.youtube.com/watch?v=h8DxDNY-DDs"></iframe>
+                        <iframe src="https://www.youtube.com/embed/h8DxDNY-DDs"></iframe>
                     </div>
                     <div class="playlist-content">
                         <div class="playlist-title">
@@ -45,9 +47,11 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="row">
                 <div class="tow-col">
                     <div class="video-container video-iframe">
-                        <iframe src="https://www.youtube.com/watch?v=ANbWi2kxTmM"></iframe>
+                        <iframe src="https://www.youtube.com/embed/ANbWi2kxTmM"></iframe>
                     </div>
                     <div class="playlist-content">
                         <div class="playlist-title">
@@ -56,9 +60,11 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="row">
                 <div class="tow-col">
                     <div class="video-container video-iframe">
-                        <iframe src="https://www.youtube.com/watch?v=5oOr2w6P_iI"></iframe>
+                        <iframe src="https://www.youtube.com/embed/5oOr2w6P_iI"></iframe>
                     </div>
                     <div class="playlist-content">
                         <div class="playlist-title">
@@ -67,9 +73,11 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="row">
                 <div class="tow-col">
                     <div class="video-container video-iframe">
-                        <iframe src="https://www.youtube.com/watch?v=5oOr2w6P_iI"></iframe>
+                        <iframe src="https://www.youtube.com/embed/5oOr2w6P_iI"></iframe>
                     </div>
                     <div class="playlist-content">
                         <div class="playlist-title">
@@ -78,9 +86,11 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="row">
                 <div class="tow-col">
                     <div class="video-container video-iframe">
-                        <iframe src="https://www.youtube.com/watch?v=h6Wz8a6MPk8"></iframe>
+                        <iframe src="https://www.youtube.com/embed/h6Wz8a6MPk8"></iframe>
                     </div>
                     <div class="playlist-content">
                         <div class="playlist-title">
@@ -89,9 +99,11 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="row">
                 <div class="tow-col">
                     <div class="video-container video-iframe">
-                        <iframe src="https://www.youtube.com/watch?v=pBrXPkppTQY"></iframe>
+                        <iframe src="https://www.youtube.com/embed/pBrXPkppTQY"></iframe>
                     </div>
                     <div class="playlist-content">
                         <div class="playlist-title">
