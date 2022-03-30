@@ -120,6 +120,11 @@ section.section-alt-2 {
     width: 100%;
   }
 
+  .page-template-template-playlist .two-col {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
   .large-col,
   .small-col {
     width: 100%;
