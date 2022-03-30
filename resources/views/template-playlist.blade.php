@@ -1,17 +1,7 @@
-@extends('layouts.app')
+{{--
+  Template Name: Playlist
+--}}
 
-@php
-
-    $args = [
-    'post_type' => 'case_studies',
-    'publish' => -1,
-    'posts_per_page' => 5,
-
-    ];
-
-    $case_study_query = new \WP_Query($args);
-
-@endphp
 
 @section('content')
     <section class="small page-header">
