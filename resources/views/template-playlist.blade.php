@@ -3,6 +3,8 @@
 --}}
 
 
+@extends('layouts.app')
+
 @section('content')
     <section class="small page-header">
         <div class="container">
