@@ -3,6 +3,7 @@ import $ from "jquery";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import Video from "./components/native-youtube-player";
+import Swiper from 'swiper';
 
 /**
  * Run the application when the DOM is ready.
@@ -76,6 +77,28 @@ domReady(() => {
     })
 
     new Video();
+
+    new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'vertical',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    });
 });
 
 /**

@@ -684,22 +684,46 @@ $link = $contact_us_link;
                         <div class="shout-out-single">
                             <div class="shout-out-body">
                                 <div class="shout-out-quote">
-                                    <p>"I've worked with the pros at MultiVision several times and continue to be
-                                        impressed
-                                        by their technical expertise and creative eye for getting the right shot. They
-                                        come
-                                        prepared, work efficiently, and get the job done. Robert is a perpetual source
-                                        of
-                                        ideas and is able to work well with very different personalities to get the best
-                                        from them — a rare skill honed by experience and insight. They deliver for
-                                        us!"</p>
 
-                                    <div class="shout-out-logo">
+                                    <!-- Slider main container -->
+                                    <div class="swiper">
+                                        <!-- Additional required wrapper -->
+                                        <div class="swiper-wrapper">
+                                            <!-- Slides -->
+                                            <div class="swiper-slide">"I've worked with the pros at MultiVision several times and continue to be
+                                                impressed
+                                                by their technical expertise and creative eye for getting the right shot. They
+                                                come
+                                                prepared, work efficiently, and get the job done. Robert is a perpetual source
+                                                of
+                                                ideas and is able to work well with very different personalities to get the best
+                                                from them — a rare skill honed by experience and insight. They deliver for
+                                                us!"
+
+                                                <div class="shout-out-logo">
+                                                </div>
+                                                <div class="shout-out-sig">
+                                                    <span class="shout-out-name">- Name</span>
+                                                    <span class="shout-out-co">- Name</span>
+                                                </div>
+
+                                            </div>
+                                            <div class="swiper-slide">Slide 2</div>
+                                            <div class="swiper-slide">Slide 3</div>
+                                            ...
+                                        </div>
+                                        <!-- If we need pagination -->
+                                        <div class="swiper-pagination"></div>
+
+                                        <!-- If we need navigation buttons -->
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-button-next"></div>
+
+                                        <!-- If we need scrollbar -->
+                                        <div class="swiper-scrollbar"></div>
                                     </div>
-                                    <div class="shout-out-sig">
-                                        <span class="shout-out-name">- Name</span>
-                                        <span class="shout-out-co">- Name</span>
-                                    </div>
+
+
                                 </div>
                             </div>
                             <div class="slider-button">
