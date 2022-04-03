@@ -242,8 +242,20 @@
         </div>
         <div class="row center">
             <div class="accolades-img">
-                <img width="800" src="@asset('images/recog.jpeg')" alt="Top Video Production
-                    Awards"/>
+
+                <a title="Top 10 Corporate Video Production Companies in New York
+" href="https://giggster.com/blog/corporate-video-production-companies-new-york/"><img
+                            src="@asset('images/giggster-corporate-2021.jpg')" alt="Top 10 Corporate Video Production
+                            Companies in New York
+" /></a>
+                <a title="
+Top NYC Video Production Companies" href="https://www.designrush.com/agency/video-production/new-york/new-york-city"><img
+                            src="@asset('images/Accredited-Agency-2022.jpeg')" alt="Top 10 Corporate Video Production
+                            Companies in New York
+" /></a>
+                <a title="Verified Agency 2022" href="https://agencyvista
+                .com/agency/multivision-digital/marketing-agency-new-york-new-york-us"><img width="800" src="@asset
+                ('images/recog.jpeg')" alt="Verified Agency 2022"/></a>
             </div>
         </div>
         </div>

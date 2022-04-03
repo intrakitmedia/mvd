@@ -124,7 +124,7 @@ class ThemeServiceProvider extends ServiceProvider {
 				'has_archive'  => true,
 				'rewrite'      => array( 'slug' => 'case-studies' ),
 				'show_in_rest' => true,
-				'supports'     => array( 'title', 'thumbnail', 'categories', 'editor' ),
+				'supports'     => array( 'title', 'thumbnail', 'categories', 'editor', 'author' ),
 			)
 		);
 
@@ -144,7 +144,7 @@ class ThemeServiceProvider extends ServiceProvider {
 				'show_ui' => true,
 				'rewrite'      => array( 'slug' => 'videos' ),
 				'show_in_rest' => true,
-				'supports'     => array( 'title', 'thumbnail' ),
+				'supports'     => array( 'title', 'thumbnail', 'author' ),
 			)
 		);
 
@@ -166,6 +166,27 @@ class ThemeServiceProvider extends ServiceProvider {
 
 			)
 		);
+
+		add_post_type_support( 'page', 'excerpt' );
+
+//		register_taxonomy(
+//			'page_type',
+//			'page',
+//			array(
+//				'labels' => array(
+//					'name' => 'Page Type',
+//					'add_new_item' => 'Add Page Type',
+//					'new_item_name' => "New Page Type"
+//				),
+//				'public' => false,
+//				'show_ui' => true,
+//				'show_tagcloud' => false,
+//				'hierarchical' => false,
+//				'hasArchive' => false,
+//				'show_admin_column' => true,
+//
+//			)
+//		);
 
 //		register_post_type('videos',
 //			array(

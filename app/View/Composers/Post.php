@@ -22,7 +22,7 @@ class Post extends Composer {
 		'single-case_studies',
 		'template-solutions',
 		'template-playlist',
-
+		'page',
 	];
 
 	public $post_ID;
@@ -48,6 +48,7 @@ class Post extends Composer {
 			'recent_posts'  => $this->recent_posts(),
 			'related_posts' => $this->related_posts(),
 			'default_image' => $this->default_image(),
+			'excerpt' => $this->excerpt(),
 		];
 	}
 
@@ -67,6 +68,20 @@ class Post extends Composer {
 	 */
 	public function post_id() {
 		return $this->post_ID;
+	}
+
+//	public function page_tag() {
+//		if( ! class_exists('ACF') ) {
+//			return  '';
+//		}
+//
+//		return get_field('page_tag', $this->post_ID);
+//	}
+
+	public function excerpt()  {
+		$excerpt = get_the_excerpt($this->post_ID) ?? '';
+
+		return $excerpt;
 	}
 
 	/**

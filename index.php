@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
       <script src="https://kit.fontawesome.com/5ec1d943a3.js" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
       <link rel="icon" href="@asset('iamges/favicon.png')" />
     <?php wp_head(); ?>
   </head>

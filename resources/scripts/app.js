@@ -3,13 +3,20 @@ import $ from "jquery";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import Video from "./components/native-youtube-player";
-import Swiper from 'swiper';
+import Splide from '@splidejs/splide';
+
 
 /**
  * Run the application when the DOM is ready.
  */
 domReady(() => {
     library.add(fas);
+    new Splide( '.splide', {
+        arrows: false,
+        autoplay: true,
+        intersection: false,
+    } ).mount();
+
     // Application code
     if(window.matchMedia('(max-width: 1119px)').matches) {
         $('.nav-wrapper').addClass('is-mobile')
@@ -77,28 +84,6 @@ domReady(() => {
     })
 
     new Video();
-
-    new Swiper('.swiper', {
-        // Optional parameters
-        direction: 'vertical',
-        loop: true,
-
-        // If we need pagination
-        pagination: {
-            el: '.swiper-pagination',
-        },
-
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-
-        // And if we need scrollbar
-        scrollbar: {
-            el: '.swiper-scrollbar',
-        },
-    });
 });
 
 /**

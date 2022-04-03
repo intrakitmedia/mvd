@@ -686,64 +686,43 @@ $link = $contact_us_link;
                                 <div class="shout-out-quote">
 
                                     <!-- Slider main container -->
-                                    <div class="swiper">
-                                        <!-- Additional required wrapper -->
-                                        <div class="swiper-wrapper">
-                                            <!-- Slides -->
-                                            <div class="swiper-slide">"I've worked with the pros at MultiVision several times and continue to be
-                                                impressed
-                                                by their technical expertise and creative eye for getting the right shot. They
-                                                come
-                                                prepared, work efficiently, and get the job done. Robert is a perpetual source
-                                                of
-                                                ideas and is able to work well with very different personalities to get the best
-                                                from them — a rare skill honed by experience and insight. They deliver for
-                                                us!"
+                                    <div class="splide">
+                                        <div class="splide__track">
+                                            <ul class="splide__list">
+                                                <li class="splide__slide">"I’ve worked with the pros at MultiVision several times and continue to be impressed by their technical expertise and creative eye for getting the right shot. They come prepared, work efficiently, and get the job done. Robert is a perpetual source of ideas and is able to work well with very different personalities to get the best from them — a rare skill honed by experience and insight. They deliver for us!"
 
-                                                <div class="shout-out-logo">
-                                                </div>
                                                 <div class="shout-out-sig">
-                                                    <span class="shout-out-name">- Name</span>
-                                                    <span class="shout-out-co">- Name</span>
+                                                    <img src="@asset('images/slide-one.jpeg')" alt="BERDON" />
+                                                   <span class="shout-out-name">— Jim T., Marketing Manager (New
+                                                       York,NY)</span>
+                                                    <span class="shout-out-co">-INNERFLUENCE</span>
                                                 </div>
 
-                                            </div>
-                                            <div class="swiper-slide">Slide 2</div>
-                                            <div class="swiper-slide">Slide 3</div>
-                                            ...
+                                                </li>
+                                                <li class="splide__slide">"Working with MultiVision on our new product video was a great experience. Robert and his team walked us through the different types of video we could create based on our specific goals; took the time to understand our market; and created a video that we are proud to use as our first point of contact with customers. Robert makes you feel like you and your project are his top priority and I look forward to working with them again."
+                                                    <div class="shout-out-sig">
+                                                        <img src="@asset('images/slide-two.jpeg')" alt="BERDON" />
+                                                        <span class="shout-out-name">— Neal J., Assoc. Director of Marketing (Waltham, MA)</span>
+                                                        <span class="shout-out-co">- Wolters Kluwer</span>
+                                                    </div>
+                                                </li>
+                                                <li class="splide__slide">
+                                                    "Robert took the time to understand my business and hone in on the goals of my videos to determine how video content could be positioned to more effectively support lead generation, nurturing existing contacts &amp; clients, and building a larger following. After only one consultation, he was able to offer simple, specific recommendations to improve the effectiveness of my existing videos, methods to track their reach, and ways to improve SEO. He is extremely generous, knowledgeable and well-versed in what makes an integrated marketing strategy effective, and he offered insights that helped me begin to rethink the bigger picture of how video can convey my offerings in a dynamic and impactful way that results in action."
+                                                    <div class="shout-out-sig">
+                                                        <span class="shout-out-name">— Jen S. Small business owner (New York, NY)</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <!-- If we need pagination -->
-                                        <div class="swiper-pagination"></div>
-
-                                        <!-- If we need navigation buttons -->
-                                        <div class="swiper-button-prev"></div>
-                                        <div class="swiper-button-next"></div>
-
-                                        <!-- If we need scrollbar -->
-                                        <div class="swiper-scrollbar"></div>
+                                    </div>
                                     </div>
 
 
                                 </div>
                             </div>
-                            <div class="slider-button">
-                                <div class="slider-button-inner">
-                                    <span class="swiper-pagination-bullet" tabindex="0" role="button"
-                                          aria-label="Go to slide 1"></span>
-                                    <span class="swiper-pagination-bullet" tabindex="0" role="button"
-                                          aria-label="Go to slide 2"></span>
-                                    <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0"
-                                          role="button" aria-label="Go to slide 3"></span>
-                                    <span class="swiper-pagination-bullet" tabindex="0" role="button"
-                                          aria-label="Go to slide 4"></span>
-                                    <span class="swiper-pagination-bullet" tabindex="0" role="button"
-                                          aria-label="Go to slide 5"></span>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
             </div>
         </section>
 

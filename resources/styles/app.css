@@ -52,6 +52,7 @@
 @import "components/post-meta.css";
 @import "components/post-card.css";
 @import "components/contact-form.css";
+@import "@splidejs/splide/dist/css/splide.min.css";
 
 .root,
 #root,
@@ -156,6 +157,11 @@ li {
 
 p {
   margin-bottom: 28px;
+}
+
+.page-excerpt,
+.page-excerpt p{
+  margin-bottom: 0;
 }
 
 .checklist-board-inner li {

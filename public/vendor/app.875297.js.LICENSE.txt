@@ -4,6 +4,13 @@
  * Copyright 2022 Fonticons, Inc.
  */
 
+/*!
+ * Splide.js
+ * Version  : 3.6.12
+ * License  : MIT
+ * Copyright: 2022 Naotoshi Fujita
+ */
+
 /**
 * @link https://github.com/gajus/sister for the canonical source repository
 * @license https://github.com/gajus/sister/blob/master/LICENSE BSD 3-Clause

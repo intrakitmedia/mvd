@@ -13,7 +13,7 @@
 .shout-out-single {
   background: var(--white);
   border-radius: 10px;
-  padding: 20px;
+  padding: 30px 40px;
   box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%)
 }
 
@@ -27,6 +27,10 @@
   font-style: italic;
   font-size: 18px;
   line-height: 28px;
+}
+
+.shout-out-sig {
+  padding: 30px 0;
 }
 
 .shout-out-sig .shout-out-name,
@@ -49,6 +53,14 @@
   line-height: 1.75;
   margin-bottom: 0;
   margin-top: 1px;
+}
+
+.splide__pagination__page.is-active {
+  color: var(--darkgrey);
+}
+
+.splide.splide--slide {
+  padding-bottom: 30px;
 }
 
 @media (max-width: 800px) {
