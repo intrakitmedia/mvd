@@ -1,17 +1,21 @@
 @extends('layouts.app')
 
 @php
+
     $paged = ( get_query_var('page') ) ? get_query_var('page') : 1;
 
     $args = [
     'post_type' => 'case_studies',
     'publish' => -1,
     'posts_per_page' => 5,
+    'orderby'=>'date',
     'paged' => $paged
 
     ];
 
-    $case_study_query = new \WP_Query($args);
+    $case_study_query = query_posts($args);
+
+
 
 @endphp
 
@@ -31,9 +35,9 @@
 
     <section class="blog-banner small">
         <div class="container">
-            @if($case_study_query->found_posts)
+            @if(count($case_study_query))
                 @php
-                    $posts = $case_study_query->posts;
+                    $posts = $case_study_query;
                 @endphp
 
                 @foreach($posts as $post)
