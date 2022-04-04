@@ -1,15 +1,17 @@
 @extends('layouts.app')
 
 @php
+    $paged = ( get_query_var('page') ) ? get_query_var('page') : 1;
 
-$args = [
-'post_type' => 'case_studies',
-'publish' => -1,
-'posts_per_page' => 5,
+    $args = [
+    'post_type' => 'case_studies',
+    'publish' => -1,
+    'posts_per_page' => 5,
+    'paged' => $paged
 
-];
+    ];
 
-$case_study_query = new \WP_Query($args);
+    $case_study_query = new \WP_Query($args);
 
 @endphp
 
@@ -83,6 +85,21 @@ $case_study_query = new \WP_Query($args);
             </div>
             @endforeach
             @endif
+        </div>
+    </section>
+    <section class="pagination">
+        <div class="container">
+            <div class="row flex-end">
+                <div class="post-pagination">
+                    @php(the_posts_pagination())
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-alt">
+        <div class="container">
+            <div class="row"></div>
         </div>
     </section>
 @endsection
