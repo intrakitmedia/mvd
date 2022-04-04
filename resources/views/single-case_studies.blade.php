@@ -72,6 +72,7 @@
                                 </div>
                             </div>
                         </div>
+
                         {{--@if($thumbnail_url)--}}
                             {{--<div class="article-featured-image">--}}
                                 {{--<img src="{{$thumbnail_url}}" alt=""/>--}}
