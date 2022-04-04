@@ -29,6 +29,8 @@
             $categories = get_the_terms($pinned_post->ID, 'category');
         @endphp
 
+
+
         <section class="blog-banner small">
             <div class="container">
                 <div class="row blog-card">
@@ -76,11 +78,19 @@
                             </div>
                             <div class="blog-roll-author blog-card-row">
                                 @php
+                                   $gravatar_default= "https://secure.gravatar
+                                .com/avatar/53a7057b864b47e834e2986aaf9549ff?s=96&d=mm&r=g";
                                     $author_display_name = get_the_author_meta('display_name', $pinned_post->post_author);
                                     $nickname = get_the_author_meta('nickname', $pinned_post->post_author);
                                     $avatar = get_avatar_url($pinned_post->post_author);
                                     $post_date = date('F d Y', strtotime($pinned_post->post_date) );
                                 @endphp
+
+                                @if( $author_display_name == 'Robert Weiss' )
+                                    @php
+                                        $avatar = \Roots\asset('images/robert-weiss.png')->uri();
+                                    @endphp
+                                @endif
                                 <div class="pic">
                                     @if($avatar)
                                         <div class="pic-inner" style="background: url({{$avatar}});

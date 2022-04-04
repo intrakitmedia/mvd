@@ -56,7 +56,7 @@
 }
 
 .splide__pagination__page.is-active {
-  color: var(--darkgrey);
+  background: var(--darkgrey) !important;
 }
 
 .splide.splide--slide {

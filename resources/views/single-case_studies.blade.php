@@ -24,53 +24,53 @@
                             <div class="article-title article-row ">
                                 <h1>{!! $title !!}</h1>
                             </div>
-                            <div class="article-meta article-row-2">
-                                @php
-                                    $author_display_name = get_the_author_meta('display_name', $post->post_author);
-                                    $nickname = get_the_author_meta('nickname', $post->post_author);
-                                    $avatar = get_avatar_url($post->post_author);
-                                    $post_date = date('F d Y', strtotime($post->post_date) );
-                                @endphp
-                                <div class="post-meta article-author">
-                                    <div class="pic article-pic">
-                                        @if($avatar)
-                                            <div class="pic-inner article-pic-inner" style="background: url({{$avatar}});
-                                            background-size: cover;">
+                            {{--<div class="article-meta article-row-2">--}}
+                                {{--@php--}}
+                                    {{--$author_display_name = get_the_author_meta('display_name', $post->post_author);--}}
+                                    {{--$nickname = get_the_author_meta('nickname', $post->post_author);--}}
+                                    {{--$avatar = get_avatar_url($post->post_author);--}}
+                                    {{--$post_date = date('F d Y', strtotime($post->post_date) );--}}
+                                {{--@endphp--}}
+                                {{--<div class="post-meta article-author">--}}
+                                    {{--<div class="pic article-pic">--}}
+                                        {{--@if($avatar)--}}
+                                            {{--<div class="pic-inner article-pic-inner" style="background: url({{$avatar}});--}}
+                                            {{--background-size: cover;">--}}
 
-                                            </div>
-                                            @else
-                                        <div class="pic-inner article-pic-inner" style="background: url(@asset('images/author.jpg')); background-size: cover;">
+                                            {{--</div>--}}
+                                            {{--@else--}}
+                                        {{--<div class="pic-inner article-pic-inner" style="background: url(@asset('images/author.jpg')); background-size: cover;">--}}
 
-                                        </div>
-                                            @endif
-                                    </div>
-                                    <div class="meta article-data">
-                                        @if($author_display_name && $post_date)
-                                        <div class="author-name"><p>{!! $author_display_name !!}</p></div>
-                                        <div class="date"><p>{!! $post_date !!}</p></div>
-                                            @endif
-                                    </div>
-                                </div>
-                                <div class="post-social">
-                                    <div class="blurb"><p>Share on</p></div>
-                                    <div class="links">
-                                        <ul>
-                                            <li><a target="_blank"
-                                                   href="https://www.facebook.com/sharer/sharer.php?u=<?=
-	                                               urlencode
-	                                               ( $permalink )
-	                                               ?>"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a target="_blank" href="http://twitter.com/share?<?= urlencode
-		                                        ( $permalink ) ?>"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a target="_blank"
-                                                   href="https://www.linkedin.com/shareArticle?mini=true&url=<?= urlencode
-	                                               ( $permalink )
-	                                               ?>"><i class="fa
-                                        fa-linkedin"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                                        {{--</div>--}}
+                                            {{--@endif--}}
+                                    {{--</div>--}}
+                                    {{--<div class="meta article-data">--}}
+                                        {{--@if($author_display_name && $post_date)--}}
+                                        {{--<div class="author-name"><p>{!! $author_display_name !!}</p></div>--}}
+                                        {{--<div class="date"><p>{!! $post_date !!}</p></div>--}}
+                                            {{--@endif--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                                {{--<div class="post-social">--}}
+                                    {{--<div class="blurb"><p>Share on</p></div>--}}
+                                    {{--<div class="links">--}}
+                                        {{--<ul>--}}
+                                            {{--<li><a target="_blank"--}}
+                                                   {{--href="https://www.facebook.com/sharer/sharer.php?u=<?=--}}
+	                                               {{--urlencode--}}
+	                                               {{--( $permalink )--}}
+	                                               {{--?>"><i class="fa fa-facebook"></i></a></li>--}}
+                                            {{--<li><a target="_blank" href="http://twitter.com/share?<?= urlencode--}}
+		                                        {{--( $permalink ) ?>"><i class="fa fa-twitter"></i></a></li>--}}
+                                            {{--<li><a target="_blank"--}}
+                                                   {{--href="https://www.linkedin.com/shareArticle?mini=true&url=<?= urlencode--}}
+	                                               {{--( $permalink )--}}
+	                                               {{--?>"><i class="fa--}}
+                                        {{--fa-linkedin"></i></a></li>--}}
+                                        {{--</ul>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
                         </div>
                         @if($thumbnail_url)
                             <div class="article-featured-image">

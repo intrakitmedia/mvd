@@ -712,6 +712,12 @@ $link = $contact_us_link;
                                                         <span class="shout-out-name">— Jen S. Small business owner (New York, NY)</span>
                                                     </div>
                                                 </li>
+                                                <li class="splide__slide">
+                                                "I found Robert to be focused, adaptable and resilent. Flexible enough to handle unforeseen situations (which always occur). Talented and knowledgeable enough to blend the technical and creative aspects. And wise enough to maintain a vigorous sense of control. These admirable traits mark Robert as a superior director/producer."
+                                                    <div class="shout-out-sig">
+                                                        <span class="shout-out-name">— Vic Schiff, Independent Idea Person</span>
+                                                    </div>
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>

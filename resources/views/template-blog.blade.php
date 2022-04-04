@@ -80,7 +80,17 @@
                                 $nickname = get_the_author_meta('nickname', $pinned_post->post_author);
                                 $avatar = get_avatar_url($pinned_post->post_author);
                                 $post_date = date('F d Y', strtotime($pinned_post->post_date) );
+
+
                             @endphp
+
+
+
+                            @if( $author_display_name == 'Robert Weiss' && ! $avatar )
+                                @php
+                                    $avatar = @asset('images/robert-weiss.png');
+                                @endphp
+                            @endif
                             <div class="pic">
                                 @if($avatar)
                                     <div class="pic-inner" style="background: url({{$avatar}});

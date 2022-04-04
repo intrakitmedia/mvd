@@ -165,7 +165,14 @@ $query = new \WP_Query( $args );
                 <div class="different-content lead-out">
                     <div class="call-to-actions-group">
                         <div class="cta-button-wrapper js-watch">
-                            <a class="call-to-action" href="">Contact Us</a>
+                            @php
+                                if($contact_us_link) {
+                                    $link = $contact_us_link;
+                                } else {
+                                $link =  '#';
+                                }
+                            @endphp
+                            <a title="Contact Us" class="call-to-action" href="{{$link}}">Contact Us</a>
                         </div>
                     </div>
                 </div>
