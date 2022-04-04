@@ -72,3 +72,28 @@ add_action('plugins_loaded', 'my_coupon_init');
 @ini_set( 'upload_max_size', '64M' );
 @ini_set( 'post_max_size', '64M' );
 @ini_set( 'max_execution_time', '300' );
+
+
+
+add_action('pre_get_posts', 'set_posts_per_page');
+
+function set_posts_per_page( $query ) {
+	flush_rewrite_rules();
+
+	global $wp_the_query;
+
+	if ( ( ! is_admin() ) && ( $query === $wp_the_query ) && ( $query->is_search() ) ) {
+		$query->set( 'posts_per_page', 3 );
+	}
+	elseif ( ( ! is_admin() ) && ( $query === $wp_the_query ) && ( $query->is_post_type_archive('case_studies') ) ) {
+		$query->set( 'posts_per_page', 5 );
+	}
+	// Etc..
+
+	return $query;
+}
+
+
+
+
+

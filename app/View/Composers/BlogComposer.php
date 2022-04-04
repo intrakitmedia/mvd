@@ -12,8 +12,6 @@ class BlogComposer extends Composer {
 	 */
 	protected static $views = [
 		//
-		'template-blog',
-		'archive',
 		'index'
 	];
 
@@ -32,22 +30,26 @@ class BlogComposer extends Composer {
 	}
 
 	public function posts() {
+		if (is_post_type_archive('case_studies')) {
+			return;
+		}
+
 		if ( is_page( 'Blog' ) ) {
 			$post_type = 'post';
 		} else {
 			$post_type = get_post_type();
 		}
 
-		$paged = ( get_query_var('page') ) ? get_query_var('page') : 1;
+		$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 
 		$args = [
 			'post_type'      => $post_type,
-			'status'         => 'publish',
+			'post_status'         => 'publish',
 			'posts_per_page' => 9,
 			'paged' => $paged
 		];
 
-		if ( is_archive() ) {
+		if ( is_archive() && ! is_post_type_archive('case_studies') ) {
 
 			$category = get_category( get_query_var( 'cat' ) );
 			$cat_id   = $category->cat_ID;

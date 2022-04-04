@@ -2,18 +2,18 @@
 
 @php
 
-    $paged = ( get_query_var('page') ) ? get_query_var('page') : 1;
+    $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 
     $args = [
     'post_type' => 'case_studies',
-    'publish' => -1,
+    'post_status' => 'publish',
     'posts_per_page' => 5,
     'orderby'=>'date',
     'paged' => $paged
 
     ];
 
-    $case_study_query = query_posts($args);
+    $case_study_query = new WP_Query($args);
 
 
 
@@ -35,9 +35,9 @@
 
     <section class="blog-banner small">
         <div class="container">
-            @if(count($case_study_query))
+            @if($case_study_query->found_posts)
                 @php
-                    $posts = $case_study_query;
+                    $posts = $case_study_query->posts;
                 @endphp
 
                 @foreach($posts as $post)

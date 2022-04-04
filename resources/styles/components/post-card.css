@@ -4,3 +4,7 @@
   padding: 30px 0;
   border-bottom: 1px solid rgb(0 0 0 / 7%);
 }
+
+.post-card.case-card:last-child {
+  border-bottom: none;
+}
