@@ -31,6 +31,10 @@ article .article-header {
   padding-left: 40px;
 }
 
+.single-case_studies .article-meta .post-social {
+  padding-left: 0;
+}
+
 .article-meta .post-social .blurb {
   display: flex;
   justify-content: center;

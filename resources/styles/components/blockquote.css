@@ -1,0 +1,16 @@
+blockquote {
+  border-top: 1px solid rgb(0 0 0 / 10%);
+  border-bottom: 1px solid rgb(0 0 0 / 10%);
+  margin-bottom: 30px;
+  padding: 15px 0;
+}
+
+blockquote p {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+blockquote cite {
+  color: var(--darkgrey);
+}

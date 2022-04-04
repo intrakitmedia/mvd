@@ -24,7 +24,7 @@
                             <div class="article-title article-row ">
                                 <h1>{!! $title !!}</h1>
                             </div>
-                            {{--<div class="article-meta article-row-2">--}}
+                            <div class="article-meta article-row-2">
                                 {{--@php--}}
                                     {{--$author_display_name = get_the_author_meta('display_name', $post->post_author);--}}
                                     {{--$nickname = get_the_author_meta('nickname', $post->post_author);--}}
@@ -51,32 +51,32 @@
                                             {{--@endif--}}
                                     {{--</div>--}}
                                 {{--</div>--}}
-                                {{--<div class="post-social">--}}
-                                    {{--<div class="blurb"><p>Share on</p></div>--}}
-                                    {{--<div class="links">--}}
-                                        {{--<ul>--}}
-                                            {{--<li><a target="_blank"--}}
-                                                   {{--href="https://www.facebook.com/sharer/sharer.php?u=<?=--}}
-	                                               {{--urlencode--}}
-	                                               {{--( $permalink )--}}
-	                                               {{--?>"><i class="fa fa-facebook"></i></a></li>--}}
-                                            {{--<li><a target="_blank" href="http://twitter.com/share?<?= urlencode--}}
-		                                        {{--( $permalink ) ?>"><i class="fa fa-twitter"></i></a></li>--}}
-                                            {{--<li><a target="_blank"--}}
-                                                   {{--href="https://www.linkedin.com/shareArticle?mini=true&url=<?= urlencode--}}
-	                                               {{--( $permalink )--}}
-	                                               {{--?>"><i class="fa--}}
-                                        {{--fa-linkedin"></i></a></li>--}}
-                                        {{--</ul>--}}
-                                    {{--</div>--}}
-                                {{--</div>--}}
-                            {{--</div>--}}
-                        </div>
-                        @if($thumbnail_url)
-                            <div class="article-featured-image">
-                                <img src="{{$thumbnail_url}}" alt=""/>
+                                <div class="post-social">
+                                    <div class="blurb"><p>Share on</p></div>
+                                    <div class="links">
+                                        <ul>
+                                            <li><a target="_blank"
+                                                   href="https://www.facebook.com/sharer/sharer.php?u=<?=
+	                                               urlencode
+	                                               ( $permalink )
+	                                               ?>"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a target="_blank" href="http://twitter.com/share?<?= urlencode
+		                                        ( $permalink ) ?>"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a target="_blank"
+                                                   href="https://www.linkedin.com/shareArticle?mini=true&url=<?= urlencode
+	                                               ( $permalink )
+	                                               ?>"><i class="fa
+                                        fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                        @endif
+                        </div>
+                        {{--@if($thumbnail_url)--}}
+                            {{--<div class="article-featured-image">--}}
+                                {{--<img src="{{$thumbnail_url}}" alt=""/>--}}
+                            {{--</div>--}}
+                        {{--@endif--}}
 
                         @if($main_content)
                             <div class="article-body">
