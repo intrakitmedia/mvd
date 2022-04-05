@@ -5,18 +5,6 @@
 
 @extends('layouts.app')
 
-<?php
-$args = [
-	'post_type'      => 'services',
-	'status'         => 'publish',
-	'posts_per_page' => -1
-];
-
-$query = new \WP_Query( $args );
-
-?>
-
-
 @section('content')
 
     <section class="services-banner section-alt">
@@ -25,17 +13,6 @@ $query = new \WP_Query( $args );
                 {{--<span class="header-tag">{!! $page_tag !!}</span>--}}
                 <div class="services-header text-center">
                     <h1 class="services-header-title">{!! $title !!}</h1>
-
-                       @php
-                           $main_bold_content = get_field('main_bold_content');
-                           $excerpt = ($main_bold_content) ? $main_bold_content : $excerpt;
-                       @endphp
-                    @if($excerpt)
-                        <div class="page-excerpt">
-                            <p>{!! $excerpt !!}</p>
-                        </div>
-                    @endif
-
                 </div>
             </div>
         </div>
@@ -76,8 +53,7 @@ $query = new \WP_Query( $args );
         <section class="section-alt-2">
             <div class="container">
                 <div class="row center">
-                    <div class="banner-list-wide"
-                        {!! $checklist !!}
+                    <div class="banner-list-wide">{!! $checklist !!}
                     </div>
                 </div>
             </div>
