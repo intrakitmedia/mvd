@@ -125,20 +125,7 @@
                     </div>
 
 
-                <div class="video-modal">
-                    <div class="bg-shadow-video">
-
-                        <div class="video-modal-inner video-container video-iframe">
-                            <div class="ex-out-wrapper">
-                                <div id="ex-out" class="ex-out"></div>
-                            </div>
-                            <div id="youtube_video_source">
-                                <div class="video-container video-iframe"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+                @include('components.modal')
                         </div>
                     </div>
                 </div>

@@ -152,6 +152,11 @@ a.orange-underline {
   transition: 0.2s ease all;
 }
 
+.s-vid-link {
+  display: inline-block;
+  cursor: pointer;
+}
+
 @media (max-width: 800px) {
   .cta-button-wrapper:not(:last-child) {
     margin-bottom: 30px;

@@ -55,8 +55,9 @@ $link = $contact_us_link;
                         </div>
 
                     </div>
-                    <div class="hero-link"><p><a href="">Click here to see our 10 year anniversay
+                    <div class="hero-link"><p><a data-field="9RFWNmu8H3E" class="s-vid-link">Click here to see our 10 year anniversay
                                 highlight reel!</a></p></div>
+                    @include('components.modal')
                 </div>
             </div>
         </div>

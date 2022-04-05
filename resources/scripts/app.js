@@ -11,11 +11,14 @@ import Splide from '@splidejs/splide';
  */
 domReady(() => {
     library.add(fas);
-    new Splide( '.splide', {
-        arrows: false,
-        autoplay: true,
-        intersection: false,
-    } ).mount();
+    if ( $('.splide').length ) {
+        new Splide( '.splide', {
+            arrows: false,
+            autoplay: true,
+            intersection: false,
+        } ).mount();
+    }
+
 
     // Application code
     if(window.matchMedia('(max-width: 1119px)').matches) {

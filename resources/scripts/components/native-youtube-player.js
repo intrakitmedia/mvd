@@ -53,7 +53,15 @@ export default class Video {
     loadById(){
         let self = this;
 
-        $('.s-vid').on('click', function(){
+        $('.s-vid').on('click', function(e){
+            e.preventDefault();
+            let videoId = $(this).attr('data-field');
+            $('.video-modal').addClass('active');
+            self.player.loadVideoById({'videoId': videoId, 'startSeconds': 0});
+        });
+
+        $('.s-vid-link').on('click', function(e){
+            e.preventDefault();
             let videoId = $(this).attr('data-field');
             $('.video-modal').addClass('active');
             self.player.loadVideoById({'videoId': videoId, 'startSeconds': 0});

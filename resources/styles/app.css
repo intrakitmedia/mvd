@@ -444,4 +444,15 @@ padding-right: 35px;
   padding: 14px 15px;
 }
 
+.accolades-img {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.accolades-img img {
+  height: 150px;
+  width: auto;
+}
+
 /* stylelint-enable */

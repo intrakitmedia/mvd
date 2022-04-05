@@ -2,6 +2,10 @@
   Template Name: About Us
 --}}
 
+@php
+    $portfolio = get_post_type_archive_link('portfolios');
+@endphp
+
 
 @extends('layouts.app')
 
@@ -77,12 +81,13 @@
         <div class="container">
             <div class="row center">
                 <div class="page-header-title text-center">
-                    <a class="orange-link" href=""><i class="fa-solid fa-play orange-play"></i> <span>Watch 10th
-                            ANNIVERSARY
-                                PROMOTIONAL VIDEO</span></a>
+                    <a data-field="9RFWNmu8H3E" class="s-vid-link orange-link"><i class="fa-solid fa-play
+                    orange-play"></i>
+                        <span>Watch 10th ANNIVERSARY PROMOTIONAL VIDEO</span></a>
                 </div>
+
+                @include('components.modal')
             </div>
-        </div>
         </div>
     </section>
 
@@ -121,7 +126,7 @@
                             centuries, but also the leap into electronic typesetting, remaining essentially
                             unchanged.</p>
 
-                        <a class="call-to-action inline-block">View Portfolio</a>
+                        <a class="call-to-action inline-block"title="Portfolio" href="{{ $portfolio }}" >View Portfolio</a>
                     </div>
                 </div>
             </div>
@@ -223,7 +228,7 @@
                     <p>Reach out say hello and will be seeing you in front of a camera.
                 </div>
                 <div class="cta-button-wrapper text-center">
-                    <a class="call-to-action">View Portfolio</a>
+                    <a class="call-to-action" title="Portfolio"  href="{{$portfolio}}">View Portfolio</a>
                 </div>
             </div>
         </div>
@@ -254,7 +259,7 @@ Top NYC Video Production Companies" href="https://www.designrush.com/agency/vide
                             Companies in New York
 " /></a>
                 <a title="Verified Agency 2022" href="https://agencyvista
-                .com/agency/multivision-digital/marketing-agency-new-york-new-york-us"><img width="800" src="@asset('images/verified-agency-vista-badge.png')" alt="Verified Agency 2022"/></a>
+                .com/agency/multivision-digital/marketing-agency-new-york-new-york-us"><img src="@asset('images/verified-agency-vista-badge.png')" alt="Verified Agency 2022"/></a>
             </div>
         </div>
         </div>
