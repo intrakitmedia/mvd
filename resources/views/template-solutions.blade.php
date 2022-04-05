@@ -385,7 +385,7 @@ $query = new \WP_Query( $args );
     if( have_rows('video_gallery') ):
 
                         @endphp
-                        <div class="services-sizzle-reel grid sm:grid-cols-1 md:grid-cols-2 gap-2">
+                        <div class="services-sizzle-reel grid sm:grid-cols-1 md:grid-cols-2 gap-3">
                             @php
                                 // Loop through rows.
                                 while ( have_rows('video_gallery') ) : the_row();

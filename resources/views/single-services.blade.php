@@ -202,7 +202,7 @@ $query = new \WP_Query( $args );
     if( have_rows('video_gallery') ):
 
                         @endphp
-                        <div class="services-sizzle-reel grid sm:grid-cols-1 md:grid-cols-2 gap-2">
+                        <div class="services-sizzle-reel grid sm:grid-cols-1 md:grid-cols-2 gap-3">
                             @php
                                 // Loop through rows.
                                 while ( have_rows('video_gallery') ) : the_row();
@@ -347,7 +347,8 @@ $query = new \WP_Query( $args );
                                         @if($image_url)
                                         <img src="{{$image_url}}" alt="{{$post->post_title}}"/>
                                             @else
-                                            <img src="@asset('images/default-image.jpg')" alt="{{$post->post_title}}"/>
+                                            <a title="{{$post->post_title}}" href="{{$post_link}}"><img src="@asset
+                                            ('images/default-image.jpg')" alt="{{$post->post_title}}"/></a>
                                         @endif
                                     </div>
                                     <div class="other-service-title">
