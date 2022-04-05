@@ -448,6 +448,7 @@ padding-right: 35px;
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .accolades-img img {
