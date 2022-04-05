@@ -109,11 +109,14 @@ $query = new \WP_Query( $args );
                     <div class="call-to-actions-group">
                         <div class="cta-button-wrapper js-watch">
                             @php
-                                if($contact_us_link) {
-                                    $link = $contact_us_link;
-                                } else {
-                                $link =  '#';
-                                }
+                                $contact_us = get_page_by_title('Contact Us') ? get_page_by_title('Contact Us')
+                                             : get_page_by_title('Contact');
+                                              $contact_us_link = get_permalink($contact_us->ID);
+                                    if($contact_us_link) {
+                                        $link = $contact_us_link;
+                                    } else {
+                                    $link =  '#';
+                                    }
                             @endphp
                             <a title="Contact Us" class="call-to-action" href="{{$link}}">Contact Us</a>
                         </div>

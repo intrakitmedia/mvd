@@ -376,11 +376,15 @@ $link = $contact_us_link;
                     <div class="call-to-actions-group">
                         <div class="cta-button-wrapper js-watch">
                             @php
-                                if($contact_us_link) {
-                                    $link = $contact_us_link;
-                                } else {
-                                $link =  '#';
-                                }
+                                $contact_us = get_page_by_title('Contact Us') ? get_page_by_title('Contact Us')
+                                             : get_page_by_title('Contact');
+                                              $contact_us_link = get_permalink($contact_us->ID);
+
+                                    if($contact_us_link) {
+                                        $link = $contact_us_link;
+                                    } else {
+                                    $link =  '#';
+                                    }
                             @endphp
 
                             <a class="call-to-action" title="Contact Us" href="{{$link}}">Contact Us</a>
@@ -565,18 +569,21 @@ $link = $contact_us_link;
                         <div class="call-to-actions-group">
                             <div class="cta-button-wrapper js-watch">
                                     @php
-                                    if($contact_us_link) {
-                                        $link = $contact_us_link;
-                                    } else {
-                                    $link =  '#';
-                                    }
+                                        $contact_us = get_page_by_title('Contact Us') ? get_page_by_title('Contact Us')
+                                                 : get_page_by_title('Contact');
+                                                  $contact_us_link = get_permalink($contact_us->ID);
+                                        if($contact_us_link) {
+                                            $link = $contact_us_link;
+                                        } else {
+                                        $link =  '#';
+                                        }
                                     @endphp
                                     <a class="call-to-action" title="Contact Us" href="{{$link}}">Contact Us</a>
                             </div>
                             <div class="cta-button-wrapper js-watch">
                                 @php
                                     $case_studies_link = get_post_type_archive_link('case_studies');
-                                        if($contact_us_link) {
+                                        if($case_studies_link) {
                                             $link = $case_studies_link;
                                         } else {
                                         $link =  '#';
@@ -637,11 +644,14 @@ $link = $contact_us_link;
                     <div class="call-to-actions-group">
                         <div class="cta-button-wrapper js-watch">
                             @php
-                                if($contact_us_link) {
-                                    $link = $contact_us_link;
-                                } else {
-                                $link =  '#';
-                                }
+                                $contact_us = get_page_by_title('Contact Us') ? get_page_by_title('Contact Us')
+                                             : get_page_by_title('Contact');
+                                              $contact_us_link = get_permalink($contact_us->ID);
+                                    if($contact_us_link) {
+                                        $link = $contact_us_link;
+                                    } else {
+                                    $link =  '#';
+                                    }
                             @endphp
                             <a class="call-to-action" title="Contact Us" href="{{$link}}">Contact Us</a>
                         </div>
