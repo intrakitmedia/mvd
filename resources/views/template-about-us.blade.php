@@ -255,11 +255,10 @@
 " /></a>
                 <a title="
 Top NYC Video Production Companies" href="https://www.designrush.com/agency/video-production/new-york/new-york-city"><img
-                            src="@asset('images/Accredited-Agency-2022.jpeg')" alt="Top 10 Corporate Video Production
+src="@asset('images/Accredited-Agency-2022.jpeg')" alt="Top 10 Corporate Video Production
                             Companies in New York
 " /></a>
-                <a title="Verified Agency 2022" href="https://agencyvista
-                .com/agency/multivision-digital/marketing-agency-new-york-new-york-us"><img src="@asset('images/verified-agency-vista-badge.png')" alt="Verified Agency 2022"/></a>
+                <a title="Verified Agency 2022" href="https://agencyvista.com/agency/multivision-digital/marketing-agency-new-york-new-york-us"><img src="@asset('images/verified-agency-vista-badge.png')" alt="Verified Agency 2022"/></a>
             </div>
         </div>
         </div>
