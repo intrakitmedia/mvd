@@ -86,7 +86,7 @@
             </div>
             <div class="row center">
 
-                    <div class="services-reel-content grid sm:grid-cols-1 md:grid-cols-3 gap-3">
+                    <div class="services-reel-content grid sm:grid-cols-1 md:grid-cols-3 gap-4">
 
 
                         @php
