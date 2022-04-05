@@ -255,7 +255,7 @@ Top NYC Video Production Companies" href="https://www.designrush.com/agency/vide
 " /></a>
                 <a title="Verified Agency 2022" href="https://agencyvista
                 .com/agency/multivision-digital/marketing-agency-new-york-new-york-us"><img width="800" src="@asset
-                ('images/recog.jpeg')" alt="Verified Agency 2022"/></a>
+                ('images/verified-agency-vista-badge.png')" alt="Verified Agency 2022"/></a>
             </div>
         </div>
         </div>
