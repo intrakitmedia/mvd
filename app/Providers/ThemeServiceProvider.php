@@ -42,15 +42,7 @@ class ThemeServiceProvider extends ServiceProvider {
         </div>
 		<?php
 	}
-
-	public function wrap_embed( $block_content, $block ) {
-		if ( 'core/embed' === $block['blockName'] ) {
-			$block_content = '<div class="video-container video-iframe">' . $block_content . '</div>';
-		}
-
-		return $block_content;
-	}
-
+	
 	/**
 	 * Save the menu item meta
 	 *
