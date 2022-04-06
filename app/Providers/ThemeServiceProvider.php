@@ -24,7 +24,6 @@ class ThemeServiceProvider extends ServiceProvider {
 		add_action( 'wp_nav_menu_item_custom_fields', [ $this, 'mega_menu' ], 10, 2 );
 		add_action( 'wp_update_nav_menu_item', [ $this, 'kia_nav_update' ], 10, 2 );
 		add_theme_support( 'responsive-embeds' );
-		add_filter( 'render_block', [ $this, 'wrap_embed' ], 10, 2 );
 	}
 
 	public function mega_menu( $item_id, $item ) {
@@ -42,7 +41,7 @@ class ThemeServiceProvider extends ServiceProvider {
         </div>
 		<?php
 	}
-	
+
 	/**
 	 * Save the menu item meta
 	 *
