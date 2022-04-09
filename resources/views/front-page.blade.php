@@ -288,20 +288,8 @@ $link = $contact_us_link;
                         <div class="lead-out">
                             <div class="call-to-actions-group">
                                 <div class="cta-button-wrapper js-watch">
-                                    @php
-                                        $remote = get_page_by_title('Remote Video Producton');
-                                    @endphp
 
-                                    @if($remote)
-                                        @php
-                                            $link = get_permalink($remote->ID);
-                                        @endphp
-                                    @else
-                                        @php
-                                            $link = "#";
-                                        @endphp
-                                    @endif
-                                    <a class="call-to-action" title="Remote Video Production" href="{{$link}}">Learn
+                                    <a class="call-to-action" title="Remote Video Production" href="/services/remote-video-production/">Learn
                                         More About
                                         Remore Video
                                         Capture</a>
