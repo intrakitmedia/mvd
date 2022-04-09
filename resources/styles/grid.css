@@ -36,6 +36,11 @@ section.section-alt-2 {
   background-color: var(--grey);
 }
 
+section.the-page-header {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
 .container {
   max-width: var(--container);
   margin: 0 auto;

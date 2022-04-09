@@ -7,7 +7,7 @@
 
 @section('content')
 
-    <section class="services-banner section-alt">
+    <section class="services-banner the-page-header section-alt">
         <div class="container">
             <div class="small-row">
                 {{--<span class="header-tag">{!! $page_tag !!}</span>--}}
