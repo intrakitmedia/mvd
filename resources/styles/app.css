@@ -145,6 +145,10 @@ a {
   color: var(--blue2);
 }
 
+nav a:hover{
+  color: var(--orange);
+}
+
 nav a {
   color: var(--blue);
 }
