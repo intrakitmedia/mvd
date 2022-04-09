@@ -160,7 +160,7 @@ class ThemeServiceProvider extends ServiceProvider {
 			)
 		);
 
-		add_post_type_support( 'page', 'excerpt' );
+		add_post_type_support( 'page', ['excerpt', 'author']);
 
 //		register_taxonomy(
 //			'page_type',

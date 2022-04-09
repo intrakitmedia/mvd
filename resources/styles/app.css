@@ -260,6 +260,14 @@ ul.checkmark li:before {
   text-transform: lowercase;
 }
 
+.the-page-header {
+  background: var(--blue) !important;
+}
+
+.the-page-header h1 {
+  color: white !important;
+}
+
 .home-explainer {
   margin-bottom: 30px;
   font-weight: 100;

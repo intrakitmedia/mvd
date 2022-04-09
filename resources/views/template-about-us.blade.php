@@ -113,18 +113,11 @@
                 </div>
                 <div class="two-col">
                     <div class="sizzle-content-top">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                            galley of type and scrambled it to make a type specimen book. It has survived not only five
-                            centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-                            passages, and more recently with desktop publishing software like Aldus PageMaker including
-                            versions of Lorem Ipsum.</p>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                            galley of type and scrambled it to make a type specimen book. It has survived not only five
-                            centuries, but also the leap into electronic typesetting, remaining essentially
-                            unchanged.</p>
+                        <p>We started our business with that vision and we keep that vision in our back pockets in
+                            every engagement.  Over the course of hundreds of video production projects, spanning every business objective and video production skill set, MultiVision Digital has been hired by global multinational firms to solo-entrepreneurs across almost every industry.  Over this time we have amassed a wealth of knowledge in executing successful video projects every single business objective.</p>
+
+                        <p>Working with marcom teams and executive level talent, we’ve come to understand the nuances, challenges, and opportunities that people have with video marketing.  Leveraging our broad experience, and diverse skill sets that span sales, marketing and digital content creation, we have allowed clients to achieve quantifiable increases in sales, lead generation, improved SEO rankings, increased awareness and client loyalty.
+                        </p>
 
                         <a class="call-to-action inline-block"title="Portfolio" href="{{ $portfolio }}" >View Portfolio</a>
                     </div>

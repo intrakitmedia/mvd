@@ -8,7 +8,7 @@
 
 @section('content')
 
-    <section class="services-banner section-alt">
+    <section class="services-banner the-page-header section-alt">
         <div class="container">
             <div class="small-row">
                 {{--<span class="header-tag">{!! $page_tag !!}</span>--}}
@@ -26,8 +26,7 @@
                     {!! the_content() !!}
                 </article>
             </div>
-        </div>
-    </section>
+
 
     @php
 
@@ -35,13 +34,7 @@
 
         @endphp
 
-
-        <section class="the-team">
-            <div class="container">
-                <div class="row center">
-                    <h2>Team Members</h2>
-                </div>
-                <div class="small-row wrap">
+                <div class="row wrap">
 
                     @php
 
@@ -83,11 +76,13 @@
 
                 @endphp
             </div>
+
+            @php
+
+                endif;
+            @endphp
         </div>
     </section>
 
-    @php
 
-       endif;
-    @endphp
 @endsection
