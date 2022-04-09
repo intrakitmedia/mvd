@@ -12,7 +12,8 @@ class BlogComposer extends Composer {
 	 */
 	protected static $views = [
 		//
-		'index'
+		'index',
+		'archive'
 	];
 
 	/**
