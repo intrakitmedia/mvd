@@ -147,7 +147,7 @@ a {
   cursor: pointer;
 }
 
-nav li:hover > a {
+nav li:not(.call-to-action):hover > a {
   color: var(--orange) !important;
   transition: 0.3s all ease;
 }
