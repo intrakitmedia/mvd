@@ -264,8 +264,10 @@ ul.checkmark li:before {
   background: var(--blue) !important;
 }
 
-.the-page-header h1 {
+.the-page-header h1,
+.the-page-header h3 {
   color: white !important;
+  text-transform: none !important;
 }
 
 .home-explainer {
