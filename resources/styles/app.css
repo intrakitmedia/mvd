@@ -146,7 +146,8 @@ a {
 }
 
 nav a:hover{
-  color: var(--orange);
+  color: var(--orange) !important;
+  transition: 0.3s all ease;
 }
 
 nav a {
