@@ -27,6 +27,7 @@
 @import "sections/blog-banner.css";
 @import "sections/blog-articles.css";
 @import "sections/services-archive.css";
+@import "sections/team-member.css";
 /** modules **/
 @import "modules/lead-ins-outs.css";
 @import "modules/swiper.css";

@@ -1,0 +1,23 @@
+.team-member {
+  display: flex;
+  width: 100%;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.team-member:not(:last-child) {
+  border-bottom: 1px solid rgb(0 0 0 / 10%);
+}
+
+.team-member-content {
+  max-width: 75%;
+  padding-right: 40px;
+}
+
+.team-member-name {
+  padding: 0 0 15px !important;
+}
+
+.team-member-photo {
+  width: 400px;
+}

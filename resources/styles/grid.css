@@ -47,6 +47,10 @@ section.section-alt-2 {
   display: flex;
 }
 
+.row.wrap {
+  flex-wrap: wrap;
+}
+
 .row.block {
   display: block;
 }

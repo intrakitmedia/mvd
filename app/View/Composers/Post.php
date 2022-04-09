@@ -23,6 +23,7 @@ class Post extends Composer {
 		'template-solutions',
 		'template-playlist',
 		'page',
+		'template-ourteam'
 	];
 
 	public $post_ID;
