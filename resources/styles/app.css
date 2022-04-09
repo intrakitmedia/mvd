@@ -149,6 +149,10 @@ nav a {
   color: var(--blue);
 }
 
+.wide-form-banner a {
+  color: var(--white);
+}
+
 .other-services-wrapper  a,
 .post-roll a {
   color: var(--black);

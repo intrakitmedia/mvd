@@ -62,7 +62,7 @@
                                 </ul>
 
                                 <div class="cta-button-wrapper">
-                                    <a href="" class="call-to-action">View Customer Studies</a>
+                                    <a href="/case-studies/" class="call-to-action">View Customer Studies</a>
                                 </div>
                             </div>
                         </div>
@@ -130,6 +130,7 @@
             </div>
         </div>
     </section>
+
 
 
 
