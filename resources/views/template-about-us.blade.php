@@ -113,7 +113,12 @@
                 </div>
                 <div class="two-col">
                     <div class="sizzle-content-top">
-                        <p>We started our business with that vision and we keep that vision in our back pockets in
+                        <p><a title="Multivision Digital Team" href="/our-team/">Our team</a> started our business with
+                            that vision and we
+                            keep
+                            that
+                                vision in our back
+                            pockets in
                             every engagement.  Over the course of hundreds of video production projects, spanning every business objective and video production skill set, MultiVision Digital has been hired by global multinational firms to solo-entrepreneurs across almost every industry.  Over this time we have amassed a wealth of knowledge in executing successful video projects every single business objective.</p>
 
                         <p>Working with marcom teams and executive level talent, we’ve come to understand the nuances, challenges, and opportunities that people have with video marketing.  Leveraging our broad experience, and diverse skill sets that span sales, marketing and digital content creation, we have allowed clients to achieve quantifiable increases in sales, lead generation, improved SEO rankings, increased awareness and client loyalty.
