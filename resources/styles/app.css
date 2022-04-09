@@ -76,6 +76,7 @@
   --brandlight: #e5eff4;
   --brandvibrant: #2af7be;
   --white: #fff;
+  --black: #000;
   --pcolor: #333;
   --grey: #EEEEEE;
   --grey2: #2C2F32;
@@ -138,6 +139,19 @@ div#app:before {
   content: " ";
   display: table;
   width: 0;
+}
+
+a {
+  color: var(--blue2);
+}
+
+nav a {
+  color: var(--blue);
+}
+
+.other-services-wrapper  a,
+.post-roll a {
+  color: var(--black);
 }
 
 ul {
