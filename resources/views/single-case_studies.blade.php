@@ -94,13 +94,11 @@
                         @include('components.quick-quote')
 
                         <div class="pdf-dl" style="display: flex; justify-content: center;">
-                            <img data-link="@asset('images/how-much-does-video-production-cost.pdf')"
-                                 onclick="newWindow(this);" width="300" src="@asset('images/how-much-does-a-video-cost.jpeg')" alt="How Much
-                            Does a
-                        Video Cost?" />
+                            <img style="cursor: pointer;" data-link="@asset('images/how-much-does-video-production-cost.pdf')" onclick="newWindow(this);" width="300" src="@asset('images/how-much-does-a-video-cost.jpeg')" alt="How Much Does a Video Cost?" />
                             <script type="text/javascript">
                                 function newWindow(param) {
-                                    let link = $(param).attr('data-link');
+                                    console.log(param)
+                                    let link = param.getAttribute('data-link');
                                     window.open(link, '_blank');
                                 }
                             </script>
