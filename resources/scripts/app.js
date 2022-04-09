@@ -86,13 +86,6 @@ domReady(() => {
         $megaMenu.toggleClass('mobile-open');
     })
 
-
-
-    $('.pdf-dl').on('click', function(e) {
-        e.preventDefault();
-
-    });
-
     new Video();
 });
 
