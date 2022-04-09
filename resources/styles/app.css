@@ -54,6 +54,7 @@
 @import "components/post-card.css";
 @import "components/contact-form.css";
 @import "components/blockquote.css";
+@import "components/pdf-dl.css";
 @import "@splidejs/splide/dist/css/splide.min.css";
 
 .root,
@@ -143,9 +144,10 @@ div#app:before {
 
 a {
   color: var(--blue2);
+  cursor: pointer;
 }
 
-nav a:hover{
+nav li:hover > a {
   color: var(--orange) !important;
   transition: 0.3s all ease;
 }

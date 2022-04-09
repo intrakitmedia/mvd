@@ -146,6 +146,7 @@ $query = new \WP_Query( $args );
                         <div class="different-text">
                             {!! $alternate_content !!}
                         </div>
+
                     </div>
                 @endif
             </div>

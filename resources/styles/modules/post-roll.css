@@ -38,6 +38,7 @@
 .post-roll-header .post-roll-title a {
   font-size: 16px;
   line-height: 19px;
+  display: block;
 }
 
 .post-roll-header .post-date,

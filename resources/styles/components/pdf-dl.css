@@ -1,0 +1,9 @@
+.pdf-dl {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.pdf-dl img {
+  width: 300px;
+}

@@ -21,7 +21,9 @@
                 <li>
             </ul>
         </div>
+        <div class="four-col"></div>
     </div>
+        <div class="row center">
         <div class="social-icons">
             <ul>
                 <li><a href="https://www.facebook.com/NYCOnlineVideoProduction"><i class="fa fa-facebook"></i></a></li>
@@ -29,6 +31,7 @@
                 <li><a href="https://www.linkedin.com/company/multivision-digital/"><i class="fa fa-linkedin"></i></a></li>
                 <li><a href="https://www.youtube.com/user/MVProductionsNYC"><i class="fa fa-youtube"></i></a></li>
             </ul>
+        </div>
         </div>
     <div class="row center">
         <p class="copyright">Copyright © 2022 MultiVisionDigital - Online Video Production Company for New Jersey &
