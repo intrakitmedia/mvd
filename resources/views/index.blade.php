@@ -229,8 +229,7 @@
                     background-position: center center;">
                             <div class="peak-card-bg"></div>
                             <div class="peak-card-title">
-                                <span>12</span>
-                                <h3>Tips for Making Your Videos Look More Professional</h3>
+                                <h3>How Much Does a Video Cost?</h3>
                             </div>
                         </div>
 
@@ -242,11 +241,9 @@
                 <div class="lead-in-right">
                     <div class="wide-form wide-form-download">
                         <h2 class="preheader">Download Free PDF</h2>
-                        <h3 class="follow-up smaller">Nothing comes close to the effectiveness of a well designed video
-                            communications
-                            project.</h3>
-                        <p>Improve your search engine rankings by driving and keeeping traffic on your site and
-                            generate quality leads with professional video</p>
+                        <h3 class="follow-up smaller">What is the most common question about video?</h3>
+                        <p>The answer is "how much does a video cost?" Download this free PDF and learn what goes
+                            into video production.</p>
 
                        {!!   do_shortcode('[gravityform id="6" title="false"]') !!}
 
