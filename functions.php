@@ -152,7 +152,7 @@ function post_to_third_party( $entry, $form ){
 		};
 	endforeach;
 	$body['form_source_url'] = $entry['source_url'];
-	if(array_key_exists($_COOKIE['__ss_tk'])) {
+	if(property_exist($_COOKIE['__ss_tk'])) {
 		$body['trackingid__sb'] = $_COOKIE['__ss_tk']; //DO NOT CHANGE THIS LINE... it collects the tracking cookie to establish tracking
 	}
 //	$body['trackingid__sb'] = $_COOKIE['__ss_tk']; //DO NOT CHANGE THIS LINE... it collects the tracking cookie to establish tracking
