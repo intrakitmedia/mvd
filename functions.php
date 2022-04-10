@@ -152,7 +152,10 @@ function post_to_third_party( $entry, $form ){
 		};
 	endforeach;
 	$body['form_source_url'] = $entry['source_url'];
-	$body['trackingid__sb'] = $_COOKIE['__ss_tk']; //DO NOT CHANGE THIS LINE... it collects the tracking cookie to establish tracking
+	if(array_key_exists($_COOKIE['__ss_tk'])) {
+		$body['trackingid__sb'] = $_COOKIE['__ss_tk']; //DO NOT CHANGE THIS LINE... it collects the tracking cookie to establish tracking
+	}
+//	$body['trackingid__sb'] = $_COOKIE['__ss_tk']; //DO NOT CHANGE THIS LINE... it collects the tracking cookie to establish tracking
 	$post_url = $base_uri . $post_endpoint;
 	if($sendToSharpSpring) {
 		$request = new WP_Http();
