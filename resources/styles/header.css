@@ -39,6 +39,7 @@ header.header-banner {
   box-shadow: var(--shadowbig);
   position: relative;
   z-index: 1;
+  max-height: 93px;
 }
 
 .header-two h2 {
