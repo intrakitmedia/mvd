@@ -603,11 +603,11 @@ $link = $contact_us_link;
             <div class="row">
                 <div class="different-content">
                     <div class="different-text">
-                        <p>Having produced over 900 business videos since our inception, our clients have come to rely
+                        <p>Having produced over 1000 business videos since our inception, our clients have come to rely
                             on
                             us to give them everything they need to get the most ROI from their investment in video
                             content
-                            marketing services. From strategic guidance, cost-effective video production thru to
+                            marketing services. From strategic guidance, cost-effective video production through to
                             thoughtful
                             video marketing services to reach their lead & sales objectives. As a NYC Video Production
                             company we understand that your business needs high quality video production services to
@@ -616,7 +616,7 @@ $link = $contact_us_link;
 
                         <p>MultiVision Digital's talented team of interactive marketing professionals, producers,
                             editors
-                            and animators leverage deep expertise in interactive marketing and video production with a
+                            and animators leverages deep expertise in interactive marketing and video production with a
                             real
                             world understanding to drive quantifiable results. We've worked with solo entrepreneurs to
                             global Fortune 500 companies across almost every industry and have created video marketing
@@ -675,7 +675,7 @@ $link = $contact_us_link;
             <div class="container">
             <div class="row">
                 <div class="lead-in left">
-                    <h3>Hear from our satisfied clients who achieve greater success with their businesses</h3>
+                    <h3>Hear from our satisfied clients who have achieved greater success with their businesses</h3>
                     <h4 class="header-alt">Testimonials from our Clients</h4>
                 </div>
                 <div class="shout-out lead-in-right">

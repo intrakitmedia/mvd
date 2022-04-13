@@ -21,7 +21,7 @@
             <div class="row center">
                 <div class="page-header-title blog-page-header text-center">
                     <h1>Portfolio</h1>
-                    <h2>Over 900+ business videos produced for our clients</h2>
+                    <h2>Over 1000+ business videos produced for our clients</h2>
                 </div>
             </div>
         </div>
