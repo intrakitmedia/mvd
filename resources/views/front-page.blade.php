@@ -13,7 +13,7 @@
                         <div class="hero-text sm:w-full md:w-3/4 lg:w-1/2">
                             <h1 class="home-lead">Turn-Key Video Strategy, Production, and Marketing Services​</h1>
                             <p class="home-explainer">We help our clients with strategic guidance, cost-effective video
-                                production & video marketing services to reach their lead & sales goals.</p>
+                                production, & video marketing services to reach their lead & sales goals.</p>
                             <div class="hero-cta">
                                 <div class="cta-inner">
 
