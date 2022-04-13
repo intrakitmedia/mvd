@@ -55,7 +55,6 @@ $post = get_post($post_ID);
                                     @if($author_display_name && $post_date)
                                     <div class="meta article-data">
                                         <div class="author-name"><p>{!! $author_display_name !!}</p></div>
-                                        <div class="date"><p>{!! $post_date !!}</p></div>
                                     </div>
                                         @endif
                                 </div>

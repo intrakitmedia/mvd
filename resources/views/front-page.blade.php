@@ -474,6 +474,45 @@ $link = $contact_us_link;
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-four services-block">
+                        <div class="services-block-inner">
+                            <div class="block-flip">
+                                @php
+                                    $page = get_page_by_title('Video Marketing', 'object', 'services');
+                                @endphp
+
+                                @if($page)
+                                    @php
+                                        $link = get_permalink($page->ID);
+                                    @endphp
+                                @else
+                                    @php
+                                        $link = "#";
+                                    @endphp
+                                @endif
+                                <a title="{{$page->post_title}}" href="{{$link}}" class="block-link"
+                                   style="background: url(@asset('images/animation-studio.jpg')); background-size: cover;">
+                                    <div class="block-flip-inner">
+                                        <div class="block-content">
+                                            <div class="block-header">
+                                                <h4 class="initial">Video Marketing</h4>
+                                            </div>
+                                            <div class="block-text">
+                                                <div class="block-text-inner">
+                                                    <h4>Video Marketing</h4>
+
+                                                    <p>With our Video 1st Strategy™ in place, getting qualified prospects to watch your video will ensure your ROI.						</p>
+                                                    <p><span class="learn-more">Learn More</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="col-four services-block">
                         <div class="services-block-inner">
                             <div class="block-flip">
@@ -503,45 +542,6 @@ $link = $contact_us_link;
 
                                                     <p>Animated marketing videos are a very effective tool for lead
                                                         generation and conversion. </p>
-                                                    <p><span class="learn-more">Learn More</span></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-four services-block">
-                        <div class="services-block-inner">
-                            <div class="block-flip">
-                                @php
-                                    $page = get_page_by_title('Video Marketing', 'object', 'services');
-                                @endphp
-
-                                @if($page)
-                                    @php
-                                        $link = get_permalink($page->ID);
-                                    @endphp
-                                @else
-                                    @php
-                                        $link = "#";
-                                    @endphp
-                                @endif
-                                <a title="{{$page->post_title}}" href="{{$link}}" class="block-link"
-                                   style="background: url(@asset('images/animation-studio.jpg')); background-size: cover;">
-                                    <div class="block-flip-inner">
-                                        <div class="block-content">
-                                            <div class="block-header">
-                                                <h4 class="initial">Video Marketing</h4>
-                                            </div>
-                                            <div class="block-text">
-                                                <div class="block-text-inner">
-                                                    <h4>Video Marketing</h4>
-
-                                                    <p>Our holistic video marketing strategy lets you plan, budget and
-                                                        integrate all the
-                                                        different types video you need.</p>
                                                     <p><span class="learn-more">Learn More</span></p>
                                                 </div>
                                             </div>
