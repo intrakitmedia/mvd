@@ -338,6 +338,10 @@
   padding-right: 0px;
 }
 
+.is-mobile.mobile-open .mega-menu .container .mega-menu-inner .sub-menu {
+  display: none;
+}
+
 .is-mobile.mobile-open .mega-menu.mobile-open .container .mega-menu-inner .sub-menu {
   display: block;
 }
