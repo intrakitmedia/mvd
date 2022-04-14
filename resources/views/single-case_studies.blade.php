@@ -3,7 +3,7 @@
     $post = get_post($post_ID);
 @endphp
 @section('content')
-    <section class="main-article-content">
+    <section class="main-article-content extra-bottom">
         <div class="container">
             <div class="row">
                 <div class="large-col">
@@ -156,4 +156,6 @@
             </div>
         </div>
     </section>
+
+    @include('components.lead-gen')
 @endsection

@@ -164,7 +164,7 @@ $post = get_post($post_ID);
         </div>
     </section>
 
-    <section class="blog-articles section-alt">
+    <section class="blog-articles section-alt extra-bottom">
         <div class="container">
             <div class="row center">
                 <h2>You might like these too</h2>
@@ -233,5 +233,32 @@ $post = get_post($post_ID);
                         </div>
                 </div>
             </div>
+    </section>
+
+    <section class="wide-form-section section-alt-2">
+        <div class="container">
+            <div class="row wide-form-wrapper">
+                <div class="lead-in left alt lead-in-form">
+                    <div class="orange-bg-cover" style="background:url(@asset('images/orange-bg-cover.jpg'));">
+                        <div class="wide-form-banner">
+                            <h3>Nothing comes close to the effectiveness of a well designed video communications
+                                project.</h3>
+                            <p>Improve your search engine rankings by driving and keeping traffic on your site and
+                                generate quality leads with professional video.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lead-in-right">
+                    <div class="wide-form">
+                        <h4>Contact Us</h4>
+                        @php
+
+                            echo do_shortcode('[gravityform id="4" title="false"]');
+
+                        @endphp
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 @endsection

@@ -246,6 +246,10 @@ header.header-banner.fixed .desktop-nav>li.menu-item:not(.call-to-action) > a {
 
 }
 
+d-none {
+  display: none;
+}
+
 p,
 li {
   font-size: 18px;
