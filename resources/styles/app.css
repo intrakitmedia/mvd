@@ -203,7 +203,7 @@ header.header-banner.fixed {
 
 @media (max-wdith: 800px) {
   .admin-bar header.header-banner.fixed {
-    top: 46px;
+    top: 0;
   }
 }
 
@@ -215,6 +215,11 @@ header.header-banner.fixed .desktop-nav>li.menu-item:not(.call-to-action) > a {
   padding-top: 30px;
   padding-bottom: 30px;
   transition: 0.3s all ease;
+}
+
+.brand {
+  min-width: 150px;
+  min-height: 60px;
 }
 
 .brand img {
