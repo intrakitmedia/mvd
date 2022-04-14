@@ -103,7 +103,6 @@
   width: 98%;
   max-width: 385px;
   visibility: hidden;
-  transition: 0.7s all ease;
   right: -787px;
   opacity: 0;
   box-shadow: var(--leftshadow);

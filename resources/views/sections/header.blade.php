@@ -35,16 +35,16 @@
                         <span></span>
                     </div>
 
-                    {{--<div id="main-navi-wrapper">--}}
-                    {{--<div id="main-navi"  class="nav-wrapper">--}}
-                        {{--<nav class="nav-primary sm:hidden lg:block"--}}
-                             {{--aria-label="{{ wp_get_nav_menu_name('primary_navigation') }}">--}}
-                            {{--{!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'desktop-nav',--}}
-                            {{--'echo'--}}
-                             {{--=> false, 'walker' => new \app\MegaMenu()]) !!}--}}
-                        {{--</nav>--}}
-                    {{--</div>--}}
-                    {{--</div>--}}
+                    <div id="main-navi-wrapper">
+                    <div id="main-navi"  class="nav-wrapper">
+                        <nav class="nav-primary sm:hidden lg:block"
+                             aria-label="{{ wp_get_nav_menu_name('primary_navigation') }}">
+                            {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'desktop-nav',
+                            'echo'
+                             => false, 'walker' => new \app\MegaMenu()]) !!}
+                        </nav>
+                    </div>
+                    </div>
                 </div>
             @endif
         </div>
