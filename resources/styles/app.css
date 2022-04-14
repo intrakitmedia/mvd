@@ -147,9 +147,18 @@ a {
   cursor: pointer;
 }
 
-nav li:not(.call-to-action) p a {
+nav .sub-menu li:not(.call-to-action) p a {
   font-weight: 100 !important;
   font-size: 13px !important;
+  padding-bottom: 0 !important;
+}
+
+nav .sub-menu li:not(.call-to-action) a {
+  margin-bottom: 15px !important;
+}
+
+nav .sub-menu li {
+  margin-bottom: 15px;
 }
 
 nav li:not(.call-to-action):hover > a,
@@ -178,6 +187,16 @@ ul {
 
 li {
   list-style: disc;
+}
+
+.brand img {
+  width: 250px;
+  transition: .3s all ease;
+}
+
+.fixed .brand img {
+  width: 150px;
+  transition: .3s all ease;
 }
 
 p,
