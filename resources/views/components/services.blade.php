@@ -8,7 +8,7 @@
             </div>
         </div>
 
-        <div class="row wrap center">
+        <div class="small-row wrap center">
             <div class="col-four services-block">
                 <div class="services-block-inner">
                     <div class="block-flip">
