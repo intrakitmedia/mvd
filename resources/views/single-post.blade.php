@@ -36,25 +36,25 @@ $post = get_post($post_ID);
                                     $post_date = date('F d Y', strtotime($post->post_date) );
                                 @endphp
                                 <div class="post-meta article-author">
-                                    @if($avatar)
-                                        <div class="pic article-pic">
-                                            <div class="pic-inner article-pic-inner"
-                                                 style="background: url({{$avatar}}); background-size: cover;">
+                                    {{--@if($avatar)--}}
+                                        {{--<div class="pic article-pic">--}}
+                                            {{--<div class="pic-inner article-pic-inner"--}}
+                                                 {{--style="background: url({{$avatar}}); background-size: cover;">--}}
 
-                                            </div>
-                                        </div>
-                                    @else
-                                    <div class="pic article-pic">
-                                        <div class="pic-inner article-pic-inner"
-                                             style="background: url(@asset('images/author.jpg')); background-size: cover;">
+                                            {{--</div>--}}
+                                        {{--</div>--}}
+                                    {{--@else--}}
+                                    {{--<div class="pic article-pic">--}}
+                                        {{--<div class="pic-inner article-pic-inner"--}}
+                                             {{--style="background: url(@asset('images/author.jpg')); background-size: cover;">--}}
 
-                                        </div>
-                                    </div>
-                                    @endif
+                                        {{--</div>--}}
+                                    {{--</div>--}}
+                                    {{--@endif--}}
 
                                     @if($author_display_name && $post_date)
                                     <div class="meta article-data">
-                                        <div class="author-name"><p>{!! $author_display_name !!}</p></div>
+                                        <div class="author-name"><p> by {!! $author_display_name !!}</p></div>
                                     </div>
                                         @endif
                                 </div>

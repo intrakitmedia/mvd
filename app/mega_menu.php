@@ -29,6 +29,7 @@ class=\"sub-menu\">\n";
 
 		function end_el( &$output, $data_object, $depth = 0, $args = null, $current_object_id = 0 ) {
 			$item        = get_post_meta( $data_object->ID );
+			$item_url = $data_object->url;
 			$desc = '';
 
 			if (array_key_exists('_menu_item_desc', $item)) {
@@ -44,7 +45,7 @@ class=\"sub-menu\">\n";
 			}
 
 			if ( $depth == 1 ) {
-				$output .= "<p>$desc</p></li>";
+				$output .= "<p><a href='$item_url'>$desc</a></p></li>";
 			}
 		}
 	}
