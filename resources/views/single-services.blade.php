@@ -179,10 +179,10 @@ $query = new \WP_Query( $args );
     <section class="services-sizzle section-alt">
         <div class="container">
             <div class="row">
-                <div class="large-col">
+                <div class="vid">
                     <div class="services-reel-content">
                         <div class="header-two blue">
-                            <h2>Video Production Examples</h2>
+                            <h2 class="text-center">Video Production Examples</h2>
                         </div>
 
                         @php
@@ -191,7 +191,7 @@ $query = new \WP_Query( $args );
     if( have_rows('video_gallery') ):
 
                         @endphp
-                        <div class="services-sizzle-reel grid sm:grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="services-sizzle-reel grid sm:grid-cols-1 md:grid-cols-3 gap-6">
                             @php
                                 // Loop through rows.
                                 while ( have_rows('video_gallery') ) : the_row();
@@ -310,51 +310,11 @@ $query = new \WP_Query( $args );
                                 {{--</div>--}}
                             {{--</div>--}}
 
-
-                <div class="small-col">
-
-                    @if($query->found_posts)
-
-                    <div class="small-content other-services">
-                        <div class="other-services-wrapper">
-                            <div class="other-services-inner">
-                                <h3 class="header-tag center">Other Services</h3>
-
-                                @php
-                                    $posts = $query->posts;
-                                @endphp
-                            @foreach($posts as $post)
-
-                                @php
-
-                                        $image_url = get_the_post_thumbnail_url($post->ID) ?? null;
-                                    $post_link = get_permalink($post->ID);
-                                    @endphp
-
-                                <div class="other-service">
-                                    <div class="other-service-image">
-                                        @if($image_url)
-                                            <a title="{{$post->post_title}}" href="{{$post_link}}"> <img
-                                                        src="{{$image_url}}" alt="{{$post->post_title}}"/></a>
-                                            @else
-                                            <a title="{{$post->post_title}}" href="{{$post_link}}"><img src="@asset
-                                            ('images/default-image.jpg')" alt="{{$post->post_title}}"/></a>
-                                        @endif
-                                    </div>
-                                    <div class="other-service-title">
-                                        <a title="{{$post->post_title}}" href="{{$post_link}}">{{$post->post_title}}</a>
-                                    </div>
-                                </div>
-
-                                    @endforeach
-                            </div>
-                        </div>
-                    </div>
-                        @endif
-                </div>
             </div>
         </div>
     </section>
+
+    @include('components.services')
 
 
 
