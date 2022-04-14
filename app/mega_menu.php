@@ -45,7 +45,9 @@ class=\"sub-menu\">\n";
 			}
 
 			if ( $depth == 1 ) {
-				$output .= "<p><a href='$item_url'>$desc</a></p></li>";
+				if($desc) {
+					$output .= "<p><a href='$item_url'>$desc</a></p></li>";
+				}
 			}
 		}
 	}
