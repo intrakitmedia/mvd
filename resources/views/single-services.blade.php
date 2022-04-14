@@ -328,6 +328,13 @@ $query = new \WP_Query( $args );
     @endif
 
     @include('components.services')
+    <section class="the-content section-alt-2 extra-bottom">
+        <div class="container">
+            <div class="small-row">
+            </div>
+        </div>
+    </section>
+    @include('components.lead-gen')
 
 
 
