@@ -145,18 +145,12 @@ $post = get_post($post_ID);
                                                 @if($image_url)
                                                     <img src="@php echo get_the_post_thumbnail_url($post->ID) @endphp"
                                                          alt="{{$post->post_title}}"/>
-                                                @else
-                                                    <img src="@asset('images/default-image.jpg')" alt="Multivision
-                                                Digital Blog"/>
-                                                @endif
+@endif
                                             </div>
                                             <div class="post-roll-header">
                                                 <div class="post-roll-title">
                                                     <a title="{{$post->post_title}}"
                                                        href="{{$post_link}}">{{$post->post_title}}</a>
-                                                </div>
-                                                <div class="post-date">
-                                                    <p>{{$post_date}}</p>
                                                 </div>
                                             </div>
                                         </div>

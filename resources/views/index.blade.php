@@ -91,19 +91,19 @@
                                         $avatar = \Roots\asset('images/robert-weiss.png')->uri();
                                     @endphp
                                 @endif
-                                <div class="pic">
-                                    @if($avatar)
-                                        <div class="pic-inner" style="background: url({{$avatar}});
-                                                background-size:cover;"></div>
-                                    @else
-                                        <div class="pic-inner" style="background: url(@asset('images/default-author.jpg'));
-                                background-size:cover;"></div>
-                                    @endif
-                                </div>
+                                {{--<div class="pic">--}}
+                                    {{--@if($avatar)--}}
+                                        {{--<div class="pic-inner" style="background: url({{$avatar}});--}}
+                                                {{--background-size:cover;"></div>--}}
+                                    {{--@else--}}
+                                        {{--<div class="pic-inner" style="background: url(@asset('images/default-author.jpg'));--}}
+                                {{--background-size:cover;"></div>--}}
+                                    {{--@endif--}}
+                                {{--</div>--}}
                                 <div class="meta">
 
                                     <div class="author-name"><p>{{$author_display_name}}</p></div>
-                                    <div class="date"><p>{{$post_date}}</p></div>
+                                    {{--<div class="date"><p>{{$post_date}}</p></div>--}}
                                 </div>
                             </div>
 
