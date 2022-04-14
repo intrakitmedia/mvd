@@ -35,9 +35,6 @@ body.admin-bar .bg-shadow-video {
   height: calc(100vh - 32px);
 }
 
-.the-page-header .blog-page-header h2, .page-header-title h2 {
-  color: var(--bluesoft);
-}
 
 .bg-shadow-video {
   background: rgba(0 0 0 / 91%);
