@@ -8,6 +8,7 @@
   left: 0;
   display: none;
   border-radius: 0 0 10px 10px;
+  box-shadow: var(--shadowbig);
 }
 
 #main-navi-wrapper #main-navi:not(.is-mobile) #menu-primary-navigation > li.menu-item-has-children:hover .mega-menu {
