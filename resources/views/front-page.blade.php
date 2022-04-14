@@ -394,7 +394,7 @@ $link = $contact_us_link;
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row wrap center">
                     <div class="col-four services-block">
                         <div class="services-block-inner">
                             <div class="block-flip">
@@ -538,10 +538,9 @@ $link = $contact_us_link;
                                             </div>
                                             <div class="block-text">
                                                 <div class="block-text-inner">
-                                                    <h4>Animation</h4>
+                                                    <h4>Remote Video Production</h4>
 
-                                                    <p>Animated marketing videos are a very effective tool for lead
-                                                        generation and conversion. </p>
+                                                    <p>Capture up to 4k video with the help of a professional director without the on-location cost.</p>
                                                     <p><span class="learn-more">Learn More</span></p>
                                                 </div>
                                             </div>
@@ -550,6 +549,91 @@ $link = $contact_us_link;
                                 </a>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="col-four services-block">
+                        <div class="services-block-inner">
+                            <div class="block-flip">
+                                @php
+                                    $page = get_page_by_title('Remote Video Production', 'object', 'services');
+                                @endphp
+
+                                @if($page)
+                                    @php
+                                        $link = get_permalink($page->ID);
+                                    @endphp
+                                @else
+                                    @php
+                                        $link = "#";
+                                    @endphp
+                                @endif
+                                <a title="{{$page->post_title}}" href="{{$link}}" class="block-link"
+                                   style="background: url(@asset('images/remote-video-capture.png'));
+                                   background-size: cover;">
+                                    <div class="block-flip-inner">
+                                        <div class="block-content">
+                                            <div class="block-header">
+                                                <h4 class="initial">Remote Video Production</h4>
+                                            </div>
+                                            <div class="block-text">
+                                                <div class="block-text-inner">
+                                                    <h4>Remote Video Production</h4>
+
+                                                    <p>Capture up to 4k video with the help of a professional director without the on-location cost..</p>
+                                                    <p><span class="learn-more">Learn More</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-four services-block">
+                        <div class="services-block-inner">
+                            <div class="block-flip">
+                                @php
+                                    $page = get_page_by_title('Live Stream & Events', 'object', 'services');
+                                @endphp
+
+                                @if($page)
+                                    @php
+                                        $link = get_permalink($page->ID);
+                                    @endphp
+                                @else
+                                    @php
+                                        $link = "#";
+                                    @endphp
+                                @endif
+                                <a title="{{$page->post_title}}" title="Live Stream & Events" href="{{$link}}"
+                                   class="block-link"
+                                   style="background: url(@asset('images/events.jpeg'));
+                                   background-size: cover;">
+                                    <div class="block-flip-inner">
+                                        <div class="block-content">
+                                            <div class="block-header">
+                                                <h4 class="initial">Live Stream & Events</h4>
+                                            </div>
+                                            <div class="block-text">
+                                                <div class="block-text-inner">
+                                                    <h4>Live Stream & Events</h4>
+
+                                                    <p>Multiply your brand’s audience, reach, and engagement with the experience of our live streaming event video production services.</p>
+                                                    <p><span class="learn-more">Learn More</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div>
+
                     </div>
                 </div>
 
