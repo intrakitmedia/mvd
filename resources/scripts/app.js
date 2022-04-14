@@ -86,13 +86,13 @@ domReady(() => {
         $megaMenu.toggleClass('mobile-open');
     })
 
-    var num = 200; //number of pixels before modifying styles
+    var num = 30; //number of pixels before modifying styles
 
     $(window).bind('scroll', function () {
         if ($(window).scrollTop() > num) {
-            $('.menu').addClass('fixed');
+            $('.header-banner').addClass('fixed');
         } else {
-            $('.menu').removeClass('fixed');
+            $('.header-banner').removeClass('fixed');
         }
     });
 
