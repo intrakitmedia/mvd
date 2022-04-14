@@ -185,7 +185,7 @@
         </div>
     </section>
 
-    <section class="pagination">
+    <section class="pagination extra-bottom">
         <div class="container">
             <div class="row flex-end">
     <div class="post-pagination">
@@ -199,16 +199,6 @@
         </div>
     </section>
 
-    <section class="section-alt">
-        <div class="container">
-            <div class="row"></div>
-        </div>
-    </section>
-
-    @php
-        $sc = get_field('gravity_forms_shortcode') ?? null;
-        if ($sc) {
-    @endphp
 
     <section class="wide-form-section section-alt-2">
         <div class="container">
@@ -226,20 +216,15 @@
                 <div class="lead-in-right">
                     <div class="wide-form">
                         <h4>Contact Us</h4>
-    @php
+                        @php
 
-        echo do_shortcode($sc);
+                            echo do_shortcode('[gravityform id="4" title="false"]');
 
-    @endphp
+                        @endphp
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    @php
-        }
-    @endphp
-
 
 @endsection
