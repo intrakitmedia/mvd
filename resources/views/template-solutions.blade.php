@@ -411,7 +411,7 @@ if( have_rows('video_gallery') ):
 
                                 // End loop.
                                 endwhile;
-                                                
+
 
                             @endphp
                         </div>
