@@ -86,7 +86,7 @@
             </div>
             <div class="row center">
 
-                    <div class="services-reel-content grid sm:grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="services-reel-content grid sm:grid-cols-1 md:grid-cols-3 gap-6">
 
 
                         @php
@@ -106,13 +106,7 @@
 
                         @if($video)
                             <div data-field="{{$youtube_id}}" class="s-vid">
-                                <div class="s-vid-inner">
-                                    <div class="video-container video-thumbnail"
-                                         style="background-image: url('<?php echo "https://img.youtube.com/vi/$youtube_id/maxresdefault.jpg"; ?>');
-                                                 background-size: 103%;
-                                                 background-position: -2px;">
-                                    </div>
-                                </div>
+                                @include('components.s-vid')
                                 @endif
                             </div>
                             @php

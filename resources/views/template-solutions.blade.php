@@ -385,7 +385,7 @@ $query = new \WP_Query( $args );
     if( have_rows('video_gallery') ):
 
                         @endphp
-                        <div class="services-sizzle-reel grid sm:grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="services-sizzle-reel grid sm:grid-cols-1 md:grid-cols-2 gap-6">
                             @php
                                 // Loop through rows.
                                 while ( have_rows('video_gallery') ) : the_row();
@@ -402,19 +402,9 @@ $query = new \WP_Query( $args );
                             @endphp
 
                             @if($video)
-                                <div data-field="{{$youtube_id}}" class="s-vid">
-                                    <div class="s-vid-inner">
-                                        <div class="video-container video-thumbnail"
-                                             style="background-image: url('<?php echo "https://img.youtube.com/vi/$youtube_id/maxresdefault.jpg"; ?>');
-                                                     background-size: 103%;
-                                                     background-position: -2px;">
-                                        </div>
-                                        <div class="s-vid-title">
-                                            <h4>{{$video->post_title}}</h4>
-                                        </div>
-                                    </div>
+                                @include('components.s-vid')
                                     @endif
-                                </div>
+
                                 @php
 
                                     // End loop.

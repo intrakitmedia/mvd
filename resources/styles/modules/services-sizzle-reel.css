@@ -30,6 +30,16 @@
   font-size: 16px;
 }
 
+.abso-bg {
+  position: absolute;
+  background: rgb(0 0  0 / 50%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
 @media (max-width: 800px) {
   .s-vid {
     width: 100%;

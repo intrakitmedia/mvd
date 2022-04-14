@@ -157,6 +157,37 @@ a.orange-underline {
   cursor: pointer;
 }
 
+.player-button-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.player-button {
+  border: 2px solid white;
+  border-radius: 100%;
+  margin: auto;
+  padding: 30px;
+  transition: all 0.25s;
+}
+
+.player-button svg {
+  width: 30px;
+  height: 30px;
+  left: 2px;
+  position: relative;
+  color: var(--white);
+  fill: var(--white);
+}
+
+.video-img-container:hover .player-button {
+  background: rgb(0 0 0 / 55%);
+  transform: scale(1.1);
+}
+
 @media (max-width: 800px) {
   .cta-button-wrapper:not(:last-child) {
     margin-bottom: 30px;
