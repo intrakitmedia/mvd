@@ -43,7 +43,7 @@
             </div>
             <div class="col-four services-block">
                 <div class="services-block-inner">
-                    <div class="block-flip"
+                    <div class="block-flip">
                         <a title="Video Production" href="{{$url}}/services/video-production/" class="block-link"
                            style="background: url(@asset('images/video-production.jpg')); background-size: cover;">
                             <div class="block-flip-inner">
@@ -95,7 +95,7 @@
 
             <div class="col-four services-block">
                 <div class="services-block-inner">
-                    <div class="block-flip"
+                    <div class="block-flip">
                         <a title="Animation" href="{{$url}}/services/animation-motion-graphics/"
                            class="block-link"
                            style="background: url(@asset('images/animation-studio.jpg')); background-size: cover;">
