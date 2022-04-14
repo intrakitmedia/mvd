@@ -220,6 +220,7 @@ header.header-banner.fixed .desktop-nav>li.menu-item:not(.call-to-action) > a {
 .brand {
   min-width: 150px;
   min-height: 60px;
+  display: block;
 }
 
 .brand img {

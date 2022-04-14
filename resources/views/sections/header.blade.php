@@ -10,12 +10,13 @@
 <header class="header-banner">
     <div class="container">
         <div class="header-inner">
-            
+            <div class="logoo">
             <a class="brand" href="{{ home_url('/') }}">
                 <img width="250" src="@asset('images/multivision-digital-video-production-logo-trans.png')" alt="Multivision
     Digital
     Production Logo"/>
             </a>
+            </div>
 
             @if (has_nav_menu('primary_navigation'))
                 <div id="menuToggle" class="primary-menu-wrapper">

@@ -37,7 +37,15 @@ domReady(() => {
         }
     })
 
-
+    if ( window.matchMedia('(max-width: 1119px)').matches ) {
+        $('.nav-wrapper').addClass('is-mobile');
+    } else {
+        $('.mega-menu').removeClass('.mobile-open');
+        $('.nav-wrapper').removeClass('is-mobile');
+        $('.nav-wrapper').removeClass('mobile-open');
+        $('#main-navi-wrapper').removeClass('sh-overlay');
+        $('#mobile-navi').prop('checked', false);
+    }
 
     $(window).on('resize', function () {
         if ( window.matchMedia('(max-width: 1119px)').matches ) {
