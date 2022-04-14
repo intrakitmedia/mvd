@@ -246,7 +246,7 @@ header.header-banner.fixed .desktop-nav>li.menu-item:not(.call-to-action) > a {
 
 }
 
-d-none {
+.d-none {
   display: none;
 }
 
