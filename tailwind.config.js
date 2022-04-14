@@ -25,8 +25,8 @@ module.exports = {
         DEFAULT: '20px',
         sm: '20px',
         md: '20px',
-        lg: '10px',
-        xl: '20px',
+        lg: '40px',
+        xl: '40px',
       }
     }
   },
