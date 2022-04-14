@@ -108,6 +108,16 @@
   box-shadow: var(--leftshadow);
 }
 
+@media(max-width: 800px) {
+  #menuToggle {
+    max-width: 33px !important;
+  }
+
+  .primary-menu-wrapper {
+    height: auto;
+  }
+}
+
 .is-mobile .call-to-action.menu-item {
   margin-top: 60px;
   margin-left: 12px;
