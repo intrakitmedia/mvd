@@ -206,7 +206,7 @@
     </section>
 
     @php
-        $sc = get_field('gravity_forms_shortcode') ? get_field('gravity_forms_shortcode') : null;
+        $sc = get_field('gravity_forms_shortcode') ?? null;
         if ($sc) {
     @endphp
 
