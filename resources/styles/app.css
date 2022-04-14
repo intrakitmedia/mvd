@@ -194,6 +194,17 @@ header.header-banner.fixed {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 10;
+}
+
+.admin-bar header.header-banner.fixed {
+  top: 32px;
+}
+
+@media (max-wdith: 800px) {
+  .admin-bar header.header-banner.fixed {
+    top: 46px;
+  }
 }
 
 .desktop-nav>li.menu-item:not(.call-to-action) a {
