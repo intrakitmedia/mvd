@@ -185,7 +185,7 @@
                                         {{--</div>--}}
                                         <div class="meta">
 
-                                            <div class="author-name">by  <p>{{$author_display_name}}</p></div>
+                                            <div class="author-name"><p>by {{$author_display_name}}</p></div>
                                             <div class="date"><p>{{$post_date}}</p></div>
                                         </div>
                                     </div>
