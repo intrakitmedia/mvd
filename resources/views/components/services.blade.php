@@ -106,7 +106,7 @@
                             @endphp
                         @endif
                         <a title="{{$page->post_title}}" href="{{$link}}" class="block-link"
-                           style="background: url(@asset('images/video-marekting.jpeg')); background-size: cover;">
+                           style="background: url(@asset('images/video-marketing.jpg')); background-size: cover;">
                             <div class="block-flip-inner">
                                 <div class="block-content">
                                     <div class="block-header">
