@@ -370,22 +370,24 @@ $query = new \WP_Query( $args );
 
         @endif
 
+    @php
+
+        // Check value exists.
+if( have_rows('video_gallery') ):
+
+    @endphp
+
     <section class="services-sizzle section-alt">
         <div class="container">
             <div class="row">
-                <div class="large-col">
+                <div class="vid">
                     <div class="services-reel-content">
                         <div class="header-two blue">
-                            <h2>Check out these videos!</h2>
+                            <h2 class="text-center">Video Production Examples</h2>
                         </div>
 
-                        @php
 
-                            // Check value exists.
-    if( have_rows('video_gallery') ):
-
-                        @endphp
-                        <div class="services-sizzle-reel grid sm:grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="services-sizzle-reel grid sm:grid-cols-1 md:grid-cols-3 gap-6">
                             @php
                                 // Loop through rows.
                                 while ( have_rows('video_gallery') ) : the_row();
@@ -393,8 +395,8 @@ $query = new \WP_Query( $args );
                                     if( get_row_layout() == 'videos' ):
                                         $video = get_sub_field('video');
                                         if($video) {
-                                            $youtube_id = get_field('youtube_id', $video->ID);
-                                            $youtube_id = preg_replace('/\s+/', '', $youtube_id);
+                                        $youtube_id = get_field('youtube_id', $video->ID);
+                                        $youtube_id = preg_replace('/\s+/', '', $youtube_id);
                                         }
 
                                     endif;
@@ -403,138 +405,52 @@ $query = new \WP_Query( $args );
 
                             @if($video)
                                 @include('components.s-vid')
-                                    @endif
+                            @endif
 
-                                @php
+                            @php
 
-                                    // End loop.
-                                    endwhile;
-                                                    endif;
+                                // End loop.
+                                endwhile;
+                                                
 
-                                @endphp
+                            @endphp
                         </div>
+
 
                         @include('components.modal')
                     </div>
                 </div>
 
-
-                {{--<div class="large-col">--}}
-                {{--<div class="services-reel-content">--}}
-                {{--<div class="header-two blue">--}}
-                {{--<h2>Sizzle Reels Made for Our Partners</h2>--}}
-                {{--</div>--}}
-
-                {{--@php--}}
-
-                {{--// Check value exists.--}}
-                {{--if( have_rows('sizzle_reel') ):--}}
-
-                {{--@endphp--}}
-                {{--<div class="services-sizzle-reel grid grid-cols-2 gap-2">--}}
-                {{--@php--}}
-                {{--// Loop through rows.--}}
-                {{--while ( have_rows('sizzle_reel') ) : the_row();--}}
-                {{----}}
-                {{----}}
-                {{--// Case: Paragraph layout.--}}
-                {{--if( get_row_layout() == 'video' ):--}}
-                {{--$video = get_sub_field('video');--}}
-                {{--$video_url = get_sub_field('video', false, false) ?? 'hey';--}}
-                {{--$video_title = get_sub_field('video_title') ?? 'hi';--}}
-                {{--$image = get_sub_field('video_cover_image');--}}
-                {{--$url = $image['url'];--}}
-                {{--endif;--}}
-
-                {{--@endphp--}}
-
-
-                {{--<div class="s-vid"--}}
-                {{--data-field="@php echo--}}
-                {{--$video_url;--}}
-                {{--@endphp">--}}
-                {{--<div class="s-vid-inner">--}}
-                {{--<div class="video-container video-thumbnail"--}}
-                {{--style="background-image: url('@php echo $url; @endphp');--}}
-                {{--background-size: cover;">--}}
-                {{--<img src="@php echo $url; @endphp" alt="Remote Video Capture--}}
-                {{--</div>--}}
-                {{--Client"/>--}}
-                {{--<div class="s-vid-title">--}}
-                {{--<h4>@php echo $video_title; @endphp</h4>--}}
-                {{--</div>--}}
-                {{--</div>--}}
-                {{--</div>--}}
-
-                {{--@php--}}
-
-                {{--// End loop.--}}
-                {{--endwhile;--}}
-                {{--endif;--}}
-
-                {{--@endphp--}}
-                {{--</div>--}}
-
-
-                {{--<div class="video-modal">--}}
-                {{--<div class="bg-shadow-video">--}}
-
-                {{--<div class="video-modal-inner">--}}
-                {{--<div class="ex-out-wrapper">--}}
-                {{--<div id="ex-out" class="ex-out"></div>--}}
-                {{--</div>--}}
-                {{--<div class="video-container video-iframe"></div>--}}
-                {{--</div>--}}
-                {{--</div>--}}
-
-                {{--</div>--}}
-                {{--</div>--}}
-                {{--</div>--}}
-
-
-                <div class="small-col">
-
-                    @if($query->found_posts)
-
-                        <div class="small-content other-services">
-                            <div class="other-services-wrapper">
-                                <div class="other-services-inner">
-                                    <h3 class="header-tag center">Other Services</h3>
-
-                                    @php
-                                        $posts = $query->posts;
-                                    @endphp
-                                    @foreach($posts as $post)
-
-                                        @php
-
-                                            $image_url = get_the_post_thumbnail_url($post->ID) ?? null;
-                                        $post_link = get_permalink($post->ID);
-                                        @endphp
-
-                                        <div class="other-service">
-                                            <div class="other-service-image">
-                                                @if($image_url)
-                                                    <img src="{{$image_url}}" alt="{{$post->post_title}}"/>
-                                                @else
-                                                    <img src="@asset('images/default-image.jpg')" alt="{{$post->post_title}}"/>
-                                                @endif
-                                            </div>
-                                            <div class="other-service-title">
-                                                <a title="{{$post->post_title}}" href="{{$post_link}}">{{$post->post_title}}</a>
-                                            </div>
-                                        </div>
-
-                                    @endforeach
-                                </div>
-                            </div>
-                        </div>
-                    @endif
-                </div>
             </div>
         </div>
     </section>
 
+    @php
+
+
+                        endif;
+
+    @endphp
+
+    @if(get_post()->post_content)
+
+        <section class="the-content">
+            <div class="container">
+                <div class="small-row">
+                    {{ the_content() }}
+                </div>
+            </div>
+        </section>
+    @endif
+
+    @include('components.services')
+    <section class="the-content section-alt-2 extra-bottom">
+        <div class="container">
+            <div class="small-row">
+            </div>
+        </div>
+    </section>
+    @include('components.lead-gen')
 
 
 @endsection
