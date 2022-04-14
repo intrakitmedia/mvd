@@ -220,11 +220,11 @@ $query = new \WP_Query( $args );
         style="background-image: url('<?php echo "https://img.youtube.com/vi/$youtube_id/maxresdefault.jpg"; ?>');
                 background-size: 103%;
                 background-position: -2px;">
-            <div class="player-button">
-                <svg aria-hidden="true" focusable="false">
-                    <use xlink:href="#plyr-play"></use>
-                </svg>
-            </div>
+            {{--<div class="player-button">--}}
+                {{--<svg aria-hidden="true" focusable="false">--}}
+                    {{--<use xlink:href="#plyr-play"></use>--}}
+                {{--</svg>--}}
+            {{--</div>--}}
 
     </div>
         <div class="s-vid-title">
