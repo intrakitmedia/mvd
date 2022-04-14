@@ -152,9 +152,9 @@
                                     </div>
                                     <div class="block-text">
                                         <div class="block-text-inner">
-                                            <h4>Remote Video Production</h4>
+                                            <h4>Animation</h4>
 
-                                            <p>Capture up to 4k video with the help of a professional director without the on-location cost.</p>
+                                            <p>Animated marketing videos are a very effective tool for lead generation and conversion.						</p>
                                             <p><span class="learn-more">Learn More</span></p>
                                         </div>
                                     </div>
