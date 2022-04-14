@@ -1,3 +1,8 @@
+@php
+    $url  = get_home_url();
+
+@endphp
+
 <section class="section block-services section-alt-2">
     <div class="block-services-inner">
 
@@ -12,20 +17,7 @@
             <div class="col-four services-block">
                 <div class="services-block-inner">
                     <div class="block-flip">
-                        @php
-                            $page = get_page_by_title('Video Strategy', 'object', 'services');
-                        @endphp
-
-                        @if($page)
-                            @php
-                                $link = get_permalink($page->ID);
-                            @endphp
-                        @else
-                            @php
-                                $link = "#";
-                            @endphp
-                        @endif
-                        <a title="{{$page->post_title}}" href="{{$link}}" class="block-link"
+                        <a title="Video Strategy" href="{{$url}}/services/video-strategy/" class="block-link"
                            style="background: url(@asset('images/video-strategy.jpg')); background-size:
                                    cover;">
                             <div class="block-flip-inner">
@@ -51,21 +43,8 @@
             </div>
             <div class="col-four services-block">
                 <div class="services-block-inner">
-                    <div class="block-flip">
-                        @php
-                            $page = get_page_by_title('Video Production', 'object', 'services');
-                        @endphp
-
-                        @if($page)
-                            @php
-                                $link = get_permalink($page->ID);
-                            @endphp
-                        @else
-                            @php
-                                $link = "#";
-                            @endphp
-                        @endif
-                        <a title="{{$page->post_title}}" href="{{$link}}" class="block-link"
+                    <div class="block-flip"
+                        <a title="Video Production" href="{{$url}}/services/video-production/" class="block-link"
                            style="background: url(@asset('images/video-production.jpg')); background-size: cover;">
                             <div class="block-flip-inner">
                                 <div class="block-content">
@@ -92,20 +71,7 @@
             <div class="col-four services-block">
                 <div class="services-block-inner">
                     <div class="block-flip">
-                        @php
-                            $page = get_page_by_title('Video Marketing', 'object', 'services');
-                        @endphp
-
-                        @if($page)
-                            @php
-                                $link = get_permalink($page->ID);
-                            @endphp
-                        @else
-                            @php
-                                $link = "#";
-                            @endphp
-                        @endif
-                        <a title="{{$page->post_title}}" href="{{$link}}" class="block-link"
+                        <a title="Video Marketing" href="{{$url}}/services/video-marketing/" class="block-link"
                            style="background: url(@asset('images/video-marketing.jpg')); background-size: cover;">
                             <div class="block-flip-inner">
                                 <div class="block-content">
@@ -129,21 +95,9 @@
 
             <div class="col-four services-block">
                 <div class="services-block-inner">
-                    <div class="block-flip">
-                        @php
-                            $page = get_page_by_title('Animation/Motion Graphics', 'object', 'services');
-                        @endphp
-
-                        @if($page)
-                            @php
-                                $link = get_permalink($page->ID);
-                            @endphp
-                        @else
-                            @php
-                                $link = "#";
-                            @endphp
-                        @endif
-                        <a title="{{$page->post_title}}" href="{{$link}}" class="block-link"
+                    <div class="block-flip"
+                        <a title="Animation" href="{{$url}}/services/animation-motion-graphics/"
+                           class="block-link"
                            style="background: url(@asset('images/animation-studio.jpg')); background-size: cover;">
                             <div class="block-flip-inner">
                                 <div class="block-content">
@@ -168,20 +122,8 @@
             <div class="col-four services-block">
                 <div class="services-block-inner">
                     <div class="block-flip">
-                        @php
-                            $page = get_page_by_title('Remote Video Production', 'object', 'services');
-                        @endphp
-
-                        @if($page)
-                            @php
-                                $link = get_permalink($page->ID);
-                            @endphp
-                        @else
-                            @php
-                                $link = "#";
-                            @endphp
-                        @endif
-                        <a title="{{$page->post_title}}" href="{{$link}}" class="block-link"
+                        <a title="Remote Video Production" href="{{$url}}/services/remote-video-production/"
+                           class="block-link"
                            style="background: url(@asset('images/remote-video-capture.png'));
                                    background-size: cover;">
                             <div class="block-flip-inner">
@@ -207,31 +149,17 @@
             <div class="col-four services-block">
                 <div class="services-block-inner">
                     <div class="block-flip">
-                        @php
-                            $page = get_page_by_title('Live Stream & Events', 'object', 'services');
-                        @endphp
-
-                        @if($page)
-                            @php
-                                $link = get_permalink($page->ID);
-                            @endphp
-                        @else
-                            @php
-                                $link = "#";
-                            @endphp
-                        @endif
-                        <a title="{{$page->post_title}}" title="Live Stream & Events" href="{{$link}}"
-                           class="block-link"
-                           style="background: url(@asset('images/events.jpeg'));
+                        <a title="Live Streaming & Events" title="Live Stream & Events"
+                           href="{{$url}}/services/live-stream-events/" class="block-link" style="background: url(@asset('images/events.jpeg'));
                                    background-size: cover;">
                             <div class="block-flip-inner">
                                 <div class="block-content">
                                     <div class="block-header">
-                                        <h4 class="initial">Live Stream & Events</h4>
+                                        <h4 class="initial">Live Streaming & Events</h4>
                                     </div>
                                     <div class="block-text">
                                         <div class="block-text-inner">
-                                            <h4>Live Stream & Events</h4>
+                                            <h4>Live Streaming & Events</h4>
 
                                             <p>Multiply your brand’s audience, reach, and engagement with the experience of our live streaming event video production services.</p>
                                             <p><span class="learn-more">Learn More</span></p>
