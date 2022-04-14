@@ -46,6 +46,15 @@ section.the-page-header {
   margin: 0 auto;
 }
 
+.small-row.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.small-wrap.center {
+  justify-content: center;
+}
+
 .row {
   max-width: var(--row);
   margin: 0 auto;

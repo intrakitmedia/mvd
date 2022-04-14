@@ -173,16 +173,7 @@ $query = new \WP_Query( $args );
     </section>
 
 
-    @if(get_post()->post_content)
 
-    <section class="the-content">
-        <div class="container">
-            <div class="small-row">
-                {{ the_content() }}
-            </div>
-        </div>
-    </section>
-@endif
 
 
 
@@ -324,6 +315,17 @@ $query = new \WP_Query( $args );
             </div>
         </div>
     </section>
+
+    @if(get_post()->post_content)
+
+        <section class="the-content">
+            <div class="container">
+                <div class="small-row">
+                    {{ the_content() }}
+                </div>
+            </div>
+        </section>
+    @endif
 
     @include('components.services')
 
