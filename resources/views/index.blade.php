@@ -91,19 +91,10 @@
                                         $avatar = \Roots\asset('images/robert-weiss.png')->uri();
                                     @endphp
                                 @endif
-                                {{--<div class="pic">--}}
-                                    {{--@if($avatar)--}}
-                                        {{--<div class="pic-inner" style="background: url({{$avatar}});--}}
-                                                {{--background-size:cover;"></div>--}}
-                                    {{--@else--}}
-                                        {{--<div class="pic-inner" style="background: url(@asset('images/default-author.jpg'));--}}
-                                {{--background-size:cover;"></div>--}}
-                                    {{--@endif--}}
-                                {{--</div>--}}
                                 <div class="meta">
 
                                     <div class="author-name"><p>by {{$author_display_name}}</p></div>
-                                    {{--<div class="date"><p>{{$post_date}}</p></div>--}}
+
                                 </div>
                             </div>
 
@@ -174,19 +165,9 @@
                                             $avatar = get_avatar_url($post->post_author);
                                             $post_date = date('F d Y', strtotime($post->post_date) );
                                         @endphp
-                                        {{--<div class="pic">--}}
-                                            {{--@if($avatar)--}}
-                                                {{--<div class="pic-inner" style="background: url({{$avatar}});--}}
-                                                        {{--background-size:cover;"></div>--}}
-                                            {{--@else--}}
-                                                {{--<div class="pic-inner" style="background: url(@asset('images/default-author.jpg'));--}}
-                                {{--background-size:cover;"></div>--}}
-                                            {{--@endif--}}
-                                        {{--</div>--}}
                                         <div class="meta">
 
                                             <div class="author-name"><p>by {{$author_display_name}}</p></div>
-                                            {{--<div class="date"><p>{{$post_date}}</p></div>--}}
                                         </div>
                                     </div>
                                 </div>
@@ -208,7 +189,11 @@
         <div class="container">
             <div class="row flex-end">
     <div class="post-pagination">
-        @php(the_posts_pagination())
+        @php
+
+            the_posts_pagination()
+
+        @endphp
     </div>
             </div>
         </div>
@@ -220,47 +205,10 @@
         </div>
     </section>
 
-    <section class="wide-form-section">
-        <div class="row wide-form-wrapper-90">
-            <div class="peak">
-                <div class="lead-in left alt">
-                    <div class="peak-card">
-                        <div class="peak-card-top" style="background: url(@asset('images/video-production-lights-center.jpg'));
-                    background-position: center center;">
-                            <div class="peak-card-bg"></div>
-                            <div class="peak-card-title">
-                                <h3>How Much Does a Video Cost?</h3>
-                            </div>
-                        </div>
-
-                        <div class="peak-card-logo"><img
-                                    src="@asset('images/multivision-digital-video-production-logo-trans.png')"
-                                    alt="Multivision Digitial Logo"/></div>
-                    </div>
-                </div>
-                <div class="lead-in-right">
-                    <div class="wide-form wide-form-download">
-                        <h2 class="preheader">Download Free PDF</h2>
-                        <h3 class="follow-up smaller">What is the most common question about video?</h3>
-                        <p>The answer is "how much does a video cost?" Download this free PDF and learn what goes
-                            into video production.</p>
-
-                       {!!   do_shortcode('[gravityform id="6" title="false"]') !!}
-
-                        {{--<form>--}}
-                            {{--<div class="form-row">--}}
-                                {{--<label class="two-col even-space" id="wide-form-first-name-label">--}}
-                                    {{--<input id="peak-email" type="email" value="" placeholder="Enter Email Address"--}}
-                                           {{--required/>--}}
-                                {{--</label>--}}
-                                {{--<button class="call-to-action" id="wide-form-submit">Download</button>--}}
-                            {{--</div>--}}
-                        {{--</form>--}}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    @php
+        $sc = get_field('gravity_forms_shortcode') ? get_field('gravity_forms_shortcode') : null;
+        if ($sc) {
+    @endphp
 
     <section class="wide-form-section section-alt-2">
         <div class="container">
@@ -278,50 +226,20 @@
                 <div class="lead-in-right">
                     <div class="wide-form">
                         <h4>Contact Us</h4>
-                        @php
-                            $sc = get_field('gravity_forms_shortcode') ?? null;
-                            if ($sc) {
-                                echo do_shortcode($sc);
-                            }
+    @php
 
-                        @endphp
-                        {{--<h4>Contact Us</h4>--}}
-                        {{--<form>--}}
-                        {{--<div class="form-row">--}}
-                        {{--<label class="two-col even-space" id="wide-form-first-name-label"--}}
-                        {{--for="wide-form-first-name"><p>First--}}
-                        {{--Name<span class="required">*</span></p>--}}
-                        {{--<input id="wide-form-first-name" type="text" value="" required/>--}}
-                        {{--</label>--}}
-                        {{--<label class="two-col even-space" id="wide-form-first-name-label"><p>Last Name<span--}}
-                        {{--class="required">*</span></p>--}}
-                        {{--<input id="wide-form-last-name" type="text" value="" required/>--}}
-                        {{--</label>--}}
-                        {{--</div>--}}
-                        {{--<div class="form-row">--}}
-                        {{--<label class="two-col even-space" id="wide-form-first-name-label"><p>Phone<span--}}
-                        {{--class="required">*</span></p>--}}
-                        {{--<input id="wide-form-first-name" type="phone" value="" required/>--}}
-                        {{--</label>--}}
-                        {{--<label class="two-col even-space" id="wide-form-first-name-label"><p>Email<span--}}
-                        {{--class="required">*</span></p>--}}
-                        {{--<input id="wide-form-last-name" type="email" value="" required/>--}}
-                        {{--</label>--}}
-                        {{--</div>--}}
-                        {{--<div class="form-row">--}}
-                        {{--<label class="two-col even-space only" id="wide-form-first-name-label"><p>Company<span--}}
-                        {{--class="required">*</span></p>--}}
-                        {{--<input id="wide-form-first-name" type="phone" value="" required/>--}}
-                        {{--</label>--}}
-                        {{--</div>--}}
-                        {{--<div class="row center">--}}
-                        {{--<button class="call-to-action" id="wide-form-submit">Submit</button>--}}
-                        {{--</div>--}}
-                        {{--</form>--}}
+        echo do_shortcode($sc);
+
+    @endphp
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    @php
+        }
+    @endphp
+
 
 @endsection
