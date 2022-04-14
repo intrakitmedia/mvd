@@ -219,6 +219,8 @@ header.header-banner.fixed {
 
 .desktop-nav>li.menu-item:not(.call-to-action) a {
   transition: 0.3s all ease;
+  font-weight: 400;
+  letter-spacing: 0.7px;
 }
 
 header.header-banner.fixed .desktop-nav>li.menu-item:not(.call-to-action) > a {
