@@ -42,7 +42,7 @@ body.admin-bar .bg-shadow-video {
   position: fixed;
   bottom: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 11;
   display: flex;
   justify-content: center;
   align-items: center;
