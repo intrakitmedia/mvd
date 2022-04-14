@@ -16,7 +16,7 @@
 
 @section('content')
 
-    <section class="parent section-alt">
+    <section class="parent">
         <div class="container">
             <div class="row center">
                 <div class="page-header-title blog-page-header text-center">
@@ -30,7 +30,7 @@
     <section class="serie-section page-header">
         <div class="container">
             <div class="row center">
-                <div class="services">
+                <div class="services text-center">
                     @if($query->found_posts)
                         @foreach($posts as $post)
                             @php

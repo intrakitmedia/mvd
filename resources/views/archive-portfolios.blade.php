@@ -16,7 +16,7 @@
 
 @section('content')
 
-    <section class="parent section-alt">
+    <section class="parent">
         <div class="container">
             <div class="row center">
                 <div class="page-header-title blog-page-header text-center">
@@ -39,7 +39,7 @@
 
                             $banner_bold = get_field('banner_bold_content', $post->ID);
                             @endphp
-                            <div class="service">
+                            <div class="service text-center">
                                 <div class="service-title">
                                     <h2 class="blue"><a title="{!! $post->post_title !!}"
                                                         href="{{$post_link}}">{!! $post->post_title
