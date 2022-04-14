@@ -149,7 +149,7 @@ a {
 
 nav li:not(.call-to-action) p a {
   font-weight: 100 !important;
-  font-size: 15px !important;
+  font-size: 13px !important;
 }
 
 nav li:not(.call-to-action):hover > a,
