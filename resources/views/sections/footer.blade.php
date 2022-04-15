@@ -6,7 +6,8 @@
             <ul>
                 <li>1330 Fifth Ave, Ste 6e<br/>
                     New York, NY 10026<br/>
-                    (646) 319-8609<br/><a href="rweiss@multivisiondigital.com">rweiss@multivisiondigital.com</a></li>
+                    (646) 319-8609<br/><a href="mailto:rweiss@multivisiondigital.com">rweiss@multivisiondigital
+                        .com</a></li>
                 <li>
             </ul>
         </div>
