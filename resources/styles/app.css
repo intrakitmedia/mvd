@@ -385,6 +385,11 @@ ul.checkmark li:before {
   margin-bottom:  0;
 }
 
+.portfolio-archive .text-center,
+.portfolio-archive .s-vid .video-img-container {
+  margin-bottom:15px;
+}
+
 .sidebar #gform_6 .gform_wrapper.gravity-theme .gfield.gfield--width-half {
   grid-column: span 12;
 }
@@ -426,6 +431,15 @@ ul.checkmark li:before {
 
 .the-page-header h1,
 .the-page-header h3 {
+  color: white !important;
+
+}
+
+.the-page-header h1 {
+  text-transform: uppercase !important;
+}
+
+.the-page-header h2 {
   color: white !important;
   text-transform: none !important;
 }
