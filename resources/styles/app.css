@@ -181,6 +181,17 @@ nav a {
   color: var(--blue);
 }
 
+.four-oh-four {
+  display: flex;
+  justify-content: center;
+  padding: 120px;
+}
+
+.f-num {
+  font-size: 72px;
+  font-weight: bold;
+}
+
 .wide-form-banner a {
   color: var(--white);
 }

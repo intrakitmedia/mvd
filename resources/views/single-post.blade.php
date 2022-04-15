@@ -103,8 +103,8 @@ $post = get_post($post_ID);
                     background-position: center center;">
                                             <div class="peak-card-bg"></div>
                                             <div class="peak-card-title">
-                                                <span>12</span>
-                                                <h3>Tips for Making Your Videos Look More Professional</h3>
+                                                <span>5</span>
+                                                <h3>Main Cost Factors to a Business Video</h3>
                                             </div>
                                         </div>
 
@@ -115,14 +115,12 @@ $post = get_post($post_ID);
                                 </div>
                                 <div class="lead-in-right">
                                     <div class="wide-form wide-form-download">
-                                        <h2 class="preheader">Download Free PDF</h2>
+                                        <h2 class="preheader">How Much Does a Video Cost?</h2>
                                         <h3 class="follow-up smaller">Nothing comes close to the effectiveness of a well
                                             designed video
                                             communications
                                             project.</h3>
-                                        <p>Improve your search engine rankings by driving and keeeping traffic on your
-                                            site and
-                                            generate quality leads with professional video</p>
+                                        <p>The impact video has in driving everyday sales and marketing results is unmatched, which makes it easy to understand why business video communications have been gaining momentum.</p>
                                         {!!   do_shortcode('[gravityform id="6" title="false"]') !!}
                                     </div>
                                 </div>
