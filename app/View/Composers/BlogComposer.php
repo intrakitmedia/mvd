@@ -50,7 +50,7 @@ class BlogComposer extends Composer {
 			'paged' => $paged
 		];
 
-		if ( is_archive() && ! is_post_type_archive('case_studies') && ! is_tag() ) {
+		if ( is_archive() && ! is_post_type_archive('case_studies') && ! is_tag() && ! is_author() ) {
 
 			$category = get_category( get_query_var( 'cat' ) );
 			$cat_id   = $category->term_ID;

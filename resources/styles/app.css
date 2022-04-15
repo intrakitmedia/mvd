@@ -394,6 +394,10 @@ ul.checkmark li:before {
   grid-column: span 12 !important;
 }
 
+.sidebar #gform_6 .spacer  {
+  display: none !important;
+}
+
 @media (max-width: 800) {
   #gform_6 .gfield.gfield--width-half {
     grid-column: span 12 !important;
