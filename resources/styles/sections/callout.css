@@ -1,6 +1,7 @@
 .callout-body {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .callout-body .callout-text,

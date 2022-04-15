@@ -10,6 +10,7 @@
 }
 .s-vid {
   cursor: pointer;
+  width: 100%;
 }
 
 .s-vid .video-container {
@@ -32,7 +33,7 @@
 
 .abso-bg {
   position: absolute;
-  background: rgb(0 0  0 / 50%);
+  background: rgb(0 0  0 / 30%);
   top: 0;
   left: 0;
   width: 100%;

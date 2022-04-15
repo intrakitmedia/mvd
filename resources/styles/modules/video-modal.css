@@ -78,6 +78,15 @@ div.ex-out {
 @media (max-width: 800px) {
   div.ex-out {
     right: 0px;
+    top: -50px;
+  }
+
+  .video-modal-content {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
   }
 }
 
