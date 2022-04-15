@@ -375,10 +375,31 @@ ul.checkmark li:before {
   display: flex;
 }
 
-.checklist-grid {
-  display: grid;
-  gap: 15px;
-  grid-template-columns: repeat(2,minmax(0,1fr));
+.checklist-grid ul  {
+  display: grid !important;
+  gap: 15px !important;
+  grid-template-columns: repeat(2,minmax(0,1fr)) !important;
+  list-style: none;
+  padding-left: 10px;
+  margin-left: 0;
+  margin-bottom:  0;
+}
+
+.checklist-grid ul li {
+  line-height: 30px;
+  margin-bottom: 15px;
+  padding-left: 40px;
+  list-style: none;
+}
+
+.checklist-grid ul li:before {
+  content: url('../images/check.png');
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -22px;
+  width: 30px;
+  color: var(--orange);
+  font-size: 18px;
 }
 
 .utility ul li {
