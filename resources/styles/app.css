@@ -385,6 +385,16 @@ ul.checkmark li:before {
   margin-bottom:  0;
 }
 
+.sidebar #gform_6 .gform_wrapper.gravity-theme .gfield.gfield--width-half {
+  grid-column: span 12;
+}
+
+@media (max-width: 800) {
+  #gform_6 .gform_wrapper.gravity-theme .gfield.gfield--width-half {
+    grid-column: span 12;
+  }
+}
+
 .checklist-grid ul li {
   line-height: 30px;
   margin-bottom: 15px;
