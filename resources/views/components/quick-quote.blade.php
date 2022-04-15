@@ -3,7 +3,7 @@
         <div class="quick-quote-inner">
             <div class="quick-quote-title">
                 <h4 class="header-tag">Quick Quote</h4>
-                <p>Ask about our special low-investment remote video production services</p>
+                <p>Hundreds of clients before you started by filling out a form just like this. A year from now you’ll be glad you got started today!</p>
             </div>
 
 
