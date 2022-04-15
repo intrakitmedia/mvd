@@ -169,7 +169,7 @@
                         <h4>Contact Us</h4>
                         @php
 
-                            echo do_shortcode('[gravityform id="4" title="true" ajax="true"]');
+                            echo do_shortcode('[gravityform id="4" title="false" ajax="true"]');
 
                         @endphp
                     </div>
