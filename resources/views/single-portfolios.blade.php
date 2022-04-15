@@ -149,10 +149,7 @@
         </div>
     </section>
 
-    @php
-        $sc = get_field('gravity_forms_shortcode') ?? null;
-        if ($sc) {
-    @endphp
+
 
     <section class="wide-form-section section-alt-2">
         <div class="container">
@@ -172,7 +169,7 @@
                         <h4>Contact Us</h4>
                         @php
 
-                            echo do_shortcode($sc);
+                            echo do_shortcode('[gravityform id="4" title="true" ajax="true"]');
 
                         @endphp
                     </div>
@@ -180,10 +177,6 @@
             </div>
         </div>
     </section>
-
-    @php
-        }
-    @endphp
-
+    
 @endsection
 
