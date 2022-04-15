@@ -253,7 +253,10 @@
 src="@asset('images/Accredited-Agency-2022.jpeg')" alt="Top 10 Corporate Video Production Companies in New York" /></a>
                 <a title="Verified Agency 2022" href="https://agencyvista
                 .com/agency/multivision-digital/marketing-agency-new-york-new-york-us"><img src="@asset('images/verified-agency-vista-badge.png')" alt="Verified Agency 2022"/></a>
-                <a href="https://www.expertise.com/ny/nyc/law-firm-marketing" style="display:inline-block; border:0;" /> <img src="https://res.cloudinary.com/expertise-com/image/upload/f_auto,fl_lossy,q_auto/w_auto/remote_media/awards/ny_nyc_law-firm-marketing_2022_transparent.svg" alt="Top Legal Marketing Company in New York City" />
+                <a href="https://www.expertise.com/ny/nyc/law-firm-marketing" style="display:inline-block; border:0;"
+                > <img src="https://res.cloudinary.com/expertise-com/image/upload/f_auto,fl_lossy,
+                q_auto/w_auto/remote_media/awards/ny_nyc_law-firm-marketing_2022_transparent.svg" alt="Top Legal
+                Marketing Company in New York City" /></a>
             </div>
         </div>
         </div>
