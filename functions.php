@@ -93,8 +93,16 @@ function set_posts_per_page( $query ) {
 	return $query;
 }
 
+
+
+
+add_filter( 'gform_confirmation_anchor', function() {
+	return true;
+} );
+
 add_action( 'gform_after_submission', 'post_to_third_party', 10, 2 );
 function post_to_third_party( $entry, $form ){
+	$base_uri = null;
 	if ( rgar( $entry, 'status' ) === 'spam' ) {
 		return false;
 	}
@@ -156,10 +164,12 @@ function post_to_third_party( $entry, $form ){
 		$body['trackingid__sb'] = $_COOKIE['__ss_tk']; //DO NOT CHANGE THIS LINE... it collects the tracking cookie to establish tracking
 	}
 //	$body['trackingid__sb'] = $_COOKIE['__ss_tk']; //DO NOT CHANGE THIS LINE... it collects the tracking cookie to establish tracking
-	$post_url = $base_uri . $post_endpoint;
-	if($sendToSharpSpring) {
-		$request = new WP_Http();
-		$response = $request->post( $post_url, array( 'body' => $body ) );
+	if($base_uri) {
+		$post_url = $base_uri . $post_endpoint;
+		if($sendToSharpSpring) {
+			$request = new WP_Http();
+			$response = $request->post( $post_url, array( 'body' => $body ) );
+		}
 	}
 }
 

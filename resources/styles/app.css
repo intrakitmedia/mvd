@@ -203,6 +203,10 @@ nav a {
   color: var(--white);
 }
 
+.splide.splide--slide {
+  max-height: 400px;
+}
+
 .other-services-wrapper  a,
 .post-roll a {
   color: var(--black);

@@ -403,7 +403,7 @@ $link = $contact_us_link;
             </div>
             <div class="row center">
                 <div class="accolades-img">
-                    <img width="800" src="@asset('images/smaller-nyc-video-production-awards-min-2.webp')" alt="Top
+                    <img width="800" src="@asset('images/smaller-nyc-video-production-awards-min2.webp')" alt="Top
                     Video
                     Production
                     Awards"/>
