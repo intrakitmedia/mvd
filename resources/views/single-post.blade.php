@@ -121,7 +121,7 @@ $post = get_post($post_ID);
                                             communications
                                             project.</h3>
                                         <p>The impact video has in driving everyday sales and marketing results is unmatched, which makes it easy to understand why business video communications have been gaining momentum.</p>
-                                        {!!   do_shortcode('[gravityform id="6" title="false"]') !!}
+                                        {!!   do_shortcode('[gravityform id="6" title="false" ajax="true"]') !!}
                                     </div>
                                 </div>
                             </div>
@@ -251,7 +251,7 @@ $post = get_post($post_ID);
                         <h4>Contact Us</h4>
                         @php
 
-                            echo do_shortcode('[gravityform id="4" title="false"]');
+                            echo do_shortcode('[gravityform id="4" title="false" ajax="true"]');
 
                         @endphp
                     </div>
