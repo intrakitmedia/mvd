@@ -390,13 +390,13 @@ ul.checkmark li:before {
   margin-bottom:15px;
 }
 
-.sidebar #gform_6 .gform_wrapper.gravity-theme .gfield.gfield--width-half {
-  grid-column: span 12;
+.sidebar #gform_6 .gfield.gfield--width-half {
+  grid-column: span 12 !important;
 }
 
 @media (max-width: 800) {
-  #gform_6 .gform_wrapper.gravity-theme .gfield.gfield--width-half {
-    grid-column: span 12;
+  #gform_6 .gfield.gfield--width-half {
+    grid-column: span 12 !important;
   }
 }
 
