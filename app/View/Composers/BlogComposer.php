@@ -53,7 +53,7 @@ class BlogComposer extends Composer {
 		if ( is_archive() && ! is_post_type_archive('case_studies') ) {
 
 			$category = get_category( get_query_var( 'cat' ) );
-			$cat_id   = $category->cat_ID;
+			$cat_id   = $category->term_ID;
 
 			$cat = [
 				'category__in' => $cat_id,
