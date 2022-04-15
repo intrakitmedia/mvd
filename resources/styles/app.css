@@ -184,12 +184,19 @@ nav a {
 .four-oh-four {
   display: flex;
   justify-content: center;
-  padding: 120px;
+  padding: 120px 0;
+  text-align: center;
 }
 
 .f-num {
-  font-size: 72px;
+  text-align: center;
+}
+
+.f-num span {
+  font-size: 182px !important;
   font-weight: bold;
+  display: block;
+  text-shadow: 5px 5px 5px rgb(0 0 0 0 / 5%)
 }
 
 .wide-form-banner a {
