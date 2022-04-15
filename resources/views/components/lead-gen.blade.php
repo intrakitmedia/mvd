@@ -23,15 +23,7 @@
                     <h3 class="follow-up smaller">How Much Does a Video Cost?</h3>
                     <p>The impact video has in driving everyday sales and marketing results is unmatched, which
                         makes it easy to understand why business video communications have been gaining momentum.</p>
-                    <form>
-                        <div class="form-row">
-                            <label class="two-col even-space" id="wide-form-first-name-label">
-                                <input id="peak-email" type="email" value="" placeholder="Enter Email Address"
-                                       required/>
-                            </label>
-                            <button class="call-to-action" id="wide-form-submit">Download</button>
-                        </div>
-                    </form>
+                    {!!   do_shortcode('[gravityform id="6" title="false" ajax="true"]') !!}
                 </div>
             </div>
         </div>
