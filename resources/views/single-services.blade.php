@@ -116,20 +116,7 @@ $query = new \WP_Query( $args );
         $checklist = get_field('checklist') ??  null;
     @endphp
     @if($checklist)
-
-        <section class="section-alt-2">
-            <div class="container">
-                <div class="row center">
-                    <div class="banner-list-wide">
-
-
-                        {!! $checklist !!}
-
-
-                    </div>
-                </div>
-            </div>
-        </section>
+        @include('sections.checklist')
     @endif
 
     <section class="different remote-bg"

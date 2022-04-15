@@ -375,6 +375,12 @@ ul.checkmark li:before {
   display: flex;
 }
 
+.checklist-grid {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+}
+
 .utility ul li {
   list-style-type: none;
   padding-left: 15px;
