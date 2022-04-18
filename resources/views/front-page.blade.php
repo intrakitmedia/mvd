@@ -84,17 +84,18 @@ $link = $contact_us_link;
 
 
                             <div class="short-copy">
-                                <img src="@asset('images/getting-started.jpg')" alt="Getting Started"/>
+                                @php
+                                    if($GettingStarted) {
+                                        $link =  get_permalink($GettingStarted->ID);
+                                    } else {
+                                        $link = "#";
+                                    }
+                                @endphp
+                                <a class="orange-underline" title="Getting Started" href="{{$link}}"><img src="@asset('images/getting-started.jpg')" alt="Getting Started"/></a>
                                 <p>You're just getting started with video marketing; in any size of company or
                                     industry.</p>
                                 <div class="call-to-action-group">
-                                    @php
-                                        if($GettingStarted) {
-                                            $link =  get_permalink($GettingStarted->ID);
-                                        } else {
-                                            $link = "#";
-                                        }
-                                    @endphp
+
                                     <a class="orange-underline" title="Getting Started" href="{{$link}}">LEARN
                                         MORE</a>
                                 </div>
@@ -102,49 +103,46 @@ $link = $contact_us_link;
                         </div>
                         <div class="four-col">
                             <div class="short-copy">
-                                <img src="@asset('images/doubling-down.jpg')" alt="Doubling Down"/>
+                                @php
+                                    if($DoublingDown) {
+                                        $link =  get_permalink($DoublingDown->ID);
+                                    } else {
+                                        $link = "#";
+                                    }
+                                @endphp
+                                <a class="orange-underline" title="Doubling Down" href="{{$link}}"><img src="@asset('images/doubling-down.jpg')" alt="Doubling Down"/></a>
                                 <p>You've done some video before, but now you need to focus more on it with an eye
                                     towards ROI.</p>
                                 <div class="call-to-action-group">
-                                    @php
-                                        if($DoublingDown) {
-                                            $link =  get_permalink($DoublingDown->ID);
-                                        } else {
-                                            $link = "#";
-                                        }
-                                    @endphp
                                     <a class="orange-underline" title="Doubling Down" href="{{$link}}">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
                         <div class="four-col">
                             <div class="short-copy">
-                                <img src="@asset('images/need-strategy.jpg')" alt="Need a Strategy"/>
+                                @php
+                                    $page = get_page_by_title('Video Strategy', 'object', 'services');
+                                @endphp
+
+                                @if($page)
+                                    @php
+                                        $link = get_permalink($page->ID);
+                                    @endphp
+                                @else
+                                    @php
+                                        $link = "#";
+                                    @endphp
+                                @endif
+                                <a class="orange-underline" title="Need a Strategy" href="{{$link}}"><img src="@asset('images/need-strategy.jpg')" alt="Need a Strategy"/></a>
                                 <p>You have many videos, but no strategy. You need a planned, thoughtful, and integrated
                                     approach.</p>
                                 <div class="call-to-action-group">
-                                    @php
-                                        $page = get_page_by_title('Video Strategy', 'object', 'services');
-                                    @endphp
-
-                                    @if($page)
-                                        @php
-                                            $link = get_permalink($page->ID);
-                                        @endphp
-                                    @else
-                                        @php
-                                            $link = "#";
-                                        @endphp
-                                    @endif
                                     <a class="orange-underline" title="Need a Strategy" href="{{$link}}">LEARN MORE</a>
                                 </div>
                             </div>
                         </div>
                         <div class="four-col">
                             <div class="short-copy">
-                                <img src="@asset('images/for-agencies.jpg')" alt="For Agencies"/>
-                                <p>For agencies, PR firms, SEO and web developers looking for a trusted, value based
-                                    company to rely on.</p>
                                 @php
                                     if($ForAgencies) {
                                         $link =  get_permalink($ForAgencies->ID);
@@ -152,6 +150,9 @@ $link = $contact_us_link;
                                         $link = "#";
                                     }
                                 @endphp
+                                <a class="orange-underline" title="For Angencies" href="{{$link}}"><img src="@asset('images/for-agencies.jpg')" alt="For Agencies"/></a>
+                                <p>For agencies, PR firms, SEO and web developers looking for a trusted, value based
+                                    company to rely on.</p>
                                 <div class="call-to-action-group">
                                     <a class="orange-underline" title="For Angencies" href="{{$link}}">LEARN MORE</a>
                                 </div>
