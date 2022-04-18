@@ -130,9 +130,6 @@
                                     @if($image_url)
                                         <div class="blog-featured-image"
                                              style="background: url({{$image_url}}); background-size:cover;"><a class="link-fill" title="{{$post->post_title}}" href="{{$post_link}}"></a></div>
-                                    @else
-                                        <div class="blog-featured-image"
-                                             style="background: url(@asset('images/default-image.jpg')); background-size:cover;"><a class="link-fill" title="{{$post->post_title}}" href="{{$post_link}}"></a></div>
                                     @endif
                                 </div>
                                 <div class="blog-content-card top-news blog-card-row">
