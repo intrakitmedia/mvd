@@ -68,7 +68,12 @@
         <div class="container">
             <div class="row center">
                 <div class="header-two blue">
-                    <h2>Video Production Examples</h2>
+                    @php
+
+                        $section_header = get_field('section_header');
+                    $section_header = $section_header ? $section_header :  'Video Production Examples';
+                    @endphp
+                    <h2>{{ $section_header }}</h2>
                 </div>
             </div>
             <div class="row center">

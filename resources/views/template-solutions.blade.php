@@ -371,7 +371,12 @@ if( have_rows('video_gallery') ):
                 <div class="vid">
                     <div class="services-reel-content">
                         <div class="header-two blue">
-                            <h2 class="text-center">Video Production Examples</h2>
+                            @php
+
+                                $section_header = get_field('section_header');
+                            $section_header = $section_header ? $section_header :  'Video Production Examples';
+                            @endphp
+                            <h2>{{ $section_header }}</h2>
                         </div>
 
 
