@@ -7,6 +7,17 @@
 {{--</ul>--}}
 {{--</div>--}}
 
+<div class="top-header">
+    <div class="container">
+            <div class="top-menu">
+                <ul>
+                    <li><i class="fa fa-phone"></i> <a href="tel:6463198609">(646) 319-8609</a></li>
+                    <li><i class="fa-solid fa-envelope"></i> <a href="mailto:rweiss@multivisiondigital.com">rweiss@multivisiondigital
+                            .com</a></li>
+                </ul>
+            </div>
+    </div>
+</div>
 <header class="header-banner">
     <div class="container">
         <div class="header-inner">

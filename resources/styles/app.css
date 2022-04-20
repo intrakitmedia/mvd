@@ -55,6 +55,7 @@
 @import "components/contact-form.css";
 @import "components/blockquote.css";
 @import "components/pdf-dl.css";
+@import "components/top-menu.css";
 @import "@splidejs/splide/dist/css/splide.min.css";
 
 .root,

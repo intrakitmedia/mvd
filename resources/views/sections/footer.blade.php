@@ -6,7 +6,8 @@
             <ul>
                 <li>1330 Fifth Ave, Ste 6e<br/>
                     New York, NY 10026<br/>
-                    (646) 319-8609<br/><a href="mailto:rweiss@multivisiondigital.com">rweiss@multivisiondigital
+                    <a href="tel:6463198609">(646) 319-8609</a><br/><a href="mailto:rweiss@multivisiondigital
+                    .com">rweiss@multivisiondigital
                         .com</a></li>
                 <li>
             </ul>
@@ -16,7 +17,8 @@
             <ul>
                 <li>34 Gramercy Ave<br/>
                     Rye, NY 10580<br/>
-                    (646) 319-8609<br/><a href="mailto:rweiss@multivisiondigital.com">rweiss@multivisiondigital
+                    <a href="tel:6463198609">(646) 319-8609</a><br/><a href="mailto:rweiss@multivisiondigital
+                    .com">rweiss@multivisiondigital
                         .com</a></li>
                 <li>
             </ul>
