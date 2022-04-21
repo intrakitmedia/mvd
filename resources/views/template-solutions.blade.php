@@ -370,6 +370,7 @@ if( have_rows('video_gallery') ):
             <div class="row">
                 <div class="vid">
                     <div class="services-reel-content">
+                        <div class="row center">
                         <div class="header-two blue">
                             @php
 
@@ -377,6 +378,7 @@ if( have_rows('video_gallery') ):
                             $section_header = $section_header ? $section_header :  'Video Production Examples';
                             @endphp
                             <h2>{{ $section_header }}</h2>
+                        </div>
                         </div>
 
 

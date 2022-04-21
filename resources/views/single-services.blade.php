@@ -171,13 +171,15 @@ $query = new \WP_Query( $args );
             <div class="row">
                 <div class="vid">
                     <div class="services-reel-content">
-                        <div class="header-two blue">
-                            @php
+                        <div class="row center">
+                            <div class="header-two blue">
+                                @php
 
-                                $section_header = get_field('section_header');
-                            $section_header = $section_header ? $section_header :  'Video Production Examples';
-                            @endphp
-                            <h2>{{ $section_header }}</h2>
+                                    $section_header = get_field('section_header');
+                                $section_header = $section_header ? $section_header :  'Video Production Examples';
+                                @endphp
+                                <h2>{{ $section_header }}</h2>
+                            </div>
                         </div>
 
                         @php
