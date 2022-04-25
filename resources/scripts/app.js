@@ -19,6 +19,17 @@ domReady(() => {
         } ).mount();
     }
 
+    $(document).on('gform_confirmation_loaded', function(event, formId) {
+
+     if ( formId == 6 ) {
+         let url = $('whitepaper-dl').attr('data-dl');
+         console.log(url);
+
+         window.open('https://www.multivisiondigital.com/wp-content/themes/mvd/public/images/how-much-does-video-production-cost.329860.pdf', '_blank');
+     }
+
+    });
+
 
     // Application code
     if(window.matchMedia('(max-width: 1119px)').matches) {
