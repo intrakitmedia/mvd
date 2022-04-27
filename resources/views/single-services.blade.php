@@ -119,6 +119,66 @@ $query = new \WP_Query( $args );
         @include('sections.checklist')
     @endif
 
+    <section class="services-sizzle section-alt">
+        <div class="container">
+            <div class="row">
+                <div class="vid">
+                    <div class="services-reel-content">
+                        <div class="row center">
+                            <div class="header-two blue">
+                                @php
+
+                                    $section_header = get_field('section_header');
+                                $section_header = $section_header ? $section_header :  'Video Production Examples';
+                                @endphp
+                                <h2>{{ $section_header }}</h2>
+                            </div>
+                        </div>
+
+                        @php
+
+                            // Check value exists.
+    if( have_rows('video_gallery') ):
+
+                        @endphp
+                        <div class="services-sizzle-reel grid sm:grid-cols-1 md:grid-cols-3 gap-6">
+                            @php
+                                // Loop through rows.
+                                while ( have_rows('video_gallery') ) : the_row();
+                                    // Case: Paragraph layout.
+                                    if( get_row_layout() == 'videos' ):
+                                        $video = get_sub_field('video');
+                                        if($video) {
+                                        $youtube_id = get_field('youtube_id', $video->ID);
+                                        $youtube_id = preg_replace('/\s+/', '', $youtube_id);
+                                        }
+
+                                    endif;
+
+                            @endphp
+
+                            @if($video)
+                                @include('components.s-vid')
+                            @endif
+
+                            @php
+
+                                // End loop.
+                                endwhile;
+                                                endif;
+
+                            @endphp
+                        </div>
+
+
+                        @include('components.modal')
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <section class="different remote-bg"
              style="background: url(@asset('images/remote-bg.jpg')); background-size: cover;">
         <div class="container">
@@ -166,65 +226,7 @@ $query = new \WP_Query( $args );
 
 
 
-    <section class="services-sizzle section-alt">
-        <div class="container">
-            <div class="row">
-                <div class="vid">
-                    <div class="services-reel-content">
-                        <div class="row center">
-                            <div class="header-two blue">
-                                @php
 
-                                    $section_header = get_field('section_header');
-                                $section_header = $section_header ? $section_header :  'Video Production Examples';
-                                @endphp
-                                <h2>{{ $section_header }}</h2>
-                            </div>
-                        </div>
-
-                        @php
-
-                            // Check value exists.
-    if( have_rows('video_gallery') ):
-
-                        @endphp
-                        <div class="services-sizzle-reel grid sm:grid-cols-1 md:grid-cols-3 gap-6">
-                            @php
-                                // Loop through rows.
-                                while ( have_rows('video_gallery') ) : the_row();
-                                    // Case: Paragraph layout.
-                                    if( get_row_layout() == 'videos' ):
-                                        $video = get_sub_field('video');
-                                        if($video) {
-                                        $youtube_id = get_field('youtube_id', $video->ID);
-                                        $youtube_id = preg_replace('/\s+/', '', $youtube_id);
-                                        }
-
-                                    endif;
-
-                            @endphp
-
-                            @if($video)
-@include('components.s-vid')
-    @endif
-
-                            @php
-
-                                // End loop.
-                                endwhile;
-                                                endif;
-
-                            @endphp
-                        </div>
-
-
-                        @include('components.modal')
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
 
     @if(get_post()->post_content)
 
