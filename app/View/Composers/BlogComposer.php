@@ -75,6 +75,7 @@ class BlogComposer extends Composer {
 			'post_type'      => $post_type,
 			'post_status'         => 'publish',
 			'posts_per_page' => 12,
+			'offset' => 2,
 			'paged' => $paged
 		];
 
