@@ -23,91 +23,86 @@
 
 
 
-    @if($pinned_post)
-        @php
-            $image_url = get_the_post_thumbnail_url($pinned_post->ID) ?? null;
-            $post_date = date('F dd Y', strtotime($pinned_post->post_date) );
-            $post_link = get_permalink($pinned_post->ID);
-            $categories = get_the_terms($pinned_post->ID, 'category');
-        @endphp
-
-
-
-        <section class="blog-banner small">
-            <div class="container">
-                <div class="row blog-card">
-                    <div class="two-col">
-                        <div class="blog-card-image-wapper">
-                            @if($image_url)
-                                <div class="blog-featured-image"
-                                     style="background: url({{$image_url}}); background-size:cover;"><a class="link-fill" title="{{$pinned_post->post_title}}" href="{{$post_link}}"></a>
-                                </div>
-                            @else
-                                <div class="blog-featured-image"
-                                     style="background: url(@asset('images/default-image.jpg')); background-size:cover;"><a class="link-fill" title="{{$pinned_post->post_title}}" href="{{$post_link}}"></a>
-                                </div>
-                            @endif
-
-                        </div>
-                    </div>
-                    <div class="two-col">
-                        <div class="blog-content-card top-news">
-                            <div class="blog-roll-header blog-card-row">
-                                <div class="blog-roll-cats blog-card-row">
-                                    <a class="cat pinned">Top News</a>
-                                    @if($categories)
-                                        @foreach($categories as $category)
-                                            @php
-                                                $term_link = get_term_link($category->term_id);
-                                            @endphp
-
-                                            <a class="cat" title="{{$category->name}}"
-                                               href="{{$term_link}}">{{$category->name}}</a>
-
-
-                                        @endforeach
-                                    @endif
-                                </div>
-                                <div class="blog-roll-title">
-                                    <h3><a title="{{$pinned_post->post_title}}"
-                                           href="{{$post_link}}">{{$pinned_post->post_title}}</a></h3>
-                                </div>
-                            </div>
-                            <div class="blog-roll-body blog-card-row">
-                                <p>NYC Video production services often come with a hefty price tag. Granted, the investment
-                                    is worth it when the outcome is lucrative, but at certain times there are more
-                                    efficient…</p>
-                            </div>
-                            <div class="blog-roll-author blog-card-row">
+        @if( $banner_posts->found_posts > 0 )
+            <section class="blog-banner small">
+                <div class="container">
+                    <div class="row blog-card">
+                        <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-4">
+                            @foreach($banner_posts->posts as $post)
                                 @php
-                                   $gravatar_default= "https://secure.gravatar
-                                .com/avatar/53a7057b864b47e834e2986aaf9549ff?s=96&d=mm&r=g";
-                                    $author_display_name = get_the_author_meta('display_name', $pinned_post->post_author);
-                                    $nickname = get_the_author_meta('nickname', $pinned_post->post_author);
-                                    $avatar = get_avatar_url($pinned_post->post_author);
-                                    $post_date = date('F d Y', strtotime($pinned_post->post_date) );
+                                    $image_url = get_the_post_thumbnail_url($post->ID) ?? null;
+                                    $post_date = date('F dd Y', strtotime($post->post_date) );
+                                    $post_link = get_permalink($post->ID);
+                                    $categories = get_the_terms($post->ID, 'category');
+                                $post_title = get_the_title($post->ID);
+                                $content = get_the_content('', true, $post->ID);
                                 @endphp
 
-                                @if( $author_display_name == 'Robert Weiss' )
-                                    @php
-                                        $avatar = \Roots\asset('images/robert-weiss.png')->uri();
-                                    @endphp
+                            <div class="feat-card-wrapper">
+                                @if($image_url)
+                                    <div class="blog-card-image-wapper blog-card-row">
+
+                                            <div class="blog-featured-image"
+                                             style="background: url({{$image_url}}); background-size:cover;"><a class="link-fill" title="{{$post_title}}" href="{{$post_link}}"></a>
+                                            </div>
+                                    </div>
                                 @endif
-                                <div class="meta">
 
-                                    <div class="author-name"><p>by {{$author_display_name}}</p></div>
+                            <div class="blog-content-card top-news">
+                                <div class="blog-roll-header blog-card-row">
+                                    <div class="blog-roll-cats blog-card-row">
+                                        <span class="cat pinned">Top News</span>
+                                        @if($categories)
+                                            @foreach($categories as $category)
+                                                @php
+                                                    $term_link = get_term_link($category->term_id);
+                                                @endphp
 
+                                                <a class="cat" title="{{$category->name}}"
+                                                   href="{{$term_link}}">{{$category->name}}</a>
+                                            @endforeach
+                                        @endif
+                                    </div>
+                                    <div class="blog-roll-title">
+                                        <h3><a title="{{$post_title}}"
+                                               href="{{$post_link}}">{{$post_title}}</a></h3>
+                                    </div>
                                 </div>
+                                <div class="blog-roll-body blog-card-row">
+                                    <p><?php echo wp_trim_words( $content, 40, " ..."); ?></p>
+                                </div>
+                                <div class="blog-roll-author blog-card-row">
+                                    @php
+                                       $gravatar_default= "https://secure.gravatar
+                                    .com/avatar/53a7057b864b47e834e2986aaf9549ff?s=96&d=mm&r=g";
+                                        $author_display_name = get_the_author_meta('display_name', $pinned_post->post_author);
+                                        $nickname = get_the_author_meta('nickname', $pinned_post->post_author);
+                                        $avatar = get_avatar_url($pinned_post->post_author);
+                                        $post_date = date('F d Y', strtotime($pinned_post->post_date) );
+                                    @endphp
+
+                                    @if( $author_display_name == 'Robert Weiss' )
+                                        @php
+                                            $avatar = \Roots\asset('images/robert-weiss.png')->uri();
+                                        @endphp
+                                    @endif
+                                    <div class="meta">
+
+                                        <div class="author-name"><p>by {{$author_display_name}}</p></div>
+
+                                    </div>
+                                </div>
+
                             </div>
 
-                        </div>
 
+                        </div>
+                                @endforeach
                     </div>
                 </div>
             </div>
         </section>
-
-    @endif
+        @endif
 
     <section class="blog-articles small">
         <div class="container">

@@ -29,6 +29,16 @@
                     $categories = get_the_terms($pinned_post->ID, 'category');
                 @endphp
 
+                @if( $banner_posts->found_posts > 0 )
+                    @foreach($banner_posts->posts as $post)
+                        @php
+                            $image_url = get_the_post_thumbnail_url($post->ID) ?? null;
+                            $post_date = date('F dd Y', strtotime($post->post_date) );
+                            $post_link = get_permalink($post->ID);
+                            $categories = get_the_terms($post->ID, 'category');
+                        @endphp
+
+
     <section class="blog-banner small">
         <div class="container">
             <div class="row blog-card">

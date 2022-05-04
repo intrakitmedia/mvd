@@ -23,11 +23,39 @@ class BlogComposer extends Composer {
 	 */
 	public function with() {
 		return [
-			'posts'       => $this->posts(),
-			'pinned_post' => $this->pinned_post(),
-			'title'       => $this->title(),
+			'banner_posts'  => $this->banner_posts(),
+			'posts'         => $this->posts(),
+			'pinned_post'   => $this->pinned_post(),
+			'title'         => $this->title(),
 
 		];
+	}
+
+	public function banner_posts() {
+		if (is_post_type_archive('case_studies')) {
+			return;
+		}
+
+		if ( is_page( 'Blog' ) ) {
+			$post_type = 'post';
+		} else {
+			$post_type = get_post_type();
+		}
+
+		$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+
+		$args = [
+			'post_type'      => $post_type,
+			'post_status'         => 'publish',
+			'posts_per_page' => 2,
+			'paged' => $paged
+		];
+
+		$query = new \WP_Query( $args );
+
+
+		return $query;
+
 	}
 
 	public function posts() {
@@ -46,7 +74,7 @@ class BlogComposer extends Composer {
 		$args = [
 			'post_type'      => $post_type,
 			'post_status'         => 'publish',
-			'posts_per_page' => 9,
+			'posts_per_page' => 12,
 			'paged' => $paged
 		];
 

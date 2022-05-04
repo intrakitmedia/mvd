@@ -118,12 +118,15 @@ a.orange-link:hover .orange-play {
   transition: 0.5s ease all;
 }
 
-a.cat.pinned {
+a.cat.pinned,
+span.cat.pinned {
   color: var(--orangealt);
   background: var(--orangesoft);
+  display: inline-block;
 }
 
-a.cat {
+a.cat,
+span.cat {
   padding: 4px 10px;
   border-radius: 20px;
   color: var(--blue);
