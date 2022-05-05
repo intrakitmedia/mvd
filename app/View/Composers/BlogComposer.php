@@ -44,6 +44,10 @@ class BlogComposer extends Composer {
 
 		$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 
+		if ($paged != 1) {
+			return;
+		}
+
 		$args = [
 			'post_type'      => $post_type,
 			'post_status'         => 'publish',
@@ -71,13 +75,22 @@ class BlogComposer extends Composer {
 
 		$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 
+
+
 		$args = [
 			'post_type'      => $post_type,
 			'post_status'         => 'publish',
 			'posts_per_page' => 12,
-			'offset' => 2,
 			'paged' => $paged
 		];
+
+		if ($paged == 1) {
+			$offset = [
+				'offset' => 2
+			];
+
+			$args = array_merge($args, $offset);
+		}
 
 		if ( is_archive() && ! is_post_type_archive('case_studies') && ! is_tag() && ! is_author() ) {
 

@@ -21,6 +21,7 @@
         </div>
     </section>
 
+    @if($banner_posts)
 
 
         @if( $banner_posts->found_posts > 0 )
@@ -102,6 +103,8 @@
                 </div>
             </div>
         </section>
+        @endif
+
         @endif
 
     <section class="blog-articles small">
