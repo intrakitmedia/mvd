@@ -240,6 +240,10 @@ header.header-banner.fixed {
   }
 }
 
+.post-type-archive-case_studies .blog-card-image-wapper {
+  margin-right: 20px;
+}
+
 .desktop-nav>li.menu-item:not(.call-to-action) a {
   transition: 0.3s all ease;
   font-weight: 400;
