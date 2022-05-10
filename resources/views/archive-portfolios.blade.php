@@ -47,11 +47,13 @@
                                         $youtube_id = get_field('youtube_id', $video->ID);
                                         $youtube_id = preg_replace('/\s+/', '', $youtube_id);
                                         }
+
+
                             @endphp
                             <div class="text-center">
-                                @if($video && $youtube_id)
-                                    @include('components.s-vid-no-title')
-                                @endif
+
+                                <div class="port-feat" style="margin-bottom: 15px;"><a title="{!! $post->post_title !!}" href=""><img alt="{!!  $post->post_title !!}" src="{{$image_url}}" /></a>
+                                </div>
                                 <div class="service-title">
                                     <h3 class="blue"><a title="{!! $post->post_title !!}"
                                                         href="{{$post_link}}">{!! $post->post_title
