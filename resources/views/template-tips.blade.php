@@ -13,7 +13,11 @@
             <div class="row center">
                 <div class="page-header-title blog-page-header text-center">
                     <h1>{!! $title !!}</h1>
-                    <h2>Insights and Updates from our expert team</h2>
+                    @php
+                        $subtitle  = get_field('subtitle') ? : "Business Video Tips from our expert team";
+                    @endphp
+
+                    <h2>{!!  $subtitle !!}</h2>
                 </div>
             </div>
         </div>
