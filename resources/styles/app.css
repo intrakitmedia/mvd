@@ -645,9 +645,10 @@ padding-right: 35px;
   flex-wrap: wrap;
 }
 
-.accolades-img img {
+.about-img .accolades-img img {
   width: auto;
   padding: 10px;
+  height: 150px;
 }
 
 /* stylelint-enable */

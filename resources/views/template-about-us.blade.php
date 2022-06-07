@@ -244,7 +244,7 @@
                 </div>
             </div>
         </div>
-        <div class="row center">
+        <div class="row about-img center">
             <div class="accolades-img">
 
                 <a title="Top 10 Corporate Video Production Companies in New York" href="https://giggster.com/blog/corporate-video-production-companies-new-york/">
@@ -257,7 +257,7 @@
                     <img src="@asset('images/verified-agency-vista-badge.png')" alt="Verified Agency 2022"/>
                 </a>
                 <a href="https://www.expertise.com/ny/nyc/law-firm-marketing" style="display:inline-block; border:0;">
-                    <img src="https://res.cloudinary.com/expertise-com/image/upload/f_auto,fl_lossy,q_auto/w_auto/remote_media/awards/ny_nyc_law-firm-marketing_2022_transparent.svg" alt="Top Legalgit s Marketing Company in New York City" />
+                    <img src="https://res.cloudinary.com/expertise-com/image/upload/f_auto,fl_lossy,q_auto/w_auto/remote_media/awards/ny_nyc_law-firm-marketing_2022_transparent.svg" />
                 </a>
             </div>
         </div>
