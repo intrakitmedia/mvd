@@ -3,7 +3,10 @@
 
 @section('content')
     <div class="hero">
-        <div class="hero-inner" style="background: url(@asset('images/video-content-marketing.78582c.webp'));
+        @php
+            $homeepage_bg = get_field('hero_background_image')['url'];
+        @endphp
+        <div class="hero-inner" style="background: url({{$homeepage_bg}});
         background-size: cover;
         background-position:
          center right">
@@ -404,11 +407,8 @@ $link = $contact_us_link;
             </div>
             <div class="row center">
                 <div class="accolades-img">
-                    <img width="800" src="@asset('images/smaller-nyc-video-production-awards-min2.webp')" alt="Top
+                    <img width="800" src="@asset('images/awards.png')" alt="Top
                     Video
-                    Production
-                    Awards"/>
-                    <img width="800" src="@asset('images/nyc-video-production-second-min.webp')" alt="Best Video
                     Production
                     Awards"/>
                 </div>

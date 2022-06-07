@@ -13,7 +13,8 @@ class BlogComposer extends Composer {
 	protected static $views = [
 		//
 		'index',
-		'archive'
+		'archive',
+		'template-tips',
 	];
 
 	/**
@@ -38,9 +39,12 @@ class BlogComposer extends Composer {
 
 		if ( is_page( 'Blog' ) ) {
 			$post_type = 'post';
+		} elseif ( is_page( 'Tips' ) ) {
+			$post_type = 'tips';
 		} else {
 			$post_type = get_post_type();
 		}
+
 
 		$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 
@@ -67,8 +71,13 @@ class BlogComposer extends Composer {
 			return;
 		}
 
+		$tips = false;
+
 		if ( is_page( 'Blog' ) ) {
 			$post_type = 'post';
+		} elseif ( is_page( 'Tips' ) ) {
+			$post_type = 'tips';
+			$tips = true;
 		} else {
 			$post_type = get_post_type();
 		}
@@ -84,7 +93,7 @@ class BlogComposer extends Composer {
 			'paged' => $paged
 		];
 
-		if ($paged == 1) {
+		if ($paged == 1  && ! $tips) {
 			$offset = [
 				'offset' => 2
 			];

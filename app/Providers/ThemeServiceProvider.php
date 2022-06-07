@@ -141,6 +141,29 @@ class ThemeServiceProvider extends ServiceProvider {
 			)
 		);
 
+		register_post_type( 'tips',
+			array(
+				'labels'       => array(
+					'name'          => __( 'Tips', 'textdomain' ),
+					'singular_name' => __( 'Tip', 'textdomain' ),
+					'view_item'     => __( 'View Tip', 'tips' ),
+					'view_items'    => __( 'View Tips', 'tips' ),
+					'edit_item'     => __( 'Edit Tip', 'tips' ),
+					'all_items'     => __( 'All Tips', 'tips' ),
+					'add_new_item'  => __( 'Add New Tip', 'tips' ),
+				),
+				'public'       => true,
+				'has_archive'  => false,
+				'show_ui' => true,
+				'publicly_queryable' => true,
+				'query_var' => true,
+				'show_in_rest' => true,
+				'hierarchical' => false,
+				'supports'     => array( 'title', 'thumbnail', 'categories', 'editor', 'author' ),
+				'rewrite' => array( 'slug' => 'business-video/tips' )
+			)
+		);
+
 		register_taxonomy(
 			'examples',
 			'videos',
@@ -161,6 +184,8 @@ class ThemeServiceProvider extends ServiceProvider {
 		);
 
 		add_post_type_support( 'page', ['excerpt', 'author']);
+
+		flush_rewrite_rules( true );
 
 //		register_taxonomy(
 //			'page_type',

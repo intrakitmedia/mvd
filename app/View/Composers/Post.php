@@ -24,6 +24,7 @@ class Post extends Composer {
 		'template-playlist',
 		'page',
 		'template-ourteam',
+		'single-tips'
 	];
 
 	public $post_ID;
@@ -177,7 +178,10 @@ class Post extends Composer {
 	}
 
 	public function recent_posts() {
+		$post_type = get_post_type();
+
 		$args = array(
+			'post_type' => $post_type,
 			'numberposts'  => 5,
 			'offset'       => 0,
 			'post__not_in' => array( $this->post_ID )
@@ -187,8 +191,11 @@ class Post extends Composer {
 	}
 
 	public function related_posts() {
+		$post_type = get_post_type();
+
 		$related = get_posts(
 			array(
+				'post_type' => $post_type,
 				'category__in' => wp_get_post_categories( $this->post_ID ),
 				'numberposts'  => 3,
 				'post__not_in' => array( $this->post_ID )

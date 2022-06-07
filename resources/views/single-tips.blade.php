@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @php
-$post = get_post($post_ID);
+    $post = get_post($post_ID);
 @endphp
 
 
@@ -13,17 +13,17 @@ $post = get_post($post_ID);
                     <article class="aside">
                         <div class="article-header article-row ">
                             @if($categories)
-                            <div class="article-cats article-row">
-                                @foreach($categories as $category)
+                                <div class="article-cats article-row">
+                                    @foreach($categories as $category)
 
-                                    @php
-                                        $term_link = get_term_link($category->term_id);
-                                    @endphp
+                                        @php
+                                            $term_link = get_term_link($category->term_id);
+                                        @endphp
 
-                                    <a class="cat" title="{{$category->name}}"
-                                       href="{{$term_link}}">{{$category->name}}</a>
-                                @endforeach
-                            </div>
+                                        <a class="cat" title="{{$category->name}}"
+                                           href="{{$term_link}}">{{$category->name}}</a>
+                                    @endforeach
+                                </div>
                             @endif
                             <div class="article-title article-row ">
                                 <h1>{!! $title !!}</h1>
@@ -37,26 +37,26 @@ $post = get_post($post_ID);
                                 @endphp
                                 <div class="post-meta article-author">
                                     {{--@if($avatar)--}}
-                                        {{--<div class="pic article-pic">--}}
-                                            {{--<div class="pic-inner article-pic-inner"--}}
-                                                 {{--style="background: url({{$avatar}}); background-size: cover;">--}}
+                                    {{--<div class="pic article-pic">--}}
+                                    {{--<div class="pic-inner article-pic-inner"--}}
+                                    {{--style="background: url({{$avatar}}); background-size: cover;">--}}
 
-                                            {{--</div>--}}
-                                        {{--</div>--}}
+                                    {{--</div>--}}
+                                    {{--</div>--}}
                                     {{--@else--}}
                                     {{--<div class="pic article-pic">--}}
-                                        {{--<div class="pic-inner article-pic-inner"--}}
-                                             {{--style="background: url(@asset('images/author.jpg')); background-size: cover;">--}}
+                                    {{--<div class="pic-inner article-pic-inner"--}}
+                                    {{--style="background: url(@asset('images/author.jpg')); background-size: cover;">--}}
 
-                                        {{--</div>--}}
+                                    {{--</div>--}}
                                     {{--</div>--}}
                                     {{--@endif--}}
 
                                     @if($author_display_name && $post_date)
-                                    <div class="meta article-data">
-                                        <div class="author-name"><p> by {!! $author_display_name !!}</p></div>
-                                    </div>
-                                        @endif
+                                        <div class="meta article-data">
+                                            <div class="author-name"><p> by {!! $author_display_name !!}</p></div>
+                                        </div>
+                                    @endif
                                 </div>
                                 <div class="post-social">
                                     <div class="blurb"><p>Share on</p></div>
@@ -143,7 +143,7 @@ $post = get_post($post_ID);
                                                 @if($image_url)
                                                     <img src="@php echo get_the_post_thumbnail_url($post->ID) @endphp"
                                                          alt="{{$post->post_title}}"/>
-@endif
+                                                @endif
                                             </div>
                                             <div class="post-roll-header">
                                                 <div class="post-roll-title">
@@ -169,7 +169,7 @@ $post = get_post($post_ID);
             </div>
             <div class="row block">
                 @php
-                //TODO make conditional for categories
+                    //TODO make conditional for categories
                 @endphp
                 <div class="related-posts grid sm:grid-cols-1 lg:grid-cols-3 gap-4">
                     @foreach($related_posts as $post)
@@ -196,17 +196,17 @@ $post = get_post($post_ID);
                                     </div>
                                     <div class="blog-content-card top-news blog-card-row">
                                         <div class="blog-roll-header blog-card-row">
-                                            <div class="blog-roll-cats blog-card-row">
-                                                @foreach($cats as $cat)
+                                            {{--<div class="blog-roll-cats blog-card-row">--}}
+                                                {{--@foreach($cats as $cat)--}}
 
-                                                    @php
-                                                        $cat_link = get_term_link($cat->term_id);
-                                                    @endphp
+                                                    {{--@php--}}
+                                                        {{--$cat_link = get_term_link($cat->term_id);--}}
+                                                    {{--@endphp--}}
 
-                                                    <a class="cat" title="{{$cat->name}}"
-                                                       href="{{$cat_link}}">{{$cat->name}}</a>
-                                                @endforeach
-                                            </div>
+                                                    {{--<a class="cat" title="{{$cat->name}}"--}}
+                                                       {{--href="{{$cat_link}}">{{$cat->name}}</a>--}}
+                                                {{--@endforeach--}}
+                                            {{--</div>--}}
                                             <div class="blog-roll-title">
                                                 <h3><a title="{{$post->post_title}}"
                                                        href="{{$related_post_link}}">{{$post->post_title}}</a>

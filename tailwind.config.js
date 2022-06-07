@@ -9,7 +9,18 @@ module.exports = {
       'xl': '1425px',
     },
     extend: {
-      colors: {},
+      colors: {
+        "safety-1": "#ef2f02",
+        "safety-2": "#ef2f02",
+        "safety-3": "#e75903",
+        "safety-4": "#e08e04",
+        "safety-5": "#d1a703",
+        "safety-6": "#bebc05",
+        "safety-7": "#a9d005",
+        "safety-8": "#8cdf07",
+        "safety-9": "#63f107",
+        "safety-10": "#63f107",
+      },
     },
     spacing: {
       '0': '0',
@@ -31,7 +42,8 @@ module.exports = {
     }
   },
   variants: {
-    extend: {},
+    extend: {
+    },
   },
   plugins: [],
 };
