@@ -160,7 +160,7 @@ class ThemeServiceProvider extends ServiceProvider {
 				'show_in_rest' => true,
 				'hierarchical' => false,
 				'supports'     => array( 'title', 'thumbnail', 'categories', 'editor', 'author' ),
-				'rewrite' => array( 'slug' => 'business-video/tips' )
+				'rewrite' => array( 'slug' => 'business-video-tips' )
 			)
 		);
 
