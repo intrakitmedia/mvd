@@ -36,7 +36,7 @@
                                             $post_date = date('F dd Y', strtotime($post->post_date) );
                                             $post_link = get_permalink($post->ID);
                                             $categories = get_the_terms($post->ID, 'category');
-                                        $content = get_the_content($post->ID);
+                                       $content = get_the_content('', true, $post->ID);
                                         @endphp
 
 
