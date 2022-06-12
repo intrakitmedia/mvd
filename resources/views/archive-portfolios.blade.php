@@ -52,15 +52,13 @@
                             @endphp
                             <div class="text-center">
 
-                                <div class="port-feat" style="margin-bottom: 15px;"><a title="{!! $post->post_title
-                                !!}" href="{{$post_link}}"><img alt="{!!  $post->post_title !!}" src="{{$image_url}}" /></a>
+                                <div class="port-feat" style="margin-bottom: 15px;">
+                                    <a title="{!! $post->post_title !!}" href="{{$post_link}}"><img alt="{!! $post->post_title !!}" src="{{$image_url}}" /></a>
                                 </div>
                                 <div class="service-title">
-                                    <h3 class="blue"><a title="{!! $post->post_title !!}"
-                                                        href="{{$post_link}}">{!! $post->post_title
-                                 !!}</a></h3>
+                                    <h3 class="blue">
+                                        <a title="{!! $post->post_title !!}" href="{{$post_link}}">{!! $post->post_title  !!}</a> </h3>
                                     <p>{!! $banner_bold !!}</p>
-
                                     <a title="{!! $post->post_title !!}" href="{{$post_link}}"
                                        class="orange-underline">See Examples</a>
                                 </div>
