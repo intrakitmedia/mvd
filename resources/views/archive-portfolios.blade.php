@@ -53,7 +53,7 @@
                             <div class="text-center">
 
                                 <div class="port-feat" style="margin-bottom: 15px;"><a title="{!! $post->post_title
-                                !!}" href="{{ get_permalink() }}"><img alt="{!!  $post->post_title !!}" src="{{$image_url}}" /></a>
+                                !!}" href="{{$post_link}}"><img alt="{!!  $post->post_title !!}" src="{{$image_url}}" /></a>
                                 </div>
                                 <div class="service-title">
                                     <h3 class="blue"><a title="{!! $post->post_title !!}"
