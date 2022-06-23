@@ -1,3 +1,5 @@
+/* stylelint-disable */
+
 .contact-page-form .lead-in-form {
   background: var(--orange);
   height: auto;
@@ -61,6 +63,19 @@
   color: black;
   height: 40px;
 }
+
+.contact-page-form .wide-form textarea {
+  border: 1px solid rgb(0 0 0 / 8%);
+  border-radius: 4px;
+  padding: 5px 10px;
+  width: 100%;
+  font-size: 18px;
+  line-height: 1;
+  background: var(--inputgreey);
+  color: black;
+}
+
+
 
 .contact-page-form select {
   appearance: none;
