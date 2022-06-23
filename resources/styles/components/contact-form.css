@@ -52,6 +52,15 @@
 .contact-page-form .wide-form input[type="email"],
 .contact-page-form .wide-form input[type="phone"],
 .contact-page-form .wide-form input[type="tel"],
+.contact-page-form .wide-form input[type="text"],
+.contact-page-form .wide-form textarea {
+  background: var(--inputgreey);
+}
+
+.contact-page-form .wide-form select,
+.contact-page-form .wide-form input[type="email"],
+.contact-page-form .wide-form input[type="phone"],
+.contact-page-form .wide-form input[type="tel"],
 .contact-page-form .wide-form input[type="text"] {
   border: 1px solid rgb(0 0 0 / 8%);
   border-radius: 4px;
