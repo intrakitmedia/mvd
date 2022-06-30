@@ -16,10 +16,7 @@ $query = new \WP_Query( $args );
 
 ?>
 
-
-
 @section('content')
-
     <section class="services-banner section-alt">
         <div class="container">
             <div class="row">
@@ -65,22 +62,59 @@ $query = new \WP_Query( $args );
         <div class="container">
             <div class="row">
                 <div class="large-col">
-                    <div class="services-add-content">
+                  <div class="vid md:pr-4">
+                    <div class="services-reel-content">
+                      <div class="row center">
+                        <div class="header-two blue">
+                          @php
+
+                            $section_header = get_field('section_header');
+                        $section_header = $section_header ? $section_header :  'Video Production Examples';
+                          @endphp
+                          <h2>{{ $section_header }}</h2>
+                        </div>
+                      </div>
+
+                      @php
+
+                        // Check value exists.
+if( have_rows('video_gallery') ):
+
+                      @endphp
+                      <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-6">
                         @php
-                            $main_bold_content = get_field('main_bold_content');
-                            $main_regular_content = get_field('main_regular_content');
+                          // Loop through rows.
+                          while ( have_rows('video_gallery') ) : the_row();
+                              // Case: Paragraph layout.
+                              if( get_row_layout() == 'videos' ):
+                                  $video = get_sub_field('video');
+                                  if($video) {
+                                  $youtube_id = get_field('youtube_id', $video->ID);
+                                  $youtube_id = preg_replace('/\s+/', '', $youtube_id);
+                                  }
+
+                              endif;
+
                         @endphp
-                        @if($main_bold_content)
-                            <div class="header-two">
-                                <h2 id="main-content">{!! $main_bold_content !!}</h2>
-                            </div>
+
+                        @if($video)
+                          @include('components.s-vid')
                         @endif
-                        @if($main_regular_content)
-                            <div class="main-regular-content">
-                                {!! $main_regular_content !!}
-                            </div>
-                        @endif
+
+                        @php
+
+                          // End loop.
+                          endwhile;
+                                          endif;
+
+                        @endphp
+                      </div>
+
+
+                      @include('components.modal')
                     </div>
+                  </div>
+
                 </div>
                 <div class="small-col">
                    @include('components.quick-quote')
@@ -119,65 +153,33 @@ $query = new \WP_Query( $args );
         @include('sections.checklist')
     @endif
 
+    @if($main_bold_content ||  $main_regular_content || $main_regular_content)
+
     <section class="services-sizzle section-alt">
         <div class="container">
             <div class="row">
-                <div class="vid">
-                    <div class="services-reel-content">
-                        <div class="row center">
-                            <div class="header-two blue">
-                                @php
 
-                                    $section_header = get_field('section_header');
-                                $section_header = $section_header ? $section_header :  'Video Production Examples';
-                                @endphp
-                                <h2>{{ $section_header }}</h2>
-                            </div>
-                        </div>
-
-                        @php
-
-                            // Check value exists.
-    if( have_rows('video_gallery') ):
-
-                        @endphp
-                        <div class="services-sizzle-reel grid sm:grid-cols-1 md:grid-cols-3 gap-6">
-                            @php
-                                // Loop through rows.
-                                while ( have_rows('video_gallery') ) : the_row();
-                                    // Case: Paragraph layout.
-                                    if( get_row_layout() == 'videos' ):
-                                        $video = get_sub_field('video');
-                                        if($video) {
-                                        $youtube_id = get_field('youtube_id', $video->ID);
-                                        $youtube_id = preg_replace('/\s+/', '', $youtube_id);
-                                        }
-
-                                    endif;
-
-                            @endphp
-
-                            @if($video)
-                                @include('components.s-vid')
-                            @endif
-
-                            @php
-
-                                // End loop.
-                                endwhile;
-                                                endif;
-
-                            @endphp
-                        </div>
-
-
-                        @include('components.modal')
-                    </div>
-                </div>
-
+              <div class="services-add-content">
+                @php
+                  $main_bold_content = get_field('main_bold_content');
+                  $main_regular_content = get_field('main_regular_content');
+                @endphp
+                @if($main_bold_content)
+                  <div class="header-two">
+                    <h2 id="main-content">{!! $main_bold_content !!}</h2>
+                  </div>
+                @endif
+                @if($main_regular_content)
+                  <div class="main-regular-content">
+                    {!! $main_regular_content !!}
+                  </div>
+                @endif
+              </div>
             </div>
         </div>
     </section>
+
+    @endif
 
     <section class="different remote-bg"
              style="background: url(@asset('images/remote-bg.jpg')); background-size: cover;">

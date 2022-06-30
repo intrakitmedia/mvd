@@ -14,9 +14,6 @@
     ];
 
     $case_study_query = new WP_Query($args);
-
-
-
 @endphp
 
 @section('content')

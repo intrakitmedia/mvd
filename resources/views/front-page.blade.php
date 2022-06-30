@@ -5,11 +5,35 @@
     <div class="hero">
         @php
             $homeepage_bg = get_field('hero_background_image')['url'];
+			      $homepage_bg_mobile = get_field('hero_background_image_mobile')['url'];
         @endphp
-        <div class="hero-inner" style="background: url({{$homeepage_bg}});
-        background-size: cover;
-        background-position:
-         center right">
+
+      @if($homepage_bg_mobile)
+      <style type="text/css">
+        @media (max-width: 767px) {
+          .hero-inner {
+            background-image: url({{$homepage_bg_mobile}}) !important;
+            background-size: cover !important;
+            background-repeat: no-repeat !important;
+          }
+        }
+
+        .hero-inner {
+          position: relative;
+        }
+        .bg-image-grad {
+          background: rgba(0,0,0,.225);
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          position: absolute;
+          content: '';
+        }
+      </style>
+      @endif
+        <div class="hero-inner" style="background: url({{$homeepage_bg}}); background-size: cover;background-position: center right">
+          <div class="bg-image-grad"></div>
             <div class="row">
                 <div class="hero-container">
                     <div class="hero-body">
