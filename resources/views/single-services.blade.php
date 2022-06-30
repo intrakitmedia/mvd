@@ -153,17 +153,19 @@ if( have_rows('video_gallery') ):
         @include('sections.checklist')
     @endif
 
-    @if($main_bold_content ||  $main_regular_content || $main_regular_content)
+    @php
+      $main_bold_content = get_field('main_bold_content');
+      $main_regular_content = get_field('main_regular_content');
+    @endphp
+
+    @if($main_bold_content || $main_regular_content)
 
     <section class="services-sizzle section-alt">
         <div class="container">
             <div class="row">
 
               <div class="services-add-content">
-                @php
-                  $main_bold_content = get_field('main_bold_content');
-                  $main_regular_content = get_field('main_regular_content');
-                @endphp
+
                 @if($main_bold_content)
                   <div class="header-two">
                     <h2 id="main-content">{!! $main_bold_content !!}</h2>
