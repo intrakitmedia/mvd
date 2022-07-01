@@ -4,8 +4,16 @@
 @section('content')
     <div class="hero">
         @php
-            $homeepage_bg = get_field('hero_background_image')['url'];
-			      $homepage_bg_mobile = get_field('hero_background_image_mobile')['url'];
+            $homeepage_bg = get_field('hero_background_image');
+
+			if ($homeepage_bg) {
+				$homeepage_bg = $homeepage_bg['url'];
+			}
+			      $homepage_bg_mobile = get_field('hero_background_image_mobile');
+
+			if($homepage_bg_mobile) {
+				$homepage_bg_mobile = $homepage_bg_mobile['url'];
+			}
         @endphp
 
       @if($homepage_bg_mobile)
