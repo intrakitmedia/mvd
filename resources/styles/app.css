@@ -160,12 +160,13 @@ footer a,
 
 nav .sub-menu li:not(.call-to-action) p a {
   font-weight: 100 !important;
-  font-size: 13px !important;
+  font-size: 15px !important;
   padding-bottom: 0 !important;
 }
 
 nav .sub-menu li:not(.call-to-action) p {
   margin-bottom: 15px !important;
+  text-transform: none !important;
 }
 
 nav .sub-menu li {

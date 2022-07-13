@@ -362,8 +362,8 @@
 
 .is-mobile.mobile-open .mega-menu.mobile-open .container .mega-menu-inner .sub-menu li a {
   padding: 15px;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 17px;
+  line-height: 20px;
   color: var(--lightgrey);
   letter-spacing: -1px;
 }

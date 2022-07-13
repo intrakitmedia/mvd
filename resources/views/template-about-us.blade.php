@@ -80,8 +80,16 @@
     <section class="section-alt-2 page-header">
         <div class="container">
             <div class="row center">
-                <div class="page-header-title text-center">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/0655fXREnas" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div style="width: 100%;">
+                  <h2 class="blue text-center">Watch 10th Anniversery Promotional Video</h2>
+                  <div class="video" style="height: auto;">
+                    <div class="video-container" style="position: relative; height: 0;">
+                      <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/9RFWNmu8H3E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                  </div>
+{{--                    <a data-field="9RFWNmu8H3E" class="s-vid-link orange-link"><i class="fa-solid fa-play--}}
+{{--                    orange-play"></i>--}}
+{{--                        <span>Watch 10th ANNIVERSARY PROMOTIONAL VIDEO</span></a>--}}
                 </div>
 
                 @include('components.modal')
