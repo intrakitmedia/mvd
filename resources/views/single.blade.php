@@ -5,3 +5,12 @@
     @includeFirst(['partials.content-single-' . get_post_type(), 'partials.content-single'])
   @endwhile
 @endsection
+
+<script>
+  document.addEventListener('click', function() {
+
+
+
+    
+  })
+</script>

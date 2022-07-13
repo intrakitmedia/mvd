@@ -81,9 +81,7 @@
         <div class="container">
             <div class="row center">
                 <div class="page-header-title text-center">
-                    <a data-field="9RFWNmu8H3E" class="s-vid-link orange-link"><i class="fa-solid fa-play
-                    orange-play"></i>
-                        <span>Watch 10th ANNIVERSARY PROMOTIONAL VIDEO</span></a>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/0655fXREnas" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
 
                 @include('components.modal')
