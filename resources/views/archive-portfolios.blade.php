@@ -52,7 +52,7 @@
                             @endphp
                             <div class="text-center">
 
-                                <div class="port-feat" style="position: relative; margin-bottom: 15px; background-image: url({{$image_url}}); background-size: cover;">
+                                <div class="port-feat" style="height: 250px; position: relative; margin-bottom: 15px; background-image: url({{$image_url}}); background-size: cover;">
                                     <a style="position: absolute; top: 0; left: 0; display: block; width: 100%; height: 100%;" title="{!! $post->post_title !!}" href="{{$post_link}}"></a>
                                 </div>
                                 <div class="service-title">
