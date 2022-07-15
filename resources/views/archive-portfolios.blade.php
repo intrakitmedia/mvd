@@ -44,16 +44,16 @@
 
                             $video = get_field('featured_video_object', $post->ID);
                                         if($video) {
-                                        $youtube_id = get_field('youtube_id', $video->ID);
-                                        $youtube_id = preg_replace('/\s+/', '', $youtube_id);
+                                            $youtube_id = get_field('youtube_id', $video->ID);
+                                            $youtube_id = preg_replace('/\s+/', '', $youtube_id);
                                         }
 
 
                             @endphp
                             <div class="text-center">
 
-                                <div class="port-feat" style="margin-bottom: 15px;">
-                                    <a title="{!! $post->post_title !!}" href="{{$post_link}}"><img alt="{!! $post->post_title !!}" src="{{$image_url}}" /></a>
+                                <div class="port-feat" style="position: relative; margin-bottom: 15px; background-image: url({{$image_url}}); background-size: cover;">
+                                    <a style="position: absolute; top: 0; left: 0; display: block; width: 100%; height: 100%;" title="{!! $post->post_title !!}" href="{{$post_link}}"></a>
                                 </div>
                                 <div class="service-title">
                                     <h3 class="blue">
