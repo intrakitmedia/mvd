@@ -16,15 +16,16 @@
                     <h1 class="services-header-title">{!! $title !!}</h1>
                 </div>
             </div>
-            <div class="row">
-                <div class="two-col">
+          <div class="row">
+            <div class="grid grid-cols-1 md:grid-cols-5">
+                <div class="md:col-span-2 pr-20">
                     <div class="services-video-wrapper">
                         <div class="services-video">
                             <img src="{{ $thumbnail_url }}" alt="{{$thumbnail_alt}}"/>
                         </div>
                     </div>
                 </div>
-                <div class="two-col">
+                <div class="md:col-span-3">
                     <div class="services-content-lead">
                         @php
                             $banner_bold_content = get_field('banner_bold_content');
@@ -42,6 +43,7 @@
 
                 </div>
             </div>
+          </div>
         </div>
     </section>
 
