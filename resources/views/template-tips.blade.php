@@ -76,28 +76,28 @@
                                                 <div class="blog-roll-body blog-card-row">
                                                     <p><?php echo wp_trim_words( $content, 40, " ..."); ?></p>
                                                 </div>
-                                                <div class="blog-roll-author blog-card-row">
-                                                    @php
-                                                        $author_display_name = get_the_author_meta('display_name', $post->post_author);
-                                                        $nickname = get_the_author_meta('nickname', $post->post_author);
-                                                        $avatar = get_avatar_url($post->post_author);
-                                                        $post_date = date('F d Y', strtotime($post->post_date) );
-                                                    @endphp
-                                                    <div class="pic">
-                                                        @if($avatar)
-                                                            <div class="pic-inner" style="background: url({{$avatar}});
-                                                                    background-size:cover;"></div>
-                                                        @else
-                                                            <div class="pic-inner" style="background: url(@asset('images/default-author.jpg'));
-                                background-size:cover;"></div>
-                                                        @endif
-                                                    </div>
-                                                    <div class="meta">
+{{--                                                <div class="blog-roll-author blog-card-row">--}}
+{{--                                                    @php--}}
+{{--                                                        $author_display_name = get_the_author_meta('display_name', $post->post_author);--}}
+{{--                                                        $nickname = get_the_author_meta('nickname', $post->post_author);--}}
+{{--                                                        $avatar = get_avatar_url($post->post_author);--}}
+{{--                                                        $post_date = date('F d Y', strtotime($post->post_date) );--}}
+{{--                                                    @endphp--}}
+{{--                                                    <div class="pic">--}}
+{{--                                                        @if($avatar)--}}
+{{--                                                            <div class="pic-inner" style="background: url({{$avatar}});--}}
+{{--                                                                    background-size:cover;"></div>--}}
+{{--                                                        @else--}}
+{{--                                                            <div class="pic-inner" style="background: url(@asset('images/default-author.jpg'));--}}
+{{--                                background-size:cover;"></div>--}}
+{{--                                                        @endif--}}
+{{--                                                    </div>--}}
+{{--                                                    <div class="meta">--}}
 
-                                                        <div class="author-name"><p>{{$author_display_name}}</p></div>
-                                                        <div class="date"><p>{{$post_date}}</p></div>
-                                                    </div>
-                                                </div>
+{{--                                                        <div class="author-name"><p>{{$author_display_name}}</p></div>--}}
+{{--                                                        <div class="date"><p>{{$post_date}}</p></div>--}}
+{{--                                                    </div>--}}
+{{--                                                </div>--}}
                                             </div>
                                         </div>
                                     @endforeach
