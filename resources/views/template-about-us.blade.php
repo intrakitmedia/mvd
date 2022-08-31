@@ -18,7 +18,7 @@
                 <div class="page-header-title text-center">
                     <h1>About Us</h1>
                     <h2>Our mission from day one &#8212;</h2>
-                    <p>Provide quality video proudction services that did not break the bank and allow them to invest in different types of video marketing content multiple times a year.</p>
+                    <p>Provide quality video production services that did not break the bank and allow them to invest in different types of video marketing content multiple times a year.</p>
                 </div>
             </div>
         </div>
@@ -190,7 +190,7 @@
                     </div>
                     <div class="small-card-text">
                         <h4>Fairness</h4>
-                        <p>To ourselvse, clients, family, time-off, health, side projects & hobbies.</p>
+                        <p>To ourselves, clients, family, time-off, health, side projects & hobbies.</p>
                     </div>
                 </div>
                 <div class="small-card">

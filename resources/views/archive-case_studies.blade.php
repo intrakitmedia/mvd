@@ -50,8 +50,7 @@
                     <div class="blog-card-image-wapper">
                         @if($image_url)
                         <div data-check="featured-image" class="blog-featured-image"
-                             style="background: url({{$image_url}}); background-size:cover;"><a class="link-fill"
-                                                                                                title="{{$post->post_title}}" href="{{$post_link}}"></a>
+                             style="background: url({{$image_url}}); background-size:cover;"><a class="link-fill" title="{{$post->post_title}}" href="{{$post_link}}"></a>
                         </div>
                         @endif
                     </div>
