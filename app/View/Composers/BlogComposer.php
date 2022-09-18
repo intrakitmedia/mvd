@@ -39,8 +39,8 @@ class BlogComposer extends Composer {
 
 		if ( is_page( 'Blog' ) ) {
 			$post_type = 'post';
-		} elseif ( is_page( 'Business Video Tips' ) ) {
-			$post_type = 'tips';
+		} elseif ( get_field('use_as_tips_home_page') ) {
+            $post_type = 'tips';
 		} else {
 			$post_type = get_post_type();
 		}
@@ -75,7 +75,7 @@ class BlogComposer extends Composer {
 
 		if ( is_page( 'Blog' ) ) {
 			$post_type = 'post';
-		} elseif ( is_page( 'Business Video Tips' ) ) {
+		} elseif ( get_field('use_as_tips_home_page') ) {
 			$post_type = 'tips';
 			$tips = true;
 		} else {
