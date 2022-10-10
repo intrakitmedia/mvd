@@ -52,11 +52,15 @@ class BlogComposer extends Composer {
 			return;
 		}
 
+        $args = array ('exclude'=>1,'fields'=>'ids');
+        $exclude_uncategorized = get_terms('category',$args);
+
 		$args = [
 			'post_type'      => $post_type,
 			'post_status'         => 'publish',
 			'posts_per_page' => 2,
-			'paged' => $paged
+			'paged' => $paged,
+            'category__in' => $exclude_uncategorized,
 		];
 
 		$query = new \WP_Query( $args );
@@ -84,13 +88,15 @@ class BlogComposer extends Composer {
 
 		$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 
-
+        $args = array ('exclude'=>1,'fields'=>'ids');
+        $exclude_uncategorized = get_terms('category',$args);
 
 		$args = [
 			'post_type'      => $post_type,
 			'post_status'         => 'publish',
 			'posts_per_page' => 18,
-			'paged' => $paged
+			'paged' => $paged,
+            'category__in' => $exclude_uncategorized,
 		];
 
 		if ($paged == 1  && ! $tips) {

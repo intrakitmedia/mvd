@@ -22,3 +22,5 @@ add_filter('wp_trim_words', function ($text, $num_words, $more, $original_text) 
 
 	return $text;
 }, 10, 4);
+
+add_action( 'wp_nav_menu_item_custom_fields', [ $this, 'mega_menu' ], 10, 2 );
