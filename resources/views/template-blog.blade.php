@@ -86,12 +86,10 @@
                         </div>
                         <div class="blog-roll-author blog-card-row">
                             @php
-                                $author_display_name = get_the_author_meta('display_name', $pinned_post->post_author);
-                                $nickname = get_the_author_meta('nickname', $pinned_post->post_author);
-                                $avatar = get_avatar_url($pinned_post->post_author);
-                                $post_date = date('F d Y', strtotime($pinned_post->post_date) );
-
-
+                                $author_display_name    = get_the_author_meta('display_name', $pinned_post->post_author);
+                                $nickname               = get_the_author_meta('nickname', $pinned_post->post_author);
+                                $avatar                 = get_avatar_url($pinned_post->post_author);
+                                $post_date              = date('F d Y', strtotime($pinned_post->post_date) );
                             @endphp
 
 

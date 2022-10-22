@@ -38,10 +38,11 @@ class BlogComposer extends Composer {
         }
 
         $args = array ('exclude'=>1,'fields'=>'ids');
-        $exclude_uncategorized = get_terms('category',$args);
+
+        $exclude_uncategorized = get_terms('category' , $args);
 
         $args = [
-            'post_status'         => 'publish',
+            'post_status' => 'publish',
             'posts_per_page' => 2,
         ];
 
@@ -54,6 +55,7 @@ class BlogComposer extends Composer {
             $post_type = 'tips';
         } else {
             $post_type = get_post_type();
+            $args = array_merge($args, $ex);
         }
 
         $args = array_merge($args, ['post_type'      => $post_type]);
@@ -61,7 +63,6 @@ class BlogComposer extends Composer {
 
         $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 
-        $args = array_merge($args, ['paged' => $paged]);
 
         if ($paged != 1) {
             return;
@@ -100,6 +101,7 @@ class BlogComposer extends Composer {
             $tips = true;
         } else {
             $post_type = get_post_type();
+            $args = array_merge($args, $ex);
         }
 
         $args = array_merge($args, ['post_type'      => $post_type]);

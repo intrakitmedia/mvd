@@ -193,12 +193,16 @@ class Post extends Composer {
 	public function related_posts() {
 		$post_type = get_post_type();
 
+        $args = array ('exclude'=>1,'fields'=>'ids');
+        $exclude_uncategorized = get_terms('category',$args);
+
 		$related = get_posts(
 			array(
 				'post_type' => $post_type,
 				'category__in' => wp_get_post_categories( $this->post_ID ),
 				'numberposts'  => 3,
-				'post__not_in' => array( $this->post_ID )
+				'post__not_in' => array( $this->post_ID ),
+                'category__in' => $exclude_uncategorized
 			)
 		);
 
