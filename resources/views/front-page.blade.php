@@ -440,7 +440,7 @@ $link = $contact_us_link;
         <div class="row center">
 
           <div class="lead-in">
-
+          <h3 class="header-leaad-in">News</h3>
             <h4 class="header-alt">Thought leadership on business video production</h4>
 
           </div></div>
