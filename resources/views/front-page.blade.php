@@ -460,7 +460,7 @@ $link = $contact_us_link;
 
 
 
-            <div class="blog-card">
+            <div class="blog-card blog-card-test">
               <div class="blog-card-image-wapper blog-card-row">
                 @if($image_url)
                   <div class="blog-featured-image"
@@ -473,20 +473,6 @@ $link = $contact_us_link;
               <div class="blog-content-card top-news blog-card-row">
                 <div class="blog-roll-header blog-card-row">
 
-                  <div class="blog-roll-cats blog-card-row">
-                    @if($categories)
-                      @foreach($categories as $category)
-                        @php
-                          $term_link = get_term_link($category->term_id);
-                        @endphp
-
-                        <a class="cat" title="{{$category->name}}"
-                           href="{{$term_link}}">{{$category->name}}</a>
-
-
-                      @endforeach
-                    @endif
-                  </div>
                   <div class="blog-roll-title">
                     <h3><a title="{{$post->post_title}}" href="{{$post_link}}">{{$post->post_title}}</a>
                     </h3>

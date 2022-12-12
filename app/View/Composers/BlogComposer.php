@@ -43,6 +43,7 @@ class BlogComposer extends Composer {
         $args = [
             'post_status' => 'publish',
             'posts_per_page' => 2,
+            'category__not_in' => [108]
         ];
 
         $ex = [ 'category__in' => $exclude_uncategorized ];
@@ -88,6 +89,7 @@ class BlogComposer extends Composer {
         $args = [
             'post_status'         => 'publish',
             'posts_per_page' => 18,
+            'category__not_in' => [108]
         ];
 
         $ex = [ 'category__in' => $exclude_uncategorized ];
@@ -124,6 +126,7 @@ class BlogComposer extends Composer {
 
             $cat = [
                 'category__in' => $cat_id,
+                'category__not_in' => [108]
             ];
 
             $args = array_merge( $args, $cat );
