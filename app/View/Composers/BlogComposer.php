@@ -28,7 +28,6 @@ class BlogComposer extends Composer {
             'posts'         => $this->posts(),
             'pinned_post'   => $this->pinned_post(),
             'title'         => $this->title(),
-
         ];
     }
 

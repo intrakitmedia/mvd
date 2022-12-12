@@ -175,11 +175,11 @@
                     @foreach($related_posts as $post)
 
                         @php
-                            $image_url = get_the_post_thumbnail_url($post->ID) ?? null;
-                        $cats = get_the_terms($post->ID, 'category');
-                       $related_post_date = date('F d Y', strtotime($post->post_date) );
-                        $related_post_link = get_permalink($post->ID);
-                        $related_content  = get_the_content($post->ID);
+                          $image_url = get_the_post_thumbnail_url($post->ID) ?? null;
+                          $cats = get_the_terms($post->ID, 'category');
+                          $related_post_date = date('F d Y', strtotime($post->post_date) );
+                          $related_post_link = get_permalink($post->ID);
+                          $related_content  = get_the_content($post->ID);
                         @endphp
 
                         <div class="blog-card">
