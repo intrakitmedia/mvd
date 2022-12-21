@@ -2,6 +2,14 @@
 
 
 @section('content')
+  <style>
+
+    .hero-link a {
+      position: relative;
+      z-index: 9;
+      display: block;
+    }
+  </style>
   <div class="hero">
     @php
       $homeepage_bg = get_field('hero_background_image');
@@ -97,6 +105,14 @@ $link = $contact_us_link;
       </div>
     </div>
   </div>
+
+  <section>
+    <div class="container">
+      <div class="row center">
+        <img src="https://www.multivisiondigital.com/wp-content/uploads/2022/12/brandpush-trust-badge.png" />
+      </div>
+    </div>
+  </section>
 
   <section class="">
     <div class="copy-inner">
@@ -440,56 +456,64 @@ $link = $contact_us_link;
         <div class="row center">
 
           <div class="lead-in">
-          <h3 class="header-leaad-in">News</h3>
+            <h3 class="header-leaad-in">News</h3>
             <h4 class="header-alt">Thought leadership on business video production</h4>
 
           </div></div>
 
       </div>
-      <div class="grid sm:grid-cols-1 lg:grid-cols-4 gap-4">
-        @if( $query->found_posts > 0 )
-          @foreach($query->posts as $post)
-            @php
-              $post_id = $post->ID;
-              $image_url = get_the_post_thumbnail_url($post->ID) ?? null;
-              $post_date = date('F dd Y', strtotime($post->post_date) );
-              $post_link = get_permalink($post->ID);
-              $categories = get_the_terms($post->ID, 'category');
-         $content = get_the_content('', true, $post->ID);
-            @endphp
+      <style>
+        @media (max-width: 587px ) {
+          .mobile-fix {
+            grid-template-columns: repeat(1,minmax(0,1fr)) !important;
+          }
+        }
+      </style>
+      <div class="mobile-fix grid sm:grid-cols-1 lg:grid-cols-4 gap-4" style="grid-template-columns: repeat(4,minmax(0,1fr)); gap: 20px;"">
+
+      @if( $query->found_posts > 0 )
+        @foreach($query->posts as $post)
+          @php
+            $post_id = $post->ID;
+            $image_url = get_the_post_thumbnail_url($post->ID) ?? null;
+            $post_date = date('F dd Y', strtotime($post->post_date) );
+            $post_link = get_permalink($post->ID);
+            $categories = get_the_terms($post->ID, 'category');
+       $content = get_the_content('', true, $post->ID);
+          @endphp
 
 
 
-            <div class="blog-card blog-card-test">
-              <div class="blog-card-image-wapper blog-card-row">
-                @if($image_url)
-                  <div class="blog-featured-image"
-                       style="background: url({{$image_url}}); background-size:cover;"><a class="link-fill" title="{{$post->post_title}}" href="{{$post_link}}"></a></div>
-                @else
-                  <div class="blog-featured-image"
-                       style="background: url(@asset('images/default-image.jpg')); background-size:cover;"><a class="link-fill" title="{{$post->post_title}}" href="{{$post_link}}"></a></div>
-                @endif
+          <div class="blog-card blog-card-test">
+            <div class="blog-card-image-wapper blog-card-row">
+              @if($image_url)
+                <div class="blog-featured-image"
+                     style="background: url({{$image_url}}); background-size:cover;"><a class="link-fill" title="{{$post->post_title}}" href="{{$post_link}}"></a></div>
+              @else
+                <div class="blog-featured-image"
+                     style="background: url(@asset('images/default-image.jpg')); background-size:cover;"><a class="link-fill" title="{{$post->post_title}}" href="{{$post_link}}"></a></div>
+              @endif
+            </div>
+            <div class="blog-content-card top-news blog-card-row">
+              <div class="blog-roll-header blog-card-row">
+
+                <div class="blog-roll-title">
+                  <h3><a title="{{$post->post_title}}" href="{{$post_link}}">{{$post->post_title}}</a>
+                  </h3>
+                </div>
               </div>
-              <div class="blog-content-card top-news blog-card-row">
-                <div class="blog-roll-header blog-card-row">
-
-                  <div class="blog-roll-title">
-                    <h3><a title="{{$post->post_title}}" href="{{$post_link}}">{{$post->post_title}}</a>
-                    </h3>
-                  </div>
-                </div>
-                <div class="blog-roll-body blog-card-row">
-                  <p><?php echo wp_trim_words( get_the_content('', false, $post_id), 30, " ..."); ?></p>
-                </div>
+              <div class="blog-roll-body blog-card-row">
+                <p><?php echo wp_trim_words( get_the_content('', false, $post_id), 30, " ..."); ?></p>
               </div>
             </div>
-          @endforeach
-        @else
-          <div class="No Posts">
-            <h1>No posts yet!</h1>
           </div>
-        @endif
-      </div>
+        @endforeach
+      @else
+        <div class="No Posts">
+          <h1>No posts yet!</h1>
+        </div>
+      @endif
+    </div>
     </div>
     </div>
   </section>
