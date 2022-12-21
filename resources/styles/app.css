@@ -205,8 +205,10 @@ nav a {
   color: var(--white);
 }
 
-.splide.splide--slide {
-  max-height: 400px;
+@media (min-width: 700px) {
+  .splide.splide--slide {
+    max-height: 400px;
+  }
 }
 
 .other-services-wrapper  a,
