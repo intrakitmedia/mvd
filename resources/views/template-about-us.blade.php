@@ -265,6 +265,9 @@
                 <a href="https://www.expertise.com/ny/nyc/law-firm-marketing" style="display:inline-block; border:0;">
                     <img src="https://res.cloudinary.com/expertise-com/image/upload/f_auto,fl_lossy,q_auto/w_auto/remote_media/awards/ny_nyc_law-firm-marketing_2022_transparent.svg" />
                 </a>
+                <a href="https://upcity.com/profiles/multivision-digital/locations/multivision-digital">
+                  <img src="https://upcity-marketplace.s3.amazonaws.com/excellenceaward/314/best_of_full_color/f654ab6c21ed36197c982ed28d85fed0.png" width="300px" height="300px" alt="2022 Best Of New York" />
+                </a>
             </div>
         </div>
         </div>
