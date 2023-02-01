@@ -225,9 +225,17 @@ li {
   list-style: disc;
 }
 
-header.header-banner.fixed {
+.top-header.fixed {
   position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+header.header-banner.fixed {
+  position: fixed;
+  top: 40px;
   left: 0;
   width: 100%;
   z-index: 10;

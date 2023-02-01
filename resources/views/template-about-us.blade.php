@@ -81,7 +81,6 @@
         <div class="container">
             <div class="row center">
                 <div style="width: 100%;">
-                  <h2 class="blue text-center">Watch 10th Anniversery Promotional Video</h2>
                   <div class="video" style="height: auto;">
                     <div class="video-container" style="position: relative; height: 0;">
                       <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/9RFWNmu8H3E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

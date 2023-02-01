@@ -98,8 +98,8 @@ $link = $contact_us_link;
             </div>
 
           </div>
-          <div class="hero-link"><p><a data-field="9RFWNmu8H3E" class="s-vid-link">Click here to see our 10 year anniversay
-                highlight reel!</a></p></div>
+{{--          <div class="hero-link"><p><a data-field="9RFWNmu8H3E" class="s-vid-link">Click here to see our 10 year anniversay--}}
+{{--                highlight reel!</a></p></div>--}}
           @include('components.modal')
         </div>
       </div>
@@ -117,7 +117,7 @@ $link = $contact_us_link;
   <section class="">
     <div class="copy-inner">
       <div class="container">
-        <div class="row center">
+        <div style="display: flex; padding-bottom: 0; justify-content: center;">
           <div class="lead-in">
             <h3>A Solution for Every Stage of Video Adoption</h3>
             <h4 class="header-alt">Perfectly made to every company size, industry, status, and

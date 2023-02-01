@@ -110,8 +110,10 @@ domReady(() => {
     $(window).bind('scroll', function () {
         if ($(window).scrollTop() > num) {
             $('.header-banner').addClass('fixed');
+            $('.top-header').addClass('fixed');
         } else {
             $('.header-banner').removeClass('fixed');
+            $('.top-header').removeClass('fixed');
         }
     });
 
