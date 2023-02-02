@@ -40,22 +40,25 @@ class BlogComposer extends Composer {
 
         $exclude_uncategorized = get_terms('category' , $args);
 
-        $args = [
+        $args = [];
+        if(get_query_var('cat')) {
+            $cat_id = get_query_var('cat');
+            $args['category__in'] = [ $cat_id ];
+        } else {
+            $args['category__in'] = $exclude_uncategorized;
+        }
+
+        $args = array_merge($args, [
             'post_status' => 'publish',
             'posts_per_page' => 2,
-            'category__not_in' => [108]
-        ];
-
-        $ex = [ 'category__in' => $exclude_uncategorized ];
+        ]);
 
         if ( is_page( 'Blog' ) ) {
             $post_type = 'post';
-            $args = array_merge($args, $ex);
         } elseif ( get_field('use_as_tips_home_page') ) {
             $post_type = 'tips';
         } else {
             $post_type = get_post_type();
-            $args = array_merge($args, $ex);
         }
 
         $args = array_merge($args, ['post_type'      => $post_type]);
@@ -70,9 +73,7 @@ class BlogComposer extends Composer {
 
         $query = new \WP_Query( $args );
 
-
         return $query;
-
     }
 
     public function posts() {
@@ -80,32 +81,38 @@ class BlogComposer extends Composer {
             return;
         }
 
-        $tips = false;
-
-
         $args = array ('exclude'=>1,'fields'=>'ids');
         $exclude_uncategorized = get_terms('category',$args);
 
-        $args = [
-            'post_status'         => 'publish',
-            'posts_per_page' => 18,
-            'category__not_in' => [108]
-        ];
+        if(is_tag()) {
+            $args['tag_id'] = get_queried_object()->term_id;
+        }
 
-        $ex = [ 'category__in' => $exclude_uncategorized ];
+        if(get_query_var('cat')) {
+            $cat_id = get_query_var('cat');
+            $args['category__in'] = $cat_id;
+        } else {
+            $args['category__in'] = $exclude_uncategorized;
+        }
+
+        $tips = false;
+
+
+        $args = array_merge($args, [
+            'post_status'    => 'publish',
+            'posts_per_page' => 18,
+        ]);
 
         if ( is_page( 'Blog' ) ) {
             $post_type = 'post';
-            $args = array_merge($args, $ex);
         } elseif ( get_field('use_as_tips_home_page') ) {
             $post_type = 'tips';
             $tips = true;
         } else {
-            $post_type = get_post_type();
-            $args = array_merge($args, $ex);
+            $post_type = 'post';
         }
 
-        $args = array_merge($args, ['post_type'      => $post_type]);
+        $args = array_merge($args, ['post_type' => $post_type]);
 
         $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 
@@ -119,21 +126,7 @@ class BlogComposer extends Composer {
             $args = array_merge($args, $offset);
         }
 
-        if ( is_archive() && ! is_post_type_archive('case_studies') && ! is_tag() && ! is_author() ) {
-
-            $category = get_category( get_query_var( 'cat' ) );
-            $cat_id   = $category->term_ID;
-
-            $cat = [
-                'category__in' => $cat_id,
-                'category__not_in' => [108]
-            ];
-
-            $args = array_merge( $args, $cat );
-        }
-
         $query = new \WP_Query( $args );
-
 
         return $query;
     }
