@@ -81,8 +81,8 @@ class BlogComposer extends Composer {
             return;
         }
 
-        $args = array ('exclude'=>1,'fields'=>'ids');
-        $exclude_uncategorized = get_terms('category',$args);
+        $exargs = array ('exclude'=>1,'fields'=>'ids');
+        $exclude_uncategorized = get_terms('category',$exargs);
 
         if(is_tag()) {
             $args['tag_id'] = get_queried_object()->term_id;
@@ -107,6 +107,11 @@ class BlogComposer extends Composer {
             $post_type = 'post';
         } elseif ( get_field('use_as_tips_home_page') ) {
             $post_type = 'tips';
+            $newargs = [
+                'post_type' => $post_type,
+                'post_status'    => 'publish',
+                'posts_per_page' => 18,
+            ];
             $tips = true;
         } else {
             $post_type = 'post';
@@ -126,7 +131,12 @@ class BlogComposer extends Composer {
             $args = array_merge($args, $offset);
         }
 
+        if($tips) {
+            $args = $newargs;
+        }
+
         $query = new \WP_Query( $args );
+
 
         return $query;
     }
