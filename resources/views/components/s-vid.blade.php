@@ -23,9 +23,5 @@ $url = get_the_post_thumbnail_url($video->ID);
             </div>
 
         </div>
-        <div class="s-vid-title">
-            <h4>{{$video->post_title}}</h4>
-        </div>
-
     </div>
 </div>
