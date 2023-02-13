@@ -368,7 +368,7 @@ if( have_rows('video_gallery') ):
     <section class="services-sizzle section-alt">
         <div class="container">
             <div class="row">
-                <div class="vid">
+                <div class="vid" style="width: 100%">
                     <div class="services-reel-content">
                         <div class="row center">
                         <div class="header-two blue">
