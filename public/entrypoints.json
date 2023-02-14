@@ -1,12 +1,13 @@
 {
   "app": {
     "js": [
-      "runtime.979dfd.js",
-      "vendor/app.875297.js",
-      "app.1be3cb.js"
+      "js/runtime.d115c7.js",
+      "js/492.e62268.js",
+      "js/16.92311a.js",
+      "js/app.ae1ebc.js"
     ],
     "css": [
-      "app.69252e.css"
+      "css/app.2ec688.css"
     ],
     "dependencies": [
       "jquery"
@@ -14,11 +15,12 @@
   },
   "editor": {
     "js": [
-      "runtime.979dfd.js",
-      "editor.4d42af.js"
+      "js/runtime.d115c7.js",
+      "js/16.92311a.js",
+      "js/editor.113bcd.js"
     ],
     "css": [
-      "editor.31d6cf.css"
+      "css/editor.31d6cf.css"
     ],
     "dependencies": [
       "wp-blocks"

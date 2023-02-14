@@ -1,0 +1,77 @@
+Arguments: 
+  /home/philiparudy/.nvm/versions/node/v18.14.0/bin/node /mnt/c/Program Files (x86)/Yarn/bin/yarn.js
+
+PATH: 
+  /home/philiparudy/.nvm/versions/node/v18.14.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python310/Scripts/:/mnt/c/Python310/C:/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/dotnet/:/mnt/c/Program Files/Git/cmdC:/Users/phili/AppData/Roaming/nvm:/mnt/c/Program Files/nodejsC:/ProgramData/ComposerSetup/bin:/mnt/c/Program Files/Git/bin/:/mnt/c/Program Files/Git/cmd/:/mnt/c/ProgramData/ComposerSetup/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/WINDOWS/system32:/mnt/c/Program Files (x86)/Yarn/bin/:/mnt/c/MAMP/bin/php/php7.4.16:/mnt/c/Users/phili/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/phili/AppData/Local/JetBrains/PhpStorm 2022.1.4/bin:/mnt/c/Users/phili/AppData/Roaming/Composer/vendor/bin:/mnt/c/Program Files/nodejs:/mnt/c/Users/phili/AppData/Roaming/npm:/mnt/c/Users/phili/AppData/Local/Yarn/bin:/snap/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.14.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Invariant Violation: could not find a copy of browserslist to link in /mnt/c/MAMP/htdocs/mvd/node_modules/@roots/bud/node_modules
+      at invariant (/mnt/c/Program Files (x86)/Yarn/lib/cli.js:2318:15)
+      at PackageLinker.<anonymous> (/mnt/c/Program Files (x86)/Yarn/lib/cli.js:48522:7)
+      at Generator.next (<anonymous>)
+      at step (/mnt/c/Program Files (x86)/Yarn/lib/cli.js:310:30)
+      at /mnt/c/Program Files (x86)/Yarn/lib/cli.js:321:13
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+npm manifest: 
+  {
+    "name": "sage",
+    "private": true,
+    "bud": {
+      "location": {
+        "src": "resources",
+        "dist": "public"
+      }
+    },
+    "browserslist": [
+      "extends @wordpress/browserslist-config"
+    ],
+    "engines": {
+      "node": ">=16.0.0"
+    },
+    "scripts": {
+      "dev": "bud dev",
+      "build": "bud build",
+      "lint": "npm run lint:js && npm run lint:css",
+      "lint:js": "eslint resources/scripts",
+      "lint:css": "stylelint \"resources/**/*.{css,scss,vue}\"",
+      "test": "npm run lint"
+    },
+    "devDependencies": {
+      "@roots/bud": "6.9.1",
+      "@roots/bud-eslint": "6.9.1",
+      "@roots/bud-postcss": "6.9.1",
+      "@roots/bud-prettier": "6.9.1",
+      "@roots/bud-stylelint": "6.9.1",
+      "@roots/bud-tailwindcss": "6.9.1",
+      "@roots/sage": "6.9.1"
+    },
+    "dependencies": {
+      "@fortawesome/fontawesome-free": "^6.0.0",
+      "@fortawesome/fontawesome-svg-core": "^1.3.0",
+      "@fortawesome/free-brands-svg-icons": "^6.0.0",
+      "@fortawesome/free-regular-svg-icons": "^6.0.0",
+      "@fortawesome/free-solid-svg-icons": "^6.0.0",
+      "@splidejs/splide": "^3.6.12",
+      "@wordpress/browserslist-config": "^5.9.0",
+      "browserslist": "^4.21.5",
+      "jquery": "^3.6.0",
+      "swiper": "^8.0.7",
+      "youtube-player": "^5.5.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
