@@ -36,7 +36,7 @@ class BlogComposer extends Composer {
             return;
         }
 
-        $args = array ('exclude'=>1,'fields'=>'ids');
+        $args = array ('exclude'=>[108, 1],'fields'=>'ids');
 
         $exclude_uncategorized = get_terms('category' , $args);
 
@@ -81,7 +81,7 @@ class BlogComposer extends Composer {
             return;
         }
 
-        $exargs = array ('exclude'=>1,'fields'=>'ids');
+        $exargs = array ('exclude'=> [108, 1],'fields'=>'ids');
         $exclude_uncategorized = get_terms('category',$exargs);
 
         if(is_tag()) {
